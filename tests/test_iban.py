@@ -1,5 +1,5 @@
 import pytest
-from iban import IBAN
+from schwifty import IBAN
 
 
 @pytest.mark.parametrize('number', [
@@ -80,20 +80,48 @@ from iban import IBAN
 ])
 def test_parse_iban(number):
     iban = IBAN(number)
-    assert iban.validate()
     assert iban.formatted == number
+
+
+@pytest.mark.parametrize('number', [
+    'DE89 3704 0044 0532 0130',                 # Too short
+    'DE89 3704 0044 0532 0130 0000',            # Too long
+    'XX89 3704 0044 0532 0130 00',              # Wrong country-code
+    'DE99 3704 0044 0532 0130 00',              # Wrong check digits
+    'DEAA 3704 0044 0532 0130 00',              # Wrong format (check digits)
+    'DE89 AA04 0044 0532 0130 00',              # Wrong format (country specific)
+])
+def test_invalid_iban(number):
+    with pytest.raises(ValueError):
+        IBAN(number)
 
 
 def test_iban_properties():
     iban = IBAN('DE42430609677000534100')
-    assert iban.validate()
     assert iban.bank_code == '43060967'
     assert iban.branch_code == ''
     assert iban.account_code == '7000534100'
     assert iban.country_code == 'DE'
+    assert iban.bic == 'GENODEM1GLS'
     assert iban.formatted == 'DE42 4306 0967 7000 5341 00'
+    assert iban.length == 22
 
 
-def test_generate_iban():
-    iban = IBAN.generate('DE', '43060967', '7000534100')
-    assert iban.compact == 'DE42430609677000534100'
+@pytest.mark.parametrize('components,compact', [
+    (('DE', '43060967', '7000534100'), 'DE42430609677000534100'),
+    (('DE', '51230800', '2622196545'), 'DE61512308002622196545'),
+    (('DE', '20690500', '9027378'), 'DE37206905000009027378'),
+])
+def test_generate_iban(components, compact):
+    iban = IBAN.generate(*components)
+    assert iban.compact == compact
+
+
+def test_magic_methods():
+    iban = IBAN('DE42430609677000534100')
+    assert iban == 'DE42430609677000534100'
+    assert iban == IBAN('DE42430609677000534100')
+    assert iban != IBAN('ES9121000418450200051332')
+
+    assert str(iban) == 'DE42430609677000534100'
+    assert repr(iban) == '<IBAN=DE42430609677000534100>'

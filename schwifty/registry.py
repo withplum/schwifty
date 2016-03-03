@@ -1,0 +1,35 @@
+import json
+from pkg_resources import resource_stream
+
+
+_registry = {}
+
+
+def has(name):
+    return name in _registry
+
+
+def get(name):
+    if not has(name):
+        save(name, json.load(resource_stream(__name__, name + '-registry.json')))
+    return _registry[name]
+
+
+def save(name, data):
+    _registry[name] = data
+
+
+def build_index(base_name, index_name, key):
+    def make_key(entry):
+        return tuple(entry[k] for k in key) if isinstance(key, tuple) else entry[key]
+    save(index_name, dict((make_key(entry), entry) for entry in get(base_name)))
+
+
+def manipulate(name, func):
+    registry = get(name)
+    if isinstance(registry, dict):
+        for key, value in registry.items():
+            registry[key] = func(key, value)
+    elif isinstance(registry, list):
+        registry = [func(item) for item in registry]
+    save(name, registry)

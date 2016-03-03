@@ -69,5 +69,5 @@ if __name__ == '__main__':
         for code in codes:
             registry[code] = entry
 
-    with open('iban/iban-registry.json', 'w+') as fp:
+    with open('schwifty/iban-registry.json', 'w+') as fp:
         json.dump(registry, fp, indent=2)
