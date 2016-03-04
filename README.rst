@@ -1,6 +1,6 @@
 .. image:: https://img.shields.io/pypi/v/schwifty.svg?style=flat-square
     :target: https://pypi.python.org/pypi/schwifty
-.. image:: https://travis-ci.org/figo-connect/schwifty.svg?style=flat-square&branch=master
+.. image:: https://img.shields.io/travis/figo-connect/schwifty/master.svg?style=flat-square
     :target: https://travis-ci.org/figo-connect/schwifty
 .. image:: https://img.shields.io/pypi/l/schwifty.svg?style=flat-square
     :target: https://pypi.python.org/pypi/schwifty
