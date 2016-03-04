@@ -1,3 +1,11 @@
+.. image:: https://img.shields.io/pypi/v/schwifty.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/schwifty
+.. image:: https://travis-ci.org/figo-connect/schwifty.svg?style=flat-square&branch=master
+    :target: https://travis-ci.org/figo-connect/schwifty
+.. image:: https://img.shields.io/pypi/l/schwifty.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/schwifty
+
+
 Gotta get schwifty with your IBANs
 ==================================
 
