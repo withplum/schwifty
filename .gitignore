@@ -9,3 +9,6 @@ ChangeLog
 build/
 dist/
 *.egg-info
+htmlcov/
+.coverage
+test-results.xml

@@ -3,8 +3,8 @@ import re
 
 import iso3166
 
-from common import Base
-import registry
+from schwifty.common import Base
+from schwifty import registry
 
 
 _bic_re = re.compile(r'[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?')
@@ -32,18 +32,18 @@ class BIC(Base):
 
     def validate_length(self):
         if self.length not in (8, 11):
-            raise ValueError('Invalid BIC length %d', self.length)
+            raise ValueError('Invalid length %d' % self.length)
 
     def validate_structure(self):
         if not _bic_re.match(self.compact):
-            raise ValueError('Invalid BIC structure %s', self.compact)
+            raise ValueError('Invalid structure %s' % self.compact)
 
     def validate_country_code(self):
         country_code = self.country_code
         try:
             iso3166.countries_by_alpha2[country_code]
         except KeyError:
-            raise ValueError('Invalid country code in BIC %s' % country_code)
+            raise ValueError('Invalid country code %s' % country_code)
 
     @property
     def formatted(self):
@@ -51,6 +51,16 @@ class BIC(Base):
         if self.branch_code:
             formatted += ' ' + self.branch_code
         return formatted
+
+    @property
+    def country_bank_code(self):
+        entry = registry.get('bic').get(self.compact)
+        if entry:
+            return entry.get('bank_code')
+
+    @property
+    def exists(self):
+        return bool(registry.get('bic').get(self.compact))
 
     bank_code = property(partial(Base._get_component, start=0, end=4))
     branch_code = property(partial(Base._get_component, start=8, end=11))

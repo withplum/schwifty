@@ -2,7 +2,7 @@ import pytest
 from schwifty import IBAN
 
 
-@pytest.mark.parametrize('number', [
+valid = [
     'AL47 2121 1009 0000 0002 3569 8741',       # Albania
     'AD12 0001 2030 2003 5910 0100',            # Andorra
     'AT61 1904 3002 3457 3201',                 # Austria
@@ -77,20 +77,33 @@ from schwifty import IBAN
     'AE07 0331 2345 6789 0123 456',             # United Arab Emirates
     'GB29 NWBK 6016 1331 9268 19',              # United Kingdom
     'VG96 VPVG 0000 0123 4567 8901',            # Virgin Islands, British
-])
-def test_parse_iban(number):
-    iban = IBAN(number)
-    assert iban.formatted == number
+]
 
 
-@pytest.mark.parametrize('number', [
+invalid = [
     'DE89 3704 0044 0532 0130',                 # Too short
     'DE89 3704 0044 0532 0130 0000',            # Too long
     'XX89 3704 0044 0532 0130 00',              # Wrong country-code
     'DE99 3704 0044 0532 0130 00',              # Wrong check digits
     'DEAA 3704 0044 0532 0130 00',              # Wrong format (check digits)
     'DE89 AA04 0044 0532 0130 00',              # Wrong format (country specific)
-])
+]
+
+
+@pytest.mark.parametrize('number', valid)
+def test_parse_iban(number):
+    iban = IBAN(number)
+    assert iban.formatted == number
+
+
+@pytest.mark.parametrize('number', invalid)
+def test_parse_iban_allow_invalid(number):
+    iban = IBAN(number, allow_invalid=True)
+    with pytest.raises(ValueError):
+        iban.validate()
+
+
+@pytest.mark.parametrize('number', invalid)
 def test_invalid_iban(number):
     with pytest.raises(ValueError):
         IBAN(number)
@@ -117,11 +130,21 @@ def test_generate_iban(components, compact):
     assert iban.compact == compact
 
 
+@pytest.mark.parametrize('country_code,bank_code,account_code', [
+    ('DE', '012345678', '7000123456'),
+    ('DE', '51230800', '01234567891'),
+])
+def test_generate_iban_invalid(country_code, bank_code, account_code):
+    with pytest.raises(ValueError):
+        IBAN.generate(country_code, bank_code, account_code)
+
+
 def test_magic_methods():
     iban = IBAN('DE42430609677000534100')
     assert iban == 'DE42430609677000534100'
     assert iban == IBAN('DE42430609677000534100')
     assert iban != IBAN('ES9121000418450200051332')
+    assert iban < IBAN('ES9121000418450200051332')
 
     assert str(iban) == 'DE42430609677000534100'
     assert repr(iban) == '<IBAN=DE42430609677000534100>'

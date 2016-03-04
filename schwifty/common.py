@@ -1,9 +1,11 @@
+from functools import total_ordering
 import re
 
 
 _clean_regex = re.compile(r'\s+')
 
 
+@total_ordering
 class Base(object):
 
     def __init__(self, code):
@@ -16,11 +18,10 @@ class Base(object):
         return '<%s=%s>' % (self.__class__.__name__, str(self))
 
     def __eq__(self, other):
-        if isinstance(other, str):
-            return str(self) == other
-        elif isinstance(other, self.__class__):
-            return str(self) == str(other)
-        return False
+        return str(self) == str(other)
+
+    def __lt__(self, other):
+        return str(self) < str(other)
 
     @property
     def compact(self):

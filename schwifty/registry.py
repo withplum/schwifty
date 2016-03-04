@@ -1,5 +1,5 @@
 import json
-from pkg_resources import resource_stream
+from pkg_resources import resource_filename
 
 
 _registry = {}
@@ -11,7 +11,8 @@ def has(name):
 
 def get(name):
     if not has(name):
-        save(name, json.load(resource_stream(__name__, name + '-registry.json')))
+        with open(resource_filename(__name__, name + '-registry.json'), 'r') as fp:
+            save(name, json.load(fp))
     return _registry[name]
 
 

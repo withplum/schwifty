@@ -2,9 +2,9 @@ from functools import partial
 import re
 import string
 
-from bic import BIC
-from common import Base
-import registry
+from schwifty.bic import BIC
+from schwifty.common import Base
+from schwifty import registry
 
 
 _spec_to_re = {
@@ -14,7 +14,7 @@ _spec_to_re = {
     'e': r' '
 }
 
-_alphabet = string.digits + string.uppercase
+_alphabet = string.digits + string.ascii_uppercase
 
 
 def _get_iban_spec(country_code):
@@ -57,10 +57,10 @@ class IBAN(Base):
         account_code_length = code_length(spec, 'account_code')
 
         if len(bank_code) > bank_and_branch_code_length:
-            raise ValueError('Bank code exceeds maximum size.')
+            raise ValueError('Bank code exceeds maximum size %d' % bank_and_branch_code_length)
 
         if len(account_code) > account_code_length:
-            raise ValueError('Account code exceeds maximum size.')
+            raise ValueError('Account code exceeds maximum size %d' % account_code_length)
 
         bank_code = bank_code.rjust(bank_and_branch_code_length, '0')
         account_code = account_code.rjust(account_code_length, '0')
@@ -70,14 +70,9 @@ class IBAN(Base):
     def validate(self):
         self.validate_characters()
         self.validate_length()
-        self.validate_country()
         self.validate_format()
         self.validate_checksum()
         return True
-
-    def validate_country(self):
-        if self.country_code not in registry.get('iban'):
-            raise ValueError('Invalid country code %s' % self.country_code)
 
     def validate_characters(self):
         if not re.match(r'[A-Z]{2}\d{2}[A-Z]*', self.compact):
@@ -88,7 +83,7 @@ class IBAN(Base):
             raise ValueError('Invalid checksum digits')
 
     def validate_length(self):
-        if self.spec['iban_length'] != len(self.compact):
+        if self.spec['iban_length'] != self.length:
             raise ValueError('Invalid IBAN length')
 
     def validate_format(self):

@@ -1,6 +1,6 @@
 import csv
-import re
 import json
+import re
 
 from bs4 import BeautifulSoup
 import requests

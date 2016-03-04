@@ -9,6 +9,25 @@ def test_bic():
     assert bic.validate()
 
 
+def test_bic_allow_invalid():
+    bic = BIC('GENODXM1GLS', allow_invalid=True)
+    assert bic
+    assert bic.country_code == 'DX'
+    with pytest.raises(ValueError):
+        bic.validate()
+
+
+def test_bic_no_branch_code():
+    bic = BIC('GENODEM1')
+    assert bic.branch_code is None
+    assert bic.formatted == 'GENO DE M1'
+
+
+def test_country_bank_code():
+    assert BIC('ABNAJPJTXXX').country_bank_code is None
+    assert BIC('GENODEM1GLS').country_bank_code == '43060967'
+
+
 def test_bic_properties():
     bic = BIC('GENODEM1GLS')
     assert bic.length == 11
@@ -16,6 +35,8 @@ def test_bic_properties():
     assert bic.branch_code == 'GLS'
     assert bic.country_code == 'DE'
     assert bic.location_code == 'M1'
+    assert bic.country_bank_code == '43060967'
+    assert bic.exists
 
 
 @pytest.mark.parametrize('code', [
@@ -44,6 +65,8 @@ def test_magic_methods():
     assert bic == 'GENODEM1GLS'
     assert bic == BIC('GENODEM1GLS')
     assert bic != BIC('GENODEMMXXX')
+    assert bic != 12345
+    assert bic < 'GENODEM1GLT'
 
     assert str(bic) == 'GENODEM1GLS'
     assert repr(bic) == '<BIC=GENODEM1GLS>'
