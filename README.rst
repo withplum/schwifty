@@ -84,6 +84,7 @@ or less has the same interface than the ``IBAN``-object.
 
 .. code-block:: python
 
+  >>> from schwifty import BIC
   >>> bic = BIC('PBNKDEFFXXX')
   >>> bic.bank_code
   'PBNK'

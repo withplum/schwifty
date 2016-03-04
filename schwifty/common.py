@@ -25,10 +25,12 @@ class Base(object):
 
     @property
     def compact(self):
+        '''str: Compact representation of the code.'''
         return self._code
 
     @property
     def length(self):
+        '''int: Length of the compact code.'''
         return len(self.compact)
 
     def _get_component(self, start, end=None):
