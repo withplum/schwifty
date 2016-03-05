@@ -1,1 +1,3 @@
+include README.rst
 include schwifty/*.json
+exclude schwifty/*.pyc
