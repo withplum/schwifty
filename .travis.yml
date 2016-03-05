@@ -15,5 +15,6 @@ deploy:
   docs_dir: docs/build/html
   on:
     tags: true
+    python: '3.5'
     all_branches: true
     repo: figo-connect/schwifty
