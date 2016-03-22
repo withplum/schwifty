@@ -69,7 +69,7 @@ class IBAN(Base):
             self.validate()
 
     def _calc_checksum_digits(self):
-        return '{:2d}'.format(98 - (numerify(self.bban + self.country_code) * 100) % 97)
+        return '{:02d}'.format(98 - (numerify(self.bban + self.country_code) * 100) % 97)
 
     @classmethod
     def generate(cls, country_code, bank_code, account_code):
