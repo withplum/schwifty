@@ -64,18 +64,18 @@ class BIC(Base):
 
     def _validate_length(self):
         if self.length not in (8, 11):
-            raise ValueError('Invalid length {}'.format(self.length))
+            raise ValueError("Invalid length '{}'".format(self.length))
 
     def _validate_structure(self):
         if not _bic_re.match(self.compact):
-            raise ValueError('Invalid structure {}'.format(self.compact))
+            raise ValueError("Invalid structure '{}'".format(self.compact))
 
     def _validate_country_code(self):
         country_code = self.country_code
         try:
             iso3166.countries_by_alpha2[country_code]
         except KeyError:
-            raise ValueError('Invalid country code {}'.format(country_code))
+            raise ValueError("Invalid country code '{}'".format(country_code))
 
     @property
     def formatted(self):
@@ -116,13 +116,13 @@ class BIC(Base):
             return 'default'
 
     bank_code = property(partial(Base._get_component, start=0, end=4),
-                         doc='str: The bank-code part of the BIC.')
+                         doc="str: The bank-code part of the BIC.")
     branch_code = property(partial(Base._get_component, start=8, end=11),
-                           doc='str or None: The branch-code part of the BIC (if available)')
+                           doc="str or None: The branch-code part of the BIC (if available)")
     country_code = property(partial(Base._get_component, start=4, end=6),
-                            doc='str: The ISO 3166 alpha2 country-code.')
+                            doc="str: The ISO 3166 alpha2 country-code.")
     location_code = property(partial(Base._get_component, start=6, end=8),
-                             doc='str: The location code of the BIC.')
+                             doc="str: The location code of the BIC.")
 
 
 registry.build_index('bank', 'bic', 'bic')
