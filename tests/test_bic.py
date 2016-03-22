@@ -37,6 +37,18 @@ def test_bic_properties():
     assert bic.location_code == 'M1'
     assert bic.country_bank_code == '43060967'
     assert bic.exists
+    assert bic.type == 'passive'
+
+
+@pytest.mark.parametrize('code,type', [
+    ('GENODEM0GLS', 'testing'),
+    ('GENODEM1GLS', 'passive'),
+    ('GENODEM2GLS', 'reverse billing'),
+    ('GENODEMMGLS', 'default')
+])
+def test_bic_type(code, type):
+    bic = BIC(code)
+    assert bic.type == type
 
 
 @pytest.mark.parametrize('code', [
