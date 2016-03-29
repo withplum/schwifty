@@ -10,7 +10,7 @@ if __name__ == '__main__':
             'check_digit_method', 'record_number', 'mod_number', 'tbd', 'successor_bank_code']
         data = csv.DictReader(fp, all_fieldnames, delimiter=';')
 
-        fieldnames = ['bank_code', 'name', 'short_name', 'bic']
+        fieldnames = ('bank_code', 'name', 'short_name', 'bic', 'tbd')
         cleaned = []
         for row in data:
             if not row['bank_code'].strip():
