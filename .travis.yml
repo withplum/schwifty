@@ -1,17 +1,17 @@
 language: python
 python:
-  - '2.7'
-  - '3.5'
+- '2.7'
+- '3.5'
 install:
-  - pip install -U pip wheel tox-travis
+- pip install -U pip wheel tox-travis
 script:
-  - tox
+- tox
 deploy:
   provider: pypi
   user: figo
   password:
-    secure: cGRGfvb4HApwkUuMvM/0nhomT/XJzlbzBnX2YmlqmIUbaygMwgHsKp/gYUL4GuNWU5iUvgQn5zHZy/DscuTCJW/u5WaS4z4TQ1uojugwxl3paX0J/cVOVHuzrYqB5gBmnU2Dj4riZ18UffOJPs8gOzdBewNcn9p2RWs5p8o2vbWfrUpU1b80hU+lj4CjTWnstI0Lg9c1zDGmN8qobM8W/VIZs2utfO9nWn+biaRZbvX+bVEhTlmzBR4dg9lt2tnWxBThcVkq9r2m2OHeLeLRzNhr4O4cOzxjQPHiccTyN1milKX6RJDK9NUGUNwhRvZAEJoDOq4jyy3ULbW28a3aXcgaytvJBZoMUce62dT81ISU2zbC3r/XYMLCWwdCNzoMvpf/51RCTvOWEd2gm50Qj8PWRssUzvxm+AnG+Ovqg7gAIAHSUnh/cwTdrW9S9Rl2OCAf96kzY28nHv+BXK0eq0ZbAq1SZ4lgjJHNJeEgb5OsNRBzfjTomr8qLwFCcizib9Gp3itWOVCxlsoQpn6sPIuyJA7lYjkMM8eZcQbQC25iw9LCcIXnQ7Cvm6Ukv95LSGMnFQTPYoo8ZGN7MchFeBCXsm3uAWV2GAd1hFxaemo2ulwjLupbQvJEP44oOLT6H1XC66/nTHdgyrAV/ecsoajEnrZD75TvuKiYWMe3mXg=
-  distributions: 'sdist bdist_wheel'
+    secure: W8CLhjwTamhs4BfmOjSsznX0IVk3pSUd7c5++FB6IXViVLLBjGQdtZeyrn1d1HZtlc02wDEbqKHsaYK/aVDan3dZfWZi6mt+WDRFGJYL77FtTONG/rBHGfAgoZVJTI9JPecrxrgI78rnoMYfpA6l9WryBd+h8Uk3o4bHQWepiJWXW6wafSxCMBtIRtso8QGFoXVm2dOwkuSuWNgiYzOBgPbnkKl0+EZF8aBYnkY0883PYGqkwwnTegUyKvMpkkmhanOR1wgzCkfLtSMzeAmJe/Ob6KrlkAj4k+XMP5MC5guSrn01TqjqvpdkxSkUCDsDyFnzSA4Oz5t5tcZbVHxMFVZTq4wASiR/cyTXxJuGYN4GNtJM7G0TPVNHx4YlIGktlwpSkewxLLpaPSUYaXRxy6MYIQhVQsK1J7YJMfFQpOH23JsIQ7XJxXnZ2nup5V+2RZJqTb1dsH9TeT9ChQfDTvEUB5c40YkAjaXkGnrfhCHG1qKpgQQUG/QkxpYFhOMQOUqsOlSxh3IQEi+ed2t4/IRn+KKYVolj4ROin5uyQOQawFwUCHskfY7oPGyVIKZbYWUXSiKL37OE5u5yvrvbUcCr5UZ7AooT7RgmhdnH3RaAJ8vkHTOw2wzTXzboGEz4JAaSUogD/lDRpdKFnWxveiyojIzQch60kcHvOB+AO3s=
+  distributions: sdist bdist_wheel
   docs_dir: docs/build/html
   on:
     tags: true
