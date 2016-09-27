@@ -16,6 +16,8 @@ if __name__ == '__main__':
             if not row['bank_code'].strip():
                 continue
             for key, value in row.items():
+                if key == 'feature':
+                    row['primary'] = value.strip() == '1'
                 if key not in fieldnames:
                     del row[key]
                     continue
