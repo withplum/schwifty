@@ -20,10 +20,15 @@ def save(name, data):
     _registry[name] = data
 
 
-def build_index(base_name, index_name, key):
+def build_index(base_name, index_name, key, **predicate):
     def make_key(entry):
         return tuple(entry[k] for k in key) if isinstance(key, tuple) else entry[key]
-    save(index_name, dict((make_key(entry), entry) for entry in get(base_name)))
+
+    def match(entry):
+        return all(entry[key] == value for key, value in predicate.items())
+
+    base = get(base_name)
+    save(index_name, dict((make_key(entry), entry) for entry in base if match(entry)))
 
 
 def manipulate(name, func):

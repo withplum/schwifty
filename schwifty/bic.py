@@ -126,4 +126,4 @@ class BIC(Base):
 
 
 registry.build_index('bank', 'bic', 'bic')
-registry.build_index('bank', 'bank_code', ('country_code', 'bank_code'))
+registry.build_index('bank', 'bank_code', ('country_code', 'bank_code'), primary=True)

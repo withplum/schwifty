@@ -72,6 +72,11 @@ def test_bic_from_unknown_bank_code():
     assert not BIC.from_bank_code('PO', '12345678')
 
 
+def test_bic_is_from_primary_bank_code():
+    bic = BIC.from_bank_code('DE', '20070024')
+    assert bic.compact == 'DEUTDEDBHAM'
+
+
 def test_magic_methods():
     bic = BIC('GENODEM1GLS')
     assert bic == 'GENODEM1GLS'
