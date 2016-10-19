@@ -1,14 +1,5 @@
 [
   {
-    "primary": false, 
-    "name": "Bezeichnung", 
-    "short_name": "Kurzbezeichnung", 
-    "bank_code": "Bank-leitzahl", 
-    "bic": "BIC", 
-    "country_code": "DE", 
-    "tbd": "Bankleitzahl-l\u00f6schung"
-  }, 
-  {
     "primary": true, 
     "name": "Bundesbank", 
     "short_name": "BBk Berlin", 
