@@ -12,6 +12,7 @@ if __name__ == '__main__':
 
         fieldnames = ('bank_code', 'name', 'short_name', 'bic', 'tbd')
         cleaned = []
+        next(data)  # Skip header line
         for row in data:
             if not row['bank_code'].strip():
                 continue
