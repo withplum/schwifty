@@ -184,4 +184,5 @@ def add_bban_regex(country, spec):
     spec['regex'] = re.compile('^{}$'.format(re.sub(spec_re, convert, bban_spec)))
     return spec
 
+
 registry.manipulate('iban', add_bban_regex)
