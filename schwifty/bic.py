@@ -44,6 +44,8 @@ class BIC(Base):
     def from_bank_code(cls, country_code, bank_code):
         """Create a new BIC object from country- and bank-code.
 
+        If the supplied bank code is not found in the registry a ValueError is raised.
+
         Args:
             country_code (str): ISO 3166 alpha2 country-code.
             bank_code (str): Country specific bank-code.
