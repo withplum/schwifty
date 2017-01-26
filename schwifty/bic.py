@@ -74,7 +74,7 @@ class BIC(Base):
             This currently only works for German bank-codes.
         """
         try:
-            return cls(str(registry.get('bank_code')[(country_code, bank_code)]['bic']))
+            return cls(registry.get('bank_code')[(country_code, bank_code)]['bic'])
         except KeyError:
             raise ValueError("Invalid bank code {!r} for country {!r}".format(bank_code,
                                                                               country_code))
