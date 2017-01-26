@@ -54,7 +54,8 @@ class BIC(Base):
         try:
             return cls(registry.get('bank_code')[(country_code, bank_code)]['bic'])
         except KeyError:
-            pass
+            raise ValueError("Invalid bank code {!r} for country {!r}".format(bank_code,
+                                                                              country_code))
 
     def validate(self):
         self._validate_length()
