@@ -30,6 +30,7 @@ class BIC(Base):
             >>> bic = BIC.from_bank_code('DE', '43060967')
             >>> bic.formatted
             'GENO DE M1 GLS'
+
     Args:
         bic (str): The BIC number.
         allow_invalid (bool): If set to ``True`` validation is skipped on instantiation.
@@ -44,9 +45,30 @@ class BIC(Base):
     def from_bank_code(cls, country_code, bank_code):
         """Create a new BIC object from country- and bank-code.
 
+        Examples:
+            >>> bic = BIC.from_bank_code('DE', '20070000')
+            >>> bic.country_code
+            'DE'
+            >>> bic.bank_code
+            'DEUT'
+            >>> bic.location_code
+            'HH'
+
+            >>> BIC.from_bank_code('DE', '01010101')
+            Traceback (most recent call last):
+            ...
+            ValueError: Invalid bank code '01010101' for country 'DE'
+
+
         Args:
             country_code (str): ISO 3166 alpha2 country-code.
             bank_code (str): Country specific bank-code.
+
+        Returns:
+            BIC: a BIC object generated from the given country code and bank code.
+
+        Raises:
+            ValueError: If the given bank code wasn't found in the registry
 
         Note:
             This currently only works for German bank-codes.
@@ -54,7 +76,8 @@ class BIC(Base):
         try:
             return cls(registry.get('bank_code')[(country_code, bank_code)]['bic'])
         except KeyError:
-            pass
+            raise ValueError("Invalid bank code {!r} for country {!r}".format(bank_code,
+                                                                              country_code))
 
     def validate(self):
         self._validate_length()
