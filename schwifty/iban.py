@@ -45,13 +45,13 @@ class IBAN(Base):
         as properties::
 
             >>> iban = IBAN('DE89 3704 0044 0532 0130 00')
-            >>> iban.account_number
+            >>> iban.account_code
             '0532013000'
             >>> iban.bank_code
             '37040044'
             >>> iban.country_code
             'DE'
-            >>> iban.check_digits
+            >>> iban.checksum_digits
             '89'
 
 

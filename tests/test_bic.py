@@ -69,7 +69,8 @@ def test_bic_from_bank_code():
 
 
 def test_bic_from_unknown_bank_code():
-    assert not BIC.from_bank_code('PO', '12345678')
+    with pytest.raises(ValueError):
+        BIC.from_bank_code('PO', '12345678')
 
 
 def test_bic_is_from_primary_bank_code():
