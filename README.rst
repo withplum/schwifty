@@ -48,7 +48,7 @@ Let's jump right into it:
 
 So far so good. So you are able to create an ``IBAN``-object and to access all
 relevant components of the IBAN as properties. As you can see on the last line, you can
-also get ahold of the BIC number associated to the bank-code of the IBAN. This currently
+also get hold of the BIC number associated to the bank-code of the IBAN. This currently
 only works for IBANs of german banks.
 
 Behind the scenes the IBAN has been validated at the moment of instantiation. With respect
@@ -68,7 +68,7 @@ error message.
   ValueError: Invalid checksum digits
 
 
-But what if you wan't to generate an IBAN from a bank-code and the account-code? 
+But what if you wan't to generate an IBAN from a bank-code and the account-code?
 Use the ``generate``-classmethod!
 
 .. code-block:: python
@@ -106,10 +106,10 @@ or less has the same interface than the ``IBAN``-object.
   '86010090'
 
 The ``country_bank_code`` is the country specific bank code as you can find it in the IBAN. This
-mapping is currently only available for german BICs.
+mapping is currently only available for German BICs.
 
-The ``BIC``-object also does some basic validation on instantation and raises a ``ValueError``
-if the country-code, the BIC´s length is invalid or if the strucutre doesn't match the ISO 9362
+The ``BIC``-object also does some basic validation on instantiation and raises a ``ValueError``
+if the country-code, the BIC´s length is invalid or if the structure doesn't match the ISO 9362
 specification.
 
 .. code-block:: python
@@ -142,6 +142,6 @@ To install Schwifty, simply:
 Name
 ----
 
-Since ``swift`` and ``swiftly`` were already taken by the OpenStack-project, but we somehow 
+Since ``swift`` and ``swiftly`` were already taken by the OpenStack-project, but we somehow
 wanted to point out the connection to SWIFT, Rick and Morty came up with the idea to name
 the project ``schwifty``.
