@@ -44,10 +44,10 @@ def test_unknown_bic_properties():
     assert bic.country_code == 'JP'
     assert bic.location_code == 'JT'
     assert bic.branch_code == 'XXX'
-    assert bic.country_bank_code == None
-    assert bic.bank_name == None
-    assert bic.bank_short_name == None
-    assert bic.exists == False
+    assert bic.country_bank_code is None
+    assert bic.bank_name is None
+    assert bic.bank_short_name is None
+    assert not bic.exists
     assert bic.type == 'default'
 
 
