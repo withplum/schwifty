@@ -110,10 +110,24 @@ class BIC(Base):
 
     @property
     def country_bank_code(self):
-        """str or None: The country specific bank-code associated to the BIC."""
+        """str or None: The country specific bank-code associated with the BIC."""
         entry = registry.get('bic').get(self.compact)
         if entry:
             return entry.get('bank_code')
+
+    @property
+    def bank_name(self):
+        """str or None: The name of the bank associated with the BIC."""
+        entry = registry.get('bic').get(self.compact)
+        if entry:
+            return entry.get('name')
+
+    @property
+    def bank_short_name(self):
+        """str or None: The short name of the bank associated with the BIC."""
+        entry = registry.get('bic').get(self.compact)
+        if entry:
+            return entry.get('short_name')
 
     @property
     def exists(self):
@@ -140,12 +154,12 @@ class BIC(Base):
 
     bank_code = property(partial(Base._get_component, start=0, end=4),
                          doc="str: The bank-code part of the BIC.")
-    branch_code = property(partial(Base._get_component, start=8, end=11),
-                           doc="str or None: The branch-code part of the BIC (if available)")
     country_code = property(partial(Base._get_component, start=4, end=6),
                             doc="str: The ISO 3166 alpha2 country-code.")
     location_code = property(partial(Base._get_component, start=6, end=8),
                              doc="str: The location code of the BIC.")
+    branch_code = property(partial(Base._get_component, start=8, end=11),
+                           doc="str or None: The branch-code part of the BIC (if available)")
 
 
 registry.build_index('bank', 'bic', 'bic')
