@@ -11,12 +11,13 @@ url = 'https://www.swift.com/standards/data-standards/iban'
 
 def get_raw():
     soup = BeautifulSoup(requests.get(url).content, 'html.parser')
-    link = soup.find('a', attrs={'data-title': 'IBAN Registry TXT'})
+    link = soup.find('a', attrs={'data-title': 'IBAN Registry (TXT)'})
     return requests.get(link['href']).content
 
 
 def clean(raw):
     chars = ' \t\n\r;:\'"'
+    import pdb; pdb.set_trace()
     return [{key.strip(chars).lower(): value.strip(chars) for key, value in line.items()}
             for line in raw]
 
