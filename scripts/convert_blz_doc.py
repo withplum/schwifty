@@ -6,8 +6,9 @@ import sys
 if __name__ == '__main__':
     with open(sys.argv[1], 'r') as fp:
         all_fieldnames = [
-            'bank_code', 'feature', 'name', 'postal_code', 'place', 'short_name', 'pan', 'bic',
-            'check_digit_method', 'record_number', 'mod_number', 'tbd', 'successor_bank_code']
+            'id', 'bank_code', 'feature', 'name', 'postal_code', 'place', 'short_name', 'pan',
+            'bic', 'check_digit_method', 'record_number', 'mod_number', 'tbd',
+            'successor_bank_code']
         data = csv.DictReader(fp, all_fieldnames, delimiter=';')
 
         fieldnames = ('bank_code', 'name', 'short_name', 'bic', 'tbd')
