@@ -17,7 +17,6 @@ def get_raw():
 
 def clean(raw):
     chars = ' \t\n\r;:\'"'
-    import pdb; pdb.set_trace()
     return [{key.strip(chars).lower(): value.strip(chars) for key, value in line.items()}
             for line in raw]
 
