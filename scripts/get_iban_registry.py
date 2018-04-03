@@ -11,7 +11,7 @@ url = 'https://www.swift.com/standards/data-standards/iban'
 
 def get_raw():
     soup = BeautifulSoup(requests.get(url).content, 'html.parser')
-    link = soup.find('a', attrs={'data-title': 'IBAN Registry TXT'})
+    link = soup.find('a', attrs={'data-title': 'IBAN Registry (TXT)'})
     return requests.get(link['href']).content
 
 

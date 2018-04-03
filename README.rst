@@ -19,6 +19,12 @@ Schwifty is a Python library for working with BICs and IBANs. It allows you to
 * access all relevant components as attributes
 
 
+Versioning
+----------
+
+Since the mapping from BIC to bank_code is updated from time to time, Schwifty uses
+`CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
+
 Usage
 -----
 
