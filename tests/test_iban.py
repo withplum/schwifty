@@ -13,7 +13,7 @@ valid = [
     'BR97 0036 0305 0000 1000 9795 493P 1',     # Brazil
     'BR18 0000 0000 1414 5512 3924 100C 2',     # Brazil
     'BG80 BNBG 9661 1020 3456 78',              # Bulgaria
-    'CR05 1520 2001 0262 8406 6',               # Costa Rica
+    'CR05 0152 0200 1026 2840 66',              # Costa Rica
     'HR12 1001 0051 8630 0016 0',               # Croatia
     'CY17 0020 0128 0000 0012 0052 7600',       # Cyprus
     'CZ65 0800 0000 1920 0014 5399',            # Czech Republic
@@ -77,6 +77,11 @@ valid = [
     'AE07 0331 2345 6789 0123 456',             # United Arab Emirates
     'GB29 NWBK 6016 1331 9268 19',              # United Kingdom
     'VG96 VPVG 0000 0123 4567 8901',            # Virgin Islands, British
+    'BY13 NBRB 3600 9000 0000 2Z00 AB00',       # Republic of Belarus
+    'SV62 CENR 0000 0000 0000 0070 0025',       # El Salvador
+    'FO62 6460 0001 6316 34',                   # Faroe Islands
+    'GL89 6471 0001 0002 06',                   # Grenland
+    'IQ98 NBIQ 8501 2345 6789 012'              # Iraq
 ]
 
 
