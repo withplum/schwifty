@@ -1,5 +1,6 @@
 from functools import partial
 import re
+import warnings
 
 import iso3166
 
@@ -43,7 +44,7 @@ class BIC(Base):
 
     @classmethod
     def from_bank_code(cls, country_code, bank_code):
-        """Create a new BIC object from country- and bank-code.
+        """Create a new BIC object from country-code and domestic bank-code.
 
         Examples:
             >>> bic = BIC.from_bank_code('DE', '20070000')
@@ -108,26 +109,45 @@ class BIC(Base):
             formatted += ' ' + self.branch_code
         return formatted
 
+    def _lookup_values(self, key):
+        entries = registry.get('bic').get(self.compact, [])
+        return sorted({entry[key] for entry in entries})
+
+    @property
+    def domestic_bank_codes(self):
+        """list: The country specific bank-codes associated with the BIC."""
+        return self._lookup_values('bank_code')
+
+    @property
+    def bank_names(self):
+        """list: The name of the banks associated with the BIC."""
+        return self._lookup_values('name')
+
+    @property
+    def bank_short_names(self):
+        """list: The short name of the banks associated with the BIC."""
+        return self._lookup_values('short_name')
+
     @property
     def country_bank_code(self):
         """str or None: The country specific bank-code associated with the BIC."""
-        entry = registry.get('bic').get(self.compact)
-        if entry:
-            return entry.get('bank_code')
+        warnings.warn("Use `BIC.domestic_bank_codes` instead", DeprecationWarning)
+        codes = self.domestic_bank_codes
+        return codes[0] if codes else None
 
     @property
     def bank_name(self):
         """str or None: The name of the bank associated with the BIC."""
-        entry = registry.get('bic').get(self.compact)
-        if entry:
-            return entry.get('name')
+        warnings.warn("Use `BIC.bank_names` instead", DeprecationWarning)
+        names = self.bank_names
+        return names[0] if names else None
 
     @property
     def bank_short_name(self):
         """str or None: The short name of the bank associated with the BIC."""
-        entry = registry.get('bic').get(self.compact)
-        if entry:
-            return entry.get('short_name')
+        warnings.warn("Use `BIC.bank_short_names` instead", DeprecationWarning)
+        names = self.bank_short_names
+        return names[0] if names else None
 
     @property
     def exists(self):
@@ -162,5 +182,5 @@ class BIC(Base):
                            doc="str or None: The branch-code part of the BIC (if available)")
 
 
-registry.build_index('bank', 'bic', 'bic')
-registry.build_index('bank', 'bank_code', ('country_code', 'bank_code'), primary=True)
+registry.build_index('bank', 'bic', key='bic', accumulate=True)
+registry.build_index('bank', 'bank_code', key=('country_code', 'bank_code'), primary=True)

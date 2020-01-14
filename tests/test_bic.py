@@ -30,9 +30,19 @@ def test_bic_properties():
     assert bic.country_code == 'DE'
     assert bic.location_code == 'M1'
     assert bic.branch_code == 'GLS'
-    assert bic.country_bank_code == '43060967'
-    assert bic.bank_name == 'GLS Gemeinschaftsbank'
-    assert bic.bank_short_name == 'GLS Gemeinschaftsbk Bochum'
+    assert bic.domestic_bank_codes == ['43060967', '43060988']
+    assert bic.bank_names == [
+        'GLS Gemeinschaftsbank',
+        'GLS Gemeinschaftsbank (GAA)',
+    ]
+    assert bic.bank_short_names == [
+        'GLS Bank in Bochum (GAA)',
+        'GLS Gemeinschaftsbk Bochum',
+    ]
+    with pytest.warns(DeprecationWarning):
+        assert bic.bank_name == 'GLS Gemeinschaftsbank'
+    with pytest.warns(DeprecationWarning):
+        assert bic.bank_short_name == 'GLS Bank in Bochum (GAA)'
     assert bic.exists
     assert bic.type == 'passive'
 
@@ -45,8 +55,11 @@ def test_unknown_bic_properties():
     assert bic.location_code == 'JT'
     assert bic.branch_code == 'XXX'
     assert bic.country_bank_code is None
+    assert bic.domestic_bank_codes == []
     assert bic.bank_name is None
+    assert bic.bank_names == []
     assert bic.bank_short_name is None
+    assert bic.bank_short_names == []
     assert not bic.exists
     assert bic.type == 'default'
 
