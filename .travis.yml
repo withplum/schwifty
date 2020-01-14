@@ -1,20 +1,21 @@
 language: python
 python:
 - '2.7'
-- '3.5'
+- '3.7'
+- '3.8'
 install:
 - pip install -U pip wheel tox-travis
 script:
 - tox
 deploy:
   provider: pypi
-  user: figo
+  user: __token__
   password:
-    secure: W8CLhjwTamhs4BfmOjSsznX0IVk3pSUd7c5++FB6IXViVLLBjGQdtZeyrn1d1HZtlc02wDEbqKHsaYK/aVDan3dZfWZi6mt+WDRFGJYL77FtTONG/rBHGfAgoZVJTI9JPecrxrgI78rnoMYfpA6l9WryBd+h8Uk3o4bHQWepiJWXW6wafSxCMBtIRtso8QGFoXVm2dOwkuSuWNgiYzOBgPbnkKl0+EZF8aBYnkY0883PYGqkwwnTegUyKvMpkkmhanOR1wgzCkfLtSMzeAmJe/Ob6KrlkAj4k+XMP5MC5guSrn01TqjqvpdkxSkUCDsDyFnzSA4Oz5t5tcZbVHxMFVZTq4wASiR/cyTXxJuGYN4GNtJM7G0TPVNHx4YlIGktlwpSkewxLLpaPSUYaXRxy6MYIQhVQsK1J7YJMfFQpOH23JsIQ7XJxXnZ2nup5V+2RZJqTb1dsH9TeT9ChQfDTvEUB5c40YkAjaXkGnrfhCHG1qKpgQQUG/QkxpYFhOMQOUqsOlSxh3IQEi+ed2t4/IRn+KKYVolj4ROin5uyQOQawFwUCHskfY7oPGyVIKZbYWUXSiKL37OE5u5yvrvbUcCr5UZ7AooT7RgmhdnH3RaAJ8vkHTOw2wzTXzboGEz4JAaSUogD/lDRpdKFnWxveiyojIzQch60kcHvOB+AO3s=
+    secure: Kni00HkI7rLk4Vr0uMEIx4QfAEar2RB3/KANp5txaKYo3Infu1BKO1UHecypBNg/MW3FLWc1iF3B1nQRMNoPsi6mFvCUbXeiR3IZqo8NEziTq3TNijhPR7ot/vOMUk6o0qh2s/B3vONeOPKDj6JfUhEMuwkOuPgn6T5WbZoP57NtbaPpLqBxB8eO9O01cPZpHgZQQLVwIqcQebYlwMenCpNoz5N19iBxyG9lfSTrjVleLvWLcaQ4nXHJbClvh+U1vLfpI/bf8Vu9tL+J6GyxpM1BaVKoFpSja624H74NriybI1Wxg0ZFffjc6CcIVdlusNNue9d250V4Hkd1CBD6C5zVPMSZkZTw1AOtHmi/+nh5wXs9wyQyK9TK4TvHF6xGAci0dFeOeleI7npG5D7oGqr6PjjLqk0wzrKBmkpnT/4hX5WF1PlW9bLkPqiaZKI69sOZMxzNBeBVlDBKvYBqEEC2/ZJk6QDMsYLDeyMqfAl/EtaYMPWFBowOoNZswASVzMXK176GAXPe7pnX7ZFB8BY94ClURxJjW4BA9XvVVPn1cWVPbpetz1cSgjNr1MwPBNOjyRozV3IDKzMiv8JNTixjV3NSPC0fVB2awuWUgUpjurKwj0JreTuKFzpU1VHvDSajgNsZ9nTEhiYzQlTr5IiJgu7rDMp7cI1EQ+8J0YI=
   distributions: sdist bdist_wheel
   docs_dir: docs/build/html
   on:
     tags: true
-    python: '3.5'
+    python: '3.7'
     all_branches: true
-    repo: figo-connect/schwifty
+    repo: mdomke/schwifty

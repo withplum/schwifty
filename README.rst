@@ -1,7 +1,7 @@
 .. image:: https://img.shields.io/pypi/v/schwifty.svg?style=flat-square
     :target: https://pypi.python.org/pypi/schwifty
-.. image:: https://img.shields.io/travis/figo-connect/schwifty/master.svg?style=flat-square
-    :target: https://travis-ci.org/figo-connect/schwifty
+.. image:: https://img.shields.io/travis/mdomke/schwifty/master.svg?style=flat-square
+    :target: https://travis-ci.org/mdomke/schwifty
 .. image:: https://img.shields.io/pypi/l/schwifty.svg?style=flat-square
     :target: https://pypi.python.org/pypi/schwifty
 
