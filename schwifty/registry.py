@@ -1,4 +1,5 @@
 import json
+from collections import defaultdict
 from pkg_resources import resource_filename
 
 
@@ -20,7 +21,7 @@ def save(name, data):
     _registry[name] = data
 
 
-def build_index(base_name, index_name, key, **predicate):
+def build_index(base_name, index_name, key, accumulate=False, **predicate):
     def make_key(entry):
         return tuple(entry[k] for k in key) if isinstance(key, tuple) else entry[key]
 
@@ -28,7 +29,15 @@ def build_index(base_name, index_name, key, **predicate):
         return all(entry[key] == value for key, value in predicate.items())
 
     base = get(base_name)
-    save(index_name, dict((make_key(entry), entry) for entry in base if match(entry)))
+    if accumulate:
+        data = defaultdict(list)
+        for entry in base:
+            if not match(entry):
+                continue
+            data[make_key(entry)].append(entry)
+    else:
+        data = dict((make_key(entry), entry) for entry in base if match(entry))
+    save(index_name, data)
 
 
 def manipulate(name, func):
