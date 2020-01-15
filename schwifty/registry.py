@@ -1,6 +1,8 @@
-import json
 from collections import defaultdict
+import json
+import os.path
 from pkg_resources import resource_filename
+from pkg_resources import resource_listdir
 
 
 _registry = {}
@@ -12,8 +14,23 @@ def has(name):
 
 def get(name):
     if not has(name):
-        with open(resource_filename(__name__, name + '-registry.json'), 'r') as fp:
-            save(name, json.load(fp))
+        data = None
+        dirname = name + '_registry'
+        for fname in sorted(resource_listdir(__name__, dirname)):
+            if os.path.splitext(fname)[1] != '.json':
+                continue
+            fname = resource_filename(__name__, os.path.join(dirname, fname))
+            with open(fname, 'r') as fp:
+                chunk = json.load(fp)
+                if data is None:
+                    data = chunk
+                elif isinstance(data, list):
+                    data.extend(chunk)
+                elif isinstance(data, dict):
+                    data.updated(chunk)
+        if data is None:
+            raise ValueError("Failed to load registry {}".format(name))
+        save(name, data)
     return _registry[name]
 
 
