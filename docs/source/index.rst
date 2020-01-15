@@ -26,6 +26,7 @@ Examples
 --------
 
 .. module:: schwifty
+   :noindex:
 
 
 Basic usage

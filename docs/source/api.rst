@@ -16,4 +16,4 @@ BIC
 ---
 
 .. autoclass:: BIC
-   :members: bank_code, branch_code, country_bank_code, country_code, compact, exists, formatted, from_bank_code, location_code, length, type, validate
+   :members:

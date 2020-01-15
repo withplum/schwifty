@@ -115,36 +115,57 @@ class BIC(Base):
 
     @property
     def domestic_bank_codes(self):
-        """list: The country specific bank-codes associated with the BIC."""
+        """List[str]: The country specific bank-codes associated with the BIC.
+
+        .. versionadded:: 2020.01.0
+        """
         return self._lookup_values('bank_code')
 
     @property
     def bank_names(self):
-        """list: The name of the banks associated with the BIC."""
+        """List[str]: The name of the banks associated with the BIC.
+
+        .. versionadded:: 2020.01.0
+        """
         return self._lookup_values('name')
 
     @property
     def bank_short_names(self):
-        """list: The short name of the banks associated with the BIC."""
+        """List[str]: The short name of the banks associated with the BIC.
+
+        .. versionadded:: 2020.01.0
+        """
         return self._lookup_values('short_name')
 
     @property
     def country_bank_code(self):
-        """str or None: The country specific bank-code associated with the BIC."""
+        """str or None: The country specific bank-code associated with the BIC.
+
+        .. deprecated:: 2020.01.0
+           Use :meth:`domestic_bank_codes` instead.
+        """
         warnings.warn("Use `BIC.domestic_bank_codes` instead", DeprecationWarning)
         codes = self.domestic_bank_codes
         return codes[0] if codes else None
 
     @property
     def bank_name(self):
-        """str or None: The name of the bank associated with the BIC."""
+        """str or None: The name of the bank associated with the BIC.
+
+        .. deprecated:: 2020.01.0
+           Use :meth:`bank_names` instead.
+        """
         warnings.warn("Use `BIC.bank_names` instead", DeprecationWarning)
         names = self.bank_names
         return names[0] if names else None
 
     @property
     def bank_short_name(self):
-        """str or None: The short name of the bank associated with the BIC."""
+        """str or None: The short name of the bank associated with the BIC.
+
+        .. deprecated:: 2020.01.0
+           Use :meth:`bank_short_names` instead.
+        """
         warnings.warn("Use `BIC.bank_short_names` instead", DeprecationWarning)
         names = self.bank_short_names
         return names[0] if names else None
