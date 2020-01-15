@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import json
 import sys
 
@@ -55,5 +56,5 @@ def process(records):
 
 
 if __name__ == '__main__':
-    with open('schwifty/bank-registry.json', 'w') as fp:
+    with open('schwifty/bank_registry/generated_de.json', 'w') as fp:
         json.dump(process(parse(get_raw())), fp, indent=2)

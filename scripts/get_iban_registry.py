@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import json
 import re
 
@@ -81,5 +82,5 @@ def process_positions(record):
 
 
 if __name__ == '__main__':
-    with open('schwifty/iban-registry.json', 'w+') as fp:
+    with open('schwifty/iban_registry/generated.json', 'w+') as fp:
         json.dump(process(parse(get_raw())), fp, indent=2)
