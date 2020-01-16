@@ -4,6 +4,8 @@
     :target: https://travis-ci.org/mdomke/schwifty
 .. image:: https://img.shields.io/pypi/l/schwifty.svg?style=flat-square
     :target: https://pypi.python.org/pypi/schwifty
+.. image:: https://readthedocs.org/projects/schwifty/badge/?version=latest&style=flat-square
+    :target: https://schwifty.readthedocs.io
 
 
 Gotta get schwifty with your IBANs

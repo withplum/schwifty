@@ -1,8 +1,3 @@
-.. Schwifty documentation master file, created by
-   sphinx-quickstart on Fri Mar  4 16:17:00 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Get schwifty with IBANs and BICs
 ================================
 
@@ -24,9 +19,6 @@ Schwifty lets you
 
 Examples
 --------
-
-.. module:: schwifty
-   :noindex:
 
 
 Basic usage
