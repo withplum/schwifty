@@ -103,7 +103,12 @@ class BIC(Base):
 
     @property
     def formatted(self):
-        """str: The BIC separated in the blocks bank-, country- and location-code."""
+        """str: The BIC separated in the blocks bank-, country- and location-code.
+
+        Examples:
+            >>> BIC('MARKDEF1100').formatted
+            'MARK DE F1 100'
+        """
         formatted = ' '.join([self.bank_code, self.country_code, self.location_code])
         if self.branch_code:
             formatted += ' ' + self.branch_code
@@ -117,6 +122,10 @@ class BIC(Base):
     def domestic_bank_codes(self):
         """List[str]: The country specific bank-codes associated with the BIC.
 
+        Examples:
+            >>> BIC('MARKDEF1100').domestic_bank_codes
+            ['10000000']
+
         .. versionadded:: 2020.01.0
         """
         return self._lookup_values('bank_code')
@@ -125,6 +134,10 @@ class BIC(Base):
     def bank_names(self):
         """List[str]: The name of the banks associated with the BIC.
 
+        Examples:
+            >>> BIC('MARKDEF1100').bank_names
+            ['Bundesbank']
+
         .. versionadded:: 2020.01.0
         """
         return self._lookup_values('name')
@@ -132,6 +145,10 @@ class BIC(Base):
     @property
     def bank_short_names(self):
         """List[str]: The short name of the banks associated with the BIC.
+
+        Examples:
+            >>> BIC('MARKDEF1100').bank_short_names
+            ['BBk Berlin']
 
         .. versionadded:: 2020.01.0
         """
@@ -180,6 +197,10 @@ class BIC(Base):
         """Indicates the type of BIC.
 
         This can be one of 'testing', 'passive', 'reverse billing' or 'default'
+
+        Examples:
+            >>> BIC('MARKDEF1100').type
+            'passive'
 
         Returns:
             str: The BIC type.

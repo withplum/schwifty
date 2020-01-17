@@ -54,16 +54,14 @@ Let's jump right into it:
   >>> iban.bic
   <BIC=COBADEFFXXX>
 
-So far so good. So you are able to create an ``IBAN``-object and to access all
-relevant components of the IBAN as properties. As you can see on the last line, you can
-also get hold of the BIC number associated to the bank-code of the IBAN. This currently
-only works for IBANs of german banks.
+So far so good. So you are able to create an ``IBAN``-object and to access all relevant components
+of the IBAN as properties. As you can see on the last line, you can also get hold of the BIC number
+associated to the bank-code of the IBAN. This currently only works for IBANs of german banks.
 
-Behind the scenes the IBAN has been validated at the moment of instantiation. With respect
-to ISO 13616 compliance it is checked if the format of the account-code, the bank-code and
-possibly the branch-code have the correct country-specific format. Whenever you pass an
-invalid IBAN to the ``__init__``-method, you'll get a ``ValueError`` with an appropriate
-error message.
+Behind the scenes the IBAN has been validated at the moment of instantiation. With respect to ISO
+13616 compliance it is checked if the format of the account-code, the bank-code and possibly the
+branch-code have the correct country-specific format. Whenever you pass an invalid IBAN to the
+``__init__``-method, you'll get a ``ValueError`` with an appropriate error message.
 
 .. code-block:: python
 
@@ -76,8 +74,8 @@ error message.
   ValueError: Invalid checksum digits
 
 
-But what if you wan't to generate an IBAN from a bank-code and the account-code?
-Use the ``generate``-classmethod!
+But what if you wan't to generate an IBAN from a bank-code and the account-code? Use the
+``generate``-classmethod!
 
 .. code-block:: python
 
@@ -86,17 +84,17 @@ Use the ``generate``-classmethod!
   >>> iban.checksum_digits
   '40'
 
-Notice that even that the account-code has less digits than required (in Germany accounts should
-be 10 digits long), zeros have been added at the correct location. Additionally the checksum
-digits have been calculated, which is good.
+Notice that even that the account-code has less digits than required (in Germany accounts should be
+10 digits long), zeros have been added at the correct location. Additionally the checksum digits
+have been calculated, which is good.
 
 
 BIC
 ~~~
 
-Besides the IBAN there is the Business Identifier Code (BIC). It is a unique identification code
-for both financial and non-financial institutes. Schwifty also has a ``BIC``-object which more
-or less has the same interface than the ``IBAN``-object.
+Besides the IBAN there is the Business Identifier Code (BIC). It is a unique identification code for
+both financial and non-financial institutes. Schwifty also has a ``BIC``-object which more or less
+has the same interface than the ``IBAN``-object.
 
 .. code-block:: python
 
@@ -110,14 +108,17 @@ or less has the same interface than the ``IBAN``-object.
   'DE'
   >>> bic.location_code
   'FF'
-  >>> bic.country_bank_code
-  '86010090'
+  >>> bic.domestic_bank_codes
+  ['10010010',
+   '20010020',
+   ...
+   '86010090']
 
-The ``country_bank_code`` is the country specific bank code as you can find it in the IBAN. This
-mapping is currently only available for German BICs.
+The ``domestic_bank_codes`` lists the country specific bank codes as you can find it in the IBAN.
+This mapping is currently only available for German BICs and some Spanish and British banks.
 
-The ``BIC``-object also does some basic validation on instantiation and raises a ``ValueError``
-if the country-code, the BIC´s length is invalid or if the structure doesn't match the ISO 9362
+The ``BIC``-object also does some basic validation on instantiation and raises a ``ValueError`` if
+the country-code, the BIC´s length is invalid or if the structure doesn't match the ISO 9362
 specification.
 
 .. code-block:: python
@@ -150,6 +151,6 @@ To install Schwifty, simply:
 Name
 ----
 
-Since ``swift`` and ``swiftly`` were already taken by the OpenStack-project, but we somehow
-wanted to point out the connection to SWIFT, Rick and Morty came up with the idea to name
-the project ``schwifty``.
+Since ``swift`` and ``swiftly`` were already taken by the OpenStack-project, but we somehow wanted
+to point out the connection to SWIFT, Rick and Morty came up with the idea to name the project
+``schwifty``.
