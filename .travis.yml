@@ -1,11 +1,7 @@
 language: python
-python:
-  - '2.7'
-  - '3.7'
-  - '3.8'
 
 install:
-  - pip install -U pip wheel
+  - pip install -U pip wheel tox
 
 script:
   - tox
