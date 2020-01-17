@@ -1,12 +1,26 @@
 language: python
 python:
-- '2.7'
-- '3.7'
-- '3.8'
+  - '2.7'
+  - '3.7'
+  - '3.8'
+
 install:
-- pip install -U pip wheel tox-travis
+  - pip install -U pip wheel
+
 script:
-- tox
+  - tox
+
+matrix:
+  include:
+    - python: 2.7
+      env: TOXENV=py27
+    - python: 3.7
+      env: TOXENV=py37
+    - python: 3.8
+      env: TOXENV=py38
+    - python: 3.8
+      env: TOXENV=lint
+
 deploy:
   provider: pypi
   user: __token__
@@ -16,6 +30,6 @@ deploy:
   docs_dir: docs/build/html
   on:
     tags: true
-    python: '3.7'
+    python: '3.8'
     all_branches: true
     repo: mdomke/schwifty
