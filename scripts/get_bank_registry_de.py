@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import json
-import sys
 
 import requests
 
@@ -20,7 +19,8 @@ FIELD_LENGTHS = {
     'tbd': 1,
     'successor_bank_code': 8,
 }
-URL = 'https://www.bundesbank.de/resource/blob/602632/b8ada8f2b30c6ede5d237be9b932a014/mL/blz-aktuell-txt-data.txt'
+URL = ('https://www.bundesbank.de/resource/blob/'
+       '602632/b8ada8f2b30c6ede5d237be9b932a014/mL/blz-aktuell-txt-data.txt')
 
 
 def get_raw():
