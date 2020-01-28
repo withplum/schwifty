@@ -47,6 +47,7 @@ def process(URL):
         else:
             row_count += 1
 
+
 if __name__ == '__main__':
     with open('schwifty/bank_registry/generated_be.json', 'w') as fp:
         json.dump(process(URL), fp, indent=2)
