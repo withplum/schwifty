@@ -21,8 +21,8 @@ def process(URL):
             row = sheet.row_values(i)
             column = 0
             registry_entry_template = {"bank_code": None, "bic": None,
-                                    "country_code": "BE", "name": None,
-                                        "primary": True, "short_name": None}
+                                        "country_code": "BE", "name": None,
+                                    "primary": True, "short_name": None}
             skip_row = False
             for cell in row:
                 if column == 1:
