@@ -31,8 +31,8 @@ for i in range(sheet.nrows):
             elif column == 0:
                 registry_entry_template["bank_code"] = str(cell)
             elif column == 2:
-                if cell == None:
-                    print("empty", cell)
+                if cell is None:
+                    pass
                 else:
                     registry_entry_template["name"] = str(cell).title()
                     registry_entry_template["short_name"] = str(cell).title()
