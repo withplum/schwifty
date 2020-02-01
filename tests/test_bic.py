@@ -111,4 +111,5 @@ def test_magic_methods():
     assert bic < 'GENODEM1GLT'
 
     assert str(bic) == 'GENODEM1GLS'
+    assert hash(bic) == hash('GENODEM1GLS')
     assert repr(bic) == '<BIC=GENODEM1GLS>'

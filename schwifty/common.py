@@ -17,6 +17,9 @@ class Base(object):
     def __repr__(self):
         return '<{0}={1!s}>'.format(self.__class__.__name__, self)
 
+    def __hash__(self):
+        return hash(str(self))
+
     def __eq__(self, other):
         return str(self) == str(other)
 

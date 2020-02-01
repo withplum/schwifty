@@ -153,4 +153,5 @@ def test_magic_methods():
     assert iban < IBAN('ES9121000418450200051332')
 
     assert str(iban) == 'DE42430609677000534100'
+    assert hash(iban) == hash('DE42430609677000534100')
     assert repr(iban) == '<IBAN=DE42430609677000534100>'
