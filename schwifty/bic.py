@@ -8,7 +8,7 @@ from schwifty.common import Base
 from schwifty import registry
 
 
-_bic_re = re.compile(r'[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?')
+_bic_re = re.compile(r"[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?")
 
 
 class BIC(Base):
@@ -75,10 +75,11 @@ class BIC(Base):
             This currently only works for German bank-codes.
         """
         try:
-            return cls(registry.get('bank_code')[(country_code, bank_code)]['bic'])
+            return cls(registry.get("bank_code")[(country_code, bank_code)]["bic"])
         except KeyError:
-            raise ValueError("Invalid bank code {!r} for country {!r}".format(bank_code,
-                                                                              country_code))
+            raise ValueError(
+                "Invalid bank code {!r} for country {!r}".format(bank_code, country_code)
+            )
 
     def validate(self):
         self._validate_length()
@@ -109,13 +110,13 @@ class BIC(Base):
             >>> BIC('MARKDEF1100').formatted
             'MARK DE F1 100'
         """
-        formatted = ' '.join([self.bank_code, self.country_code, self.location_code])
+        formatted = " ".join([self.bank_code, self.country_code, self.location_code])
         if self.branch_code:
-            formatted += ' ' + self.branch_code
+            formatted += " " + self.branch_code
         return formatted
 
     def _lookup_values(self, key):
-        entries = registry.get('bic').get(self.compact, [])
+        entries = registry.get("bic").get(self.compact, [])
         return sorted({entry[key] for entry in entries})
 
     @property
@@ -128,7 +129,7 @@ class BIC(Base):
 
         .. versionadded:: 2020.01.0
         """
-        return self._lookup_values('bank_code')
+        return self._lookup_values("bank_code")
 
     @property
     def bank_names(self):
@@ -140,7 +141,7 @@ class BIC(Base):
 
         .. versionadded:: 2020.01.0
         """
-        return self._lookup_values('name')
+        return self._lookup_values("name")
 
     @property
     def bank_short_names(self):
@@ -152,7 +153,7 @@ class BIC(Base):
 
         .. versionadded:: 2020.01.0
         """
-        return self._lookup_values('short_name')
+        return self._lookup_values("short_name")
 
     @property
     def country_bank_code(self):
@@ -190,7 +191,7 @@ class BIC(Base):
     @property
     def exists(self):
         """bool: Indicates if the BIC is available in Schwifty's registry."""
-        return bool(registry.get('bic').get(self.compact))
+        return bool(registry.get("bic").get(self.compact))
 
     @property
     def type(self):
@@ -205,24 +206,29 @@ class BIC(Base):
         Returns:
             str: The BIC type.
         """
-        if self.location_code[1] == '0':
-            return 'testing'
-        elif self.location_code[1] == '1':
-            return 'passive'
-        elif self.location_code[1] == '2':
-            return 'reverse billing'
+        if self.location_code[1] == "0":
+            return "testing"
+        elif self.location_code[1] == "1":
+            return "passive"
+        elif self.location_code[1] == "2":
+            return "reverse billing"
         else:
-            return 'default'
+            return "default"
 
-    bank_code = property(partial(Base._get_component, start=0, end=4),
-                         doc="str: The bank-code part of the BIC.")
-    country_code = property(partial(Base._get_component, start=4, end=6),
-                            doc="str: The ISO 3166 alpha2 country-code.")
-    location_code = property(partial(Base._get_component, start=6, end=8),
-                             doc="str: The location code of the BIC.")
-    branch_code = property(partial(Base._get_component, start=8, end=11),
-                           doc="str or None: The branch-code part of the BIC (if available)")
+    bank_code = property(
+        partial(Base._get_component, start=0, end=4), doc="str: The bank-code part of the BIC."
+    )
+    country_code = property(
+        partial(Base._get_component, start=4, end=6), doc="str: The ISO 3166 alpha2 country-code."
+    )
+    location_code = property(
+        partial(Base._get_component, start=6, end=8), doc="str: The location code of the BIC."
+    )
+    branch_code = property(
+        partial(Base._get_component, start=8, end=11),
+        doc="str or None: The branch-code part of the BIC (if available)",
+    )
 
 
-registry.build_index('bank', 'bic', key='bic', accumulate=True)
-registry.build_index('bank', 'bank_code', key=('country_code', 'bank_code'), primary=True)
+registry.build_index("bank", "bic", key="bic", accumulate=True)
+registry.build_index("bank", "bank_code", key=("country_code", "bank_code"), primary=True)

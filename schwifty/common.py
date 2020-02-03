@@ -2,12 +2,11 @@ from functools import total_ordering
 import re
 
 
-_clean_regex = re.compile(r'\s+')
+_clean_regex = re.compile(r"\s+")
 
 
 @total_ordering
 class Base(object):
-
     def __init__(self, code):
         self._code = clean(code)
 
@@ -15,7 +14,7 @@ class Base(object):
         return self.compact
 
     def __repr__(self):
-        return '<{0}={1!s}>'.format(self.__class__.__name__, self)
+        return "<{0}={1!s}>".format(self.__class__.__name__, self)
 
     def __hash__(self):
         return hash(str(self))
@@ -28,12 +27,12 @@ class Base(object):
 
     @property
     def compact(self):
-        '''str: Compact representation of the code.'''
+        """str: Compact representation of the code."""
         return self._code
 
     @property
     def length(self):
-        '''int: Length of the compact code.'''
+        """int: Length of the compact code."""
         return len(self.compact)
 
     def _get_component(self, start, end=None):
@@ -42,4 +41,4 @@ class Base(object):
 
 
 def clean(string):
-    return _clean_regex.sub('', string).upper()
+    return _clean_regex.sub("", string).upper()
