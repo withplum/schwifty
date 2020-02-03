@@ -6,6 +6,8 @@
     :target: https://pypi.python.org/pypi/schwifty
 .. image:: https://readthedocs.org/projects/schwifty/badge/?version=latest&style=flat-square
     :target: https://schwifty.readthedocs.io
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square
+    :target: https://black.readthedocs.io/en/stable/index.html
 
 
 Gotta get schwifty with your IBANs
@@ -148,9 +150,30 @@ To install Schwifty, simply:
   $ pip install schwifty
 
 
+Development
+-----------
+
+We use the [black][1] as code formatter. This avoids discussions about style preferences in the same
+way as ``gofmt`` does the job for Golang. The conformance to the formatting rules is checked in the
+CI pipeline, so that it is recommendable to install the configured [pre-commit][2]-hook, in order to
+avoid long feedback-cycles.
+
+.. code-block:: bash
+
+   $ pre-commit install
+
+You can also use the ``fmt`` Makefile-target to format the code or use one of the available [editor
+integrations][3].
+
+
 Name
 ----
 
 Since ``swift`` and ``swiftly`` were already taken by the OpenStack-project, but we somehow wanted
 to point out the connection to SWIFT, Rick and Morty came up with the idea to name the project
 ``schwifty``.
+
+
+[1] https://black.readthedocs.io/en/stable/index.html
+[2] https://pre-commit.com
+[3] https://black.readthedocs.io/en/stable/editor_integration.html

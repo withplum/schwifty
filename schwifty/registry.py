@@ -15,12 +15,12 @@ def has(name):
 def get(name):
     if not has(name):
         data = None
-        dirname = name + '_registry'
+        dirname = name + "_registry"
         for fname in sorted(resource_listdir(__name__, dirname)):
-            if os.path.splitext(fname)[1] != '.json':
+            if os.path.splitext(fname)[1] != ".json":
                 continue
             fname = resource_filename(__name__, os.path.join(dirname, fname))
-            with open(fname, 'r') as fp:
+            with open(fname, "r") as fp:
                 chunk = json.load(fp)
                 if data is None:
                     data = chunk

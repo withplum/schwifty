@@ -9,3 +9,7 @@ test:
 .PHONY: lint
 lint:
 	@tox -e lint
+
+.PHONY: fmt
+fmt:
+	@tox -e fmt
