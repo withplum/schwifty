@@ -153,17 +153,17 @@ To install Schwifty, simply:
 Development
 -----------
 
-We use the [black][1] as code formatter. This avoids discussions about style preferences in the same
+We use the `black`_ as code formatter. This avoids discussions about style preferences in the same
 way as ``gofmt`` does the job for Golang. The conformance to the formatting rules is checked in the
-CI pipeline, so that it is recommendable to install the configured [pre-commit][2]-hook, in order to
+CI pipeline, so that it is recommendable to install the configured `pre-commit`_-hook, in order to
 avoid long feedback-cycles.
 
 .. code-block:: bash
 
    $ pre-commit install
 
-You can also use the ``fmt`` Makefile-target to format the code or use one of the available [editor
-integrations][3].
+You can also use the ``fmt`` Makefile-target to format the code or use one of the available `editor
+integrations`_.
 
 
 Name
@@ -174,6 +174,6 @@ to point out the connection to SWIFT, Rick and Morty came up with the idea to na
 ``schwifty``.
 
 
-[1] https://black.readthedocs.io/en/stable/index.html
-[2] https://pre-commit.com
-[3] https://black.readthedocs.io/en/stable/editor_integration.html
+.. _black:  https://black.readthedocs.io/en/stable/index.html
+.. _pre-commit: https://pre-commit.com
+.. _editor integrations:  https://black.readthedocs.io/en/stable/editor_integration.html
