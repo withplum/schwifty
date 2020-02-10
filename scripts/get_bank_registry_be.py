@@ -31,5 +31,5 @@ def process():
 
 
 if __name__ == '__main__':
-    with open('generated_be.json', 'w') as fp:
+    with open('schwifty/bank_registry/generated_be.json', 'w') as fp:
         json.dump(process(), fp, indent=2)
