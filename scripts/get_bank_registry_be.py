@@ -3,50 +3,33 @@ import json
 import xlrd
 import requests
 
-URL = ("https://www.nbb.be/doc/be/be/protocol/r_fulllist_of_codes_current.xlsx")
+URL = "https://www.nbb.be/doc/be/be/protocol/r_fulllist_of_codes_current.xlsx"
 
 
-def process(URL):
-    r = requests.get(URL)
-    book = xlrd.open_workbook(file_contents=r.content)
+def process():
     registry = []
-    skip_field = ["VRIJ", "NAV", "NAP", "-", "VRIJ - LIBRE"]
-    row_count = 0
+    skip_names = ["NAV", "VRIJ", "NAP", "NYA", "VRIJ - LIBRE", "-"]
+    book = xlrd.open_workbook(file_contents=requests.get(URL).content)
 
-    if len(book.sheets()) == 1:
-        sheet = book.sheets()[0]
-    for i in range(sheet.nrows):
-        if row_count > 1:
-            row_count += 1
-            row = sheet.row_values(i)
-            column = 0
-            registry_entry_template = {"bank_code": None, "bic": None, "country_code": "BE",
-                                       "name": None, "primary": True, "short_name": None}
-            skip_row = False
-            for cell in row:
-                if column == 1:
-                    if cell.upper() not in skip_field:
-                        registry_entry_template["bic"] = str(
-                            cell.upper().replace(" ", ""))
-                    else:
-                        skip_row = True
-                elif column == 0:
-                    registry_entry_template["bank_code"] = str(cell)
-                elif column == 2:
-                    if cell is None:
-                        pass
-                    else:
-                        registry_entry_template["name"] = str(cell).title()
-                        registry_entry_template["short_name"] = str(cell).title()
-                column += 1
-            if skip_row:
-                pass
-            else:
-                registry.append(registry_entry_template)
-        else:
-            row_count += 1
+    try:
+        sheet = book.sheet_by_index(0)
+        for row in list(sheet.get_rows())[2:]:
+            bank_code, bic, name = row[:3]
+            if bic.value.upper() in skip_names:
+                continue
+            registry.append({
+                "country_code": "BE",
+                "primary": True,
+                "bic": bic.value.upper().replace(" ", ""),
+                "bank_code": bank_code.value,
+                "name": name.value,
+                "short_name": name.value,
+            })
+        return registry
+    except IndexError:
+        raise
 
 
 if __name__ == '__main__':
-    with open('schwifty/bank_registry/generated_be.json', 'w') as fp:
-        json.dump(process(URL), fp, indent=2)
+    with open('generated_be.json', 'w') as fp:
+        json.dump(process(), fp, indent=2)
