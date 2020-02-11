@@ -14,17 +14,27 @@ def process():
     try:
         sheet = book.sheet_by_index(0)
         for row in list(sheet.get_rows())[2:]:
-            bank_code, bic, name = row[:3]
+            bank_code, bic, name, second_name = row[:4]
             if bic.value.upper() in skip_names:
                 continue
-            registry.append({
-                "country_code": "BE",
-                "primary": True,
-                "bic": bic.value.upper().replace(" ", ""),
-                "bank_code": bank_code.value,
-                "name": name.value,
-                "short_name": name.value,
-            })
+            if name.value != "":
+                registry.append({
+                    "country_code": "BE",
+                    "primary": True,
+                    "bic": bic.value.upper().replace(" ", ""),
+                    "bank_code": bank_code.value,
+                    "name": name.value,
+                    "short_name": name.value,
+                })
+            else:
+                registry.append({
+                    "country_code": "BE",
+                    "primary": True,
+                    "bic": bic.value.upper().replace(" ", ""),
+                    "bank_code": bank_code.value,
+                    "name": second_name.value,
+                    "short_name": second_name.value,
+                })
         return registry
     except IndexError:
         raise
