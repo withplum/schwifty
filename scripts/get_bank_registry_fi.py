@@ -3,7 +3,10 @@ import json
 import xlrd
 import requests
 
-URL = "https://www.finanssiala.fi/maksujenvalitys/dokumentit/Finnish_monetary_institution_codes_and_BICs_in_excel_format.xlsx"
+URL = (
+    "https://www.finanssiala.fi/maksujenvalitys/dokumentit/"
+    "Finnish_monetary_institution_codes_and_BICs_in_excel_format.xlsx"
+)
 
 
 def process():
