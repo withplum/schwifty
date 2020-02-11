@@ -17,17 +17,19 @@ def process():
         bank_code, bic, name, second_name = row[:4]
         if bic.value.upper() in skip_names:
             continue
-        registry.append({
-            "country_code": "BE",
-            "primary": True,
-            "bic": bic.value.upper().replace(" ", ""),
-            "bank_code": bank_code.value,
-            "name": name.value or second_name.value,
-            "short_name": name.value or second_name.value,
-        })
+        registry.append(
+            {
+                "country_code": "BE",
+                "primary": True,
+                "bic": bic.value.upper().replace(" ", ""),
+                "bank_code": bank_code.value,
+                "name": name.value or second_name.value,
+                "short_name": name.value or second_name.value,
+            }
+        )
     return registry
 
 
-if __name__ == '__main__':
-    with open('schwifty/bank_registry/generated_be.json', 'w') as fp:
+if __name__ == "__main__":
+    with open("schwifty/bank_registry/generated_be.json", "w") as fp:
         json.dump(process(), fp, indent=2)
