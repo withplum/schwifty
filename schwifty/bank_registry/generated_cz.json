@@ -1,0 +1,554 @@
+[
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "KOMBCZPP",
+    "bank_code": "0100",
+    "name": "Komer\u00c4\u008dn\u00c3\u00ad banka, a.s.",
+    "short_name": "Komer\u00c4\u008dn\u00c3\u00ad banka, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "CEKOCZPP",
+    "bank_code": "0300",
+    "name": "\u00c4\u008ceskoslovensk\u00c3\u00a1 obchodn\u00c3\u00ad banka, a. s.",
+    "short_name": "\u00c4\u008ceskoslovensk\u00c3\u00a1 obchodn\u00c3\u00ad banka, a. s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "AGBACZPP",
+    "bank_code": "0600",
+    "name": "MONETA Money Bank, a.s.",
+    "short_name": "MONETA Money Bank, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "CNBACZPP",
+    "bank_code": "0710",
+    "name": "\u00c4\u008cESK\u00c3\u0081 N\u00c3\u0081RODN\u00c3\u008d BANKA",
+    "short_name": "\u00c4\u008cESK\u00c3\u0081 N\u00c3\u0081RODN\u00c3\u008d BANKA"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "GIBACZPX",
+    "bank_code": "0800",
+    "name": "\u00c4\u008cesk\u00c3\u00a1 spo\u00c5\u0099itelna, a.s.",
+    "short_name": "\u00c4\u008cesk\u00c3\u00a1 spo\u00c5\u0099itelna, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "FIOBCZPP",
+    "bank_code": "2010",
+    "name": "Fio banka, a.s.",
+    "short_name": "Fio banka, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "BOTKCZPP",
+    "bank_code": "2020",
+    "name": "MUFG Bank (Europe) N.V. Prague Branch",
+    "short_name": "MUFG Bank (Europe) N.V. Prague Branch"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "2030",
+    "name": "\u00c4\u008ceskoslovensk\u00c3\u00a9 \u00c3\u00bav\u00c4\u009brn\u00c3\u00ad dru\u00c5\u00bestvo",
+    "short_name": "\u00c4\u008ceskoslovensk\u00c3\u00a9 \u00c3\u00bav\u00c4\u009brn\u00c3\u00ad dru\u00c5\u00bestvo"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "CITFCZPP",
+    "bank_code": "2060",
+    "name": "Citfin, spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo",
+    "short_name": "Citfin, spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "MPUBCZPP",
+    "bank_code": "2070",
+    "name": "TRINITY BANK a.s.",
+    "short_name": "TRINITY BANK a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "2100",
+    "name": "Hypote\u00c4\u008dn\u00c3\u00ad banka, a.s.",
+    "short_name": "Hypote\u00c4\u008dn\u00c3\u00ad banka, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "2200",
+    "name": "Pen\u00c4\u009b\u00c5\u00ben\u00c3\u00ad d\u00c5\u00afm, spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo",
+    "short_name": "Pen\u00c4\u009b\u00c5\u00ben\u00c3\u00ad d\u00c5\u00afm, spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "ARTTCZPP",
+    "bank_code": "2220",
+    "name": "Artesa, spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo",
+    "short_name": "Artesa, spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "POBNCZPP",
+    "bank_code": "2240",
+    "name": "Po\u00c5\u00a1tov\u00c3\u00a1 banka, a.s., pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika",
+    "short_name": "Po\u00c5\u00a1tov\u00c3\u00a1 banka, a.s., pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "CTASCZ22",
+    "bank_code": "2250",
+    "name": "Banka CREDITAS a.s.",
+    "short_name": "Banka CREDITAS a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "2260",
+    "name": "NEY spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo",
+    "short_name": "NEY spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "2275",
+    "name": "Podnikatelsk\u00c3\u00a1 dru\u00c5\u00bestevn\u00c3\u00ad z\u00c3\u00a1lo\u00c5\u00bena",
+    "short_name": "Podnikatelsk\u00c3\u00a1 dru\u00c5\u00bestevn\u00c3\u00ad z\u00c3\u00a1lo\u00c5\u00bena"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "CITICZPX",
+    "bank_code": "2600",
+    "name": "Citibank Europe plc, organiza\u00c4\u008dn\u00c3\u00ad slo\u00c5\u00beka",
+    "short_name": "Citibank Europe plc, organiza\u00c4\u008dn\u00c3\u00ad slo\u00c5\u00beka"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "BACXCZPP",
+    "bank_code": "2700",
+    "name": "UniCredit Bank Czech Republic and Slovakia, a.s.",
+    "short_name": "UniCredit Bank Czech Republic and Slovakia, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "AIRACZPP",
+    "bank_code": "3030",
+    "name": "Air Bank a.s.",
+    "short_name": "Air Bank a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "BPPFCZP1",
+    "bank_code": "3050",
+    "name": "BNP Paribas Personal Finance SA, od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod",
+    "short_name": "BNP Paribas Personal Finance SA, od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "BPKOCZPP",
+    "bank_code": "3060",
+    "name": "PKO BP S.A., Czech Branch",
+    "short_name": "PKO BP S.A., Czech Branch"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "INGBCZPP",
+    "bank_code": "3500",
+    "name": "ING Bank N.V.",
+    "short_name": "ING Bank N.V."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "EXPNCZPP",
+    "bank_code": "4000",
+    "name": "Expobank CZ a.s.",
+    "short_name": "Expobank CZ a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "CMZRCZP1",
+    "bank_code": "4300",
+    "name": "\u00c4\u008ceskomoravsk\u00c3\u00a1 z\u00c3\u00a1ru\u00c4\u008dn\u00c3\u00ad a rozvojov\u00c3\u00a1 banka, a.s.",
+    "short_name": "\u00c4\u008ceskomoravsk\u00c3\u00a1 z\u00c3\u00a1ru\u00c4\u008dn\u00c3\u00ad a rozvojov\u00c3\u00a1 banka, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "RZBCCZPP",
+    "bank_code": "5500",
+    "name": "Raiffeisenbank a.s.",
+    "short_name": "Raiffeisenbank a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "JTBPCZPP",
+    "bank_code": "5800",
+    "name": "J & T BANKA, a.s.",
+    "short_name": "J & T BANKA, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "PMBPCZPP",
+    "bank_code": "6000",
+    "name": "PPF banka a.s.",
+    "short_name": "PPF banka a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "EQBKCZPP",
+    "bank_code": "6100",
+    "name": "Equa bank a.s.",
+    "short_name": "Equa bank a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "COBACZPX",
+    "bank_code": "6200",
+    "name": "COMMERZBANK Aktiengesellschaft, pobo\u00c4\u008dka Praha",
+    "short_name": "COMMERZBANK Aktiengesellschaft, pobo\u00c4\u008dka Praha"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "BREXCZPP",
+    "bank_code": "6210",
+    "name": "mBank S.A., organiza\u00c4\u008dn\u00c3\u00ad slo\u00c5\u00beka",
+    "short_name": "mBank S.A., organiza\u00c4\u008dn\u00c3\u00ad slo\u00c5\u00beka"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "GEBACZPP",
+    "bank_code": "6300",
+    "name": "BNP Paribas S.A., pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika",
+    "short_name": "BNP Paribas S.A., pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "SUBACZPP",
+    "bank_code": "6700",
+    "name": "V\u00c5\u00a1eobecn\u00c3\u00a1 \u00c3\u00baverov\u00c3\u00a1 banka a.s., pobo\u00c4\u008dka Praha",
+    "short_name": "V\u00c5\u00a1eobecn\u00c3\u00a1 \u00c3\u00baverov\u00c3\u00a1 banka a.s., pobo\u00c4\u008dka Praha"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "VBOECZ2X",
+    "bank_code": "6800",
+    "name": "Sberbank CZ, a.s.",
+    "short_name": "Sberbank CZ, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "DEUTCZPX",
+    "bank_code": "7910",
+    "name": "Deutsche Bank Aktiengesellschaft Filiale Prag, organiza\u00c4\u008dn\u00c3\u00ad slo\u00c5\u00beka",
+    "short_name": "Deutsche Bank Aktiengesellschaft Filiale Prag, organiza\u00c4\u008dn\u00c3\u00ad slo\u00c5\u00beka"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "SPWTCZ21",
+    "bank_code": "7940",
+    "name": "Waldviertler Sparkasse Bank AG",
+    "short_name": "Waldviertler Sparkasse Bank AG"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "7950",
+    "name": "Raiffeisen stavebn\u00c3\u00ad spo\u00c5\u0099itelna a.s.",
+    "short_name": "Raiffeisen stavebn\u00c3\u00ad spo\u00c5\u0099itelna a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "7960",
+    "name": "\u00c4\u008ceskomoravsk\u00c3\u00a1 stavebn\u00c3\u00ad spo\u00c5\u0099itelna, a.s.",
+    "short_name": "\u00c4\u008ceskomoravsk\u00c3\u00a1 stavebn\u00c3\u00ad spo\u00c5\u0099itelna, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "7970",
+    "name": "W\u00c3\u00bcstenrot - stavebn\u00c3\u00ad spo\u00c5\u0099itelna a.s.",
+    "short_name": "W\u00c3\u00bcstenrot - stavebn\u00c3\u00ad spo\u00c5\u0099itelna a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "7980",
+    "name": "W\u00c3\u00bcstenrot hypote\u00c4\u008dn\u00c3\u00ad banka a.s.",
+    "short_name": "W\u00c3\u00bcstenrot hypote\u00c4\u008dn\u00c3\u00ad banka a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "7990",
+    "name": "Modr\u00c3\u00a1 pyramida stavebn\u00c3\u00ad spo\u00c5\u0099itelna, a.s.",
+    "short_name": "Modr\u00c3\u00a1 pyramida stavebn\u00c3\u00ad spo\u00c5\u0099itelna, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "GENOCZ21",
+    "bank_code": "8030",
+    "name": "Volksbank Raiffeisenbank Nordoberpfalz eG pobo\u00c4\u008dka Cheb",
+    "short_name": "Volksbank Raiffeisenbank Nordoberpfalz eG pobo\u00c4\u008dka Cheb"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "OBKLCZ2X",
+    "bank_code": "8040",
+    "name": "Oberbank AG pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika",
+    "short_name": "Oberbank AG pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8060",
+    "name": "Stavebn\u00c3\u00ad spo\u00c5\u0099itelna \u00c4\u008cesk\u00c3\u00a9 spo\u00c5\u0099itelny, a.s.",
+    "short_name": "Stavebn\u00c3\u00ad spo\u00c5\u0099itelna \u00c4\u008cesk\u00c3\u00a9 spo\u00c5\u0099itelny, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "CZEECZPP",
+    "bank_code": "8090",
+    "name": "\u00c4\u008cesk\u00c3\u00a1 exportn\u00c3\u00ad banka, a.s.",
+    "short_name": "\u00c4\u008cesk\u00c3\u00a1 exportn\u00c3\u00ad banka, a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "MIDLCZPP",
+    "bank_code": "8150",
+    "name": "HSBC France - pobo\u00c4\u008dka Praha",
+    "short_name": "HSBC France - pobo\u00c4\u008dka Praha"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8190",
+    "name": "Sparkasse Oberlausitz-Niederschlesien",
+    "short_name": "Sparkasse Oberlausitz-Niederschlesien"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "FFCSCZP1",
+    "bank_code": "8198",
+    "name": "FAS finance company s.r.o.",
+    "short_name": "FAS finance company s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "MOUSCZP2",
+    "bank_code": "8199",
+    "name": "MoneyPolo Europe s.r.o.",
+    "short_name": "MoneyPolo Europe s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8200",
+    "name": "PRIVAT BANK der Raiffeisenlandesbank Ober\u00c3\u00b6sterreich Aktiengesellschaft, pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika",
+    "short_name": "PRIVAT BANK der Raiffeisenlandesbank Ober\u00c3\u00b6sterreich Aktiengesellschaft, pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8215",
+    "name": "ALTERNATIVE PAYMENT SOLUTIONS, s.r.o.",
+    "short_name": "ALTERNATIVE PAYMENT SOLUTIONS, s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "PAERCZP1",
+    "bank_code": "8220",
+    "name": "Payment execution s.r.o.",
+    "short_name": "Payment execution s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "ORRRCZP1",
+    "bank_code": "8225",
+    "name": "ORANGETRUST s.r.o.",
+    "short_name": "ORANGETRUST s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "EEPSCZPP",
+    "bank_code": "8230",
+    "name": "EEPAYS s.r.o.",
+    "short_name": "EEPAYS s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8240",
+    "name": "Dru\u00c5\u00bestevn\u00c3\u00ad z\u00c3\u00a1lo\u00c5\u00bena Kredit",
+    "short_name": "Dru\u00c5\u00bestevn\u00c3\u00ad z\u00c3\u00a1lo\u00c5\u00bena Kredit"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "BKCHCZPP",
+    "bank_code": "8250",
+    "name": "Bank of China (Hungary) Close Ltd. Prague branch, od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod",
+    "short_name": "Bank of China (Hungary) Close Ltd. Prague branch, od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "COMMCZPP",
+    "bank_code": "8255",
+    "name": "Bank of Communications Co., Ltd., Prague Branch od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod",
+    "short_name": "Bank of Communications Co., Ltd., Prague Branch od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "PYYMCZPP",
+    "bank_code": "8260",
+    "name": "PAYMASTER a.s.",
+    "short_name": "PAYMASTER a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "ICBKCZPP",
+    "bank_code": "8265",
+    "name": "Industrial and Commercial Bank of China Limited, Prague Branch, od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod",
+    "short_name": "Industrial and Commercial Bank of China Limited, Prague Branch, od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod"
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "FAPOCZP1",
+    "bank_code": "8270",
+    "name": "Fairplay Pay s.r.o.",
+    "short_name": "Fairplay Pay s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8272",
+    "name": "Viva Payment Services S.A.",
+    "short_name": "Viva Payment Services S.A."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "BEFKCZP1",
+    "bank_code": "8280",
+    "name": "B-Efekt a.s.",
+    "short_name": "B-Efekt a.s."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "BPORCZ22",
+    "bank_code": "8282",
+    "name": "Beekash Payment Solutions, s.r.o.",
+    "short_name": "Beekash Payment Solutions, s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "QPSRCZPP",
+    "bank_code": "8283",
+    "name": "Qpay s.r.o.",
+    "short_name": "Qpay s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8291",
+    "name": "Business Credit s.r.o.",
+    "short_name": "Business Credit s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8292",
+    "name": "Money Change s.r.o.",
+    "short_name": "Money Change s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8293",
+    "name": "Mercurius partners s.r.o.",
+    "short_name": "Mercurius partners s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8294",
+    "name": "GrisPayUnion s.r.o.",
+    "short_name": "GrisPayUnion s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8296",
+    "name": "PaySysEU s.r.o.",
+    "short_name": "PaySysEU s.r.o."
+  }
+]
