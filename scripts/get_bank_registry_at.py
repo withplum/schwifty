@@ -1,5 +1,4 @@
 import json
-import csv
 import requests
 
 URL = "https://www.oenb.at/docroot/downloads_observ/sepa-zv-vz_gesamt.csv"

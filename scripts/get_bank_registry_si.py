@@ -1,5 +1,4 @@
 import json
-import csv
 import requests
 
 URL = (
