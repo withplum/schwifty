@@ -5,11 +5,9 @@ import requests
 URL = "https://www.cnb.cz/cs/platebni-styk/.galleries/ucty_kody_bank/download/kody_bank_CR.csv"
 
 
-registry = []
-
-
 def process():
     with requests.get(URL, stream=True) as csvfile:
+        registry = []
         count = 0
         for row in csvfile.iter_lines():
             if count != 0:
