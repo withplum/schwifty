@@ -17,17 +17,16 @@ def process():
 
     for row in list(sheet.get_rows())[4:]:
         name, bank_code, bic = row[1:]
-        if bank_code.value != "":
-            registry.append(
-                {
-                    "country_code": "HR",
-                    "primary": True,
-                    "bic": bic.value.upper().replace(" ", ""),
-                    "bank_code": int(bank_code.value),
-                    "name": name.value,
-                    "short_name": name.value,
-                }
-            )
+        registry.append(
+            {
+                "country_code": "HR",
+                "primary": True,
+                "bic": bic.value.upper().replace(" ", ""),
+                "bank_code": int(bank_code.value),
+                "name": name.value,
+                "short_name": name.value,
+            }
+        )
     return registry
 
 
