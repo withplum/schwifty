@@ -6,11 +6,14 @@ URL = "https://www.cnb.cz/cs/platebni-styk/.galleries/ucty_kody_bank/download/ko
 
 
 def process():
+    registry = []
+    firstline = True
+
     with requests.get(URL, stream=True) as csvfile:
-        registry = []
-        count = 0
         for row in csvfile.iter_lines():
-            if count != 0:
+            if firstline:
+                firstline = False
+            else:
                 bank_code, name, bic = row.decode("latin1").split(";")[0:3]
                 registry.append(
                     {
@@ -22,8 +25,6 @@ def process():
                         "short_name": name,
                     }
                 )
-            else:
-                count = 1
         return registry
 
 

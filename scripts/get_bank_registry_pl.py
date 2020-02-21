@@ -7,6 +7,7 @@ URL = "https://ewib.nbp.pl/plewibnra?dokNazwa=plewibnra.txt"
 
 def process():
     registry = []
+
     with requests.get(URL, stream=True) as txtfile:
         for row in txtfile.iter_lines():
             if len(row.decode("latin1").split("\t")) != 33:

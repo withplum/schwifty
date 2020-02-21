@@ -7,8 +7,9 @@ URL = "https://www.oenb.at/docroot/downloads_observ/sepa-zv-vz_gesamt.csv"
 
 def process():
     registry = []
+    count = 0
+
     with requests.get(URL, stream=True) as csvfile:
-        count = 0
         for row in csvfile.iter_lines():
             if count != 6:
                 count += 1

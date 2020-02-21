@@ -12,6 +12,7 @@ URL = (
 def process():
     registry = []
     firstline = True
+
     with requests.get(URL, stream=True) as txtfile:
         for row in txtfile.iter_lines():
             if firstline:
