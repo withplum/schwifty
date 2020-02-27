@@ -173,6 +173,8 @@ Since ``swift`` and ``swiftly`` were already taken by the OpenStack-project, but
 to point out the connection to SWIFT, Rick and Morty came up with the idea to name the project
 ``schwifty``.
 
+.. image:: https://i.cdn.turner.com/adultswim/big/video/get-schwifty-pt-2/rickandmorty_ep205_002_vbnuta15a755dvash8.jpg
+
 
 .. _black:  https://black.readthedocs.io/en/stable/index.html
 .. _pre-commit: https://pre-commit.com
