@@ -118,5 +118,13 @@
     "bank_code": "2038",
     "bic": "CAHMESMMXXX",
     "country_code": "ES"
+  },
+  {
+    "primary": true,
+    "name": "EUROCAJA RURAL, SOCIEDAD COOPERATIVA DE CRÉDITO",
+    "short_name": "CAJA RURAL DE CASTILLA-LA MANCHA",
+    "bank_code": "3081",
+    "bic": "BCOEESMM081",
+    "country_code": "ES"
   }
 ]
