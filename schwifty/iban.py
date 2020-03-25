@@ -66,6 +66,21 @@ class IBAN(Base):
     def _calc_checksum_digits(self):
         return "{:02d}".format(98 - (numerify(self.bban + self.country_code) * 100) % 97)
 
+    def _calc_it_checksum_char(country_code, bank_code, account_code):
+        bban_it = [1, 0, 5, 7, 9, 13, 15, 17, 19, 21, 2, 4, 18, 20, 11, 3, 6, 8, 12, 14, 16, 10, 22, 25, 24, 23, 27, 28, 26]
+        if (country_code != 'IT'):
+            return ''
+        tmpSum = 0
+        code = (bank_code + account_code)
+        for idx in range(0, len(code)):
+            c=code[idx]
+            if ((idx+1) % 2) == 0:
+                tmpSum += _alphabet.index(c)
+            else:
+                tmpSum  += bban_it[_alphabet.index(c)]
+        #return chr((tmpSum % 26) + 97).upper()
+        return _alphabet[tmpSum % 26 + 10].upper()
+
     @classmethod
     def generate(cls, country_code, bank_code, account_code):
         """Generate an IBAN from it's components.
@@ -104,7 +119,7 @@ class IBAN(Base):
 
         bank_code = bank_code.rjust(bank_and_branch_code_length, "0")
         account_code = account_code.rjust(account_code_length, "0")
-        iban = country_code + "??" + bank_code + account_code
+        iban = country_code + "??" + cls._calc_it_checksum_char(country_code, bank_code, account_code) + bank_code + account_code
         return cls(iban)
 
     def validate(self):
