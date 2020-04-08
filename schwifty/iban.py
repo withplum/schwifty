@@ -1,13 +1,12 @@
 # encoding: utf-8
 
-from functools import partial
 import re
 import string
+from functools import partial
 
+from schwifty import registry
 from schwifty.bic import BIC
 from schwifty.common import Base
-from schwifty import registry
-
 
 _spec_to_re = {"n": r"\d", "a": r"[A-Z]", "c": r"[A-Za-z0-9]", "e": r" "}
 
@@ -31,7 +30,7 @@ def code_length(spec, code_type):
 
 
 def _calc_it_checksum(bank_code, account_code):
-    bban_it = [
+    odds = [
         1,
         0,
         5,
@@ -62,15 +61,14 @@ def _calc_it_checksum(bank_code, account_code):
         28,
         26,
     ]
-    tmp_sum = 0
-    code = bank_code + account_code
-    for idx in range(len(code)):
-        c = code[idx]
-        if ((idx + 1) % 2) == 0:
-            tmp_sum += _alphabet.index(c)
+    sum_ = 0
+    bban = bank_code + account_code
+    for i, char in enumerate(bban):
+        if (i + 1) % 2 == 0:
+            sum_ += _alphabet.index(char)
         else:
-            tmp_sum += bban_it[_alphabet.index(c)]
-    return _alphabet[tmp_sum % 26 + 10].upper()
+            sum_ += odds[_alphabet.index(char)]
+    return _alphabet[sum_ % 26 + 10]
 
 
 def calc_bban_checksum(country_code, bank_code, account_code):
