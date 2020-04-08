@@ -30,6 +30,55 @@ def code_length(spec, code_type):
     return end - start
 
 
+def _calc_it_checksum(bank_code, account_code):
+    bban_it = [
+        1,
+        0,
+        5,
+        7,
+        9,
+        13,
+        15,
+        17,
+        19,
+        21,
+        2,
+        4,
+        18,
+        20,
+        11,
+        3,
+        6,
+        8,
+        12,
+        14,
+        16,
+        10,
+        22,
+        25,
+        24,
+        23,
+        27,
+        28,
+        26,
+    ]
+    tmp_sum = 0
+    code = bank_code + account_code
+    for idx in range(len(code)):
+        c = code[idx]
+        if ((idx + 1) % 2) == 0:
+            tmp_sum += _alphabet.index(c)
+        else:
+            tmp_sum += bban_it[_alphabet.index(c)]
+    return _alphabet[tmp_sum % 26 + 10].upper()
+
+
+def calc_bban_checksum(country_code, bank_code, account_code):
+    if country_code == "IT":
+        return _calc_it_checksum(bank_code, account_code)
+    return ""
+
+
 class IBAN(Base):
     """The IBAN object.
 
@@ -104,7 +153,13 @@ class IBAN(Base):
 
         bank_code = bank_code.rjust(bank_and_branch_code_length, "0")
         account_code = account_code.rjust(account_code_length, "0")
-        iban = country_code + "??" + bank_code + account_code
+        iban = (
+            country_code
+            + "??"
+            + calc_bban_checksum(country_code, bank_code, account_code)
+            + bank_code
+            + account_code
+        )
         return cls(iban)
 
     def validate(self):
