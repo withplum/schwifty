@@ -1,9 +1,9 @@
 Get schwifty with IBANs and BICs
 ================================
 
-Schwifty is a Python library that let's you easily work with IBANs and BICs as specified by the ISO.
-IBAN is the Internation Bank Account Number and BIC the Business Identifier Code. Both are used for
-international money transfer.
+Schwifty is a Python library that let's you easily work with IBANs and BICs
+as specified by the ISO. IBAN is the Internation Bank Account Number and BIC
+the Business Identifier Code. Both are used for international money transfer.
 
 Features
 --------
@@ -69,8 +69,9 @@ or for working with :class:`BIC`-objects
 Validation
 ~~~~~~~~~~
 
-When it comes to validation the :class:`IBAN` and :class:`BIC` constructors raise a ``ValueError``
-whenever the provided code is incorrect for some reason:
+When it comes to validation the :class:`IBAN` and :class:`BIC` constructors
+raise a ``ValueError`` whenever the provided code is incorrect for some
+reason:
 
 .. code-block:: python
 
@@ -98,7 +99,8 @@ whenever the provided code is incorrect for some reason:
 Generation
 ~~~~~~~~~~
 
-You can generate :class:`IBAN`-objects from country-code, bank-code and account-number by using the
+You can generate :class:`IBAN`-objects from country-code, bank-code and
+account-number by using the
 :meth:`IBAN.generate()`-method. It will automatically calculate the correct checksum digits for you.
 
 .. code-block:: python
@@ -108,7 +110,8 @@ You can generate :class:`IBAN`-objects from country-code, bank-code and account-
   >>> iban.checksum_digits
   '40'
 
-For german banks you can also generate :class:`BIC`-objects from local bank-codes
+For german banks you can also generate :class:`BIC`-objects from local
+bank-codes
 
 .. code-block:: python
 
