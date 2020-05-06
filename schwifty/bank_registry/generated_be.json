@@ -5826,7 +5826,7 @@
   {
     "country_code": "BE",
     "primary": true,
-    "bic": "CEKVBE81",
+    "bic": "CEKVBE88",
     "bank_code": "906",
     "name": "Centrale Kredietverlening (C.K.V.)",
     "short_name": "Centrale Kredietverlening (C.K.V.)"
@@ -5834,7 +5834,7 @@
   {
     "country_code": "BE",
     "primary": true,
-    "bic": "CEKVBE81",
+    "bic": "CEKVBE88",
     "bank_code": "908",
     "name": "Centrale Kredietverlening (C.K.V.)",
     "short_name": "Centrale Kredietverlening (C.K.V.)"
@@ -6126,6 +6126,14 @@
     "bank_code": "963",
     "name": "AXA Bank Belgium",
     "short_name": "AXA Bank Belgium"
+  },
+  {
+    "country_code": "BE",
+    "primary": true,
+    "bic": "NEECBEB2",
+    "bank_code": "966",
+    "name": "NewB",
+    "short_name": "NewB"
   },
   {
     "country_code": "BE",

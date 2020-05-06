@@ -145,8 +145,8 @@
   },
   {
     "bank_code": "10030500",
-    "name": "Bankhaus L\u00f6bbecke",
-    "short_name": "Bankhaus L\u00f6bbecke Berlin",
+    "name": "M.M. Warburg & Co (vormals Bankhaus L\u00f6bbecke)",
+    "short_name": "M.M. Warburg (L\u00f6bbecke)",
     "bic": "LOEBDEBBXXX",
     "primary": true,
     "country_code": "DE"
@@ -1377,8 +1377,8 @@
   },
   {
     "bank_code": "13061008",
-    "name": "Volksbank Wolgast",
-    "short_name": "Volksbank Wolgast",
+    "name": "Volksbank Wolgast -alt-",
+    "short_name": "Volksbank Wolgast -alt-",
     "bic": "GENODEF1WOG",
     "primary": true,
     "country_code": "DE"
@@ -2105,8 +2105,8 @@
   },
   {
     "bank_code": "15061638",
-    "name": "Volksbank Raiffeisenbank",
-    "short_name": "Volksbank Raiffeisenbank",
+    "name": "Volksbank Vorpommern",
+    "short_name": "VB Vorpommern",
     "bic": "GENODEF1ANK",
     "primary": true,
     "country_code": "DE"
@@ -3681,7 +3681,7 @@
   },
   {
     "bank_code": "20120100",
-    "name": "M.M.Warburg & CO",
+    "name": "M.M. Warburg & CO",
     "short_name": "M.M. Warburg Bank",
     "bic": "WBWCDEHHXXX",
     "primary": true,
@@ -5745,8 +5745,8 @@
   },
   {
     "bank_code": "25060180",
-    "name": "Bankhaus Hallbaum",
-    "short_name": "Bankhaus Hallbaum",
+    "name": "M.M. Warburg & Co (vormals Bankhaus Hallbaum)",
+    "short_name": "M.M. Warburg (Hallbaum)",
     "bic": "HALLDE2HXXX",
     "primary": true,
     "country_code": "DE"
@@ -6208,14 +6208,6 @@
     "country_code": "DE"
   },
   {
-    "bank_code": "25491744",
-    "name": "Volksbank Bad M\u00fcnder",
-    "short_name": "Volksbank Bad M\u00fcnder",
-    "bic": "GENODED1BMU",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
     "bank_code": "25541426",
     "name": "Commerzbank",
     "short_name": "Commerzbank B\u00fcckeburg",
@@ -6306,6 +6298,14 @@
   {
     "bank_code": "25691633",
     "name": "Volksbank Sulingen",
+    "short_name": "Volksbank Sulingen",
+    "bic": "GENODEF1SUL",
+    "primary": true,
+    "country_code": "DE"
+  },
+  {
+    "bank_code": "25691699",
+    "name": "Volksbank (Gf GAA)",
     "short_name": "Volksbank Sulingen",
     "bic": "GENODEF1SUL",
     "primary": true,
@@ -8137,8 +8137,8 @@
   },
   {
     "bank_code": "28069878",
-    "name": "Raiffeisenbank Emsland-Mitte",
-    "short_name": "Raiffbk Emsland-Mitte",
+    "name": "Raiffeisenbank Ems-Vechte",
+    "short_name": "Raiffeisenbank Ems-Vechte",
     "bic": "GENODEF1KBL",
     "primary": true,
     "country_code": "DE"
@@ -8657,8 +8657,8 @@
   },
   {
     "bank_code": "29030400",
-    "name": "Bankhaus Carl F. Plump & CO",
-    "short_name": "Plumpbank Bremen",
+    "name": "M.M. Warburg & Co (vormals Bankhaus Carl F. Plump & CO)",
+    "short_name": "M.M. Warburg (Plump)",
     "bic": "PLUMDE29XXX",
     "primary": true,
     "country_code": "DE"
@@ -11448,30 +11448,6 @@
     "country_code": "DE"
   },
   {
-    "bank_code": "37021100",
-    "name": "Ford Bank Niederlassung der FCE Bank (vorm. Mazda Bank)",
-    "short_name": "Ford Bank, K\u00f6ln",
-    "bic": "MAZDDED1XXX",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
-    "bank_code": "37021300",
-    "name": "Ford Bank Niederl. der FCE Bank (vorm. Jaguar FS)",
-    "short_name": "Ford Bank, K\u00f6ln",
-    "bic": "JAGUDE31XXX",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
-    "bank_code": "37021400",
-    "name": "Ford Bank (Gf EG)",
-    "short_name": "Ford Bank (Gf EG), K\u00f6ln",
-    "bic": "LRFSDE31XXX",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
     "bank_code": "37021500",
     "name": "Ford Bank",
     "short_name": "Ford Bank, K\u00f6ln",
@@ -13956,14 +13932,6 @@
     "name": "Volksbank",
     "short_name": "Volksbank",
     "bic": "GENODEM1AHL",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
-    "bank_code": "41262621",
-    "name": "Vereinigte Volksbank Telgte -alt-",
-    "short_name": "Ver VB Telgte -alt-",
-    "bic": "GENODEM1SDH",
     "primary": true,
     "country_code": "DE"
   },
@@ -17337,7 +17305,7 @@
   },
   {
     "bank_code": "50025000",
-    "name": "Opel Bank",
+    "name": "Opel Bank, Niederlassung Deutschland",
     "short_name": "Opel Bank",
     "bic": "GMGGDE51XXX",
     "primary": true,
@@ -17712,6 +17680,54 @@
     "country_code": "DE"
   },
   {
+    "bank_code": "50060420",
+    "name": "DZ BANK Gf V20",
+    "short_name": "DZ BANK Gf V20",
+    "bic": "GENODEF1V20",
+    "primary": true,
+    "country_code": "DE"
+  },
+  {
+    "bank_code": "50060421",
+    "name": "DZ BANK Gf V21",
+    "short_name": "DZ BANK Gf V21",
+    "bic": "GENODEF1V21",
+    "primary": true,
+    "country_code": "DE"
+  },
+  {
+    "bank_code": "50060422",
+    "name": "DZ BANK Gf V22",
+    "short_name": "DZ BANK Gf V22",
+    "bic": "GENODEF1V22",
+    "primary": true,
+    "country_code": "DE"
+  },
+  {
+    "bank_code": "50060423",
+    "name": "DZ BANK Gf V23",
+    "short_name": "DZ BANK Gf V23",
+    "bic": "GENODEF1V23",
+    "primary": true,
+    "country_code": "DE"
+  },
+  {
+    "bank_code": "50060424",
+    "name": "DZ BANK Gf V24",
+    "short_name": "DZ BANK Gf V24",
+    "bic": "GENODEF1V24",
+    "primary": true,
+    "country_code": "DE"
+  },
+  {
+    "bank_code": "50060425",
+    "name": "DZ BANK Gf V25",
+    "short_name": "DZ BANK Gf V25",
+    "bic": "GENODEF1V25",
+    "primary": true,
+    "country_code": "DE"
+  },
+  {
     "bank_code": "50060474",
     "name": "DZ BANK, Deutsche Zentral-Genossenschaftsbank",
     "short_name": "DZ BANK",
@@ -17721,8 +17737,8 @@
   },
   {
     "bank_code": "50061741",
-    "name": "Raiffeisenbank Oberursel",
-    "short_name": "Raiffeisenbank Oberursel",
+    "name": "Raiffeisenbank im Hochtaunus",
+    "short_name": "RB im Hochtaunus Bad Hom",
     "bic": "GENODE51OBU",
     "primary": true,
     "country_code": "DE"
@@ -20384,14 +20400,6 @@
     "country_code": "DE"
   },
   {
-    "bank_code": "52060400",
-    "name": "Evangelische Bank Gf",
-    "short_name": "Evangelische Bank Gf Kassel",
-    "bic": "EKKBDE52XXX",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
     "bank_code": "52060410",
     "name": "Evangelische Bank",
     "short_name": "Evangelische Bank Kassel",
@@ -20897,8 +20905,8 @@
   },
   {
     "bank_code": "53260145",
-    "name": "Raiffeisenbank Asbach-Sorga",
-    "short_name": "Raiffeisenbank Asbach-Sorga",
+    "name": "Raiffeisenbank Asbach-Sorga -alt-",
+    "short_name": "Raiffbk Asbach-Sorga -alt-",
     "bic": "GENODEF1HFA",
     "primary": true,
     "country_code": "DE"
@@ -22881,7 +22889,7 @@
   },
   {
     "bank_code": "58590900",
-    "name": "PSD Bank Trier Ndl der PSD Bank K\u00f6ln",
+    "name": "PSD Bank Trier Ndl der PSD Bank West",
     "short_name": "PSD Bank Trier",
     "bic": "GENODEF1P21",
     "primary": true,
@@ -23801,8 +23809,8 @@
   },
   {
     "bank_code": "60020100",
-    "name": "Schw\u00e4bische Bank",
-    "short_name": "Schw\u00e4bische Bank Stuttgart",
+    "name": "M.M. Warburg & Co (vormals Schw\u00e4bische Bank)",
+    "short_name": "M.M. Warburg (Schw\u00e4b. Bk.)",
     "bic": "SCHWDESSXXX",
     "primary": true,
     "country_code": "DE"
@@ -34601,8 +34609,8 @@
   },
   {
     "bank_code": "76251020",
-    "name": "Sparkasse i Landkreis Neustadt a d Aisch",
-    "short_name": "Spk i Landkreis Neustadt",
+    "name": "Sparkasse im Landkreis Neustadt a.d. Aisch - Bad Windsheim",
+    "short_name": "Sparkasse i. Lkr. NEA-BWI",
     "bic": "BYLADEM1NEA",
     "primary": true,
     "country_code": "DE"
@@ -35129,8 +35137,8 @@
   },
   {
     "bank_code": "77365792",
-    "name": "Raiffeisenbank Hollfeld-Waischenfeld-Aufse\u00df -alt-",
-    "short_name": "Raiffbk Hollfeld-Wais.-alt-",
+    "name": "Raiffeisenbank Fr\u00e4nkische Schweiz",
+    "short_name": "RB Fr\u00e4nkische Schweiz",
     "bic": "GENODEF1HWA",
     "primary": true,
     "country_code": "DE"
