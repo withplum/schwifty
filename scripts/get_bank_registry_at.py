@@ -1,3 +1,4 @@
+import csv
 import json
 import requests
 
@@ -5,27 +6,21 @@ URL = "https://www.oenb.at/docroot/downloads_observ/sepa-zv-vz_gesamt.csv"
 
 
 def process():
-    registry = []
-    count = 0
+    with requests.get(URL, stream=True) as fp:
+        csvfile = csv.reader([line.decode("latin1") for line in fp.iter_lines()], delimiter=";")
 
-    with requests.get(URL, stream=True) as csvfile:
-        for row in csvfile.iter_lines():
-            if count != 6:
-                count += 1
-            elif len(row.decode("latin1").split(";")) != 21:
-                continue
-            else:
-                registry.append(
-                    {
-                        "country_code": "AT",
-                        "primary": True,
-                        "bic": row.decode("latin1").split(";")[18].strip().upper(),
-                        "bank_code": row.decode("latin1").split(";")[2].strip(),
-                        "name": row.decode("latin1").split(";")[6].strip(),
-                        "short_name": row.decode("latin1").split(";")[6].strip(),
-                    }
-                )
-    return registry
+    return [
+        {
+            "country_code": "AT",
+            "primary": True,
+            "bic": row[18].strip().upper(),
+            "bank_code": row[2].strip(),
+            "name": row[6].strip(),
+            "short_name": row[6].strip(),
+        }
+        for i, row in enumerate(csvfile)
+        if i >= 6 and len(row) == 21
+    ]
 
 
 if __name__ == "__main__":

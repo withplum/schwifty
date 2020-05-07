@@ -578,14 +578,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "EASYATW1XXX",
-    "bank_code": "14200",
-    "name": "easybank AG",
-    "short_name": "easybank AG"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "OBKLAT2LXXX",
     "bank_code": "15150",
     "name": "Oberbank AG",
@@ -6802,10 +6794,26 @@
   {
     "country_code": "AT",
     "primary": true,
+    "bic": "EASYATW1XXX",
+    "bank_code": "14200",
+    "name": "BAWAG P.S.K. Bank f\u00fcr Arbeit und Wirtschaft und \u00d6sterreichische Postsparkasse Aktiengesellschaft",
+    "short_name": "BAWAG P.S.K. Bank f\u00fcr Arbeit und Wirtschaft und \u00d6sterreichische Postsparkasse Aktiengesellschaft"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
     "bic": "RZOOAT2L111",
     "bank_code": "34475",
     "name": "Raiffeisenbank Region Gallneukirchen eGen",
     "short_name": "Raiffeisenbank Region Gallneukirchen eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLNWATWWZDF",
+    "bank_code": "32227",
+    "name": "Raiffeisenbank Weinviertel Nordost eGen",
+    "short_name": "Raiffeisenbank Weinviertel Nordost eGen"
   },
   {
     "country_code": "AT",
@@ -6862,6 +6870,14 @@
     "bank_code": "35054",
     "name": "Raiffeisenbank Salzburg Liefering-Maxglan-Siezenheim eGen",
     "short_name": "Raiffeisenbank Salzburg Liefering-Maxglan-Siezenheim eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "BAWAATWWXXX",
+    "bank_code": "14210",
+    "name": "BAWAG P.S.K. Bank f\u00fcr Arbeit und Wirtschaft und \u00d6sterreichische Postsparkasse Aktiengesellschaft",
+    "short_name": "BAWAG P.S.K. Bank f\u00fcr Arbeit und Wirtschaft und \u00d6sterreichische Postsparkasse Aktiengesellschaft"
   },
   {
     "country_code": "AT",
@@ -6962,14 +6978,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "EASYATW1XXX",
-    "bank_code": "14210",
-    "name": "easybank AG",
-    "short_name": "easybank AG"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "SLHYAT2SXXX",
     "bank_code": "55500",
     "name": "SALZBURGER LANDES-HYPOTHEKENBANK AKTIENGESELLSCHAFT",
@@ -6978,7 +6986,15 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RZBAATWWXXX",
+    "bic": "RZOOAT2LXXX",
+    "bank_code": "34955",
+    "name": "Raiffeisenlandesbank Ober\u00f6sterreich Aktiengesellschaft",
+    "short_name": "Raiffeisenlandesbank Ober\u00f6sterreich Aktiengesellschaft"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZBAATWWREC",
     "bank_code": "31112",
     "name": "Raiffeisen Bank International AG",
     "short_name": "Raiffeisen Bank International AG"
