@@ -1,30 +1,26 @@
+import csv
 import json
+
 import requests
 
 URL = "https://www.cnb.cz/cs/platebni-styk/.galleries/ucty_kody_bank/download/kody_bank_CR.csv"
 
 
 def process():
-    registry = []
-    firstline = True
-
-    with requests.get(URL, stream=True) as csvfile:
-        for row in csvfile.iter_lines():
-            if firstline:
-                firstline = False
-            else:
-                bank_code, name, bic = row.decode("latin1").split(";")[0:3]
-                registry.append(
-                    {
-                        "country_code": "CZ",
-                        "primary": True,
-                        "bic": bic.upper(),
-                        "bank_code": bank_code,
-                        "name": name,
-                        "short_name": name,
-                    }
-                )
-        return registry
+    with requests.get(URL, stream=True) as fp:
+        csvfile = csv.reader([line.decode("latin1") for line in fp.iter_lines()], delimiter=";")
+    return [
+        {
+            "country_code": "CZ",
+            "primary": True,
+            "bic": row[2].strip().upper(),
+            "bank_code": row[0].strip(),
+            "name": row[1].strip(),
+            "short_name": row[1].strip(),
+        }
+        for i, row in enumerate(csvfile)
+        if i >= 1
+    ]
 
 
 if __name__ == "__main__":

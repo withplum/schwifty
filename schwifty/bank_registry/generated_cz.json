@@ -498,14 +498,6 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "BPORCZ22",
-    "bank_code": "8282",
-    "name": "Beekash Payment Solutions, s.r.o.",
-    "short_name": "Beekash Payment Solutions, s.r.o."
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
     "bic": "QPSRCZPP",
     "bank_code": "8283",
     "name": "Qpay s.r.o.",
