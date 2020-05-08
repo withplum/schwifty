@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 import json
-import xlrd
+
 import requests
+import xlrd
 
 URL = (
     "https://www.finanssiala.fi/maksujenvalitys/dokumentit/"
@@ -10,25 +11,21 @@ URL = (
 
 
 def process():
-    registry = []
-
     book = xlrd.open_workbook(file_contents=requests.get(URL).content)
     sheet = book.sheet_by_index(0)
 
-    for row in list(sheet.get_rows())[2:]:
-        bank_code, bic, name = row
-        if bank_code.value != "":
-            registry.append(
-                {
-                    "country_code": "FI",
-                    "primary": True,
-                    "bic": bic.value.upper(),
-                    "bank_code": bank_code.value,
-                    "name": name.value,
-                    "short_name": name.value,
-                }
-            )
-    return registry
+    return [
+        {
+            "country_code": "FI",
+            "primary": True,
+            "bic": bic.value.upper(),
+            "bank_code": bank_code.value,
+            "name": name.value,
+            "short_name": name.value,
+        }
+        for bank_code, bic, name in list(sheet.get_rows())[2:]
+        if bank_code.value != ""
+    ]
 
 
 if __name__ == "__main__":
