@@ -1,4 +1,5 @@
 import pytest
+from pycountry import countries
 
 from schwifty import BIC
 
@@ -39,10 +40,13 @@ def test_bic_properties():
         "GLS Bank in Bochum (GAA)",
         "GLS Gemeinschaftsbk Bochum",
     ]
+    assert bic.country == countries.get(alpha_2="DE")
     with pytest.warns(DeprecationWarning):
         assert bic.bank_name == "GLS Gemeinschaftsbank"
     with pytest.warns(DeprecationWarning):
         assert bic.bank_short_name == "GLS Bank in Bochum (GAA)"
+    with pytest.warns(DeprecationWarning):
+        assert bic.country_bank_code == "43060967"
     assert bic.exists
     assert bic.type == "passive"
 

@@ -1,11 +1,12 @@
-from functools import partial
 import re
 import warnings
+from functools import partial
 
 import iso3166
+from pycountry import countries
 
-from schwifty.common import Base
 from schwifty import registry
+from schwifty.common import Base
 
 
 _bic_re = re.compile(r"[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?")
@@ -214,6 +215,11 @@ class BIC(Base):
             return "reverse billing"
         else:
             return "default"
+
+    @property
+    def country(self):
+        """Country: The country this BIC is registered in."""
+        return countries.get(alpha_2=self.country_code)
 
     bank_code = property(
         partial(Base._get_component, start=0, end=4), doc="str: The bank-code part of the BIC."

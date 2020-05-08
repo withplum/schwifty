@@ -1,6 +1,8 @@
 import pytest
+from pycountry import countries
 
 from schwifty import IBAN
+
 
 valid = [
     "AL47 2121 1009 0000 0002 3569 8741",  # Albania
@@ -123,6 +125,7 @@ def test_iban_properties():
     assert iban.bic == "GENODEM1GLS"
     assert iban.formatted == "DE42 4306 0967 7000 5341 00"
     assert iban.length == 22
+    assert iban.country == countries.get(alpha_2="DE")
 
 
 @pytest.mark.parametrize(

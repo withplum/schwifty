@@ -1,2 +1,2 @@
 iso3166>=0.7
-setuptools
+pycountry

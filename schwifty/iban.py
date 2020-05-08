@@ -1,12 +1,14 @@
 # encoding: utf-8
-
 import re
 import string
 from functools import partial
 
+from pycountry import countries
+
 from schwifty import registry
 from schwifty.bic import BIC
 from schwifty.common import Base
+
 
 _spec_to_re = {"n": r"\d", "a": r"[A-Z]", "c": r"[A-Za-z0-9]", "e": r" "}
 
@@ -206,6 +208,11 @@ class IBAN(Base):
     def bic(self):
         """BIC: The BIC associated to the IBAN´s bank-code."""
         return BIC.from_bank_code(self.country_code, self.bank_code)
+
+    @property
+    def country(self):
+        """Country: The country this IBAN is registered in."""
+        return countries.get(alpha_2=self.country_code)
 
     def _get_code(self, code_type):
         start, end = self.spec["positions"][code_type]
