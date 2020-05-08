@@ -3,6 +3,7 @@ import json
 
 import requests
 
+
 URL = "https://www.cnb.cz/cs/platebni-styk/.galleries/ucty_kody_bank/download/kody_bank_CR.csv"
 
 

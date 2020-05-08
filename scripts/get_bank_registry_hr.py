@@ -4,6 +4,7 @@ import json
 import requests
 import xlrd
 
+
 URL = "https://www.hnb.hr/documents/20182/121798/tf-pp-ds-vbb-xlsx-e-vbb.xlsx/"
 
 

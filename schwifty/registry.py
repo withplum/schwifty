@@ -1,6 +1,7 @@
-from collections import defaultdict
 import json
 import os.path
+from collections import defaultdict
+
 from pkg_resources import resource_filename
 from pkg_resources import resource_listdir
 
@@ -53,7 +54,7 @@ def build_index(base_name, index_name, key, accumulate=False, **predicate):
                 continue
             data[make_key(entry)].append(entry)
     else:
-        data = dict((make_key(entry), entry) for entry in base if match(entry))
+        data = {make_key(entry): entry for entry in base if match(entry)}
     save(index_name, data)
 
 

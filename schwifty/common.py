@@ -1,5 +1,5 @@
-from functools import total_ordering
 import re
+from functools import total_ordering
 
 
 _clean_regex = re.compile(r"\s+")

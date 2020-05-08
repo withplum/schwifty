@@ -2,6 +2,7 @@ import json
 
 import requests
 
+
 URL = "https://ewib.nbp.pl/plewibnra?dokNazwa=plewibnra.txt"
 
 

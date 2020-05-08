@@ -4,6 +4,7 @@ import json
 import requests
 import xlrd
 
+
 URL = "https://www.bank.lv/images/stories/pielikumi/makssist/bic_saraksts_22.01.2020_eng.xls"
 
 

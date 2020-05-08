@@ -4,6 +4,7 @@ import json
 import requests
 import xlrd
 
+
 URL = "https://www.nbb.be/doc/be/be/protocol/r_fulllist_of_codes_current.xlsx"
 
 

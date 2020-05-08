@@ -2,8 +2,8 @@
 import json
 import re
 
-from bs4 import BeautifulSoup
 import requests
+from bs4 import BeautifulSoup
 
 
 COUNTRY_CODE_PATTERN = r"[A-Z]{2}"
