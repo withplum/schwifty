@@ -3427,6 +3427,14 @@
     "country_code": "SI",
     "primary": true,
     "bic": "LJBASI2XXXX",
+    "bank_code": "02849",
+    "name": "NLB D.D.",
+    "short_name": "NLB D.D."
+  },
+  {
+    "country_code": "SI",
+    "primary": true,
+    "bic": "LJBASI2XXXX",
     "bank_code": "02854",
     "name": "NLB D.D.",
     "short_name": "NLB D.D."
@@ -4236,8 +4244,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03100",
-    "name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA CENTER ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA CENTER "
+    "name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA CENTER",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA CENTER"
   },
   {
     "country_code": "SI",
@@ -4276,16 +4284,16 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03106",
-    "name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA \u008aI\u008aKA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA \u008aI\u008aKA "
+    "name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA \u008aI\u008aKA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA \u008aI\u008aKA"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03107",
-    "name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA \u00c8RNU\u00c8E ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA \u00c8RNU\u00c8E "
+    "name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA \u00c8RNU\u00c8E",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA \u00c8RNU\u00c8E"
   },
   {
     "country_code": "SI",
@@ -4340,8 +4348,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03114",
-    "name": "SKB BANKA D.D. POSLOVALNICA RIBNICA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA RIBNICA "
+    "name": "SKB BANKA D.D. POSLOVALNICA RIBNICA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA RIBNICA"
   },
   {
     "country_code": "SI",
@@ -4356,16 +4364,16 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03116",
-    "name": "SKB BANKA D.D. POSLOVALNICA \u008eALEC ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA \u008eALEC "
+    "name": "SKB BANKA D.D. POSLOVALNICA \u008eALEC",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA \u008eALEC"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03117",
-    "name": "SKB BANKA D.D. POSLOVALNICA MOZIRJE ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA MOZIRJE "
+    "name": "SKB BANKA D.D. POSLOVALNICA MOZIRJE",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA MOZIRJE"
   },
   {
     "country_code": "SI",
@@ -4388,16 +4396,16 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03120",
-    "name": "SKB BANKA D.D. POSLOVALNICA MARIBOR I ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA MARIBOR I "
+    "name": "SKB BANKA D.D. POSLOVALNICA MARIBOR I",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA MARIBOR I"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03121",
-    "name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II "
+    "name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II"
   },
   {
     "country_code": "SI",
@@ -4412,24 +4420,24 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03123",
-    "name": "SKB BANKA D.D. POSLOVALNICA ORMO\u008e ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA ORMO\u008e "
+    "name": "SKB BANKA D.D. POSLOVALNICA ORMO\u008e",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA ORMO\u008e"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03124",
-    "name": "SKB BANKA D.D. POSLOVALNICA MURSKA SOBOTA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA MURSKA SOBOTA "
+    "name": "SKB BANKA D.D. POSLOVALNICA MURSKA SOBOTA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA MURSKA SOBOTA"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03125",
-    "name": "SKB BANKA D.D. POSLOVALNICA MURSKA SOBOTA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA MURSKA SOBOTA "
+    "name": "SKB BANKA D.D. POSLOVALNICA MURSKA SOBOTA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA MURSKA SOBOTA"
   },
   {
     "country_code": "SI",
@@ -4444,8 +4452,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03127",
-    "name": "SKB BANKA D.D. POSLOVALNICA RADOVLJICA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA RADOVLJICA "
+    "name": "SKB BANKA D.D. POSLOVALNICA RADOVLJICA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA RADOVLJICA"
   },
   {
     "country_code": "SI",
@@ -4460,8 +4468,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03130",
-    "name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA "
+    "name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA"
   },
   {
     "country_code": "SI",
@@ -4476,16 +4484,16 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03132",
-    "name": "SKB BANKA D.D. POSLOVALNICA MARIBOR TABOR ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA MARIBOR TABOR "
+    "name": "SKB BANKA D.D. POSLOVALNICA MARIBOR TABOR",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA MARIBOR TABOR"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03133",
-    "name": "SKB BANKA D.D. POSLOVALNICA POSTOJNA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA POSTOJNA "
+    "name": "SKB BANKA D.D. POSLOVALNICA POSTOJNA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA POSTOJNA"
   },
   {
     "country_code": "SI",
@@ -4540,8 +4548,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03150",
-    "name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO "
+    "name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO"
   },
   {
     "country_code": "SI",
@@ -4556,8 +4564,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03152",
-    "name": "SKB BANKA D.D. POSLOVALNICA METLIKA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA METLIKA "
+    "name": "SKB BANKA D.D. POSLOVALNICA METLIKA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA METLIKA"
   },
   {
     "country_code": "SI",
@@ -4588,8 +4596,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03156",
-    "name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO II ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO II "
+    "name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO II",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO II"
   },
   {
     "country_code": "SI",
@@ -4604,8 +4612,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03158",
-    "name": "SKB BANKA D.D. POSLOVALNICA SEVNICA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA SEVNICA "
+    "name": "SKB BANKA D.D. POSLOVALNICA SEVNICA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA SEVNICA"
   },
   {
     "country_code": "SI",
@@ -4636,8 +4644,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03163",
-    "name": "SKB BANKA D.D. POSLOVALNICA ROGA\u008aKA SLATINA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA ROGA\u008aKA SLATINA "
+    "name": "SKB BANKA D.D. POSLOVALNICA ROGA\u008aKA SLATINA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA ROGA\u008aKA SLATINA"
   },
   {
     "country_code": "SI",
@@ -4708,16 +4716,16 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03179",
-    "name": "SKB BANKA D.D. POSLOVALNICA SE\u008eANA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA SE\u008eANA "
+    "name": "SKB BANKA D.D. POSLOVALNICA SE\u008eANA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA SE\u008eANA"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03180",
-    "name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA "
+    "name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA"
   },
   {
     "country_code": "SI",
@@ -4732,16 +4740,16 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03182",
-    "name": "SKB BANKA D.D. POSLOVALNICA PTUJ ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA PTUJ "
+    "name": "SKB BANKA D.D. POSLOVALNICA PTUJ",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA PTUJ"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03185",
-    "name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA "
+    "name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVA GORICA"
   },
   {
     "country_code": "SI",
@@ -4756,32 +4764,32 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03188",
-    "name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II "
+    "name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03189",
-    "name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II ",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II "
+    "name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA MARIBOR II"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03215",
-    "name": "SKB BANKA D.D. POSLOVANJE S PODJETJI ",
-    "short_name": "SKB BANKA D.D. POSLOVANJE S PODJETJI "
+    "name": "SKB BANKA D.D. POSLOVANJE S PODJETJI",
+    "short_name": "SKB BANKA D.D. POSLOVANJE S PODJETJI"
   },
   {
     "country_code": "SI",
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03500",
-    "name": "SKB BANKA D.D. POSLOVANJE S PODJETJI ",
-    "short_name": "SKB BANKA D.D. POSLOVANJE S PODJETJI "
+    "name": "SKB BANKA D.D. POSLOVANJE S PODJETJI",
+    "short_name": "SKB BANKA D.D. POSLOVANJE S PODJETJI"
   },
   {
     "country_code": "SI",
