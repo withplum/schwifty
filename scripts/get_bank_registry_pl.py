@@ -1,4 +1,5 @@
 import json
+
 import requests
 
 URL = "https://ewib.nbp.pl/plewibnra?dokNazwa=plewibnra.txt"
@@ -6,22 +7,21 @@ URL = "https://ewib.nbp.pl/plewibnra?dokNazwa=plewibnra.txt"
 
 def process():
     registry = []
-
-    with requests.get(URL, stream=True) as txtfile:
-        for row in txtfile.iter_lines():
-            if len(row.decode("latin1").split("\t")) != 33:
+    with requests.get(URL, stream=True) as fp:
+        for row in fp.iter_lines():
+            cells = [cell.strip() for cell in row.decode("latin1").split("\t")]
+            if len(cells) != 32:
                 continue
-            else:
-                registry.append(
-                    {
-                        "country_code": "PL",
-                        "primary": True,
-                        "bic": row.decode("latin1").split("\t")[19].strip().upper(),
-                        "bank_code": row.decode("latin1").split("\t")[4].strip(),
-                        "name": row.decode("latin1").split("\t")[1].strip(),
-                        "short_name": row.decode("latin1").split("\t")[1].strip(),
-                    }
-                )
+            registry.append(
+                {
+                    "country_code": "PL",
+                    "primary": True,
+                    "bic": cells[19].upper(),
+                    "bank_code": cells[4],
+                    "name": cells[1],
+                    "short_name": cells[1],
+                }
+            )
     return registry
 
 

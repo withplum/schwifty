@@ -12322,6 +12322,14 @@
   {
     "country_code": "PL",
     "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "86530004",
+    "name": "SGB-Bank Sp\u00a2\u0088ka Akcyjna",
+    "short_name": "SGB-Bank Sp\u00a2\u0088ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
     "bic": "IVSEPLPPXXX",
     "bank_code": "16800007",
     "name": "PLUS BANK Sp\u00a2\u0088ka Akcyjna",
@@ -14138,14 +14146,6 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "FBPLPLPWXXX",
-    "bank_code": "21400007",
-    "name": "FCA-Group Bank Polska Sp\u00a2\u0088ka Akcyjna",
-    "short_name": "FCA-Group Bank Polska Sp\u00a2\u0088ka Akcyjna"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
     "bic": "RHBHPLPWXXX",
     "bank_code": "21500000",
     "name": "mBank Hipoteczny Sp\u00a2\u0088ka Akcyjna",
@@ -15414,6 +15414,14 @@
     "bank_code": "28500007",
     "name": "Banca Farmafactoring S.p.A. Sp\u00a2\u0088ka Akcyjna Oddzia\u0088 w Polsce",
     "short_name": "Banca Farmafactoring S.p.A. Sp\u00a2\u0088ka Akcyjna Oddzia\u0088 w Polsce"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "FBPLPLPWXXX",
+    "bank_code": "21400007",
+    "name": "FCA Bank S.p.A. Sp\u00a2\u0088ka Akcyjna Oddzia\u0088 w Polsce",
+    "short_name": "FCA Bank S.p.A. Sp\u00a2\u0088ka Akcyjna Oddzia\u0088 w Polsce"
   },
   {
     "country_code": "PL",
@@ -19338,14 +19346,6 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBWCPLPP",
-    "bank_code": "86530004",
-    "name": "Bank Sp\u00a2\u0088dzielczy w Przemkowie",
-    "short_name": "Bank Sp\u00a2\u0088dzielczy w Przemkowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86580009",
     "name": "Powiatowy Bank Sp\u00a2\u0088dzielczy w Z\u0088otoryi",
@@ -19740,40 +19740,40 @@
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "87360006",
-    "name": "Bank Sp\u00a2\u0088dzielczy w Ko\u00e4skowoli",
-    "short_name": "Bank Sp\u00a2\u0088dzielczy w Ko\u00e4skowoli"
+    "name": "Lubelski Bank Sp\u00a2\u0088dzielczy",
+    "short_name": "Lubelski Bank Sp\u00a2\u0088dzielczy"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "",
     "bank_code": "87361016",
-    "name": "Bank Sp\u00a2\u0088dzielczy w Ko\u00e4skowoli",
-    "short_name": "Bank Sp\u00a2\u0088dzielczy w Ko\u00e4skowoli"
+    "name": "Lubelski Bank Sp\u00a2\u0088dzielczy",
+    "short_name": "Lubelski Bank Sp\u00a2\u0088dzielczy"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "",
     "bank_code": "87361029",
-    "name": "Bank Sp\u00a2\u0088dzielczy w Ko\u00e4skowoli",
-    "short_name": "Bank Sp\u00a2\u0088dzielczy w Ko\u00e4skowoli"
+    "name": "Lubelski Bank Sp\u00a2\u0088dzielczy",
+    "short_name": "Lubelski Bank Sp\u00a2\u0088dzielczy"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "",
     "bank_code": "87361032",
-    "name": "Bank Sp\u00a2\u0088dzielczy w Ko\u00e4skowoli",
-    "short_name": "Bank Sp\u00a2\u0088dzielczy w Ko\u00e4skowoli"
+    "name": "Lubelski Bank Sp\u00a2\u0088dzielczy",
+    "short_name": "Lubelski Bank Sp\u00a2\u0088dzielczy"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "87410004",
-    "name": "Bank Sp\u00a2\u0088dzielczy w Ko\u00e4skowoli",
-    "short_name": "Bank Sp\u00a2\u0088dzielczy w Ko\u00e4skowoli"
+    "name": "Lubelski Bank Sp\u00a2\u0088dzielczy",
+    "short_name": "Lubelski Bank Sp\u00a2\u0088dzielczy"
   },
   {
     "country_code": "PL",
