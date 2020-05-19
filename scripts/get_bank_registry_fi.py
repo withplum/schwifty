@@ -19,7 +19,7 @@ def process():
         {
             "country_code": "FI",
             "primary": True,
-            "bic": bic.value.upper(),
+            "bic": bic.value.upper().strip(),
             "bank_code": bank_code.value,
             "name": name.value,
             "short_name": name.value,
