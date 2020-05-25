@@ -18,7 +18,7 @@ Schwifty is a Python library for working with BICs and IBANs. It allows you to
 
 * validate check-digits and the country specific format of IBANs
 * validate format and country codes from BICs
-* generate BICs from bank-codes (works for Germany for now)
+* generate BICs from bank-codes
 * generate IBANs from country-code, bank-code and account-number.
 * access all relevant components as attributes
 
