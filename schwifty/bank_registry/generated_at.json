@@ -2772,8 +2772,8 @@
     "primary": true,
     "bic": "BKCHATWWXXX",
     "bank_code": "19540",
-    "name": "Bank of China (Hungary) Close Ltd. Vienna Branch",
-    "short_name": "Bank of China (Hungary) Close Ltd. Vienna Branch"
+    "name": "Bank of China (Central and Eastern Europe) Limited Vienna Branch",
+    "short_name": "Bank of China (Central and Eastern Europe) Limited Vienna Branch"
   },
   {
     "country_code": "AT",
@@ -2838,14 +2838,6 @@
     "bank_code": "37423",
     "name": "Raiffeisenbank Mittelbregenzerwald eGen",
     "short_name": "Raiffeisenbank Mittelbregenzerwald eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "KRECAT2GXXX",
-    "bank_code": "19520",
-    "name": "Bankhaus Krentschker & Co. Aktiengesellschaft",
-    "short_name": "Bankhaus Krentschker & Co. Aktiengesellschaft"
   },
   {
     "country_code": "AT",
@@ -6722,6 +6714,14 @@
   {
     "country_code": "AT",
     "primary": true,
+    "bic": "STSPAT2GXXX",
+    "bank_code": "19520",
+    "name": "Steierm\u00e4rkische Bank und Sparkassen Aktiengesellschaft",
+    "short_name": "Steierm\u00e4rkische Bank und Sparkassen Aktiengesellschaft"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
     "bic": "RVSAAT2S015",
     "bank_code": "35023",
     "name": "Raiffeisenbank Flachgau Mitte eGen",
@@ -6990,6 +6990,14 @@
     "bank_code": "34955",
     "name": "Raiffeisenlandesbank Ober\u00f6sterreich Aktiengesellschaft",
     "short_name": "Raiffeisenlandesbank Ober\u00f6sterreich Aktiengesellschaft"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZBAATWWVAM",
+    "bank_code": "31111",
+    "name": "Raiffeisen Bank International AG",
+    "short_name": "Raiffeisen Bank International AG"
   },
   {
     "country_code": "AT",
