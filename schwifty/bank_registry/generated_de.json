@@ -16,6 +16,14 @@
     "country_code": "DE"
   },
   {
+    "bank_code": "10010123",
+    "name": "OLINDA Zweigniederlassung Deutschland",
+    "short_name": "Olinda, Berlin",
+    "bic": "QNTODEB2XXX",
+    "primary": true,
+    "country_code": "DE"
+  },
+  {
     "bank_code": "10010424",
     "name": "Aareal Bank",
     "short_name": "Aareal Bank",
@@ -3833,8 +3841,8 @@
   },
   {
     "bank_code": "20220800",
-    "name": "SAXO PAYMENTS",
-    "short_name": "SAXOPAYMENTS",
+    "name": "Banking Circle - German Branch",
+    "short_name": "Banking Circle Germany",
     "bic": "SXPYDEHHXXX",
     "primary": true,
     "country_code": "DE"
@@ -5057,8 +5065,8 @@
   },
   {
     "bank_code": "21690020",
-    "name": "Schleswiger Volksbank, Volksbank Raiffeisenbank -alt-",
-    "short_name": "Schleswiger Volksbank -alt-",
+    "name": "VR Bank Schleswig-Mittelholstein",
+    "short_name": "VR Bank SL MH",
     "bic": "GENODEF1SLW",
     "primary": true,
     "country_code": "DE"
@@ -5776,14 +5784,6 @@
     "country_code": "DE"
   },
   {
-    "bank_code": "25069370",
-    "name": "Volksbank Vechelde-Wendeburg -alt-",
-    "short_name": "VB Vechelde-Wendeburg -alt-",
-    "bic": "GENODEF1WBU",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
     "bank_code": "25069503",
     "name": "Volksbank Diepholz-Barnstorf -alt-",
     "short_name": "VB Diepholz-Barnstorf -alt-",
@@ -6265,8 +6265,8 @@
   },
   {
     "bank_code": "25662540",
-    "name": "Volksbank",
-    "short_name": "Volksbank Steyerberg",
+    "name": "Volksbank -alt-",
+    "short_name": "Volksbank Steyerberg -alt-",
     "bic": "GENODEF1STY",
     "primary": true,
     "country_code": "DE"
@@ -6321,8 +6321,8 @@
   },
   {
     "bank_code": "25750001",
-    "name": "Sparkasse Celle",
-    "short_name": "Sparkasse Celle",
+    "name": "Sparkasse Celle -alt-",
+    "short_name": "Sparkasse Celle -alt-",
     "bic": "NOLADE21CEL",
     "primary": true,
     "country_code": "DE"
@@ -6545,8 +6545,8 @@
   },
   {
     "bank_code": "25991528",
-    "name": "Volksbank Hildesheimer B\u00f6rde",
-    "short_name": "VB Hildesheimer B\u00f6rde",
+    "name": "Volksbank Hildesheimer B\u00f6rde -alt-",
+    "short_name": "VB Hildesheimer B\u00f6rde -alt-",
     "bic": "GENODEF1SLD",
     "primary": true,
     "country_code": "DE"
@@ -7656,14 +7656,6 @@
     "country_code": "DE"
   },
   {
-    "bank_code": "27190082",
-    "name": "Volksbank Helmstedt -alt-",
-    "short_name": "Volksbank Helmstedt -alt-",
-    "bic": "GENODEF1HMS",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
     "bank_code": "27240004",
     "name": "Commerzbank",
     "short_name": "Commerzbank Holzminden",
@@ -7866,7 +7858,7 @@
   {
     "bank_code": "28061501",
     "name": "VR-Bank in S\u00fcdoldenburg",
-    "short_name": "VR-Bank S\u00fcdoldenburg Garrel",
+    "short_name": "VR-Bank S\u00fcdoldenburg",
     "bic": "GENODEF1CLP",
     "primary": true,
     "country_code": "DE"
@@ -11577,8 +11569,8 @@
   },
   {
     "bank_code": "37060993",
-    "name": "PSD Bank K\u00f6ln",
-    "short_name": "PSD Bank K\u00f6ln",
+    "name": "PSD Bank West",
+    "short_name": "PSD Bank West",
     "bic": "GENODEF1P13",
     "primary": true,
     "country_code": "DE"
@@ -13225,8 +13217,8 @@
   },
   {
     "bank_code": "40060560",
-    "name": "Sparda-Bank M\u00fcnster",
-    "short_name": "Sparda-Bank M\u00fcnster",
+    "name": "Sparda-Bank West",
+    "short_name": "Sparda-Bank West",
     "bic": "GENODEF1S08",
     "primary": true,
     "country_code": "DE"
@@ -15841,8 +15833,8 @@
   },
   {
     "bank_code": "46251590",
-    "name": "Sparkasse Finnentrop",
-    "short_name": "Spk Finnentrop",
+    "name": "Sparkasse Finnentrop -alt-",
+    "short_name": "Spk Finnentrop -alt-",
     "bic": "WELADED1FTR",
     "primary": true,
     "country_code": "DE"
@@ -15897,8 +15889,8 @@
   },
   {
     "bank_code": "46451012",
-    "name": "Sparkasse Meschede",
-    "short_name": "Sparkasse Meschede",
+    "name": "Sparkasse Mitten im Sauerland",
+    "short_name": "Spk Mitten im Sauerland",
     "bic": "WELADED1MES",
     "primary": true,
     "country_code": "DE"
@@ -16385,8 +16377,8 @@
   },
   {
     "bank_code": "47651225",
-    "name": "Stadtsparkasse Blomberg",
-    "short_name": "St Spk Blomberg",
+    "name": "Stadtsparkasse Blomberg -alt-",
+    "short_name": "St Spk Blomberg -alt-",
     "bic": "WELADED1BLO",
     "primary": true,
     "country_code": "DE"
@@ -17617,16 +17609,16 @@
   },
   {
     "bank_code": "50060412",
-    "name": "DZ BANK Gf vK",
-    "short_name": "DZ BANK Gf vK",
+    "name": "DZ BANK GF DZH",
+    "short_name": "DZ BANK GF DZH",
     "bic": "GENODEF1VK1",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50060413",
-    "name": "DZ BANK Gf VK 2",
-    "short_name": "DZ BANK Gf VK 2",
+    "name": "DZ BANK GF ODA",
+    "short_name": "DZ BANK GF ODA",
     "bic": "GENODEF1VK2",
     "primary": true,
     "country_code": "DE"
@@ -17649,80 +17641,80 @@
   },
   {
     "bank_code": "50060416",
-    "name": "DZ BANK Gf VK 6",
-    "short_name": "DZ BANK Gf VK 6",
+    "name": "DZ BANK GF TSG",
+    "short_name": "DZ BANK GF TSG",
     "bic": "GENODEF1VK6",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50060417",
-    "name": "DZ BANK Gf VK 7",
-    "short_name": "DZ BANK Gf VK 7",
+    "name": "DZ BANK GF BMT",
+    "short_name": "DZ BANK GF BMT",
     "bic": "GENODEF1VK7",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50060418",
-    "name": "DZ BANK Gf VK8",
-    "short_name": "DZ BANK Gf VK8",
+    "name": "DZ BANK GF BMT",
+    "short_name": "DZ BANK GF BMT",
     "bic": "GENODEF1VK8",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50060419",
-    "name": "DZ BANK Gf VK9",
-    "short_name": "DZ BANK Gf VK9",
+    "name": "DZ BANK GF VRF",
+    "short_name": "DZ BANK GF VRF",
     "bic": "GENODEF1VK9",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50060420",
-    "name": "DZ BANK Gf V20",
-    "short_name": "DZ BANK Gf V20",
+    "name": "DZ BANK GF BSH",
+    "short_name": "DZ BANK GF BSH",
     "bic": "GENODEF1V20",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50060421",
-    "name": "DZ BANK Gf V21",
-    "short_name": "DZ BANK Gf V21",
+    "name": "DZ BANK GF BSH",
+    "short_name": "DZ BANK GF BSH",
     "bic": "GENODEF1V21",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50060422",
-    "name": "DZ BANK Gf V22",
-    "short_name": "DZ BANK Gf V22",
+    "name": "DZ BANK GF GRX",
+    "short_name": "DZ BANK GF GRX",
     "bic": "GENODEF1V22",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50060423",
-    "name": "DZ BANK Gf V23",
-    "short_name": "DZ BANK Gf V23",
+    "name": "DZ BANK GF GRX",
+    "short_name": "DZ BANK GF GRX",
     "bic": "GENODEF1V23",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50060424",
-    "name": "DZ BANK Gf V24",
-    "short_name": "DZ BANK Gf V24",
+    "name": "DZ BANK GF DEV",
+    "short_name": "DZ BANK GF DEV",
     "bic": "GENODEF1V24",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50060425",
-    "name": "DZ BANK Gf V25",
-    "short_name": "DZ BANK Gf V25",
+    "name": "DZ BANK GF BSH",
+    "short_name": "DZ BANK GF BSH",
     "bic": "GENODEF1V25",
     "primary": true,
     "country_code": "DE"
@@ -18715,7 +18707,7 @@
     "bank_code": "50330201",
     "name": "Raisin Bank",
     "short_name": "Raisin Bank",
-    "bic": "MHBFDE21XXX",
+    "bic": "RAISDEFFXXX",
     "primary": true,
     "country_code": "DE"
   },
@@ -22800,14 +22792,6 @@
     "country_code": "DE"
   },
   {
-    "bank_code": "58561250",
-    "name": "Volksbank Hermeskeil -alt-",
-    "short_name": "Volksbank Hermeskeil -alt-",
-    "bic": "GENODED1HER",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
     "bank_code": "58561626",
     "name": "Volksbank Saarburg -alt-",
     "short_name": "Volksbank Saarburg -alt-",
@@ -24968,14 +24952,6 @@
     "country_code": "DE"
   },
   {
-    "bank_code": "60130100",
-    "name": "FFS Bank",
-    "short_name": "FFS Bank Stuttgart",
-    "bic": "GENODED1FFS",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
     "bank_code": "60133300",
     "name": "Santander Consumer Bank",
     "short_name": "Santander Bank Stuttgart",
@@ -25349,14 +25325,6 @@
     "short_name": "VR-Bank Neckar-Enz",
     "bic": "GENODES1GHB",
     "primary": false,
-    "country_code": "DE"
-  },
-  {
-    "bank_code": "60651070",
-    "name": "Kreissparkasse Calw -alt-",
-    "short_name": "Kreissparkasse Calw -alt-",
-    "bic": "PZHSDE66XXX",
-    "primary": true,
     "country_code": "DE"
   },
   {
@@ -30552,14 +30520,6 @@
     "country_code": "DE"
   },
   {
-    "bank_code": "70160300",
-    "name": "Raiffeisenbank M\u00fcnchen -alt-",
-    "short_name": "Raiffbk M\u00fcnchen -alt-",
-    "bic": "GENODEF1M02",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
     "bank_code": "70163370",
     "name": "Volksbank Raiffeisenbank F\u00fcrstenfeldbruck",
     "short_name": "VR-Bank F\u00fcrstenfeldbruck",
@@ -30788,14 +30748,6 @@
     "name": "Raiffeisenbank -alt-",
     "short_name": "Raiffbk -alt-",
     "bic": "GENODEF1NBK",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
-    "bank_code": "70169493",
-    "name": "Raiffeisenbank Oberschlei\u00dfheim -alt-",
-    "short_name": "Raiffbk Oberschlei\u00dfheim alt",
-    "bic": "GENODEF1OBS",
     "primary": true,
     "country_code": "DE"
   },
