@@ -6282,6 +6282,14 @@
   {
     "country_code": "PL",
     "primary": true,
+    "bic": "",
+    "bank_code": "11400039",
+    "name": "mBank Sp\u00a2\u0088ka Akcyjna",
+    "short_name": "mBank Sp\u00a2\u0088ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
     "bic": "BREXPLPWWA1",
     "bank_code": "11401010",
     "name": "mBank Sp\u00a2\u0088ka Akcyjna",
@@ -12138,6 +12146,14 @@
   {
     "country_code": "PL",
     "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "16100048",
+    "name": "SGB-Bank Sp\u00a2\u0088ka Akcyjna",
+    "short_name": "SGB-Bank Sp\u00a2\u0088ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
     "bic": "GBWCPLPPXXX",
     "bank_code": "16101016",
     "name": "SGB-Bank Sp\u00a2\u0088ka Akcyjna",
@@ -13124,6 +13140,22 @@
     "primary": true,
     "bic": "PPABPLPKXXX",
     "bank_code": "16000016",
+    "name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna",
+    "short_name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "PPABPLPKXXX",
+    "bank_code": "16000029",
+    "name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna",
+    "short_name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "PPABPLPKXXX",
+    "bank_code": "16000032",
     "name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna",
     "short_name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna"
   },
@@ -15403,6 +15435,14 @@
     "country_code": "PL",
     "primary": true,
     "bic": "",
+    "bank_code": "28100005",
+    "name": "Goldman Sachs Bank Europe SE Sp\u00a2\u0088ka Europejska Oddzia\u0088 w Polsce",
+    "short_name": "Goldman Sachs Bank Europe SE Sp\u00a2\u0088ka Europejska Oddzia\u0088 w Polsce"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
     "bank_code": "25700000",
     "name": "UBS Europe SE (Sp\u00a2\u0088ka Europejska) Oddzia\u0088 w Polsce",
     "short_name": "UBS Europe SE (Sp\u00a2\u0088ka Europejska) Oddzia\u0088 w Polsce"
@@ -15732,8 +15772,8 @@
     "primary": true,
     "bic": "SKOKPLPWXXX",
     "bank_code": "70520002",
-    "name": "Sp\u00a2\u0088dzielcza Kasa Oszcz\u00a9dno\u0098ciowo-Kredytowa Wis\u0088a",
-    "short_name": "Sp\u00a2\u0088dzielcza Kasa Oszcz\u00a9dno\u0098ciowo-Kredytowa Wis\u0088a"
+    "name": "Sp\u00a2\u0088dzielcza Kasa Oszcz\u00a9dno\u0098ciowo-Kredytowa \"Wis\u0088a\"",
+    "short_name": "Sp\u00a2\u0088dzielcza Kasa Oszcz\u00a9dno\u0098ciowo-Kredytowa \"Wis\u0088a\""
   },
   {
     "country_code": "PL",
@@ -15764,8 +15804,8 @@
     "primary": true,
     "bic": "SKOKPLPWXXX",
     "bank_code": "70790001",
-    "name": "Krakowska Sp\u00a2\u0088dzielcza Kasa Oszcz\u00a9dno\u0098ciowo-Kredytowa",
-    "short_name": "Krakowska Sp\u00a2\u0088dzielcza Kasa Oszcz\u00a9dno\u0098ciowo-Kredytowa"
+    "name": "Krakowska Sp\u00a2\u0088dzielcza Kasa Oszcz\u00a9dno\u0098ciowo-Kredytowa w Krakowie",
+    "short_name": "Krakowska Sp\u00a2\u0088dzielcza Kasa Oszcz\u00a9dno\u0098ciowo-Kredytowa w Krakowie"
   },
   {
     "country_code": "PL",
@@ -19988,8 +20028,8 @@
     "primary": true,
     "bic": "GBWCPLPPXXX",
     "bank_code": "87840003",
-    "name": "Bank Sp\u00a2\u0088dzielczy Rzemios\u0088a w \u009dodzi",
-    "short_name": "Bank Sp\u00a2\u0088dzielczy Rzemios\u0088a w \u009dodzi"
+    "name": "\u009d\u00a2dzki Bank Sp\u00a2\u0088dzielczy",
+    "short_name": "\u009d\u00a2dzki Bank Sp\u00a2\u0088dzielczy"
   },
   {
     "country_code": "PL",
@@ -20028,8 +20068,8 @@
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "87910009",
-    "name": "Tatrza\u00e4ski Bank Sp\u00a2\u0088dzielczy",
-    "short_name": "Tatrza\u00e4ski Bank Sp\u00a2\u0088dzielczy"
+    "name": "Bank Sp\u00a2\u0088dzielczy Ziem G\u00a2rskich KARPATIA",
+    "short_name": "Bank Sp\u00a2\u0088dzielczy Ziem G\u00a2rskich KARPATIA"
   },
   {
     "country_code": "PL",
