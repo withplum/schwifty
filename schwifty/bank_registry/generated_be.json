@@ -3690,7 +3690,7 @@
   {
     "country_code": "BE",
     "primary": true,
-    "bic": "SGPBBE99",
+    "bic": "ABNABE2AIPC",
     "bank_code": "513",
     "name": "ABN AMRO Bank N.V.",
     "short_name": "ABN AMRO Bank N.V."
@@ -4286,14 +4286,6 @@
     "bank_code": "638",
     "name": "BELFIUS BANK",
     "short_name": "BELFIUS BANK"
-  },
-  {
-    "country_code": "BE",
-    "primary": true,
-    "bic": "ABNABE2AMYO",
-    "bank_code": "639",
-    "name": "ABN AMRO Bank N.V.",
-    "short_name": "ABN AMRO Bank N.V."
   },
   {
     "country_code": "BE",
