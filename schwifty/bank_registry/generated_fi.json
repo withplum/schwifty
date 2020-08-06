@@ -4514,6 +4514,14 @@
   {
     "country_code": "FI",
     "primary": true,
+    "bic": "VPAYFIH2",
+    "bank_code": "798",
+    "name": "VIVA PAYMENT SERVICES S.A., FINNISH BRANCH",
+    "short_name": "VIVA PAYMENT SERVICES S.A., FINNISH BRANCH"
+  },
+  {
+    "country_code": "FI",
+    "primary": true,
     "bic": "HOLVFIHH",
     "bank_code": "799",
     "name": "HOLVI PAYMENT SERVICES LTD",
