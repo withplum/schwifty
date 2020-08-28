@@ -102,6 +102,9 @@ class IBAN(Base):
     Args:
         iban (str): The IBAN code.
         allow_invalid (bool): If set to `True` IBAN validation is skipped on instantiation.
+
+    Raises:
+        ValueError: If the given value is not a valid IBAN unless `allow_invalid` is set.
     """
 
     def __init__(self, iban, allow_invalid=False):
@@ -163,6 +166,17 @@ class IBAN(Base):
         return cls(iban)
 
     def validate(self):
+        """Validate the structural integrity of this IBAN.
+
+        This function will verify the country specific format as well as the Luhn checksum.
+
+        Note:
+            You have to use the `allow_invalid` paramter when constructing the :class:`IBAN`-object
+            to circumvent the implicit validation.
+
+        Raises:
+            ValueError: If this :class:`IBAN`-object is invalid.
+        """
         self._validate_characters()
         self._validate_length()
         self._validate_format()
@@ -190,6 +204,25 @@ class IBAN(Base):
             )
 
     @property
+    def is_valid(self):
+        """bool: Indicate if this is a valid IBAN.
+
+        Note:
+            You have to use the `allow_invalid` paramter when constructing the :class:`IBAN`-object
+            to circumvent the implicit validation.
+
+        Examples:
+            >>> IBAN('AB1234567890', allow_invalid=True).is_valid
+            False
+
+        .. versionadded:: 2020.08.1
+        """
+        try:
+            return self.validate()
+        except ValueError:
+            return False
+
+    @property
     def numeric(self):
         """int: A numeric represenation of the IBAN."""
         return numerify(self.bban + self.compact[:4])
@@ -206,8 +239,17 @@ class IBAN(Base):
 
     @property
     def bic(self):
-        """BIC: The BIC associated to the IBAN´s bank-code."""
-        return BIC.from_bank_code(self.country_code, self.bank_code)
+        """BIC or None: The BIC associated to the IBAN´s bank-code.
+
+        If the bank code is not available in Schwifty's registry ``None`` is returned.
+
+        .. versionchanged:: 2020.08.1
+            Returns ``None`` if no appropriate :class:`BIC` can be constructed.
+        """
+        try:
+            return BIC.from_bank_code(self.country_code, self.bank_code)
+        except ValueError:
+            pass
 
     @property
     def country(self):

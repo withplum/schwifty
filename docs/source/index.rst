@@ -24,7 +24,7 @@ Examples
 Basic usage
 ~~~~~~~~~~~
 
-Consider the following code example for :class:`IBAN`-objects:
+Consider the following code example for :class:`.IBAN`-objects:
 
 .. code-block:: python
 
@@ -45,7 +45,7 @@ Consider the following code example for :class:`IBAN`-objects:
   >>> iban.bic
   <BIC=COBADEFFXXX>
 
-or for working with :class:`BIC`-objects
+or for working with :class:`.BIC`-objects
 
 .. code-block:: python
 
@@ -69,7 +69,7 @@ or for working with :class:`BIC`-objects
 Validation
 ~~~~~~~~~~
 
-When it comes to validation the :class:`IBAN` and :class:`BIC` constructors
+When it comes to validation the :class:`.IBAN` and :class:`.BIC` constructors
 raise a ``ValueError`` whenever the provided code is incorrect for some
 reason:
 
@@ -95,13 +95,21 @@ reason:
   ...
   ValueError: Invalid structure PBN1DXFFXXXX
 
+If catching a ``ValueError`` would complicate your code flow you can also use the
+:attr:`.IBAN.is_valid` property. E.g.:
+
+.. code-block:: python
+
+  if IBAN(value, allow_invalid=True).is_valid:
+    # do something with value
+
 
 Generation
 ~~~~~~~~~~
 
-You can generate :class:`IBAN`-objects from country-code, bank-code and
+You can generate :class:`.IBAN`-objects from country-code, bank-code and
 account-number by using the
-:meth:`IBAN.generate()`-method. It will automatically calculate the correct checksum digits for you.
+:meth:`.IBAN.generate()`-method. It will automatically calculate the correct checksum digits for you.
 
 .. code-block:: python
 
@@ -110,7 +118,7 @@ account-number by using the
   >>> iban.checksum_digits
   '40'
 
-For german banks you can also generate :class:`BIC`-objects from local
+For german banks you can also generate :class:`.BIC`-objects from local
 bank-codes
 
 .. code-block:: python

@@ -184,3 +184,6 @@ html_sidebars = {
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = "Schwiftydoc"
+
+
+autodoc_member_order = "groupwise"

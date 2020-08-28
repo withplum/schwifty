@@ -36,6 +36,9 @@ class BIC(Base):
     Args:
         bic (str): The BIC number.
         allow_invalid (bool): If set to ``True`` validation is skipped on instantiation.
+
+    Raises:
+        ValueError: If the given value is not a valid BIC unless `allow_invalid` is set.
     """
 
     def __init__(self, bic, allow_invalid=False):
@@ -73,7 +76,21 @@ class BIC(Base):
             ValueError: If the given bank code wasn't found in the registry
 
         Note:
-            This currently only works for German bank-codes.
+            This currently only works for selected countries. Amongst them
+
+            * Austria
+            * Belgium
+            * Czech Republic
+            * Germany
+            * Great Britan
+            * Finland
+            * France
+            * Hungary
+            * Latvia
+            * Poland
+            * Slovenia
+            * Spain
+            * Switzerland
         """
         try:
             return cls(registry.get("bank_code")[(country_code, bank_code)]["bic"])
@@ -83,6 +100,18 @@ class BIC(Base):
             )
 
     def validate(self):
+        """Validate the structural integrity of this BIC.
+
+        This function will verify the correct length, structure and the existence of the country
+        code.
+
+        Note:
+            You have to use the `allow_invalid` paramter when constructing the :class:`BIC`-object
+            to circumvent the implicit validation.
+
+        Raises:
+            ValueError: If this :class:`IBAN`-object is invalid.
+        """
         self._validate_length()
         self._validate_structure()
         self._validate_country_code()
@@ -102,6 +131,25 @@ class BIC(Base):
             iso3166.countries_by_alpha2[country_code]
         except KeyError:
             raise ValueError("Invalid country code '{}'".format(country_code))
+
+    @property
+    def is_valid(self):
+        """bool: Indicate if this is a valid BIC.
+
+        Note:
+            You have to use the `allow_invalid` paramter when constructing the :class:`BIC`-object
+            to circumvent the implicit validation.
+
+        Examples:
+            >>> BIC('FOOBARBAZ', allow_invalid=True).is_valid
+            False
+
+        .. versionadded:: 2020.08.1
+        """
+        try:
+            return self.validate()
+        except ValueError:
+            return False
 
     @property
     def formatted(self):
