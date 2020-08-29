@@ -16,7 +16,7 @@ def process():
             "country_code": "HR",
             "primary": True,
             "bic": bic.value.upper().replace(" ", ""),
-            "bank_code": int(bank_code.value),
+            "bank_code": str(int(bank_code.value)),
             "name": name.value,
             "short_name": name.value,
         }
