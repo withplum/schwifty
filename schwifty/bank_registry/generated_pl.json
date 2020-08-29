@@ -12739,6 +12739,14 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
+    "bank_code": "19301363",
+    "name": "BANK POLSKIEJ SP\u00e0\u009dDZIELCZO\u0097CI SP\u00e0\u009dKA AKCYJNA",
+    "short_name": "BANK POLSKIEJ SP\u00e0\u009dDZIELCZO\u0097CI SP\u00e0\u009dKA AKCYJNA"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
     "bank_code": "19301376",
     "name": "BANK POLSKIEJ SP\u00e0\u009dDZIELCZO\u0097CI SP\u00e0\u009dKA AKCYJNA",
     "short_name": "BANK POLSKIEJ SP\u00e0\u009dDZIELCZO\u0097CI SP\u00e0\u009dKA AKCYJNA"
@@ -13194,6 +13202,14 @@
   {
     "country_code": "PL",
     "primary": true,
+    "bic": "",
+    "bank_code": "16001068",
+    "name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna",
+    "short_name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
     "bic": "PPABPLPKXXX",
     "bank_code": "16001071",
     "name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna",
@@ -13420,6 +13436,14 @@
     "primary": true,
     "bic": "PPABPLPKXXX",
     "bank_code": "16001361",
+    "name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna",
+    "short_name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "16001374",
     "name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna",
     "short_name": "BNP Paribas Bank Polska Sp\u00a2\u0088ka Akcyjna"
   },
