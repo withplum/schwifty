@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import json
 import re
+from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -13,8 +14,8 @@ URL = "https://www.swift.com/standards/data-standards/iban"
 
 def get_raw():
     soup = BeautifulSoup(requests.get(URL).content, "html.parser")
-    link = soup.find("a", attrs={"data-title": "IBAN Registry (TXT)"})
-    return requests.get(link["href"]).content.decode(encoding="latin1")
+    link = soup.find("a", attrs={"data-tracking-title": "IBAN Registry (TXT)"})
+    return requests.get(urljoin(URL, link["href"])).content.decode(encoding="latin1")
 
 
 def parse_int(raw):
