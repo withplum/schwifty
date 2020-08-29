@@ -167,3 +167,21 @@ def test_magic_methods():
     assert str(iban) == "DE42430609677000534100"
     assert hash(iban) == hash("DE42430609677000534100")
     assert repr(iban) == "<IBAN=DE42430609677000534100>"
+
+
+@pytest.mark.parametrize(
+    "iban,bic",
+    [
+        ("AT483200000012345864", "RLNWATWWXXX"),
+        ("BE71096123456769", "GKCCBEBB"),
+        ("CZ5508000000001234567899", "GIBACZPX"),
+        ("DE37206905000009027378", "GENODEF1S11"),
+        ("FI1410093000123458", "NDEAFIHH"),
+        ("HR1723600001101234565", "ZABAHR2X"),
+        ("LV97HABA0012345678910", "HABALV22XXX"),
+        ("PL50860000020000000000093122", "POLUPLPRXXX"),
+        ("SI56192001234567892", "SZKBSI2XXXX"),
+    ],
+)
+def test_bic_from_iban(iban, bic):
+    assert IBAN(iban).bic.compact == bic

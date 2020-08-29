@@ -247,7 +247,7 @@ class IBAN(Base):
             Returns ``None`` if no appropriate :class:`BIC` can be constructed.
         """
         try:
-            return BIC.from_bank_code(self.country_code, self.bank_code)
+            return BIC.from_bank_code(self.country_code, self.bank_code or self.branch_code)
         except ValueError:
             pass
 
