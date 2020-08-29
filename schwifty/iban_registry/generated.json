@@ -1680,8 +1680,8 @@
     }
   },
   "ST": {
-    "bban_spec": "4!n4!n11!n2!n",
-    "iban_spec": "ST2!n4!n4!n11!n2!n",
+    "bban_spec": "8!n11!n2!n",
+    "iban_spec": "ST2!n8!n11!n2!n",
     "bban_length": 21,
     "iban_length": 25,
     "positions": {
