@@ -6658,14 +6658,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "",
-    "bank_code": "19815",
-    "name": "Toyota Kreditbank GmbH Zweigniederlassung \u00d6sterreich",
-    "short_name": "Toyota Kreditbank GmbH Zweigniederlassung \u00d6sterreich"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RZSTAT2G499",
     "bank_code": "38292",
     "name": "Raiffeisenbank Wildon-Preding eGen",
