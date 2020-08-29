@@ -4362,6 +4362,14 @@
   {
     "country_code": "BE",
     "primary": true,
+    "bic": "BARCBEBB",
+    "bank_code": "653",
+    "name": "Barclays Bank Ireland Plc Brussels Branch",
+    "short_name": "Barclays Bank Ireland Plc Brussels Branch"
+  },
+  {
+    "country_code": "BE",
+    "primary": true,
     "bic": "GKCCBEBB",
     "bank_code": "657",
     "name": "BELFIUS BANK",
