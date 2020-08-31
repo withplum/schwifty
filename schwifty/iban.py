@@ -31,7 +31,7 @@ def code_length(spec, code_type):
     return end - start
 
 
-def _calc_it_checksum(bank_code, account_code):
+def _calc_it_checksum(bban):
     odds = [
         1,
         0,
@@ -64,7 +64,6 @@ def _calc_it_checksum(bank_code, account_code):
         26,
     ]
     sum_ = 0
-    bban = bank_code + account_code
     for i, char in enumerate(bban):
         if (i + 1) % 2 == 0:
             sum_ += _alphabet.index(char)
@@ -73,10 +72,11 @@ def _calc_it_checksum(bank_code, account_code):
     return _alphabet[sum_ % 26 + 10]
 
 
-def calc_bban_checksum(country_code, bank_code, account_code):
+def add_bban_checksum(country_code, bban):
     if country_code == "IT":
-        return _calc_it_checksum(bank_code, account_code)
-    return ""
+        checksum = _calc_it_checksum(bban[1:])
+        bban = checksum + bban[1:]
+    return bban
 
 
 class IBAN(Base):
@@ -119,7 +119,7 @@ class IBAN(Base):
         return "{:02d}".format(98 - (numerify(self.bban + self.country_code) * 100) % 97)
 
     @classmethod
-    def generate(cls, country_code, bank_code, account_code):
+    def generate(cls, country_code, bank_code, account_code, branch_code=""):
         """Generate an IBAN from it's components.
 
         If the bank-code and/or account-number have less digits than required by their
@@ -139,31 +139,42 @@ class IBAN(Base):
             country_code (str): The ISO 3166 alpha-2 country code.
             bank_code (str): The country specific bank-code.
             account_code (str): The customer specific account-code.
+
+        .. versionchanged:: 2020.08.3
+            Added the `branch_code` parameter to allow the branch code (or sort code) to be
+            specified independently.
         """
         spec = _get_iban_spec(country_code)
         bank_code_length = code_length(spec, "bank_code")
         branch_code_length = code_length(spec, "branch_code")
-        bank_and_branch_code_length = bank_code_length + branch_code_length
         account_code_length = code_length(spec, "account_code")
 
-        if len(bank_code) > bank_and_branch_code_length:
-            raise ValueError(
-                "Bank code exceeds maximum size {}".format(bank_and_branch_code_length)
-            )
+        if len(bank_code) == bank_code_length + branch_code_length:
+            bank_code, branch_code = bank_code[:bank_code_length], bank_code[bank_code_length:]
+
+        if len(bank_code) > bank_code_length:
+            raise ValueError("Bank code exceeds maximum size {}".format(bank_code_length))
+
+        if len(branch_code) > branch_code_length:
+            raise ValueError("Branch code exceeds maximum size {}".format(branch_code_length))
 
         if len(account_code) > account_code_length:
             raise ValueError("Account code exceeds maximum size {}".format(account_code_length))
 
-        bank_code = bank_code.rjust(bank_and_branch_code_length, "0")
-        account_code = account_code.rjust(account_code_length, "0")
-        iban = (
-            country_code
-            + "??"
-            + calc_bban_checksum(country_code, bank_code, account_code)
-            + bank_code
-            + account_code
-        )
-        return cls(iban)
+        bban = "0" * spec["bban_length"]
+        positions = spec["positions"]
+        components = {
+            "bank_code": bank_code,
+            "branch_code": branch_code,
+            "account_code": account_code,
+        }
+        for key, value in components.items():
+            end = positions[key][1]
+            start = end - len(value)
+            bban = bban[:start] + value + bban[end:]
+
+        bban = add_bban_checksum(country_code, bban)
+        return cls(country_code + "??" + bban)
 
     def validate(self):
         """Validate the structural integrity of this IBAN.

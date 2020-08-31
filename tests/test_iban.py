@@ -141,6 +141,10 @@ def test_iban_properties():
         (("IT", "0538742530", "000000802006"), "IT29P0538742530000000802006"),
         (("IT", "0306940101", "100100003599"), "IT94I0306940101100100003599"),
         (("IT", "0335901600", "100000131525"), "IT63M0335901600100000131525"),
+        (("IT", "03359", "100000131525", "01600"), "IT63M0335901600100000131525"),
+        (("GB", "NWBK", "31926819", "601613"), "GB29NWBK60161331926819"),
+        (("GB", "NWBK", "31926819"), "GB66NWBK00000031926819"),
+        (("GB", "NWBK601613", "31926819"), "GB29NWBK60161331926819"),
     ],
 )
 def test_generate_iban(components, compact):
@@ -149,12 +153,16 @@ def test_generate_iban(components, compact):
 
 
 @pytest.mark.parametrize(
-    "country_code,bank_code,account_code",
-    [("DE", "012345678", "7000123456"), ("DE", "51230800", "01234567891")],
+    "components",
+    [
+        ("DE", "012345678", "7000123456"),
+        ("DE", "51230800", "01234567891"),
+        ("GB", "NWBK", "31926819", "1234567"),
+    ],
 )
-def test_generate_iban_invalid(country_code, bank_code, account_code):
+def test_generate_iban_invalid(components):
     with pytest.raises(ValueError):
-        IBAN.generate(country_code, bank_code, account_code)
+        IBAN.generate(*components)
 
 
 def test_magic_methods():
@@ -185,3 +193,7 @@ def test_magic_methods():
 )
 def test_bic_from_iban(iban, bic):
     assert IBAN(iban).bic.compact == bic
+
+
+def test_unknown_bic_from_iban():
+    assert IBAN("SI72000001234567892").bic is None
