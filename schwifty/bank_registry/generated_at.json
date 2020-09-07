@@ -2178,14 +2178,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RZSTAT2G223",
-    "bank_code": "38223",
-    "name": "Raiffeisenbank Graz-Mariatrost eGen",
-    "short_name": "Raiffeisenbank Graz-Mariatrost eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RLBBAT2E106",
     "bank_code": "33106",
     "name": "Raiffeisenbank Weiden am See eGen",
@@ -2196,8 +2188,8 @@
     "primary": true,
     "bic": "RZSTAT2G377",
     "bank_code": "38377",
-    "name": "Raiffeisenbank Graz-Andritz eGen",
-    "short_name": "Raiffeisenbank Graz-Andritz eGen"
+    "name": "Raiffeisenbank Region Graz Nord eGen",
+    "short_name": "Raiffeisenbank Region Graz Nord eGen"
   },
   {
     "country_code": "AT",
@@ -6942,6 +6934,14 @@
     "bank_code": "35058",
     "name": "Raiffeisenbank Kuchl-St. Koloman eGen",
     "short_name": "Raiffeisenbank Kuchl-St. Koloman eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZSTAT2G377",
+    "bank_code": "38223",
+    "name": "Raiffeisenbank Region Graz Nord eGen",
+    "short_name": "Raiffeisenbank Region Graz Nord eGen"
   },
   {
     "country_code": "AT",
