@@ -68,5 +68,5 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: pip install tox
-      - name: Lint style
+      - name: Test
         run: tox -e py
