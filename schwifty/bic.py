@@ -82,11 +82,12 @@ class BIC(Base):
             * Belgium
             * Croatia
             * Czech Republic
-            * Germany
-            * Great Britan
             * Finland
             * France
+            * Germany
+            * Great Britan
             * Latvia
+            * Netherlands
             * Poland
             * Slovenia
             * Spain

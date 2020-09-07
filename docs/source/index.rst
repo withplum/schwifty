@@ -12,8 +12,9 @@ Schwifty lets you
 
 * validate check-digits and the country specific format of IBANs
 * validate format and country codes from BICs
-* generate BICs from bank-codes (works for Germany for now)
+* generate BICs from from country and bank-code
 * generate IBANs from country-code, bank-code and account-number.
+* get the BIC associated to an IBAN's bank-code
 * access all relevant components as attributes
 
 
