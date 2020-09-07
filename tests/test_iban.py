@@ -190,6 +190,7 @@ def test_magic_methods():
         ("LV97HABA0012345678910", "HABALV22XXX"),
         ("PL50860000020000000000093122", "POLUPLPRXXX"),
         ("SI56192001234567892", "SZKBSI2XXXX"),
+        ("NL02ABNA0123456789", "ABNANL2A"),
     ],
 )
 def test_bic_from_iban(iban, bic):
