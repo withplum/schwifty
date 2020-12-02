@@ -178,14 +178,6 @@
   {
     "country_code": "SK",
     "primary": true,
-    "bic": "MAISSA",
-    "bank_code": "8400",
-    "name": "COFIDIS SA, pobo\u010dka zahrani\u010dnej banky",
-    "short_name": "COFIDIS SA, pobo\u010dka zahrani\u010dnej banky"
-  },
-  {
-    "country_code": "SK",
-    "primary": true,
     "bic": "JTBPSKBA",
     "bank_code": "8320",
     "name": "J&T BANKA, a.s., pobo\u010dka zahrani\u010dnej banky",
@@ -274,22 +266,6 @@
   {
     "country_code": "SK",
     "primary": true,
-    "bic": "NFDS",
-    "bank_code": "9953",
-    "name": "Payment Institution NFD a.s.",
-    "short_name": "Payment Institution NFD a.s."
-  },
-  {
-    "country_code": "SK",
-    "primary": true,
-    "bic": "BNPASA",
-    "bank_code": "8440",
-    "name": "BNP PARIBAS PERSONAL FINANCE SA, pobo\u010dka zahrani\u010dnej banky",
-    "short_name": "BNP PARIBAS PERSONAL FINANCE SA, pobo\u010dka zahrani\u010dnej banky"
-  },
-  {
-    "country_code": "SK",
-    "primary": true,
     "bic": "JTBPCZPP",
     "bank_code": "5800",
     "name": "J+T BANKA, a.s.",
@@ -302,14 +278,6 @@
     "bank_code": "4000",
     "name": "Expobank CZ a.s.",
     "short_name": "Expobank CZ a.s."
-  },
-  {
-    "country_code": "SK",
-    "primary": true,
-    "bic": "BPKOSA",
-    "bank_code": "8450",
-    "name": "PKO BP S.A., pobo\u010dka zahrani\u010dnej banky",
-    "short_name": "PKO BP S.A., pobo\u010dka zahrani\u010dnej banky"
   },
   {
     "country_code": "SK",

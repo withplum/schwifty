@@ -3,6 +3,8 @@ import json
 
 import requests
 
+from schwifty import BIC
+
 
 URL = "https://www.nbs.sk/_img/Documents/_PlatobneSystemy/EUROSIPS/Directory_IC_DPS_SR.csv"
 
@@ -10,18 +12,22 @@ URL = "https://www.nbs.sk/_img/Documents/_PlatobneSystemy/EUROSIPS/Directory_IC_
 def process():
     with requests.get(URL, stream=True) as fp:
         csvfile = csv.reader([line.decode("cp1250") for line in fp.iter_lines()], delimiter=";")
-    return [
-        {
-            "country_code": "SK",
-            "primary": True,
-            "bic": row[2].strip().upper(),
-            "bank_code": row[0].strip().zfill(4),
-            "name": row[1].strip(),
-            "short_name": row[1].strip(),
-        }
-        for i, row in enumerate(csvfile)
-        if i >= 1
-    ]
+    registry = []
+    for row in csvfile:
+        bic = row[2].strip().upper()
+        if bic and not BIC(bic, allow_invalid=True).is_valid:
+            continue
+        registry.append(
+            {
+                "country_code": "SK",
+                "primary": True,
+                "bic": bic,
+                "bank_code": row[0].strip().zfill(4),
+                "name": row[1].strip(),
+                "short_name": row[1].strip(),
+            }
+        )
+    return registry
 
 
 if __name__ == "__main__":
