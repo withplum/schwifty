@@ -15658,6 +15658,14 @@
   {
     "country_code": "PL",
     "primary": true,
+    "bic": "",
+    "bank_code": "28800006",
+    "name": "ALLFUNDS BANK S.A.U. (SP\u00d3\u0141KA AKCYJNA) ODDZIA\u0141 W POLSCE",
+    "short_name": "ALLFUNDS BANK S.A.U. (SP\u00d3\u0141KA AKCYJNA) ODDZIA\u0141 W POLSCE"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
     "bic": "NBPLPLPWXXX",
     "bank_code": "60000002",
     "name": "Zak\u0142ad Ubezpiecze\u0144 Spo\u0142ecznych",
@@ -24172,14 +24180,6 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "95000008",
-    "name": "Bank Sp\u00f3\u0142dzielczy w \u0141asinie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w \u0141asinie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPP",
-    "bank_code": "95001018",
     "name": "Bank Sp\u00f3\u0142dzielczy w \u0141asinie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w \u0141asinie"
   },
