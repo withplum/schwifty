@@ -20,7 +20,7 @@ def process():
             "short_name": row[1].strip(),
         }
         for i, row in enumerate(csvfile)
-        if i >= 1
+        if i >= 1 and row
     ]
 
 

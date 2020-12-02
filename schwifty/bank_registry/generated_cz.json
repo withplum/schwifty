@@ -308,8 +308,8 @@
     "primary": true,
     "bic": "",
     "bank_code": "7970",
-    "name": "W\u00c3\u00bcstenrot - stavebn\u00c3\u00ad spo\u00c5\u0099itelna a.s.",
-    "short_name": "W\u00c3\u00bcstenrot - stavebn\u00c3\u00ad spo\u00c5\u0099itelna a.s."
+    "name": "MONETA Stavebn\u00c3\u00ad Spo\u00c5\u0099itelna, a.s.",
+    "short_name": "MONETA Stavebn\u00c3\u00ad Spo\u00c5\u0099itelna, a.s."
   },
   {
     "country_code": "CZ",
@@ -444,8 +444,8 @@
     "primary": true,
     "bic": "BKCHCZPP",
     "bank_code": "8250",
-    "name": "Bank of China (Hungary) Close Ltd. Prague branch, od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod",
-    "short_name": "Bank of China (Hungary) Close Ltd. Prague branch, od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod"
+    "name": "Bank of China (CEE) Ltd. Prague Branch",
+    "short_name": "Bank of China (CEE) Ltd. Prague Branch"
   },
   {
     "country_code": "CZ",
@@ -482,10 +482,10 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "",
+    "bic": "VPAYCZP2",
     "bank_code": "8272",
-    "name": "Viva Payment Services S.A.",
-    "short_name": "Viva Payment Services S.A."
+    "name": "VIVA PAYMENT SERVICES S.A. od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod",
+    "short_name": "VIVA PAYMENT SERVICES S.A. od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod"
   },
   {
     "country_code": "CZ",
