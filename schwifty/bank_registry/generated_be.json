@@ -810,10 +810,10 @@
   {
     "country_code": "BE",
     "primary": true,
-    "bic": "NBBEBEBB203",
+    "bic": "NBBEBEBBHCC",
     "bank_code": "101",
-    "name": "Nationale Bank van Belgi\u00eb",
-    "short_name": "Nationale Bank van Belgi\u00eb"
+    "name": "Nationale Bank van Belgi\u00eb (Hoofdkas)",
+    "short_name": "Nationale Bank van Belgi\u00eb (Hoofdkas)"
   },
   {
     "country_code": "BE",
@@ -4346,6 +4346,14 @@
   {
     "country_code": "BE",
     "primary": true,
+    "bic": "CEPABEB2",
+    "bank_code": "649",
+    "name": "Caisse d'Epargne et de Pr\u00e9voyance Hauts de France",
+    "short_name": "Caisse d'Epargne et de Pr\u00e9voyance Hauts de France"
+  },
+  {
+    "country_code": "BE",
+    "primary": true,
     "bic": "KEYTBEBB",
     "bank_code": "651",
     "name": "Ark\u00e9a Direct Bank (nom commercial / commerci\u00eble naam: Keytrade Bank)",
@@ -4524,16 +4532,16 @@
     "primary": true,
     "bic": "BOFABE3X",
     "bank_code": "685",
-    "name": "Bank of Amerika Merrill Lynch International DAC - Brussels Branch",
-    "short_name": "Bank of Amerika Merrill Lynch International DAC - Brussels Branch"
+    "name": "",
+    "short_name": ""
   },
   {
     "country_code": "BE",
     "primary": true,
     "bic": "BOFABE3X",
     "bank_code": "686",
-    "name": "Bank of Amerika Merrill Lynch International DAC - Brussels Branch",
-    "short_name": "Bank of Amerika Merrill Lynch International DAC - Brussels Branch"
+    "name": "",
+    "short_name": ""
   },
   {
     "country_code": "BE",
