@@ -124,8 +124,8 @@
     "primary": true,
     "bic": "RVSAAT2S053",
     "bank_code": "35053",
-    "name": "Raiffeisenbank Saalfelden registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Saalfelden registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisenbank Pinzgau Mitte eGen",
+    "short_name": "Raiffeisenbank Pinzgau Mitte eGen"
   },
   {
     "country_code": "AT",
@@ -322,14 +322,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RVSAAT2S043",
-    "bank_code": "35043",
-    "name": "Raiffeisenbank Niedernsill eGen",
-    "short_name": "Raiffeisenbank Niedernsill eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RVSAAT2S044",
     "bank_code": "35044",
     "name": "Raiffeisenbank Nu\u00dfdorf eGen",
@@ -510,14 +502,6 @@
     "bank_code": "35047",
     "name": "Raiffeisenbank Salzburger Seenland eGen",
     "short_name": "Raiffeisenbank Salzburger Seenland eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RVSAAT2S048",
-    "bank_code": "35048",
-    "name": "Raiffeisenbank Piesendorf registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Piesendorf registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
   },
   {
     "country_code": "AT",
@@ -1172,8 +1156,8 @@
     "primary": true,
     "bic": "RZSTAT2G023",
     "bank_code": "38023",
-    "name": "Raiffeisenbank P\u00f6llau-Birkfeld eGen",
-    "short_name": "Raiffeisenbank P\u00f6llau-Birkfeld eGen"
+    "name": "Raiffeisenbank Oststeiermark Nord eGen",
+    "short_name": "Raiffeisenbank Oststeiermark Nord eGen"
   },
   {
     "country_code": "AT",
@@ -1190,14 +1174,6 @@
     "bank_code": "33027",
     "name": "Raiffeisenbezirksbank G\u00fcssing eGen",
     "short_name": "Raiffeisenbezirksbank G\u00fcssing eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RZSTAT2G108",
-    "bank_code": "38108",
-    "name": "Raiffeisenbank N\u00f6rdliche Oststeiermark eGen",
-    "short_name": "Raiffeisenbank N\u00f6rdliche Oststeiermark eGen"
   },
   {
     "country_code": "AT",
@@ -1258,14 +1234,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RZSTAT2G041",
-    "bank_code": "38041",
-    "name": "Raiffeisenbank Wechselland eGen",
-    "short_name": "Raiffeisenbank Wechselland eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RZSTAT2G043",
     "bank_code": "38043",
     "name": "Raiffeisenbank Schilcherland eGen",
@@ -1282,26 +1250,10 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RZSTAT2G112",
-    "bank_code": "38112",
-    "name": "Raiffeisenbank Gratwein eGen",
-    "short_name": "Raiffeisenbank Gratwein eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RZSTAT2G113",
     "bank_code": "38113",
     "name": "Raiffeisenbank Schladming-Gr\u00f6bming eGen",
     "short_name": "Raiffeisenbank Schladming-Gr\u00f6bming eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RZSTAT2G122",
-    "bank_code": "38122",
-    "name": "Raiffeisenbank Gro\u00dfwilfersdorf eGen",
-    "short_name": "Raiffeisenbank Gro\u00dfwilfersdorf eGen"
   },
   {
     "country_code": "AT",
@@ -1318,14 +1270,6 @@
     "bank_code": "33078",
     "name": "Raiffeisenbank Purbach eGen",
     "short_name": "Raiffeisenbank Purbach eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RZTIAT22306",
-    "bank_code": "36306",
-    "name": "Raiffeisenbank Ried in Tirol Fendels-T\u00f6sens und Umgebung registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Ried in Tirol Fendels-T\u00f6sens und Umgebung registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
   },
   {
     "country_code": "AT",
@@ -1366,14 +1310,6 @@
     "bank_code": "38071",
     "name": "Raiffeisenbank Region Fehring eGen",
     "short_name": "Raiffeisenbank Region Fehring eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RLBBAT2E031",
-    "bank_code": "33031",
-    "name": "Raiffeisenbank Horitschon und Umgebung eGen",
-    "short_name": "Raiffeisenbank Horitschon und Umgebung eGen"
   },
   {
     "country_code": "AT",
@@ -1602,14 +1538,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RVSAAT2S003",
-    "bank_code": "35013",
-    "name": "Raiffeisenbank Hochk\u00f6nig eGen",
-    "short_name": "Raiffeisenbank Hochk\u00f6nig eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "VBOEATWWXXX",
     "bank_code": "40000",
     "name": "VOLKSBANK WIEN AG",
@@ -1738,14 +1666,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RVVGAT2B429",
-    "bank_code": "37402",
-    "name": "Raiffeisenbank amKumma eGen",
-    "short_name": "Raiffeisenbank amKumma eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RZOOAT2L680",
     "bank_code": "34234",
     "name": "Raiffeisenbank Wels eGen",
@@ -1796,8 +1716,8 @@
     "primary": true,
     "bic": "RZSTAT2G077",
     "bank_code": "38077",
-    "name": "Raiffeisenbank F\u00fcrstenfeld eGen",
-    "short_name": "Raiffeisenbank F\u00fcrstenfeld eGen"
+    "name": "Raiffeisenbank Region F\u00fcrstenfeld eGen",
+    "short_name": "Raiffeisenbank Region F\u00fcrstenfeld eGen"
   },
   {
     "country_code": "AT",
@@ -1940,8 +1860,8 @@
     "primary": true,
     "bic": "RZTIAT22315",
     "bank_code": "36315",
-    "name": "Raiffeisenbank Serfaus-Fiss eGen",
-    "short_name": "Raiffeisenbank Serfaus-Fiss eGen"
+    "name": "Raiffeisenbank Serfaus-Fiss-Ried eGen",
+    "short_name": "Raiffeisenbank Serfaus-Fiss-Ried eGen"
   },
   {
     "country_code": "AT",
@@ -2314,14 +2234,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RLNWATW1242",
-    "bank_code": "32242",
-    "name": "Raiffeisenkasse Gro\u00dfweikersdorf-Wiesendorf-Ruppersthal eGen",
-    "short_name": "Raiffeisenkasse Gro\u00dfweikersdorf-Wiesendorf-Ruppersthal eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RZTIAT22230",
     "bank_code": "36230",
     "name": "Raiffeisenbank Fulpmes-Telfes im Stubai eGen",
@@ -2580,8 +2492,8 @@
     "primary": true,
     "bic": "RZTIAT22378",
     "bank_code": "36378",
-    "name": "Raiffeisenbank Matrei in Osttirol, Virgen-Pr\u00e4graten-Kals am Gro\u00dfglockner registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Matrei in Osttirol, Virgen-Pr\u00e4graten-Kals am Gro\u00dfglockner registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisen Regionalbank Matrei i.O. eGen",
+    "short_name": "Raiffeisen Regionalbank Matrei i.O. eGen"
   },
   {
     "country_code": "AT",
@@ -2820,8 +2732,8 @@
     "primary": true,
     "bic": "RVVGAT2B422",
     "bank_code": "37422",
-    "name": "Raiffeisenbank Feldkirch, registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Feldkirch, registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisenbank Montfort eGen",
+    "short_name": "Raiffeisenbank Montfort eGen"
   },
   {
     "country_code": "AT",
@@ -2910,14 +2822,6 @@
     "bank_code": "34390",
     "name": "Raiffeisenbank Ohlsdorf eGen",
     "short_name": "Raiffeisenbank Ohlsdorf eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RVVGAT2B429",
-    "bank_code": "37429",
-    "name": "Raiffeisenbank amKumma eGen",
-    "short_name": "Raiffeisenbank amKumma eGen"
   },
   {
     "country_code": "AT",
@@ -3106,14 +3010,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RVVGAT2B461",
-    "bank_code": "37461",
-    "name": "Raiffeisenbank Rankweil registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Rankweil registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RVVGAT2B468",
     "bank_code": "37468",
     "name": "Raiffeisenbank Bludenz-Montafon eGen",
@@ -3252,8 +3148,8 @@
     "primary": true,
     "bic": "RZSTAT2G138",
     "bank_code": "38138",
-    "name": "Raiffeisenbank Hitzendorf-Rein eGen",
-    "short_name": "Raiffeisenbank Hitzendorf-Rein eGen"
+    "name": "Raiffeisenbank Gratwein-Hitzendorf eGen",
+    "short_name": "Raiffeisenbank Gratwein-Hitzendorf eGen"
   },
   {
     "country_code": "AT",
@@ -3386,14 +3282,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RLBBAT2E041",
-    "bank_code": "33041",
-    "name": "Raiffeisenbank K\u00f6nigsdorf eGen",
-    "short_name": "Raiffeisenbank K\u00f6nigsdorf eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RLBBAT2E125",
     "bank_code": "33125",
     "name": "Raiffeisenbezirksbank Oberwart eGen",
@@ -3476,8 +3364,8 @@
     "primary": true,
     "bic": "RLNWATW1002",
     "bank_code": "32002",
-    "name": "Raiffeisenbank Region Wagram eGen",
-    "short_name": "Raiffeisenbank Region Wagram eGen"
+    "name": "Raiffeisenbank Wagram-Schmidatal eGen",
+    "short_name": "Raiffeisenbank Wagram-Schmidatal eGen"
   },
   {
     "country_code": "AT",
@@ -3532,8 +3420,8 @@
     "primary": true,
     "bic": "RZKTAT2K500",
     "bank_code": "39500",
-    "name": "Raiffeisenbank St. Paul im Lavanttal mit Zweiganstalten Maria Rojach und St. Georgen, registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank St. Paul im Lavanttal mit Zweiganstalten Maria Rojach und St. Georgen, registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisenbank St. Paul im Lavanttal eGen",
+    "short_name": "Raiffeisenbank St. Paul im Lavanttal eGen"
   },
   {
     "country_code": "AT",
@@ -3542,14 +3430,6 @@
     "bank_code": "33055",
     "name": "Raiffeisenbank Rust-M\u00f6rbisch eGen",
     "short_name": "Raiffeisenbank Rust-M\u00f6rbisch eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RLBBAT2E058",
-    "bank_code": "33058",
-    "name": "Raiffeisenbank Neckenmarkt eGen",
-    "short_name": "Raiffeisenbank Neckenmarkt eGen"
   },
   {
     "country_code": "AT",
@@ -3612,8 +3492,8 @@
     "primary": true,
     "bic": "RLBBAT2E010",
     "bank_code": "33010",
-    "name": "Raiffeisenbank Mittelburgenland Ost eGen",
-    "short_name": "Raiffeisenbank Mittelburgenland Ost eGen"
+    "name": "Raiffeisenbank Region Deutschkreutz-Horitschon eGen",
+    "short_name": "Raiffeisenbank Region Deutschkreutz-Horitschon eGen"
   },
   {
     "country_code": "AT",
@@ -3630,14 +3510,6 @@
     "bank_code": "38370",
     "name": "Raiffeisenbank Mureck eGen",
     "short_name": "Raiffeisenbank Mureck eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RZTIAT22367",
-    "bank_code": "36367",
-    "name": "Raiffeisenbank Defereggental eGen",
-    "short_name": "Raiffeisenbank Defereggental eGen"
   },
   {
     "country_code": "AT",
@@ -3730,14 +3602,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RLNWATWWGUE",
-    "bank_code": "32247",
-    "name": "Raiffeisenkasse G\u00fcnselsdorf eGen",
-    "short_name": "Raiffeisenkasse G\u00fcnselsdorf eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RLNWATWWGTD",
     "bank_code": "32250",
     "name": "Raiffeisen Regionalbank M\u00f6dling eGen",
@@ -3812,8 +3676,8 @@
     "primary": true,
     "bic": "RZSTAT2G023",
     "bank_code": "38311",
-    "name": "Raiffeisenbank P\u00f6llau-Birkfeld eGen",
-    "short_name": "Raiffeisenbank P\u00f6llau-Birkfeld eGen"
+    "name": "Raiffeisenbank Oststeiermark Nord eGen",
+    "short_name": "Raiffeisenbank Oststeiermark Nord eGen"
   },
   {
     "country_code": "AT",
@@ -3900,8 +3764,8 @@
     "primary": true,
     "bic": "RLNWATW1002",
     "bank_code": "32291",
-    "name": "Raiffeisenbank Region Wagram eGen",
-    "short_name": "Raiffeisenbank Region Wagram eGen"
+    "name": "Raiffeisenbank Wagram-Schmidatal eGen",
+    "short_name": "Raiffeisenbank Wagram-Schmidatal eGen"
   },
   {
     "country_code": "AT",
@@ -3924,8 +3788,8 @@
     "primary": true,
     "bic": "RZSTAT2G138",
     "bank_code": "38333",
-    "name": "Raiffeisenbank Hitzendorf-Rein eGen",
-    "short_name": "Raiffeisenbank Hitzendorf-Rein eGen"
+    "name": "Raiffeisenbank Gratwein-Hitzendorf eGen",
+    "short_name": "Raiffeisenbank Gratwein-Hitzendorf eGen"
   },
   {
     "country_code": "AT",
@@ -4140,24 +4004,24 @@
     "primary": true,
     "bic": "RVSAAT2S012",
     "bank_code": "35112",
-    "name": "Raiffeisenbank Bruck-Fusch-Kaprun eGen",
-    "short_name": "Raiffeisenbank Bruck-Fusch-Kaprun eGen"
+    "name": "Raiffeisenbank Hohe Tauern eGen",
+    "short_name": "Raiffeisenbank Hohe Tauern eGen"
   },
   {
     "country_code": "AT",
     "primary": true,
     "bic": "RVSAAT2S012",
     "bank_code": "35212",
-    "name": "Raiffeisenbank Bruck-Fusch-Kaprun eGen",
-    "short_name": "Raiffeisenbank Bruck-Fusch-Kaprun eGen"
+    "name": "Raiffeisenbank Hohe Tauern eGen",
+    "short_name": "Raiffeisenbank Hohe Tauern eGen"
   },
   {
     "country_code": "AT",
     "primary": true,
     "bic": "RVSAAT2S012",
     "bank_code": "35312",
-    "name": "Raiffeisenbank Bruck-Fusch-Kaprun eGen",
-    "short_name": "Raiffeisenbank Bruck-Fusch-Kaprun eGen"
+    "name": "Raiffeisenbank Hohe Tauern eGen",
+    "short_name": "Raiffeisenbank Hohe Tauern eGen"
   },
   {
     "country_code": "AT",
@@ -4204,32 +4068,32 @@
     "primary": true,
     "bic": "RVSAAT2S022",
     "bank_code": "35122",
-    "name": "Raiffeisenbank Hallein eGen",
-    "short_name": "Raiffeisenbank Hallein eGen"
+    "name": "Raiffeisenbank Hallein-Oberalm eGen",
+    "short_name": "Raiffeisenbank Hallein-Oberalm eGen"
   },
   {
     "country_code": "AT",
     "primary": true,
     "bic": "RVSAAT2S022",
     "bank_code": "35322",
-    "name": "Raiffeisenbank Hallein eGen",
-    "short_name": "Raiffeisenbank Hallein eGen"
+    "name": "Raiffeisenbank Hallein-Oberalm eGen",
+    "short_name": "Raiffeisenbank Hallein-Oberalm eGen"
   },
   {
     "country_code": "AT",
     "primary": true,
     "bic": "RVSAAT2S022",
     "bank_code": "35422",
-    "name": "Raiffeisenbank Hallein eGen",
-    "short_name": "Raiffeisenbank Hallein eGen"
+    "name": "Raiffeisenbank Hallein-Oberalm eGen",
+    "short_name": "Raiffeisenbank Hallein-Oberalm eGen"
   },
   {
     "country_code": "AT",
     "primary": true,
     "bic": "RVSAAT2S022",
     "bank_code": "35522",
-    "name": "Raiffeisenbank Hallein eGen",
-    "short_name": "Raiffeisenbank Hallein eGen"
+    "name": "Raiffeisenbank Hallein-Oberalm eGen",
+    "short_name": "Raiffeisenbank Hallein-Oberalm eGen"
   },
   {
     "country_code": "AT",
@@ -4292,8 +4156,8 @@
     "primary": true,
     "bic": "RVSAAT2S069",
     "bank_code": "35169",
-    "name": "Raiffeisenbank Wagrain-Kleinarl eGen",
-    "short_name": "Raiffeisenbank Wagrain-Kleinarl eGen"
+    "name": "Raiffeisenbank St. Johann-Wagrain-Kleinarl eGen",
+    "short_name": "Raiffeisenbank St. Johann-Wagrain-Kleinarl eGen"
   },
   {
     "country_code": "AT",
@@ -4538,22 +4402,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RZKTAT2K400",
-    "bank_code": "39400",
-    "name": "Raiffeisenbank Maltatal, registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Maltatal, registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RZKTAT2K404",
-    "bank_code": "39404",
-    "name": "Raiffeisenbank Maria Saal registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Maria Saal registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RZKTAT2K411",
     "bank_code": "39411",
     "name": "Raiffeisenbank Moosburg-Tigring, registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
@@ -4674,14 +4522,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RZKTAT2K431",
-    "bank_code": "39431",
-    "name": "Raiffeisenbank Oberdrauburg, registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Oberdrauburg, registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RZKTAT2K442",
     "bank_code": "39442",
     "name": "Raiffeisenbank Drautal registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
@@ -4700,8 +4540,8 @@
     "primary": true,
     "bic": "RZKTAT2K464",
     "bank_code": "39464",
-    "name": "Raiffeisenbank Liesertal, registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Liesertal, registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisenbank Lieser-Maltatal eG",
+    "short_name": "Raiffeisenbank Lieser-Maltatal eG"
   },
   {
     "country_code": "AT",
@@ -5052,8 +4892,8 @@
     "primary": true,
     "bic": "RZKTAT2K561",
     "bank_code": "39561",
-    "name": "Raiffeisenbank Oberes M\u00f6lltal, registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Oberes M\u00f6lltal, registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisenbank Oberes M\u00f6lltal-Oberdrauburg eGen",
+    "short_name": "Raiffeisenbank Oberes M\u00f6lltal-Oberdrauburg eGen"
   },
   {
     "country_code": "AT",
@@ -5218,14 +5058,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RVSAAT2S031",
-    "bank_code": "35031",
-    "name": "Raiffeisenbank Leogang eGen",
-    "short_name": "Raiffeisenbank Leogang eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "GUTBATWWXXX",
     "bank_code": "19140",
     "name": "Bank Gutmann Aktiengesellschaft",
@@ -5244,8 +5076,8 @@
     "primary": true,
     "bic": "RVSAAT2S012",
     "bank_code": "35012",
-    "name": "Raiffeisenbank Bruck-Fusch-Kaprun eGen",
-    "short_name": "Raiffeisenbank Bruck-Fusch-Kaprun eGen"
+    "name": "Raiffeisenbank Hohe Tauern eGen",
+    "short_name": "Raiffeisenbank Hohe Tauern eGen"
   },
   {
     "country_code": "AT",
@@ -5298,14 +5130,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RLNWATW1497",
-    "bank_code": "32497",
-    "name": "Raiffeisenbank Michelhausen eGen",
-    "short_name": "Raiffeisenbank Michelhausen eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RZTIAT22264",
     "bank_code": "36264",
     "name": "Raiffeisenbank K\u00f6ssen-Schwendt eGen",
@@ -5334,14 +5158,6 @@
     "bank_code": "34284",
     "name": "Raiffeisenbank Lohnsburg eGen",
     "short_name": "Raiffeisenbank Lohnsburg eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RLNWATWWWEB",
-    "bank_code": "32930",
-    "name": "Raiffeisenbank Oberes Triestingtal eGen",
-    "short_name": "Raiffeisenbank Oberes Triestingtal eGen"
   },
   {
     "country_code": "AT",
@@ -5380,8 +5196,8 @@
     "primary": true,
     "bic": "RVSAAT2S022",
     "bank_code": "35022",
-    "name": "Raiffeisenbank Hallein eGen",
-    "short_name": "Raiffeisenbank Hallein eGen"
+    "name": "Raiffeisenbank Hallein-Oberalm eGen",
+    "short_name": "Raiffeisenbank Hallein-Oberalm eGen"
   },
   {
     "country_code": "AT",
@@ -5390,14 +5206,6 @@
     "bank_code": "35025",
     "name": "Raiffeisenbank Hof-Koppl-Ebenau eGen",
     "short_name": "Raiffeisenbank Hof-Koppl-Ebenau eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RVSAAT2S035",
-    "bank_code": "35035",
-    "name": "Raiffeisenbank Maishofen eGen",
-    "short_name": "Raiffeisenbank Maishofen eGen"
   },
   {
     "country_code": "AT",
@@ -5418,14 +5226,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RVSAAT2S057",
-    "bank_code": "35057",
-    "name": "Raiffeisenbank St. Johann im Pongau registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank St. Johann im Pongau registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RVSAAT2S062",
     "bank_code": "35062",
     "name": "Raiffeisenbank Stra\u00dfwalchen eGen",
@@ -5436,8 +5236,8 @@
     "primary": true,
     "bic": "RVSAAT2S069",
     "bank_code": "35069",
-    "name": "Raiffeisenbank Wagrain-Kleinarl eGen",
-    "short_name": "Raiffeisenbank Wagrain-Kleinarl eGen"
+    "name": "Raiffeisenbank St. Johann-Wagrain-Kleinarl eGen",
+    "short_name": "Raiffeisenbank St. Johann-Wagrain-Kleinarl eGen"
   },
   {
     "country_code": "AT",
@@ -5634,14 +5434,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RVSAAT2S045",
-    "bank_code": "35045",
-    "name": "Raiffeisenbank Oberalm-Puch registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Oberalm-Puch registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RVSAAT2S004",
     "bank_code": "35004",
     "name": "Raiffeisenbank Altenmarkt-Flachau-Eben eGen",
@@ -5810,26 +5602,10 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RVSAAT2S003",
-    "bank_code": "35003",
-    "name": "Raiffeisenbank Hochk\u00f6nig eGen",
-    "short_name": "Raiffeisenbank Hochk\u00f6nig eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RVSAAT2S039",
     "bank_code": "35039",
     "name": "Raiffeisenbank Oberpinzgau eGen",
     "short_name": "Raiffeisenbank Oberpinzgau eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "VOHGATW1XXX",
-    "bank_code": "47050",
-    "name": "IMMO-BANK Aktiengesellschaft",
-    "short_name": "IMMO-BANK Aktiengesellschaft"
   },
   {
     "country_code": "AT",
@@ -6562,6 +6338,14 @@
   {
     "country_code": "AT",
     "primary": true,
+    "bic": "VPAYATW2XXX",
+    "bank_code": "94648",
+    "name": "Viva Payment Services S.A. Zweigniederlassung Wien/\u00d6sterreich",
+    "short_name": "Viva Payment Services S.A. Zweigniederlassung Wien/\u00d6sterreich"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
     "bic": "RLNWATWWZWE",
     "bank_code": "32615",
     "name": "Raiffeisenbank Region Waldviertel Mitte eGen",
@@ -6778,7 +6562,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "EASYATW1XXX",
+    "bic": "BAWAATWWXXX",
     "bank_code": "14200",
     "name": "BAWAG P.S.K. Bank f\u00fcr Arbeit und Wirtschaft und \u00d6sterreichische Postsparkasse Aktiengesellschaft",
     "short_name": "BAWAG P.S.K. Bank f\u00fcr Arbeit und Wirtschaft und \u00d6sterreichische Postsparkasse Aktiengesellschaft"
@@ -6938,10 +6722,234 @@
   {
     "country_code": "AT",
     "primary": true,
+    "bic": "RVSAAT2S053",
+    "bank_code": "35003",
+    "name": "Raiffeisenbank Pinzgau Mitte eGen",
+    "short_name": "Raiffeisenbank Pinzgau Mitte eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RVSAAT2S053",
+    "bank_code": "35013",
+    "name": "Raiffeisenbank Pinzgau Mitte eGen",
+    "short_name": "Raiffeisenbank Pinzgau Mitte eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RVSAAT2S053",
+    "bank_code": "35031",
+    "name": "Raiffeisenbank Pinzgau Mitte eGen",
+    "short_name": "Raiffeisenbank Pinzgau Mitte eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RVSAAT2S022",
+    "bank_code": "35045",
+    "name": "Raiffeisenbank Hallein-Oberalm eGen",
+    "short_name": "Raiffeisenbank Hallein-Oberalm eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RVSAAT2S069",
+    "bank_code": "35057",
+    "name": "Raiffeisenbank St. Johann-Wagrain-Kleinarl eGen",
+    "short_name": "Raiffeisenbank St. Johann-Wagrain-Kleinarl eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZTIAT22315",
+    "bank_code": "36306",
+    "name": "Raiffeisenbank Serfaus-Fiss-Ried eGen",
+    "short_name": "Raiffeisenbank Serfaus-Fiss-Ried eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RVSAAT2S053",
+    "bank_code": "35035",
+    "name": "Raiffeisenbank Pinzgau Mitte eGen",
+    "short_name": "Raiffeisenbank Pinzgau Mitte eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZTIAT22378",
+    "bank_code": "36367",
+    "name": "Raiffeisen Regionalbank Matrei i.O. eGen",
+    "short_name": "Raiffeisen Regionalbank Matrei i.O. eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLNWATW1002",
+    "bank_code": "32242",
+    "name": "Raiffeisenbank Wagram-Schmidatal eGen",
+    "short_name": "Raiffeisenbank Wagram-Schmidatal eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLNWATW1880",
+    "bank_code": "32497",
+    "name": "Raiffeisenbank Tulln eGen",
+    "short_name": "Raiffeisenbank Tulln eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLNWATWWBAD",
+    "bank_code": "32930",
+    "name": "Raiffeisenbank Region Baden eGen",
+    "short_name": "Raiffeisenbank Region Baden eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLNWATWWBAD",
+    "bank_code": "32247",
+    "name": "Raiffeisenbank Region Baden eGen",
+    "short_name": "Raiffeisenbank Region Baden eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLBBAT2E034",
+    "bank_code": "33041",
+    "name": "Raiffeisenbezirksbank Jennersdorf eGen",
+    "short_name": "Raiffeisenbezirksbank Jennersdorf eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZSTAT2G023",
+    "bank_code": "38108",
+    "name": "Raiffeisenbank Oststeiermark Nord eGen",
+    "short_name": "Raiffeisenbank Oststeiermark Nord eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLBBAT2E010",
+    "bank_code": "33031",
+    "name": "Raiffeisenbank Region Deutschkreutz-Horitschon eGen",
+    "short_name": "Raiffeisenbank Region Deutschkreutz-Horitschon eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLBBAT2E010",
+    "bank_code": "33058",
+    "name": "Raiffeisenbank Region Deutschkreutz-Horitschon eGen",
+    "short_name": "Raiffeisenbank Region Deutschkreutz-Horitschon eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZSTAT2G023",
+    "bank_code": "38041",
+    "name": "Raiffeisenbank Oststeiermark Nord eGen",
+    "short_name": "Raiffeisenbank Oststeiermark Nord eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RVSAAT2S012",
+    "bank_code": "35043",
+    "name": "Raiffeisenbank Hohe Tauern eGen",
+    "short_name": "Raiffeisenbank Hohe Tauern eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RVVGAT2B422",
+    "bank_code": "37429",
+    "name": "Raiffeisenbank Montfort eGen",
+    "short_name": "Raiffeisenbank Montfort eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RVVGAT2B422",
+    "bank_code": "37402",
+    "name": "Raiffeisenbank Montfort eGen",
+    "short_name": "Raiffeisenbank Montfort eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RVVGAT2B422",
+    "bank_code": "37461",
+    "name": "Raiffeisenbank Montfort eGen",
+    "short_name": "Raiffeisenbank Montfort eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZSTAT2G077",
+    "bank_code": "38122",
+    "name": "Raiffeisenbank Region F\u00fcrstenfeld eGen",
+    "short_name": "Raiffeisenbank Region F\u00fcrstenfeld eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RVSAAT2S012",
+    "bank_code": "35048",
+    "name": "Raiffeisenbank Hohe Tauern eGen",
+    "short_name": "Raiffeisenbank Hohe Tauern eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZSTAT2G138",
+    "bank_code": "38112",
+    "name": "Raiffeisenbank Gratwein-Hitzendorf eGen",
+    "short_name": "Raiffeisenbank Gratwein-Hitzendorf eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZKTAT2K561",
+    "bank_code": "39431",
+    "name": "Raiffeisenbank Oberes M\u00f6lltal-Oberdrauburg eGen",
+    "short_name": "Raiffeisenbank Oberes M\u00f6lltal-Oberdrauburg eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
     "bic": "RZSTAT2G377",
     "bank_code": "38223",
     "name": "Raiffeisenbank Region Graz Nord eGen",
     "short_name": "Raiffeisenbank Region Graz Nord eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZKTAT2K464",
+    "bank_code": "39400",
+    "name": "Raiffeisenbank Lieser-Maltatal eG",
+    "short_name": "Raiffeisenbank Lieser-Maltatal eG"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZKTAT2K442",
+    "bank_code": "39404",
+    "name": "Raiffeisenbank Drautal registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
+    "short_name": "Raiffeisenbank Drautal registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "BAWOATW1XXX",
+    "bank_code": "47050",
+    "name": "BAWAG P.S.K. Wohnbaubank Aktiengesellschaft",
+    "short_name": "BAWAG P.S.K. Wohnbaubank Aktiengesellschaft"
   },
   {
     "country_code": "AT",
