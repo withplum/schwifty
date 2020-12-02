@@ -1239,6 +1239,26 @@
       ]
     }
   },
+  "LY": {
+    "bban_spec": "3!n3!n15!n",
+    "iban_spec": "LY2!n3!n3!n15!n",
+    "bban_length": 21,
+    "iban_length": 25,
+    "positions": {
+      "account_code": [
+        6,
+        21
+      ],
+      "bank_code": [
+        0,
+        3
+      ],
+      "branch_code": [
+        3,
+        6
+      ]
+    }
+  },
   "MC": {
     "bban_spec": "5!n5!n11!c2!n",
     "iban_spec": "MC2!n5!n5!n11!c2!n",
@@ -1680,8 +1700,8 @@
     }
   },
   "ST": {
-    "bban_spec": "8!n11!n2!n",
-    "iban_spec": "ST2!n8!n11!n2!n",
+    "bban_spec": "4!n4!n11!n2!n",
+    "iban_spec": "ST2!n4!n4!n11!n2!n",
     "bban_length": 21,
     "iban_length": 25,
     "positions": {
