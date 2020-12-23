@@ -13,34 +13,47 @@
 Gotta get schwifty with your IBANs
 ==================================
 
+.. teaser-begin
 
-Schwifty is a Python library for working with BICs and IBANs. It allows you to
+``schwifty`` is a Python library that let's you easily work with IBANs and BICs
+as specified by the ISO. IBAN is the Internation Bank Account Number and BIC
+the Business Identifier Code. Both are used for international money transfer.
+
+Features
+--------
+
+``schwifty`` lets you
 
 * validate check-digits and the country specific format of IBANs
 * validate format and country codes from BICs
-* generate BICs from bank-codes
+* generate BICs from country and bank-code
 * generate IBANs from country-code, bank-code and account-number.
+* get the BIC associated to an IBAN's bank-code
 * access all relevant components as attributes
 
+.. teaser-end
 
 Versioning
 ----------
 
-Since the mapping from BIC to bank_code is updated from time to time, Schwifty uses
-`CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
+Since the IBAN specification and the mapping from BIC to bank_code is updated from time to time,
+``schwifty`` uses `CalVer <http://www.calver.org/>`_ for versioning with the scheme ``YY.0M.Micro``.
 
-Usage
------
+.. examples-begin
 
-IBAN
-~~~~
+Examples
+--------
 
-Let's jump right into it:
+Basic Usage
+~~~~~~~~~~~
 
-.. code-block:: python
+Consider the following code example for :class:`.IBAN`-objects:
+
+.. code-block:: pycon
 
   >>> from schwifty import IBAN
   >>> iban = IBAN('DE89 3704 0044 0532 0130 00')
+  <IBAN=DE89370400440532013000>
   >>> iban.compact
   'DE89370400440532013000'
   >>> iban.formatted
@@ -56,49 +69,13 @@ Let's jump right into it:
   >>> iban.bic
   <BIC=COBADEFFXXX>
 
-So far so good. So you are able to create an ``IBAN``-object and to access all relevant components
-of the IBAN as properties. As you can see on the last line, you can also get hold of the BIC number
-associated to the bank-code of the IBAN. This currently only works for IBANs of german banks.
+After creating an :class:`.IBAN`-object you can access all relevant components as attributes. For some
+countries it is also possible to get ahold of the :class:`.BIC` associated to the bank-code of the IBAN.
 
-Behind the scenes the IBAN has been validated at the moment of instantiation. With respect to ISO
-13616 compliance it is checked if the format of the account-code, the bank-code and possibly the
-branch-code have the correct country-specific format. Whenever you pass an invalid IBAN to the
-``__init__``-method, you'll get a ``ValueError`` with an appropriate error message.
+A BIC is a unique identification code for both financial and non-financial institutes. ``schwifty``
+provides a :class:`.BIC``-object, that has a similar interface to the :class:`.IBAN`.
 
-.. code-block:: python
-
-  >>> IBAN('DX89 3704 0044 0532 0130 00')
-  ...
-  ValueError: Unknown country-code DX
-
-  >>> IBAN('DE99 3704 0044 0532 0130 00')
-  ...
-  ValueError: Invalid checksum digits
-
-
-But what if you wan't to generate an IBAN from a bank-code and the account-code? Use the
-``generate``-classmethod!
-
-.. code-block:: python
-
-  >>> iban = IBAN.generate('DE', bank_code='10010010', account_code='12345')
-  <IBAN=DE40100100100000012345>
-  >>> iban.checksum_digits
-  '40'
-
-Notice that even that the account-code has less digits than required (in Germany accounts should be
-10 digits long), zeros have been added at the correct location. Additionally the checksum digits
-have been calculated, which is good.
-
-
-BIC
-~~~
-
-Besides the IBAN there is the Business Identifier Code (BIC). It is a unique identification code for
-both financial and non-financial institutes. Schwifty also has a ``BIC``-object which more or less
-has the same interface than the ``IBAN``-object.
-
-.. code-block:: python
+.. code-block:: pycon
 
   >>> from schwifty import BIC
   >>> bic = BIC('PBNKDEFFXXX')
@@ -116,38 +93,98 @@ has the same interface than the ``IBAN``-object.
    ...
    '86010090']
 
-The ``domestic_bank_codes`` lists the country specific bank codes as you can find it in the IBAN.
-This mapping is currently only available for German BICs and some Spanish and British banks.
+The :attr:`.BIC.domestic_bank_codes` lists the country specific bank codes as you can find them as
+part of the IBAN. This mapping is part of a manually curated registry that ships with ``schwifty``
+and is not available for all countries.
 
-The ``BIC``-object also does some basic validation on instantiation and raises a ``ValueError`` if
-the country-code, the BIC´s length is invalid or if the structure doesn't match the ISO 9362
-specification.
 
-.. code-block:: python
+Validation
+~~~~~~~~~~
+
+When it comes to validation the :class:`.IBAN` and :class:`.BIC` constructors raise a ``ValueError``
+whenever the provided code is incorrect for some reason.
+
+For IBANs - with respect to ISO 13616 compliance - it is checked if the account-code, the bank-code
+and possibly the branch-code have the correct country-specific format. E.g.:
+
+.. code-block:: pycon
+
+  >>> IBAN('DX89 3704 0044 0532 0130 00')
+  ...
+  ValueError: Unknown country-code DX
+
+  >>> IBAN('DE99 3704 0044 0532 0130 00')
+  ...
+  ValueError: Invalid checksum digits
+
+
+For BICs it is checked if the country-code and the length is valid and if the structure matches the
+ISO 9362 specification.
+
+.. code-block:: pycon
 
   >>> BIC('PBNKDXFFXXX')
   ...
   ValueError: Invalid country code DX
+
   >>> BIC('PBNKDXFFXXXX')
   ...
   ValueError: Invalid length 12
+
   >>> BIC('PBN1DXFFXXXX')
   ...
   ValueError: Invalid structure PBN1DXFFXXXX
 
-If Schwifty´s internal registry contains the BICs for your country (this again currently only works
-for Germany), then you can use the ``exists``-property to check that the BIC is registered.
+If catching a ``ValueError`` would complicate your code flow you can also use the
+:attr:`.IBAN.is_valid` property. E.g.:
+
+.. code-block:: python
+
+  if IBAN(value, allow_invalid=True).is_valid:
+    # do something with value
 
 
+Generation
+~~~~~~~~~~
+
+You can generate :class:`.IBAN`-objects from country-code, bank-code and
+account-number by using the
+:meth:`.IBAN.generate()`-method. It will automatically calculate the correct checksum digits for you.
+
+.. code-block:: pycon
+
+  >>> iban = IBAN.generate('DE', bank_code='10010010', account_code='12345')
+  <IBAN=DE40100100100000012345>
+  >>> iban.checksum_digits
+  '40'
+
+Notice that even that the account-code has less digits than required (in Germany accounts should be
+10 digits long), zeros have been added at the correct location.
+
+For some countries you can also generate :class:`.BIC`-objects from local
+bank-codes, e.g.:
+
+.. code-block:: pycon
+
+  >>> bic = BIC.from_bank_code('DE', '43060967')
+  >>> bic.formatted
+  'GENO DE M1 GLS'
+
+.. examples-end
+
+
+.. installation-begin
 
 Installation
 ------------
 
-To install Schwifty, simply:
+To install ``schwifty``, simply:
 
 .. code-block:: bash
 
   $ pip install schwifty
+
+.. installation-end
 
 
 Development
