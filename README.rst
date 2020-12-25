@@ -70,7 +70,6 @@ You can also use the ``fmt`` Makefile-target to format the code or use one of th
 integrations`_.
 
 
-
 Project Information
 -------------------
 

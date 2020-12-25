@@ -10,6 +10,10 @@ test:
 lint:
 	@tox -e lint
 
+.PHONY: lint-docs
+lint-docs:
+	@tox -e lint-docs
+
 .PHONY: fmt
 fmt:
 	@tox -e fmt

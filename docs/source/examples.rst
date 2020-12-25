@@ -128,9 +128,9 @@ If catching a ``ValueError`` would complicate your code flow you can also use th
 Generation
 ----------
 
-You can generate :class:`.IBAN`-objects from country-code, bank-code and
-account-number by using the
-:meth:`.IBAN.generate()`-method. It will automatically calculate the correct checksum digits for you.
+You can generate :class:`.IBAN`-objects from country-code, bank-code and account-number by using the
+:meth:`.IBAN.generate()`-method. It will automatically calculate the correct checksum digits for
+you.
 
 .. code-block:: pycon
 
