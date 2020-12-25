@@ -70,8 +70,15 @@ You can also use the ``fmt`` Makefile-target to format the code or use one of th
 integrations`_.
 
 
+
+Project Information
+-------------------
+
+``schwifty`` is released under `MIT`_ license and its documentation lives at `Read the Docs`_. The code
+is maintained on `GitHub`_ and packages are distributed on `PyPI`_
+
 Name
-----
+~~~~
 
 Since ``swift`` and ``swiftly`` were already taken by the OpenStack-project, but we somehow wanted
 to point out the connection to SWIFT, Rick and Morty came up with the idea to name the project
@@ -80,6 +87,10 @@ to point out the connection to SWIFT, Rick and Morty came up with the idea to na
 .. image:: https://i.cdn.turner.com/adultswim/big/video/get-schwifty-pt-2/rickandmorty_ep205_002_vbnuta15a755dvash8.jpg
 
 
-.. _black:  https://black.readthedocs.io/en/stable/index.html
+.. _black: https://black.readthedocs.io/en/stable/index.html
 .. _pre-commit: https://pre-commit.com
 .. _editor integrations:  https://black.readthedocs.io/en/stable/editor_integration.html
+.. _MIT: https://choosealicense.com/licenses/mit/
+.. _Read the Docs: https://schwifty.readthedocs.io
+.. _GitHub: https://github.com/mdomke/schwifty
+.. _PyPI: https://pypi.org/project/schwifty
