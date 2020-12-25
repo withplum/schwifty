@@ -19,6 +19,7 @@ API documentation
 
    examples
    api
+   troubleshooting
 
 .. toctree::
    :maxdepth: 1
