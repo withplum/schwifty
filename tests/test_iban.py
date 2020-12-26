@@ -90,10 +90,16 @@ valid = [
 invalid = [
     "DE89 3704 0044 0532 0130",  # Too short
     "DE89 3704 0044 0532 0130 0000",  # Too long
+    "GB96 BARC 2020 1530 0934 591",  # Too long
     "XX89 3704 0044 0532 0130 00",  # Wrong country-code
     "DE99 3704 0044 0532 0130 00",  # Wrong check digits
     "DEAA 3704 0044 0532 0130 00",  # Wrong format (check digits)
+    "GB2L ABBY 0901 2857 2017 07",  # Wrong format (check digits)
     "DE89 AA04 0044 0532 0130 00",  # Wrong format (country specific)
+    "GB12 BARC 2020 1530 093A 59",  # Wrong account format (country specific)
+    "GB01 BARC 2071 4583 6083 87",  # Wrong checksum digits
+    "GB00 HLFX 1101 6111 4553 65",  # Wrong checksum digits
+    "GB94 BARC 2020 1530 0934 59",  # Wrong checksum digits
 ]
 
 
