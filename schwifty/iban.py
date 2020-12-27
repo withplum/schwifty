@@ -199,7 +199,7 @@ class IBAN(Base):
             raise ValueError("Invalid characters in IBAN {}".format(self.compact))
 
     def _validate_checksum(self):
-        if self.numeric % 97 != 1:
+        if self.numeric % 97 != 1 or self._calc_checksum_digits() != self.checksum_digits:
             raise ValueError("Invalid checksum digits")
 
     def _validate_length(self):
