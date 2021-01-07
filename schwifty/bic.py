@@ -8,7 +8,6 @@ from pycountry import countries
 from schwifty import registry
 from schwifty.common import Base
 from schwifty.exceptions import (
-    InvalidBankCodeForCountry,
     InvalidLength,
     InvalidStructure,
     InvalidCountryCode,
@@ -67,7 +66,7 @@ class BIC(Base):
             >>> BIC.from_bank_code('DE', '01010101')
             Traceback (most recent call last):
             ...
-            InvalidBankCodeForCountry: Invalid bank code '01010101' for country 'DE'
+            ValueError: Invalid bank code '01010101' for country 'DE'
 
 
         Args:
@@ -101,7 +100,7 @@ class BIC(Base):
         try:
             return cls(registry.get("bank_code")[(country_code, bank_code)]["bic"])
         except KeyError:
-            raise InvalidBankCodeForCountry(
+            raise ValueError(
                 "Invalid bank code {!r} for country {!r}".format(bank_code, country_code)
             )
 

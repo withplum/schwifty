@@ -12,4 +12,3 @@ dist/
 htmlcov/
 .coverage
 test-results.xml
-/.idea/*

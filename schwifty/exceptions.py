@@ -1,38 +1,30 @@
-class UnknownCountryCode(ValueError):
+class SchwiftyException(ValueError):
     pass
 
 
-class InvalidBankCodeForCountry(ValueError):
+class InvalidLength(SchwiftyException):
     pass
 
 
-class InvalidLength(ValueError):
+class InvalidStructure(SchwiftyException):
     pass
 
 
-class InvalidStructure(ValueError):
+class InvalidCountryCode(SchwiftyException):
     pass
 
 
-class InvalidCountryCode(ValueError):
+class InvalidBankCode(SchwiftyException):
     pass
 
 
-class TooLongBankCode(ValueError):
+class InvalidBranchCode(SchwiftyException):
     pass
 
 
-class TooLongBranchCode(ValueError):
+class InvalidAccountCode(SchwiftyException):
     pass
 
 
-class TooLongAccountCode(ValueError):
-    pass
-
-
-class InvalidIBANCharacters(ValueError):
-    pass
-
-
-class InvalidChecksumDigits(ValueError):
+class InvalidChecksumDigits(SchwiftyException):
     pass

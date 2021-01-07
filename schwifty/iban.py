@@ -9,14 +9,13 @@ from schwifty import registry
 from schwifty.bic import BIC
 from schwifty.common import Base
 from schwifty.exceptions import (
-    UnknownCountryCode,
-    TooLongBankCode,
-    TooLongBranchCode,
-    TooLongAccountCode,
-    InvalidIBANCharacters,
+    InvalidBankCode,
+    InvalidBranchCode,
+    InvalidAccountCode,
     InvalidChecksumDigits,
     InvalidLength,
     InvalidStructure,
+    InvalidCountryCode,
 )
 
 _spec_to_re = {"n": r"\d", "a": r"[A-Z]", "c": r"[A-Za-z0-9]", "e": r" "}
@@ -28,7 +27,7 @@ def _get_iban_spec(country_code):
     try:
         return registry.get("iban")[country_code]
     except KeyError:
-        raise UnknownCountryCode("Unknown country-code '{}'".format(country_code))
+        raise InvalidCountryCode("Unknown country-code '{}'".format(country_code))
 
 
 def numerify(string):
@@ -162,15 +161,15 @@ class IBAN(Base):
             bank_code, branch_code = bank_code[:bank_code_length], bank_code[bank_code_length:]
 
         if len(bank_code) > bank_code_length:
-            raise TooLongBankCode("Bank code exceeds maximum size {}".format(bank_code_length))
+            raise InvalidBankCode("Bank code exceeds maximum size {}".format(bank_code_length))
 
         if len(branch_code) > branch_code_length:
-            raise TooLongBranchCode(
+            raise InvalidBranchCode(
                 "Branch code exceeds maximum size {}".format(branch_code_length)
             )
 
         if len(account_code) > account_code_length:
-            raise TooLongAccountCode(
+            raise InvalidAccountCode(
                 "Account code exceeds maximum size {}".format(account_code_length)
             )
 
@@ -209,7 +208,7 @@ class IBAN(Base):
 
     def _validate_characters(self):
         if not re.match(r"[A-Z]{2}\d{2}[A-Z]*", self.compact):
-            raise InvalidIBANCharacters("Invalid characters in IBAN {}".format(self.compact))
+            raise InvalidStructure("Invalid characters in IBAN {}".format(self.compact))
 
     def _validate_checksum(self):
         if self.numeric % 97 != 1:
