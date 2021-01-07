@@ -212,7 +212,7 @@ class IBAN(Base):
 
     def _validate_checksum(self):
         if self.numeric % 97 != 1 or self._calc_checksum_digits() != self.checksum_digits:
-            raise ValueError("Invalid checksum digits")
+            raise InvalidChecksumDigits("Invalid checksum digits")
 
     def _validate_length(self):
         if self.spec["iban_length"] != self.length:
