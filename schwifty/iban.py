@@ -8,7 +8,15 @@ from pycountry import countries
 from schwifty import registry
 from schwifty.bic import BIC
 from schwifty.common import Base
-
+from schwifty.exceptions import (
+    InvalidBankCode,
+    InvalidBranchCode,
+    InvalidAccountCode,
+    InvalidChecksumDigits,
+    InvalidLength,
+    InvalidStructure,
+    InvalidCountryCode,
+)
 
 _spec_to_re = {"n": r"\d", "a": r"[A-Z]", "c": r"[A-Za-z0-9]", "e": r" "}
 
@@ -19,7 +27,7 @@ def _get_iban_spec(country_code):
     try:
         return registry.get("iban")[country_code]
     except KeyError:
-        raise ValueError("Unknown country-code '{}'".format(country_code))
+        raise InvalidCountryCode("Unknown country-code '{}'".format(country_code))
 
 
 def numerify(string):
@@ -153,13 +161,17 @@ class IBAN(Base):
             bank_code, branch_code = bank_code[:bank_code_length], bank_code[bank_code_length:]
 
         if len(bank_code) > bank_code_length:
-            raise ValueError("Bank code exceeds maximum size {}".format(bank_code_length))
+            raise InvalidBankCode("Bank code exceeds maximum size {}".format(bank_code_length))
 
         if len(branch_code) > branch_code_length:
-            raise ValueError("Branch code exceeds maximum size {}".format(branch_code_length))
+            raise InvalidBranchCode(
+                "Branch code exceeds maximum size {}".format(branch_code_length)
+            )
 
         if len(account_code) > account_code_length:
-            raise ValueError("Account code exceeds maximum size {}".format(account_code_length))
+            raise InvalidAccountCode(
+                "Account code exceeds maximum size {}".format(account_code_length)
+            )
 
         bban = "0" * spec["bban_length"]
         positions = spec["positions"]
@@ -196,19 +208,19 @@ class IBAN(Base):
 
     def _validate_characters(self):
         if not re.match(r"[A-Z]{2}\d{2}[A-Z]*", self.compact):
-            raise ValueError("Invalid characters in IBAN {}".format(self.compact))
+            raise InvalidStructure("Invalid characters in IBAN {}".format(self.compact))
 
     def _validate_checksum(self):
         if self.numeric % 97 != 1 or self._calc_checksum_digits() != self.checksum_digits:
-            raise ValueError("Invalid checksum digits")
+            raise InvalidChecksumDigits("Invalid checksum digits")
 
     def _validate_length(self):
         if self.spec["iban_length"] != self.length:
-            raise ValueError("Invalid IBAN length")
+            raise InvalidLength("Invalid IBAN length")
 
     def _validate_format(self):
         if not self.spec["regex"].match(self.bban):
-            raise ValueError(
+            raise InvalidStructure(
                 "Invalid BBAN structure: '{}' doesn't match '{}''".format(
                     self.bban, self.spec["bban_spec"]
                 )

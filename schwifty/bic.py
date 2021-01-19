@@ -7,7 +7,11 @@ from pycountry import countries
 
 from schwifty import registry
 from schwifty.common import Base
-
+from schwifty.exceptions import (
+    InvalidLength,
+    InvalidStructure,
+    InvalidCountryCode,
+)
 
 _bic_re = re.compile(r"[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?")
 
@@ -120,18 +124,18 @@ class BIC(Base):
 
     def _validate_length(self):
         if self.length not in (8, 11):
-            raise ValueError("Invalid length '{}'".format(self.length))
+            raise InvalidLength("Invalid length '{}'".format(self.length))
 
     def _validate_structure(self):
         if not _bic_re.match(self.compact):
-            raise ValueError("Invalid structure '{}'".format(self.compact))
+            raise InvalidStructure("Invalid structure '{}'".format(self.compact))
 
     def _validate_country_code(self):
         country_code = self.country_code
         try:
             iso3166.countries_by_alpha2[country_code]
         except KeyError:
-            raise ValueError("Invalid country code '{}'".format(country_code))
+            raise InvalidCountryCode("Invalid country code '{}'".format(country_code))
 
     @property
     def is_valid(self):
