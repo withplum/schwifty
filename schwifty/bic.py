@@ -5,18 +5,14 @@ from functools import partial
 import iso3166
 from pycountry import countries
 
+from schwifty import common
+from schwifty import exceptions
 from schwifty import registry
-from schwifty.common import Base
-from schwifty.exceptions import (
-    InvalidLength,
-    InvalidStructure,
-    InvalidCountryCode,
-)
 
 _bic_re = re.compile(r"[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?")
 
 
-class BIC(Base):
+class BIC(common.Base):
     """The BIC object.
 
     Examples:
@@ -42,7 +38,9 @@ class BIC(Base):
         allow_invalid (bool): If set to ``True`` validation is skipped on instantiation.
 
     Raises:
-        ValueError: If the given value is not a valid BIC unless `allow_invalid` is set.
+        InvalidLength: If the BIC's length is not 8 or 11 characters long.
+        InvalidStructure: If the BIC contains unexpected characters.
+        InvalidCountryCode: If the BIC's country code is unknown.
     """
 
     def __init__(self, bic, allow_invalid=False):
@@ -66,7 +64,7 @@ class BIC(Base):
             >>> BIC.from_bank_code('DE', '01010101')
             Traceback (most recent call last):
             ...
-            ValueError: Invalid bank code '01010101' for country 'DE'
+            InvalidBankCode: Unknown bank code '01010101' for country 'DE'
 
 
         Args:
@@ -77,7 +75,7 @@ class BIC(Base):
             BIC: a BIC object generated from the given country code and bank code.
 
         Raises:
-            ValueError: If the given bank code wasn't found in the registry
+            InvalidBankCode: If the given bank code wasn't found in the registry
 
         Note:
             This currently only works for selected countries. Amongst them
@@ -100,8 +98,8 @@ class BIC(Base):
         try:
             return cls(registry.get("bank_code")[(country_code, bank_code)]["bic"])
         except KeyError:
-            raise ValueError(
-                "Invalid bank code {!r} for country {!r}".format(bank_code, country_code)
+            raise exceptions.InvalidBankCode(
+                "Unknown bank code {!r} for country {!r}".format(bank_code, country_code)
             )
 
     def validate(self):
@@ -115,7 +113,9 @@ class BIC(Base):
             to circumvent the implicit validation.
 
         Raises:
-            ValueError: If this :class:`IBAN`-object is invalid.
+            InvalidLength: If the BIC's length is not 8 or 11 characters long.
+            InvalidStructure: If the BIC contains unexpected characters.
+            InvalidCountryCode: If the BIC's country code is unknown.
         """
         self._validate_length()
         self._validate_structure()
@@ -124,18 +124,18 @@ class BIC(Base):
 
     def _validate_length(self):
         if self.length not in (8, 11):
-            raise InvalidLength("Invalid length '{}'".format(self.length))
+            raise exceptions.InvalidLength("Invalid length '{}'".format(self.length))
 
     def _validate_structure(self):
         if not _bic_re.match(self.compact):
-            raise InvalidStructure("Invalid structure '{}'".format(self.compact))
+            raise exceptions.InvalidStructure("Invalid structure '{}'".format(self.compact))
 
     def _validate_country_code(self):
         country_code = self.country_code
         try:
             iso3166.countries_by_alpha2[country_code]
         except KeyError:
-            raise InvalidCountryCode("Invalid country code '{}'".format(country_code))
+            raise exceptions.InvalidCountryCode("Invalid country code '{}'".format(country_code))
 
     @property
     def is_valid(self):
@@ -153,7 +153,7 @@ class BIC(Base):
         """
         try:
             return self.validate()
-        except ValueError:
+        except exceptions.SchwiftyException:
             return False
 
     @property
@@ -275,16 +275,19 @@ class BIC(Base):
         return countries.get(alpha_2=self.country_code)
 
     bank_code = property(
-        partial(Base._get_component, start=0, end=4), doc="str: The bank-code part of the BIC."
+        partial(common.Base._get_component, start=0, end=4),
+        doc="str: The bank-code part of the BIC.",
     )
     country_code = property(
-        partial(Base._get_component, start=4, end=6), doc="str: The ISO 3166 alpha2 country-code."
+        partial(common.Base._get_component, start=4, end=6),
+        doc="str: The ISO 3166 alpha2 country-code.",
     )
     location_code = property(
-        partial(Base._get_component, start=6, end=8), doc="str: The location code of the BIC."
+        partial(common.Base._get_component, start=6, end=8),
+        doc="str: The location code of the BIC.",
     )
     branch_code = property(
-        partial(Base._get_component, start=8, end=11),
+        partial(common.Base._get_component, start=8, end=11),
         doc="str or None: The branch-code part of the BIC (if available)",
     )
 

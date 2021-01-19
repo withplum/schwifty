@@ -5,18 +5,10 @@ from functools import partial
 
 from pycountry import countries
 
+from schwifty import common
+from schwifty import exceptions
 from schwifty import registry
 from schwifty.bic import BIC
-from schwifty.common import Base
-from schwifty.exceptions import (
-    InvalidBankCode,
-    InvalidBranchCode,
-    InvalidAccountCode,
-    InvalidChecksumDigits,
-    InvalidLength,
-    InvalidStructure,
-    InvalidCountryCode,
-)
 
 _spec_to_re = {"n": r"\d", "a": r"[A-Z]", "c": r"[A-Za-z0-9]", "e": r" "}
 
@@ -27,7 +19,7 @@ def _get_iban_spec(country_code):
     try:
         return registry.get("iban")[country_code]
     except KeyError:
-        raise InvalidCountryCode("Unknown country-code '{}'".format(country_code))
+        raise exceptions.InvalidCountryCode("Unknown country-code '{}'".format(country_code))
 
 
 def numerify(string):
@@ -87,7 +79,7 @@ def add_bban_checksum(country_code, bban):
     return bban
 
 
-class IBAN(Base):
+class IBAN(common.Base):
     """The IBAN object.
 
     Examples:
@@ -112,7 +104,10 @@ class IBAN(Base):
         allow_invalid (bool): If set to `True` IBAN validation is skipped on instantiation.
 
     Raises:
-        ValueError: If the given value is not a valid IBAN unless `allow_invalid` is set.
+        InvalidStructure: If the IBAN contains invalid characters or the BBAN does not match the
+                          country specific format.
+        InvalidChecksumDigits: If the IBAN's checksum is invalid.
+        InvalidLength: If the length does not match the country specific specification.
     """
 
     def __init__(self, iban, allow_invalid=False):
@@ -161,15 +156,17 @@ class IBAN(Base):
             bank_code, branch_code = bank_code[:bank_code_length], bank_code[bank_code_length:]
 
         if len(bank_code) > bank_code_length:
-            raise InvalidBankCode("Bank code exceeds maximum size {}".format(bank_code_length))
+            raise exceptions.InvalidBankCode(
+                "Bank code exceeds maximum size {}".format(bank_code_length)
+            )
 
         if len(branch_code) > branch_code_length:
-            raise InvalidBranchCode(
+            raise exceptions.InvalidBranchCode(
                 "Branch code exceeds maximum size {}".format(branch_code_length)
             )
 
         if len(account_code) > account_code_length:
-            raise InvalidAccountCode(
+            raise exceptions.InvalidAccountCode(
                 "Account code exceeds maximum size {}".format(account_code_length)
             )
 
@@ -198,7 +195,10 @@ class IBAN(Base):
             to circumvent the implicit validation.
 
         Raises:
-            ValueError: If this :class:`IBAN`-object is invalid.
+            InvalidStructure: If the IBAN contains invalid characters or the BBAN does not match the
+                              country specific format.
+            InvalidChecksumDigits: If the IBAN's checksum is invalid.
+            InvalidLength: If the length does not match the country specific specification.
         """
         self._validate_characters()
         self._validate_length()
@@ -208,19 +208,19 @@ class IBAN(Base):
 
     def _validate_characters(self):
         if not re.match(r"[A-Z]{2}\d{2}[A-Z]*", self.compact):
-            raise InvalidStructure("Invalid characters in IBAN {}".format(self.compact))
+            raise exceptions.InvalidStructure("Invalid characters in IBAN {}".format(self.compact))
 
     def _validate_checksum(self):
         if self.numeric % 97 != 1 or self._calc_checksum_digits() != self.checksum_digits:
-            raise InvalidChecksumDigits("Invalid checksum digits")
+            raise exceptions.InvalidChecksumDigits("Invalid checksum digits")
 
     def _validate_length(self):
         if self.spec["iban_length"] != self.length:
-            raise InvalidLength("Invalid IBAN length")
+            raise exceptions.InvalidLength("Invalid IBAN length")
 
     def _validate_format(self):
         if not self.spec["regex"].match(self.bban):
-            raise InvalidStructure(
+            raise exceptions.InvalidStructure(
                 "Invalid BBAN structure: '{}' doesn't match '{}''".format(
                     self.bban, self.spec["bban_spec"]
                 )
@@ -242,7 +242,7 @@ class IBAN(Base):
         """
         try:
             return self.validate()
-        except ValueError:
+        except exceptions.SchwiftyException:
             return False
 
     @property
@@ -271,7 +271,7 @@ class IBAN(Base):
         """
         try:
             return BIC.from_bank_code(self.country_code, self.bank_code or self.branch_code)
-        except ValueError:
+        except exceptions.SchwiftyException:
             pass
 
     @property
@@ -283,15 +283,19 @@ class IBAN(Base):
         start, end = self.spec["positions"][code_type]
         return self.bban[start:end]
 
-    bban = property(partial(Base._get_component, start=4), doc="str: The BBAN part of the IBAN.")
+    bban = property(
+        partial(common.Base._get_component, start=4), doc="str: The BBAN part of the IBAN.",
+    )
     country_code = property(
-        partial(Base._get_component, start=0, end=2), doc="str: ISO 3166 alpha-2 country code."
+        partial(common.Base._get_component, start=0, end=2),
+        doc="str: ISO 3166 alpha-2 country code.",
     )
     checksum_digits = property(
-        partial(Base._get_component, start=2, end=4), doc="str: Two digit checksum of the IBAN."
+        partial(common.Base._get_component, start=2, end=4),
+        doc="str: Two digit checksum of the IBAN.",
     )
     bank_code = property(
-        partial(_get_code, code_type="bank_code"), doc="str: The country specific bank-code."
+        partial(_get_code, code_type="bank_code"), doc="str: The country specific bank-code.",
     )
     branch_code = property(
         partial(_get_code, code_type="branch_code"),

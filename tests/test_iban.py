@@ -2,6 +2,7 @@ import pytest
 from pycountry import countries
 
 from schwifty import IBAN
+from schwifty.exceptions import SchwiftyException
 
 
 valid = [
@@ -112,13 +113,13 @@ def test_parse_iban(number):
 @pytest.mark.parametrize("number", invalid)
 def test_parse_iban_allow_invalid(number):
     iban = IBAN(number, allow_invalid=True)
-    with pytest.raises(ValueError):
+    with pytest.raises(SchwiftyException):
         iban.validate()
 
 
 @pytest.mark.parametrize("number", invalid)
 def test_invalid_iban(number):
-    with pytest.raises(ValueError):
+    with pytest.raises(SchwiftyException):
         IBAN(number)
 
 
@@ -167,7 +168,7 @@ def test_generate_iban(components, compact):
     ],
 )
 def test_generate_iban_invalid(components):
-    with pytest.raises(ValueError):
+    with pytest.raises(SchwiftyException):
         IBAN.generate(*components)
 
 

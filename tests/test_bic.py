@@ -2,6 +2,7 @@ import pytest
 from pycountry import countries
 
 from schwifty import BIC
+from schwifty import exceptions
 
 
 def test_bic():
@@ -14,7 +15,7 @@ def test_bic_allow_invalid():
     bic = BIC("GENODXM1GLS", allow_invalid=True)
     assert bic
     assert bic.country_code == "DX"
-    with pytest.raises(ValueError):
+    with pytest.raises(exceptions.InvalidCountryCode):
         bic.validate()
 
 
@@ -83,17 +84,17 @@ def test_bic_type(code, type):
 
 
 @pytest.mark.parametrize(
-    "code",
+    "code,exc",
     [
-        "AAAA",  # Too short
-        "AAAADEM1GLSX",  # Too long
-        "12ABDEM1GLS",  # Wrong structure in banc-id
-        "GENOD1M1GLS",  # Wrong structure in country-code
-        "GENOXXM1GLS",  # Wrong country-code
+        ("AAAA", exceptions.InvalidLength),
+        ("AAAADEM1GLSX", exceptions.InvalidLength),
+        ("12ABDEM1GLS", exceptions.InvalidStructure),
+        ("GENOD1M1GLS", exceptions.InvalidStructure),
+        ("GENOXXM1GLS", exceptions.InvalidCountryCode),
     ],
 )
-def test_invalid_bic(code):
-    with pytest.raises(ValueError):
+def test_invalid_bic(code, exc):
+    with pytest.raises(exc):
         BIC(code)
 
 
@@ -103,7 +104,7 @@ def test_bic_from_bank_code():
 
 
 def test_bic_from_unknown_bank_code():
-    with pytest.raises(ValueError):
+    with pytest.raises(exceptions.InvalidBankCode):
         BIC.from_bank_code("PO", "12345678")
 
 

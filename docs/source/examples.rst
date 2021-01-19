@@ -75,6 +75,7 @@ and currently includes entries for the following countries:
 * Netherlands
 * Poland
 * Slovenia
+* Slovakia
 * Spain
 * Switzerland
 
@@ -82,8 +83,16 @@ and currently includes entries for the following countries:
 Validation
 ----------
 
-When it comes to validation the :class:`.IBAN` and :class:`.BIC` constructors raise a ``ValueError``
-whenever the provided code is incorrect for some reason.
+When it comes to validation the :class:`.IBAN` and :class:`.BIC` constructors raise an exception
+whenever the provided code is incorrect for some reason. ``schwifty`` comes with a number of
+dedicated exceptions classes that help identify the concrete reason for the validation error. They
+all derive from a common base exception :exc:`.SchwiftyException` which makes it easy to catch all
+validation failures if the concrete cause is not important to you.
+
+.. note::
+
+   Prior to schwifty 2021.01.0 a ``ValueError`` was raised for all kind of validation failures. In
+   order to keep backwards compatiblity schwifty's base exception is a subclass of ``ValueError``.
 
 For IBANs - with respect to ISO 13616 compliance - it is checked if the account-code, the bank-code
 and possibly the branch-code have the correct country-specific format. E.g.:
@@ -92,11 +101,11 @@ and possibly the branch-code have the correct country-specific format. E.g.:
 
   >>> IBAN('DX89 3704 0044 0532 0130 00')
   ...
-  ValueError: Unknown country-code DX
+  InvalidCountryCode: Unknown country-code DX
 
   >>> IBAN('DE99 3704 0044 0532 0130 00')
   ...
-  ValueError: Invalid checksum digits
+  InvalidChecksumDigits: Invalid checksum digits
 
 
 For BICs it is checked if the country-code and the length is valid and if the structure matches the
@@ -106,18 +115,18 @@ ISO 9362 specification.
 
   >>> BIC('PBNKDXFFXXX')
   ...
-  ValueError: Invalid country code DX
+  InvalidCountryCode: Invalid country code DX
 
   >>> BIC('PBNKDXFFXXXX')
   ...
-  ValueError: Invalid length 12
+  InvalidLength: Invalid length 12
 
   >>> BIC('PBN1DXFFXXXX')
   ...
-  ValueError: Invalid structure PBN1DXFFXXXX
+  InvalidStructure: Invalid structure PBN1DXFFXXXX
 
-If catching a ``ValueError`` would complicate your code flow you can also use the
-:attr:`.IBAN.is_valid` property. E.g.:
+If catching an exception would complicate your code flow you can also use the :attr:`.IBAN.is_valid`
+property. E.g.:
 
 .. code-block:: python
 

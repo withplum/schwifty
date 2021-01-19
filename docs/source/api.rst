@@ -17,3 +17,10 @@ BIC
 
 .. autoclass:: BIC
    :members:
+
+
+Exceptions
+----------
+
+.. automodule:: schwifty.exceptions
+   :members:
