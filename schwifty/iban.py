@@ -284,7 +284,8 @@ class IBAN(common.Base):
         return self.bban[start:end]
 
     bban = property(
-        partial(common.Base._get_component, start=4), doc="str: The BBAN part of the IBAN.",
+        partial(common.Base._get_component, start=4),
+        doc="str: The BBAN part of the IBAN.",
     )
     country_code = property(
         partial(common.Base._get_component, start=0, end=2),
@@ -295,7 +296,8 @@ class IBAN(common.Base):
         doc="str: Two digit checksum of the IBAN.",
     )
     bank_code = property(
-        partial(_get_code, code_type="bank_code"), doc="str: The country specific bank-code.",
+        partial(_get_code, code_type="bank_code"),
+        doc="str: The country specific bank-code.",
     )
     branch_code = property(
         partial(_get_code, code_type="branch_code"),
