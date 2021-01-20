@@ -5,13 +5,15 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
-Unreleased
-----------
+`2021.01.0`_ - 2021/01/20
+-------------------------
 
 Changed
 ~~~~~~~
 * Restructure documentation and change theme to `furo <https://pradyunsg.me/furo/>`_.
 * Added dedicated exception classes for various validation errors.
+* Drop support for Python 2. Only Python 3.6+ will be supported from now on.
+* Use PEP 517/518 compliant build setup.
 
 `2020.11.0`_ - 2020/12/02
 -------------------------
@@ -24,6 +26,7 @@ Changed
 Added
 ~~~~~
 * Added generated banks for Slovakia `@petrboros <https://github.com/petrboros>`_.
+* Added a test to validate the correctnes of BICs in the registry `@ckoehn <https://github.com/ckoehn>`_.
 
 Fixed
 ~~~~~
@@ -92,6 +95,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2021.01.0: https://github.com/mdomke/schwifty/compare/2020.11.0...2021.01.0
 .. _2020.11.0: https://github.com/mdomke/schwifty/compare/2020.09.0...2020.11.0
 .. _2020.09.0: https://github.com/mdomke/schwifty/compare/2020.08.3...2020.09.0
 .. _2020.08.3: https://github.com/mdomke/schwifty/compare/2020.08.2...2020.08.3
