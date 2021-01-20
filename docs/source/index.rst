@@ -11,6 +11,10 @@ Release v\ |release| (:ref:`What's new <changelog>`)
    :start-after: installation-begin
    :end-before: installation-end
 
+.. note::
+
+   Starting from version 2021.01.0 schwifty only supports Python 3.6+
+
 
 API documentation
 -----------------
@@ -25,9 +29,3 @@ API documentation
    :maxdepth: 1
 
    changelog
-
-Indices and tables
-------------------
-
-* `genindex`
-* `search`
