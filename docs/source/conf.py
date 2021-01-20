@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import os
 import sys
 from datetime import datetime
@@ -27,8 +26,8 @@ templates_path = ["_templates"]
 source_suffix = [".rst", ".md"]
 master_doc = "index"
 project = "Schwifty"
-copyright = u"{0.year} Martin Domke".format(datetime.now())
-author = u"Martin Domke"
+copyright = f"{datetime.now().year} Martin Domke"
+author = "Martin Domke"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
