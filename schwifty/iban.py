@@ -1,4 +1,3 @@
-# encoding: utf-8
 import re
 import string
 from functools import partial
@@ -19,7 +18,7 @@ def _get_iban_spec(country_code):
     try:
         return registry.get("iban")[country_code]
     except KeyError:
-        raise exceptions.InvalidCountryCode("Unknown country-code '{}'".format(country_code))
+        raise exceptions.InvalidCountryCode(f"Unknown country-code '{country_code}'")
 
 
 def numerify(string):
@@ -111,7 +110,7 @@ class IBAN(common.Base):
     """
 
     def __init__(self, iban, allow_invalid=False):
-        super(IBAN, self).__init__(iban)
+        super().__init__(iban)
         if self.checksum_digits == "??":
             self._code = self.country_code + self._calc_checksum_digits() + self.bban
 
@@ -156,18 +155,16 @@ class IBAN(common.Base):
             bank_code, branch_code = bank_code[:bank_code_length], bank_code[bank_code_length:]
 
         if len(bank_code) > bank_code_length:
-            raise exceptions.InvalidBankCode(
-                "Bank code exceeds maximum size {}".format(bank_code_length)
-            )
+            raise exceptions.InvalidBankCode(f"Bank code exceeds maximum size {bank_code_length}")
 
         if len(branch_code) > branch_code_length:
             raise exceptions.InvalidBranchCode(
-                "Branch code exceeds maximum size {}".format(branch_code_length)
+                f"Branch code exceeds maximum size {branch_code_length}"
             )
 
         if len(account_code) > account_code_length:
             raise exceptions.InvalidAccountCode(
-                "Account code exceeds maximum size {}".format(account_code_length)
+                f"Account code exceeds maximum size {account_code_length}"
             )
 
         bban = "0" * spec["bban_length"]
@@ -208,7 +205,7 @@ class IBAN(common.Base):
 
     def _validate_characters(self):
         if not re.match(r"[A-Z]{2}\d{2}[A-Z]*", self.compact):
-            raise exceptions.InvalidStructure("Invalid characters in IBAN {}".format(self.compact))
+            raise exceptions.InvalidStructure(f"Invalid characters in IBAN {self.compact}")
 
     def _validate_checksum(self):
         if self.numeric % 97 != 1 or self._calc_checksum_digits() != self.checksum_digits:

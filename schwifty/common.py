@@ -6,7 +6,7 @@ _clean_regex = re.compile(r"\s+")
 
 
 @total_ordering
-class Base(object):
+class Base:
     def __init__(self, code):
         self._code = clean(code)
 
@@ -14,7 +14,7 @@ class Base(object):
         return self.compact
 
     def __repr__(self):
-        return "<{0}={1!s}>".format(self.__class__.__name__, self)
+        return f"<{self.__class__.__name__}={self!s}>"
 
     def __hash__(self):
         return hash(str(self))

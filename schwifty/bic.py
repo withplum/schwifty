@@ -44,7 +44,7 @@ class BIC(common.Base):
     """
 
     def __init__(self, bic, allow_invalid=False):
-        super(BIC, self).__init__(bic)
+        super().__init__(bic)
         if not allow_invalid:
             self.validate()
 
@@ -99,7 +99,7 @@ class BIC(common.Base):
             return cls(registry.get("bank_code")[(country_code, bank_code)]["bic"])
         except KeyError:
             raise exceptions.InvalidBankCode(
-                "Unknown bank code {!r} for country {!r}".format(bank_code, country_code)
+                f"Unknown bank code {bank_code!r} for country {country_code!r}"
             )
 
     def validate(self):
@@ -124,18 +124,18 @@ class BIC(common.Base):
 
     def _validate_length(self):
         if self.length not in (8, 11):
-            raise exceptions.InvalidLength("Invalid length '{}'".format(self.length))
+            raise exceptions.InvalidLength(f"Invalid length '{self.length}'")
 
     def _validate_structure(self):
         if not _bic_re.match(self.compact):
-            raise exceptions.InvalidStructure("Invalid structure '{}'".format(self.compact))
+            raise exceptions.InvalidStructure(f"Invalid structure '{self.compact}'")
 
     def _validate_country_code(self):
         country_code = self.country_code
         try:
             iso3166.countries_by_alpha2[country_code]
         except KeyError:
-            raise exceptions.InvalidCountryCode("Invalid country code '{}'".format(country_code))
+            raise exceptions.InvalidCountryCode(f"Invalid country code '{country_code}'")
 
     @property
     def is_valid(self):

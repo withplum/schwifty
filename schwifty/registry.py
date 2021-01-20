@@ -21,7 +21,7 @@ def get(name):
             if os.path.splitext(fname)[1] != ".json":
                 continue
             fname = resource_filename(__name__, os.path.join(dirname, fname))
-            with open(fname, "r") as fp:
+            with open(fname) as fp:
                 chunk = json.load(fp)
                 if data is None:
                     data = chunk
@@ -30,7 +30,7 @@ def get(name):
                 elif isinstance(data, dict):
                     data.updated(chunk)
         if data is None:
-            raise ValueError("Failed to load registry {}".format(name))
+            raise ValueError(f"Failed to load registry {name}")
         save(name, data)
     return _registry[name]
 
