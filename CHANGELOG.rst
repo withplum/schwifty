@@ -5,6 +5,13 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+Unreleased
+----------
+
+Changed
+~~~~~~~
+* Added type hints to the entire code base.
+
 `2021.01.0`_ - 2021/01/20
 -------------------------
 

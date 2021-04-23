@@ -21,7 +21,7 @@ def test_bic_allow_invalid():
 
 def test_bic_no_branch_code():
     bic = BIC("GENODEM1")
-    assert bic.branch_code is None
+    assert bic.branch_code == ""
     assert bic.formatted == "GENO DE M1"
 
 

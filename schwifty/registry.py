@@ -1,19 +1,24 @@
+from __future__ import annotations
+
 import json
 import os.path
 from collections import defaultdict
+from typing import Any
+from typing import Callable
+from typing import Union
 
 from pkg_resources import resource_filename
 from pkg_resources import resource_listdir
 
 
-_registry = {}
+_registry: dict[str, Union[dict, list[dict]]] = {}
 
 
-def has(name):
+def has(name: str) -> bool:
     return name in _registry
 
 
-def get(name):
+def get(name: str) -> Union[dict, list[dict]]:
     if not has(name):
         data = None
         dirname = name + "_registry"
@@ -28,37 +33,44 @@ def get(name):
                 elif isinstance(data, list):
                     data.extend(chunk)
                 elif isinstance(data, dict):
-                    data.updated(chunk)
+                    data.update(chunk)
         if data is None:
             raise ValueError(f"Failed to load registry {name}")
         save(name, data)
     return _registry[name]
 
 
-def save(name, data):
+def save(name: str, data: Union[dict, list[dict]]) -> None:
     _registry[name] = data
 
 
-def build_index(base_name, index_name, key, accumulate=False, **predicate):
-    def make_key(entry):
+def build_index(
+    base_name: str,
+    index_name: str,
+    key: Union[str, tuple],
+    accumulate: bool = False,
+    **predicate: Any,
+) -> None:
+    def make_key(entry: dict) -> Union[tuple, str]:
         return tuple(entry[k] for k in key) if isinstance(key, tuple) else entry[key]
 
-    def match(entry):
+    def match(entry: dict) -> bool:
         return all(entry[key] == value for key, value in predicate.items())
 
     base = get(base_name)
+    assert isinstance(base, list)
     if accumulate:
         data = defaultdict(list)
         for entry in base:
             if not match(entry):
                 continue
             data[make_key(entry)].append(entry)
+        save(index_name, dict(data))
     else:
-        data = {make_key(entry): entry for entry in base if match(entry)}
-    save(index_name, data)
+        save(index_name, {make_key(entry): entry for entry in base if match(entry)})
 
 
-def manipulate(name, func):
+def manipulate(name: str, func: Callable) -> None:
     registry = get(name)
     if isinstance(registry, dict):
         for key, value in registry.items():

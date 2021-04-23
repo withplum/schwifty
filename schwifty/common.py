@@ -1,5 +1,7 @@
 import re
 from functools import total_ordering
+from typing import Any
+from typing import Optional
 
 
 _clean_regex = re.compile(r"\s+")
@@ -7,38 +9,39 @@ _clean_regex = re.compile(r"\s+")
 
 @total_ordering
 class Base:
-    def __init__(self, code):
+    def __init__(self, code: str) -> None:
         self._code = clean(code)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.compact
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"<{self.__class__.__name__}={self!s}>"
 
-    def __hash__(self):
+    def __hash__(self) -> int:
         return hash(str(self))
 
-    def __eq__(self, other):
+    def __eq__(self, other: Any) -> bool:
         return str(self) == str(other)
 
-    def __lt__(self, other):
+    def __lt__(self, other: Any) -> bool:
         return str(self) < str(other)
 
     @property
-    def compact(self):
+    def compact(self) -> str:
         """str: Compact representation of the code."""
         return self._code
 
     @property
-    def length(self):
+    def length(self) -> int:
         """int: Length of the compact code."""
         return len(self.compact)
 
-    def _get_component(self, start, end=None):
+    def _get_component(self, start: int, end: Optional[int] = None) -> str:
         if start < self.length and (end is None or end <= self.length):
             return self.compact[start:end] if end else self.compact[start:]
+        return ""
 
 
-def clean(string):
-    return _clean_regex.sub("", string).upper()
+def clean(s: str) -> str:
+    return _clean_regex.sub("", s).upper()
