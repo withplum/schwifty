@@ -5,8 +5,8 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
-Unreleased
-----------
+`2021.04.0`_ - 2021/04/23
+-------------------------
 
 Changed
 ~~~~~~~
