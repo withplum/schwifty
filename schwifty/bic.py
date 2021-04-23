@@ -1,9 +1,13 @@
+from __future__ import annotations
+
 import re
 import warnings
-from functools import partial
+from typing import List
+from typing import Optional
 
 import iso3166
 from pycountry import countries
+from pycountry.db import Data
 
 from schwifty import common
 from schwifty import exceptions
@@ -43,13 +47,13 @@ class BIC(common.Base):
         InvalidCountryCode: If the BIC's country code is unknown.
     """
 
-    def __init__(self, bic, allow_invalid=False):
+    def __init__(self, bic: str, allow_invalid: Optional[bool] = False) -> None:
         super().__init__(bic)
         if not allow_invalid:
             self.validate()
 
     @classmethod
-    def from_bank_code(cls, country_code, bank_code):
+    def from_bank_code(cls, country_code: str, bank_code: str) -> BIC:
         """Create a new BIC object from country-code and domestic bank-code.
 
         Examples:
@@ -96,13 +100,15 @@ class BIC(common.Base):
             * Switzerland
         """
         try:
-            return cls(registry.get("bank_code")[(country_code, bank_code)]["bic"])
+            spec = registry.get("bank_code")
+            assert isinstance(spec, dict)
+            return cls(spec[(country_code, bank_code)]["bic"])
         except KeyError:
             raise exceptions.InvalidBankCode(
                 f"Unknown bank code {bank_code!r} for country {country_code!r}"
             )
 
-    def validate(self):
+    def validate(self) -> bool:
         """Validate the structural integrity of this BIC.
 
         This function will verify the correct length, structure and the existence of the country
@@ -122,15 +128,15 @@ class BIC(common.Base):
         self._validate_country_code()
         return True
 
-    def _validate_length(self):
+    def _validate_length(self) -> None:
         if self.length not in (8, 11):
             raise exceptions.InvalidLength(f"Invalid length '{self.length}'")
 
-    def _validate_structure(self):
+    def _validate_structure(self) -> None:
         if not _bic_re.match(self.compact):
             raise exceptions.InvalidStructure(f"Invalid structure '{self.compact}'")
 
-    def _validate_country_code(self):
+    def _validate_country_code(self) -> None:
         country_code = self.country_code
         try:
             iso3166.countries_by_alpha2[country_code]
@@ -138,7 +144,7 @@ class BIC(common.Base):
             raise exceptions.InvalidCountryCode(f"Invalid country code '{country_code}'")
 
     @property
-    def is_valid(self):
+    def is_valid(self) -> bool:
         """bool: Indicate if this is a valid BIC.
 
         Note:
@@ -157,7 +163,7 @@ class BIC(common.Base):
             return False
 
     @property
-    def formatted(self):
+    def formatted(self) -> str:
         """str: The BIC separated in the blocks bank-, country- and location-code.
 
         Examples:
@@ -169,12 +175,14 @@ class BIC(common.Base):
             formatted += " " + self.branch_code
         return formatted
 
-    def _lookup_values(self, key):
-        entries = registry.get("bic").get(self.compact, [])
+    def _lookup_values(self, key: str) -> List:
+        spec = registry.get("bic")
+        assert isinstance(spec, dict)
+        entries = spec.get(self.compact, [])
         return sorted({entry[key] for entry in entries})
 
     @property
-    def domestic_bank_codes(self):
+    def domestic_bank_codes(self) -> List[str]:
         """List[str]: The country specific bank-codes associated with the BIC.
 
         Examples:
@@ -186,7 +194,7 @@ class BIC(common.Base):
         return self._lookup_values("bank_code")
 
     @property
-    def bank_names(self):
+    def bank_names(self) -> List[str]:
         """List[str]: The name of the banks associated with the BIC.
 
         Examples:
@@ -198,7 +206,7 @@ class BIC(common.Base):
         return self._lookup_values("name")
 
     @property
-    def bank_short_names(self):
+    def bank_short_names(self) -> List[str]:
         """List[str]: The short name of the banks associated with the BIC.
 
         Examples:
@@ -210,7 +218,7 @@ class BIC(common.Base):
         return self._lookup_values("short_name")
 
     @property
-    def country_bank_code(self):
+    def country_bank_code(self) -> Optional[str]:
         """str or None: The country specific bank-code associated with the BIC.
 
         .. deprecated:: 2020.01.0
@@ -221,7 +229,7 @@ class BIC(common.Base):
         return codes[0] if codes else None
 
     @property
-    def bank_name(self):
+    def bank_name(self) -> Optional[str]:
         """str or None: The name of the bank associated with the BIC.
 
         .. deprecated:: 2020.01.0
@@ -232,7 +240,7 @@ class BIC(common.Base):
         return names[0] if names else None
 
     @property
-    def bank_short_name(self):
+    def bank_short_name(self) -> Optional[str]:
         """str or None: The short name of the bank associated with the BIC.
 
         .. deprecated:: 2020.01.0
@@ -243,12 +251,14 @@ class BIC(common.Base):
         return names[0] if names else None
 
     @property
-    def exists(self):
+    def exists(self) -> bool:
         """bool: Indicates if the BIC is available in Schwifty's registry."""
-        return bool(registry.get("bic").get(self.compact))
+        spec = registry.get("bic")
+        assert isinstance(spec, dict)
+        return bool(spec.get(self.compact))
 
     @property
-    def type(self):
+    def type(self) -> str:
         """Indicates the type of BIC.
 
         This can be one of 'testing', 'passive', 'reverse billing' or 'default'
@@ -270,26 +280,29 @@ class BIC(common.Base):
             return "default"
 
     @property
-    def country(self):
+    def country(self) -> Optional[Data]:
         """Country: The country this BIC is registered in."""
         return countries.get(alpha_2=self.country_code)
 
-    bank_code = property(
-        partial(common.Base._get_component, start=0, end=4),
-        doc="str: The bank-code part of the BIC.",
-    )
-    country_code = property(
-        partial(common.Base._get_component, start=4, end=6),
-        doc="str: The ISO 3166 alpha2 country-code.",
-    )
-    location_code = property(
-        partial(common.Base._get_component, start=6, end=8),
-        doc="str: The location code of the BIC.",
-    )
-    branch_code = property(
-        partial(common.Base._get_component, start=8, end=11),
-        doc="str or None: The branch-code part of the BIC (if available)",
-    )
+    @property
+    def bank_code(self) -> str:
+        """"str: The bank-code part of the BIC."""
+        return self._get_component(start=0, end=4)
+
+    @property
+    def country_code(self) -> str:
+        """str: The ISO 3166 alpha2 country-code."""
+        return self._get_component(start=4, end=6)
+
+    @property
+    def location_code(self) -> str:
+        """str: The location code of the BIC."""
+        return self._get_component(start=6, end=8)
+
+    @property
+    def branch_code(self) -> str:
+        """str or None: The branch-code part of the BIC (if available)"""
+        return self._get_component(start=8, end=11)
 
 
 registry.build_index("bank", "bic", key="bic", accumulate=True)
