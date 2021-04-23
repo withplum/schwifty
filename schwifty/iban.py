@@ -1,7 +1,6 @@
-from __future__ import annotations
-
 import re
 import string
+from typing import Dict
 from typing import Optional
 
 from pycountry import countries
@@ -12,7 +11,7 @@ from schwifty import exceptions
 from schwifty import registry
 from schwifty.bic import BIC
 
-_spec_to_re: dict[str, str] = {"n": r"\d", "a": r"[A-Z]", "c": r"[A-Za-z0-9]", "e": r" "}
+_spec_to_re: Dict[str, str] = {"n": r"\d", "a": r"[A-Z]", "c": r"[A-Za-z0-9]", "e": r" "}
 
 _alphabet: str = string.digits + string.ascii_uppercase
 
@@ -30,7 +29,7 @@ def numerify(string: str) -> int:
     return int("".join(str(_alphabet.index(c)) for c in string))
 
 
-def code_length(spec: dict, code_type: str) -> int:
+def code_length(spec: Dict, code_type: str) -> int:
     start, end = spec["positions"][code_type]
     return end - start
 
@@ -128,7 +127,7 @@ class IBAN(common.Base):
     @classmethod
     def generate(
         cls, country_code: str, bank_code: str, account_code: str, branch_code: str = ""
-    ) -> IBAN:
+    ) -> "IBAN":
         """Generate an IBAN from it's components.
 
         If the bank-code and/or account-number have less digits than required by their
@@ -153,10 +152,10 @@ class IBAN(common.Base):
             Added the `branch_code` parameter to allow the branch code (or sort code) to be
             specified independently.
         """
-        spec: dict = _get_iban_spec(country_code)
-        bank_code_length = code_length(spec, "bank_code")
-        branch_code_length = code_length(spec, "branch_code")
-        account_code_length = code_length(spec, "account_code")
+        spec: Dict = _get_iban_spec(country_code)
+        bank_code_length: int = code_length(spec, "bank_code")
+        branch_code_length: int = code_length(spec, "branch_code")
+        account_code_length: int = code_length(spec, "account_code")
 
         if len(bank_code) == bank_code_length + branch_code_length:
             bank_code, branch_code = bank_code[:bank_code_length], bank_code[bank_code_length:]
@@ -260,7 +259,7 @@ class IBAN(common.Base):
         return " ".join(self.compact[i : i + 4] for i in range(0, len(self.compact), 4))
 
     @property
-    def spec(self) -> dict:
+    def spec(self) -> Dict:
         """dict: The country specific IBAN specification."""
         return _get_iban_spec(self.country_code)
 
@@ -318,7 +317,7 @@ class IBAN(common.Base):
         return self._get_code(code_type="account_code")
 
 
-def add_bban_regex(country: str, spec: dict) -> dict:
+def add_bban_regex(country: str, spec: Dict) -> Dict:
     bban_spec = spec["bban_spec"]
     spec_re = r"(\d+)(!)?([{}])".format("".join(_spec_to_re.keys()))
 

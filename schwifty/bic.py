@@ -1,5 +1,6 @@
 import re
 import warnings
+from typing import List
 from typing import Optional
 
 import iso3166
@@ -172,14 +173,14 @@ class BIC(common.Base):
             formatted += " " + self.branch_code
         return formatted
 
-    def _lookup_values(self, key: str) -> list:
+    def _lookup_values(self, key: str) -> List:
         spec = registry.get("bic")
         assert isinstance(spec, dict)
         entries = spec.get(self.compact, [])
         return sorted({entry[key] for entry in entries})
 
     @property
-    def domestic_bank_codes(self) -> list[str]:
+    def domestic_bank_codes(self) -> List[str]:
         """List[str]: The country specific bank-codes associated with the BIC.
 
         Examples:
@@ -191,7 +192,7 @@ class BIC(common.Base):
         return self._lookup_values("bank_code")
 
     @property
-    def bank_names(self) -> list[str]:
+    def bank_names(self) -> List[str]:
         """List[str]: The name of the banks associated with the BIC.
 
         Examples:
@@ -203,7 +204,7 @@ class BIC(common.Base):
         return self._lookup_values("name")
 
     @property
-    def bank_short_names(self) -> list[str]:
+    def bank_short_names(self) -> List[str]:
         """List[str]: The short name of the banks associated with the BIC.
 
         Examples:

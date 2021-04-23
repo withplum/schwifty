@@ -1,24 +1,25 @@
-from __future__ import annotations
-
 import json
 import os.path
 from collections import defaultdict
 from typing import Any
 from typing import Callable
+from typing import Dict
+from typing import List
+from typing import Tuple
 from typing import Union
 
 from pkg_resources import resource_filename
 from pkg_resources import resource_listdir
 
 
-_registry: dict[str, Union[dict, list[dict]]] = {}
+_registry: Dict[str, Union[Dict, List[Dict]]] = {}
 
 
 def has(name: str) -> bool:
     return name in _registry
 
 
-def get(name: str) -> Union[dict, list[dict]]:
+def get(name: str) -> Union[Dict, List[Dict]]:
     if not has(name):
         data = None
         dirname = name + "_registry"
@@ -40,18 +41,18 @@ def get(name: str) -> Union[dict, list[dict]]:
     return _registry[name]
 
 
-def save(name: str, data: Union[dict, list[dict]]) -> None:
+def save(name: str, data: Union[Dict, List[Dict]]) -> None:
     _registry[name] = data
 
 
 def build_index(
     base_name: str,
     index_name: str,
-    key: Union[str, tuple],
+    key: Union[str, Tuple],
     accumulate: bool = False,
     **predicate: Any,
 ) -> None:
-    def make_key(entry: dict) -> Union[tuple, str]:
+    def make_key(entry: Dict) -> Union[Tuple, str]:
         return tuple(entry[k] for k in key) if isinstance(key, tuple) else entry[key]
 
     def match(entry: dict) -> bool:
