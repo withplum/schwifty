@@ -12,6 +12,7 @@ Changed
 ~~~~~~~
 * Added type hints to the entire code base.
 * Dropped support for Python 3.6
+* Update bank registry for Austria, Poland, Germany, Belgium, Czech Republic, Netherlands, Slovenia and Slovakia.
 
 `2021.01.0`_ - 2021/01/20
 -------------------------

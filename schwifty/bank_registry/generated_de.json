@@ -665,8 +665,8 @@
   },
   {
     "bank_code": "12030900",
-    "name": "Merck Finck Privatbankiers",
-    "short_name": "Merck Finck Privatbankiers",
+    "name": "Merck Finck A Quintet Private Bank",
+    "short_name": "Merck Finck",
     "bic": "MEFIDEMM100",
     "primary": true,
     "country_code": "DE"
@@ -2009,8 +2009,8 @@
   },
   {
     "bank_code": "14061308",
-    "name": "Volks- und Raiffeisenbank",
-    "short_name": "VB u Raiffbk G\u00fcstrow",
+    "name": "VR Bank Mecklenburg",
+    "short_name": "VR Bank Mecklenburg",
     "bic": "GENODEF1GUE",
     "primary": true,
     "country_code": "DE"
@@ -2041,8 +2041,8 @@
   },
   {
     "bank_code": "14091464",
-    "name": "VR-Bank",
-    "short_name": "VR-Bank Schwerin",
+    "name": "VR-Bank -alt-",
+    "short_name": "VR-Bank Schwerin -alt-",
     "bic": "GENODEF1SN1",
     "primary": true,
     "country_code": "DE"
@@ -2937,8 +2937,8 @@
   },
   {
     "bank_code": "20030700",
-    "name": "Merck Finck Privatbankiers",
-    "short_name": "Merck Finck Privatbankiers",
+    "name": "Merck Finck A Quintet Private Bank",
+    "short_name": "Merck Finck",
     "bic": "MEFIDEMM200",
     "primary": true,
     "country_code": "DE"
@@ -3081,8 +3081,8 @@
   },
   {
     "bank_code": "20041199",
-    "name": "comdirect bank",
-    "short_name": "comdirect bank Quickborn",
+    "name": "Commerzbank - GF comdirect",
+    "short_name": "Commerzbank - GF comdirect",
     "bic": "COBADEHD099",
     "primary": true,
     "country_code": "DE"
@@ -8033,8 +8033,8 @@
   },
   {
     "bank_code": "28066214",
-    "name": "Volksbank Wildeshauser Geest",
-    "short_name": "VB Wildeshauser Geest",
+    "name": "VR Bank Oldenburg Land",
+    "short_name": "VR Bank Oldenburg Land",
     "bic": "GENODEF1WDH",
     "primary": true,
     "country_code": "DE"
@@ -8089,8 +8089,8 @@
   },
   {
     "bank_code": "28069092",
-    "name": "VR Bank Oldenburg Land West",
-    "short_name": "VR Bank Oldenburg Land West",
+    "name": "VR Bank Oldenburg Land West -alt-",
+    "short_name": "VR Bank Oldenburg Land -alt",
     "bic": "GENODEF1HAT",
     "primary": true,
     "country_code": "DE"
@@ -8113,8 +8113,8 @@
   },
   {
     "bank_code": "28069138",
-    "name": "VR Bank Oldenburg Land West",
-    "short_name": "VR Bank Oldenburg Land West",
+    "name": "VR Bank Oldenburg Land West -alt-",
+    "short_name": "VR Bank Oldenburg Land -alt",
     "bic": "GENODEF1VAG",
     "primary": true,
     "country_code": "DE"
@@ -9209,8 +9209,8 @@
   },
   {
     "bank_code": "30030900",
-    "name": "Merck Finck Privatbankiers",
-    "short_name": "Merck Finck Privatbankiers",
+    "name": "Merck Finck A Quintet Private Bank",
+    "short_name": "Merck Finck",
     "bic": "MEFIDEMM300",
     "primary": true,
     "country_code": "DE"
@@ -11428,6 +11428,14 @@
     "name": "Postbank Ndl der Deutsche Bank",
     "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFFXXX",
+    "primary": true,
+    "country_code": "DE"
+  },
+  {
+    "bank_code": "37019000",
+    "name": "bunq Niederlassung Deutschland",
+    "short_name": "bunq, Koeln",
+    "bic": "BUNQDE82XXX",
     "primary": true,
     "country_code": "DE"
   },
@@ -16337,8 +16345,8 @@
   },
   {
     "bank_code": "47265383",
-    "name": "Volksbank Wewelsburg-Ahden",
-    "short_name": "VB Wewelsburg-Ahden",
+    "name": "Volksbank Wewelsburg-Ahden -alt-",
+    "short_name": "VB Wewelsburg-Ahden -alt-",
     "bic": "GENODEM1WAH",
     "primary": true,
     "country_code": "DE"
@@ -17232,14 +17240,6 @@
     "country_code": "DE"
   },
   {
-    "bank_code": "50010111",
-    "name": "DSK Hyp",
-    "short_name": "DSK Hyp",
-    "bic": "ESSEDE5FXXX",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
     "bank_code": "50010200",
     "name": "AKBANK",
     "short_name": "AKBANK",
@@ -17273,16 +17273,16 @@
   },
   {
     "bank_code": "50010900",
-    "name": "Bank of America",
-    "short_name": "Bankamerica",
+    "name": "Bank of America Europe, Frankfurt Branch",
+    "short_name": "Bank of America Europe",
     "bic": "BOFADEFXXXX",
     "primary": true,
     "country_code": "DE"
   },
   {
     "bank_code": "50010910",
-    "name": "Bank of America, Filiale Frankfurt",
-    "short_name": "Bank of America",
+    "name": "Bank of America Europe, Frankfurt Branch",
+    "short_name": "Bank of America Europe",
     "bic": "BOFADEFXVAM",
     "primary": true,
     "country_code": "DE"
@@ -18449,8 +18449,8 @@
   },
   {
     "bank_code": "50120000",
-    "name": "MAINFIRST BANK",
-    "short_name": "MAINFIRST BANK",
+    "name": "Stifel Europe Bank",
+    "short_name": "Stifel Europe Bank",
     "bic": "MAIFDEFFXXX",
     "primary": true,
     "country_code": "DE"
@@ -18529,8 +18529,8 @@
   },
   {
     "bank_code": "50130400",
-    "name": "Merck Finck Privatbankiers",
-    "short_name": "Merck Finck Privatbankiers",
+    "name": "Merck Finck A Quintet Private Bank",
+    "short_name": "Merck Finck",
     "bic": "MEFIDEMM501",
     "primary": true,
     "country_code": "DE"
@@ -18665,8 +18665,8 @@
   },
   {
     "bank_code": "50230000",
-    "name": "ABC International Bank Frankfurt am Main",
-    "short_name": "ABC International Bank Ffm",
+    "name": "Arab Banking Corporation Zweigniederlassung Frankfurt",
+    "short_name": "ABC ZNL Frankfurt",
     "bic": "ABCADEFFXXX",
     "primary": true,
     "country_code": "DE"
@@ -19456,14 +19456,6 @@
     "country_code": "DE"
   },
   {
-    "bank_code": "50864322",
-    "name": "Volksbank Modau -alt-",
-    "short_name": "Volksbank Modau -alt-",
-    "bic": "GENODE51ORA",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
     "bank_code": "50865224",
     "name": "VB M\u00f6rfelden-Walldorf Ndl d Frankfurter VB",
     "short_name": "Volksbank M\u00f6rfelden-Walldf",
@@ -20185,9 +20177,9 @@
   },
   {
     "bank_code": "51410600",
-    "name": "Bank of America Merrill Lynch International Zndl Frankfurt",
-    "short_name": "Bofa Merrill Lynch Intl.FFM",
-    "bic": "MELBDEF1XXX",
+    "name": "Bank of America",
+    "short_name": "Bank of America Frankfurt",
+    "bic": "BOFADEFFXXX",
     "primary": true,
     "country_code": "DE"
   },
@@ -20612,14 +20604,6 @@
     "name": "Raiffeisenbank Langenschwarz -alt-",
     "short_name": "Raiffbk Langenschwarz -alt-",
     "bic": "GENODEF1BUR",
-    "primary": true,
-    "country_code": "DE"
-  },
-  {
-    "bank_code": "52069103",
-    "name": "Raiffeisenbank Trendelburg -alt-",
-    "short_name": "Raiffbk Trendelburg -alt-",
-    "bic": "GENODEF1TBG",
     "primary": true,
     "country_code": "DE"
   },
@@ -21729,8 +21713,8 @@
   },
   {
     "bank_code": "54850010",
-    "name": "Sparkasse S\u00fcdliche Weinstra\u00dfe in Landau",
-    "short_name": "Spk S\u00fcdl Weinstr in Landau",
+    "name": "Sparkasse S\u00fcdpfalz",
+    "short_name": "Sparkasse S\u00fcdpfalz",
     "bic": "SOLADES1SUW",
     "primary": true,
     "country_code": "DE"
@@ -25041,8 +25025,8 @@
   },
   {
     "bank_code": "60090700",
-    "name": "S\u00fcdwestbank",
-    "short_name": "S\u00fcdwestbank Stuttgart",
+    "name": "S\u00dcDWESTBANK - BAWAG Niederlassung Deutschland",
+    "short_name": "S\u00dcDWESTBANK - BAWAG Ndl. DE",
     "bic": "SWBSDESSXXX",
     "primary": true,
     "country_code": "DE"
@@ -29905,8 +29889,8 @@
   },
   {
     "bank_code": "70030400",
-    "name": "Merck Finck Privatbankiers",
-    "short_name": "Merck Finck Privatbankiers",
+    "name": "Merck Finck A Quintet Private Bank",
+    "short_name": "Merck Finck",
     "bic": "MEFIDEMMXXX",
     "primary": true,
     "country_code": "DE"
@@ -30897,8 +30881,8 @@
   },
   {
     "bank_code": "70169524",
-    "name": "Raiffeisenbank RSA",
-    "short_name": "Raiffeisenbank RSA",
+    "name": "Bankhaus RSA",
+    "short_name": "Bankhaus RSA",
     "bic": "GENODEF1RME",
     "primary": true,
     "country_code": "DE"
@@ -31313,8 +31297,8 @@
   },
   {
     "bank_code": "71061009",
-    "name": "VR meine Raiffeisenbank",
-    "short_name": "VR meine Raiffeisenbank",
+    "name": "VR meine Raiffeisenbank -alt-",
+    "short_name": "VR meine Raiffeisenbk -alt-",
     "bic": "GENODEF1AOE",
     "primary": true,
     "country_code": "DE"
@@ -31465,8 +31449,8 @@
   },
   {
     "bank_code": "71160000",
-    "name": "Volksbank Raiffeisenbank Rosenheim-Chiemsee",
-    "short_name": "VB RB Rosenheim-Chiemsee",
+    "name": "meine Volksbank Raiffeisenbank",
+    "short_name": "meine Volksbank Raiffbk",
     "bic": "GENODEF1VRR",
     "primary": true,
     "country_code": "DE"
@@ -31667,7 +31651,7 @@
     "bank_code": "72030260",
     "name": "Bankhaus Anton Hafner (Gf PayCenter)",
     "short_name": "Bankhaus Anton Hafner",
-    "bic": "ANHODE77PAY",
+    "bic": "ANHODE7AXXX",
     "primary": true,
     "country_code": "DE"
   },
@@ -33233,7 +33217,7 @@
   },
   {
     "bank_code": "74260110",
-    "name": "Raiffeisenbank",
+    "name": "Raiffeisenbank Straubing",
     "short_name": "Raiffeisenbank Straubing",
     "bic": "GENODEF1SR2",
     "primary": true,

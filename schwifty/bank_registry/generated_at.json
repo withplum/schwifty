@@ -138,14 +138,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "FAZFAT21XXX",
-    "bank_code": "19965",
-    "name": "Ford Bank Austria, Zweigniederlassung der FCE BANK PLC",
-    "short_name": "Ford Bank Austria, Zweigniederlassung der FCE BANK PLC"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "BAWOATW1XXX",
     "bank_code": "19750",
     "name": "BAWAG P.S.K. Wohnbaubank Aktiengesellschaft",
@@ -350,14 +342,6 @@
     "bank_code": "20334",
     "name": "Sparkasse M\u00fchlviertel-West Bank Aktiengesellschaft",
     "short_name": "Sparkasse M\u00fchlviertel-West Bank Aktiengesellschaft"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "CBMUAT21XXX",
-    "bank_code": "19620",
-    "name": "Commerzialbank Mattersburg im Burgenland Aktiengesellschaft",
-    "short_name": "Commerzialbank Mattersburg im Burgenland Aktiengesellschaft"
   },
   {
     "country_code": "AT",
@@ -1058,7 +1042,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "VBWEAT2WXXX",
+    "bic": "VBOEATWWOOE",
     "bank_code": "43210",
     "name": "Volksbank Ober\u00f6sterreich AG",
     "short_name": "Volksbank Ober\u00f6sterreich AG"
@@ -1626,7 +1610,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "VBWEAT2WXXX",
+    "bic": "VBOEATWWOOE",
     "bank_code": "42630",
     "name": "Volksbank Ober\u00f6sterreich AG",
     "short_name": "Volksbank Ober\u00f6sterreich AG"
@@ -1634,7 +1618,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "VBWEAT2WXXX",
+    "bic": "VBOEATWWOOE",
     "bank_code": "42550",
     "name": "Volksbank Ober\u00f6sterreich AG",
     "short_name": "Volksbank Ober\u00f6sterreich AG"
@@ -3882,7 +3866,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "DOBAATWWXXX",
+    "bic": "",
     "bank_code": "19940",
     "name": "VTB Bank (Europe) SE, Zweigniederlassung Wien",
     "short_name": "VTB Bank (Europe) SE, Zweigniederlassung Wien"
@@ -4818,7 +4802,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "",
+    "bic": "PABXATW1XXX",
     "bank_code": "18120",
     "name": "paybox Bank AG",
     "short_name": "paybox Bank AG"
@@ -5330,7 +5314,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "VBWEAT2WXXX",
+    "bic": "VBOEATWWOOE",
     "bank_code": "44800",
     "name": "Volksbank Ober\u00f6sterreich AG",
     "short_name": "Volksbank Ober\u00f6sterreich AG"
@@ -5650,7 +5634,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "VBWEAT2WXXX",
+    "bic": "VBOEATWWOOE",
     "bank_code": "42830",
     "name": "Volksbank Ober\u00f6sterreich AG",
     "short_name": "Volksbank Ober\u00f6sterreich AG"
@@ -5882,7 +5866,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "VBWEAT2WXXX",
+    "bic": "VBOEATWWOOE",
     "bank_code": "43830",
     "name": "Volksbank Ober\u00f6sterreich AG",
     "short_name": "Volksbank Ober\u00f6sterreich AG"
@@ -5962,6 +5946,14 @@
   {
     "country_code": "AT",
     "primary": true,
+    "bic": "",
+    "bank_code": "19610",
+    "name": "BNP PARIBAS PERSONAL FINANCE SA Niederlassung \u00d6sterreich",
+    "short_name": "BNP PARIBAS PERSONAL FINANCE SA Niederlassung \u00d6sterreich"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
     "bic": "RZSTAT2G151",
     "bank_code": "38326",
     "name": "Raiffeisenbank Ilz-Gro\u00dfsteinbach-Riegersburg eGen",
@@ -6026,7 +6018,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "VBWEAT2WXXX",
+    "bic": "VBOEATWWOOE",
     "bank_code": "45330",
     "name": "Volksbank Ober\u00f6sterreich AG",
     "short_name": "Volksbank Ober\u00f6sterreich AG"
@@ -6114,7 +6106,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "VBWEAT2WXXX",
+    "bic": "VBOEATWWOOE",
     "bank_code": "43180",
     "name": "Volksbank Ober\u00f6sterreich AG",
     "short_name": "Volksbank Ober\u00f6sterreich AG"
@@ -6258,7 +6250,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "VBWEAT2WXXX",
+    "bic": "VBOEATWWOOE",
     "bank_code": "44790",
     "name": "Volksbank Ober\u00f6sterreich AG",
     "short_name": "Volksbank Ober\u00f6sterreich AG"
@@ -6890,10 +6882,26 @@
   {
     "country_code": "AT",
     "primary": true,
+    "bic": "",
+    "bank_code": "19515",
+    "name": "Opel Bank S.A. Niederlassung \u00d6sterreich",
+    "short_name": "Opel Bank S.A. Niederlassung \u00d6sterreich"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
     "bic": "RZSTAT2G077",
     "bank_code": "38122",
     "name": "Raiffeisenbank Region F\u00fcrstenfeld eGen",
     "short_name": "Raiffeisenbank Region F\u00fcrstenfeld eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "",
+    "bank_code": "19835",
+    "name": "Ford Bank GmbH, Zweigniederlassung \u00d6sterreich",
+    "short_name": "Ford Bank GmbH, Zweigniederlassung \u00d6sterreich"
   },
   {
     "country_code": "AT",

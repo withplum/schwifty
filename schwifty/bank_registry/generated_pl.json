@@ -6963,6 +6963,14 @@
     "country_code": "PL",
     "primary": true,
     "bic": "PKOPPLPWXXX",
+    "bank_code": "12400115",
+    "name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "PKOPPLPWXXX",
     "bank_code": "12401011",
     "name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna"
@@ -11618,6 +11626,22 @@
   {
     "country_code": "PL",
     "primary": true,
+    "bic": "IEEAPLPAXXX",
+    "bank_code": "19500001",
+    "name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "IEEAPLPAXXX",
+    "bank_code": "19501024",
+    "name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
     "bic": "POCZPLP4XXX",
     "bank_code": "13200006",
     "name": "Bank Pocztowy Sp\u00f3\u0142ka Akcyjna",
@@ -13110,22 +13134,6 @@
     "bank_code": "19401210",
     "name": "Credit Agricole Bank Polska Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Credit Agricole Bank Polska Sp\u00f3\u0142ka Akcyjna"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "IEEAPLPAXXX",
-    "bank_code": "19500001",
-    "name": "Idea Bank Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Idea Bank Sp\u00f3\u0142ka Akcyjna"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "IEEAPLPAXXX",
-    "bank_code": "19501024",
-    "name": "Idea Bank Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Idea Bank Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
@@ -15444,8 +15452,8 @@
     "primary": true,
     "bic": "HSBCPLPWXXX",
     "bank_code": "12800003",
-    "name": "HSBC France (Sp\u00f3\u0142ka Akcyjna) Oddzia\u0142 w Polsce",
-    "short_name": "HSBC France (Sp\u00f3\u0142ka Akcyjna) Oddzia\u0142 w Polsce"
+    "name": "HSBC Continental Europe (Sp\u00f3\u0142ka Akcyjna) Oddzia\u0142 w Polsce",
+    "short_name": "HSBC Continental Europe (Sp\u00f3\u0142ka Akcyjna) Oddzia\u0142 w Polsce"
   },
   {
     "country_code": "PL",
@@ -15660,8 +15668,16 @@
     "primary": true,
     "bic": "",
     "bank_code": "28800006",
-    "name": "ALLFUNDS BANK S.A.U. (SP\u00d3\u0141KA AKCYJNA) ODDZIA\u0141 W POLSCE",
-    "short_name": "ALLFUNDS BANK S.A.U. (SP\u00d3\u0141KA AKCYJNA) ODDZIA\u0141 W POLSCE"
+    "name": "Allfunds Bank S.A.U. (Sp\u00f3\u0142ka Akcyjna) Oddzia\u0142 w Polsce",
+    "short_name": "Allfunds Bank S.A.U. (Sp\u00f3\u0142ka Akcyjna) Oddzia\u0142 w Polsce"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "28900009",
+    "name": "Hoist Finance AB (publ) Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
+    "short_name": "Hoist Finance AB (publ) Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
   },
   {
     "country_code": "PL",
@@ -17932,16 +17948,16 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "83670000",
-    "name": "Gospodarczy Bank Sp\u00f3\u0142dzielczy Mi\u0119dzyrzecz",
-    "short_name": "Gospodarczy Bank Sp\u00f3\u0142dzielczy Mi\u0119dzyrzecz"
+    "name": "Lubuski Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "Lubuski Bank Sp\u00f3\u0142dzielczy"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "83720008",
-    "name": "Gospodarczy Bank Sp\u00f3\u0142dzielczy Mi\u0119dzyrzecz",
-    "short_name": "Gospodarczy Bank Sp\u00f3\u0142dzielczy Mi\u0119dzyrzecz"
+    "name": "Lubuski Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "Lubuski Bank Sp\u00f3\u0142dzielczy"
   },
   {
     "country_code": "PL",
@@ -24723,30 +24739,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
-    "bank_code": "96030006",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Do\u0142hobyczowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Do\u0142hobyczowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "96031016",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Do\u0142hobyczowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Do\u0142hobyczowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "96031029",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Do\u0142hobyczowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Do\u0142hobyczowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
     "bank_code": "96040005",
     "name": "Bank Sp\u00f3\u0142dzielczy we Frampolu",
     "short_name": "Bank Sp\u00f3\u0142dzielczy we Frampolu"
@@ -24894,6 +24886,30 @@
     "bank_code": "96421019",
     "name": "Bank Sp\u00f3\u0142dzielczy w Werbkowicach",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Werbkowicach"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPR",
+    "bank_code": "96030006",
+    "name": "Powiatowy Bank Sp\u00f3\u0142dzielczy w Zamo\u015bciu",
+    "short_name": "Powiatowy Bank Sp\u00f3\u0142dzielczy w Zamo\u015bciu"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPR",
+    "bank_code": "96031016",
+    "name": "Powiatowy Bank Sp\u00f3\u0142dzielczy w Zamo\u015bciu",
+    "short_name": "Powiatowy Bank Sp\u00f3\u0142dzielczy w Zamo\u015bciu"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPR",
+    "bank_code": "96031029",
+    "name": "Powiatowy Bank Sp\u00f3\u0142dzielczy w Zamo\u015bciu",
+    "short_name": "Powiatowy Bank Sp\u00f3\u0142dzielczy w Zamo\u015bciu"
   },
   {
     "country_code": "PL",

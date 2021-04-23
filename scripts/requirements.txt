@@ -1,3 +1,3 @@
 beautifulsoup4
 requests
-xlrd
+xlrd<2

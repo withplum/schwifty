@@ -10,14 +10,6 @@
   {
     "country_code": "NL",
     "primary": true,
-    "bic": "ABNANL2A",
-    "bank_code": "FTSB",
-    "name": "ABN AMRO (ex FORTIS)",
-    "short_name": "ABN AMRO (ex FORTIS)"
-  },
-  {
-    "country_code": "NL",
-    "primary": true,
     "bic": "ABNCNL2A",
     "bank_code": "ABNC",
     "name": "ABN AMRO Clearing Bank N.V.",
@@ -466,14 +458,6 @@
   {
     "country_code": "NL",
     "primary": true,
-    "bic": "LOCYNL2A",
-    "bank_code": "LOCY",
-    "name": "LOMBARD ODIER DARIER HENTSCH & CIE",
-    "short_name": "LOMBARD ODIER DARIER HENTSCH & CIE"
-  },
-  {
-    "country_code": "NL",
-    "primary": true,
     "bic": "LOYDNL2A",
     "bank_code": "LOYD",
     "name": "LLOYDS TSB BANK ",
@@ -500,8 +484,8 @@
     "primary": true,
     "bic": "MOYONL21",
     "bank_code": "MOYO",
-    "name": "MONEYOU",
-    "short_name": "MONEYOU"
+    "name": "MONEYOU * expected expiry date 1 September 2021 *",
+    "short_name": "MONEYOU * expected expiry date 1 September 2021 *"
   },
   {
     "country_code": "NL",

@@ -178,6 +178,14 @@
   {
     "country_code": "SK",
     "primary": true,
+    "bic": "",
+    "bank_code": "8400",
+    "name": "COFIDIS SA, pobo\u010dka zahrani\u010dnej banky",
+    "short_name": "COFIDIS SA, pobo\u010dka zahrani\u010dnej banky"
+  },
+  {
+    "country_code": "SK",
+    "primary": true,
     "bic": "JTBPSKBA",
     "bank_code": "8320",
     "name": "J&T BANKA, a.s., pobo\u010dka zahrani\u010dnej banky",
@@ -212,16 +220,8 @@
     "primary": true,
     "bic": "",
     "bank_code": "8390",
-    "name": "AKCENTA, spo\u0159iteln\u00ed a uv\u011brn\u00ed dru\u017estvo, pobo\u010dka Ko\u0161ice",
-    "short_name": "AKCENTA, spo\u0159iteln\u00ed a uv\u011brn\u00ed dru\u017estvo, pobo\u010dka Ko\u0161ice"
-  },
-  {
-    "country_code": "SK",
-    "primary": true,
-    "bic": "RIDBSKBX",
-    "bank_code": "8410",
-    "name": "ZUNO BANK AG, pobo\u010dka zahrani\u010dnej banky",
-    "short_name": "ZUNO BANK AG, pobo\u010dka zahrani\u010dnej banky"
+    "name": "\u010ceskoslovensk\u00e9 \u00fav\u011brn\u00ed dru\u017estvo, pobo\u010dka Slovensko",
+    "short_name": "\u010ceskoslovensk\u00e9 \u00fav\u011brn\u00ed dru\u017estvo, pobo\u010dka Slovensko"
   },
   {
     "country_code": "SK",
@@ -266,10 +266,26 @@
   {
     "country_code": "SK",
     "primary": true,
+    "bic": "NFDNSKBA",
+    "bank_code": "9953",
+    "name": "Payment Institution NFD a.s.",
+    "short_name": "Payment Institution NFD a.s."
+  },
+  {
+    "country_code": "SK",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8440",
+    "name": "BNP PARIBAS PERSONAL FINANCE SA, pobo\u010dka zahrani\u010dnej banky",
+    "short_name": "BNP PARIBAS PERSONAL FINANCE SA, pobo\u010dka zahrani\u010dnej banky"
+  },
+  {
+    "country_code": "SK",
+    "primary": true,
     "bic": "JTBPCZPP",
     "bank_code": "5800",
-    "name": "J+T BANKA, a.s.",
-    "short_name": "J+T BANKA, a.s."
+    "name": "J&T BANKA, a.s.",
+    "short_name": "J&T BANKA, a.s."
   },
   {
     "country_code": "SK",
@@ -282,9 +298,41 @@
   {
     "country_code": "SK",
     "primary": true,
+    "bic": "BPKOSKBB",
+    "bank_code": "8450",
+    "name": "PKO BP S.A., pobo\u010dka zahrani\u010dnej banky",
+    "short_name": "PKO BP S.A., pobo\u010dka zahrani\u010dnej banky"
+  },
+  {
+    "country_code": "SK",
+    "primary": true,
     "bic": "MPUBCZPP",
     "bank_code": "2070",
     "name": "TRINITY BANK a.s.",
     "short_name": "TRINITY BANK a.s."
+  },
+  {
+    "country_code": "SK",
+    "primary": true,
+    "bic": "PMBPCZPP",
+    "bank_code": "6000",
+    "name": "PPF banka a.s.",
+    "short_name": "PPF banka a.s."
+  },
+  {
+    "country_code": "SK",
+    "primary": true,
+    "bic": "AGBACZPP",
+    "bank_code": "0600",
+    "name": "MONETA Money Bank, a.s.",
+    "short_name": "MONETA Money Bank, a.s."
+  },
+  {
+    "country_code": "SK",
+    "primary": true,
+    "bic": "",
+    "bank_code": "9954",
+    "name": "K-PAY a.s.",
+    "short_name": "K-PAY a.s."
   }
 ]

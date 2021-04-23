@@ -1140,8 +1140,8 @@
     "primary": true,
     "bic": "BSCHBEBBRET",
     "bank_code": "176",
-    "name": "Santander Consumer Bank",
-    "short_name": "Santander Consumer Bank"
+    "name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb",
+    "short_name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb"
   },
   {
     "country_code": "BE",
@@ -3644,8 +3644,8 @@
     "primary": true,
     "bic": "PANXBEB1",
     "bank_code": "504",
-    "name": "PAY-NXT",
-    "short_name": "PAY-NXT"
+    "name": "Unifiedpost Payments",
+    "short_name": "Unifiedpost Payments"
   },
   {
     "country_code": "BE",
@@ -3700,8 +3700,8 @@
     "primary": true,
     "bic": "PUILBEBB",
     "bank_code": "514",
-    "name": "Puilaetco Dewaay Private Bankers",
-    "short_name": "Puilaetco Dewaay Private Bankers"
+    "name": "Puilaetco Branch of Quintet Private Bank SA",
+    "short_name": "Puilaetco Branch of Quintet Private Bank SA"
   },
   {
     "country_code": "BE",
@@ -3746,7 +3746,7 @@
   {
     "country_code": "BE",
     "primary": true,
-    "bic": "FVLBBE2E",
+    "bic": "FVLBBE22",
     "bank_code": "525",
     "name": "F. van Lanschot Bankiers",
     "short_name": "F. van Lanschot Bankiers"
@@ -3758,14 +3758,6 @@
     "bank_code": "530",
     "name": "Shizuoka Bank (Europe)",
     "short_name": "Shizuoka Bank (Europe)"
-  },
-  {
-    "country_code": "BE",
-    "primary": true,
-    "bic": "FBHLBE22",
-    "bank_code": "535",
-    "name": "CREDIT EUROPE BANK NV",
-    "short_name": "CREDIT EUROPE BANK NV"
   },
   {
     "country_code": "BE",
@@ -4084,40 +4076,40 @@
     "primary": true,
     "bic": "BSCHBEBB",
     "bank_code": "590",
-    "name": "Santander Consumer Bank",
-    "short_name": "Santander Consumer Bank"
+    "name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb",
+    "short_name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb"
   },
   {
     "country_code": "BE",
     "primary": true,
     "bic": "BSCHBEBB",
     "bank_code": "591",
-    "name": "Santander Consumer Bank",
-    "short_name": "Santander Consumer Bank"
+    "name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb",
+    "short_name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb"
   },
   {
     "country_code": "BE",
     "primary": true,
     "bic": "BSCHBEBB",
     "bank_code": "592",
-    "name": "Santander Consumer Bank",
-    "short_name": "Santander Consumer Bank"
+    "name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb",
+    "short_name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb"
   },
   {
     "country_code": "BE",
     "primary": true,
     "bic": "BSCHBEBB",
     "bank_code": "593",
-    "name": "Santander Consumer Bank",
-    "short_name": "Santander Consumer Bank"
+    "name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb",
+    "short_name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb"
   },
   {
     "country_code": "BE",
     "primary": true,
     "bic": "BSCHBEBB",
     "bank_code": "594",
-    "name": "Santander Consumer Bank",
-    "short_name": "Santander Consumer Bank"
+    "name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb",
+    "short_name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb"
   },
   {
     "country_code": "BE",
@@ -4582,14 +4574,6 @@
     "bank_code": "696",
     "name": "Cr\u00e9dit Agricole Corporate & Investment Bank",
     "short_name": "Cr\u00e9dit Agricole Corporate & Investment Bank"
-  },
-  {
-    "country_code": "BE",
-    "primary": true,
-    "bic": "NATXBEB1",
-    "bank_code": "698",
-    "name": "Natixis Bank",
-    "short_name": "Natixis Bank"
   },
   {
     "country_code": "BE",
@@ -6012,8 +5996,8 @@
     "primary": true,
     "bic": "PUILBEBB",
     "bank_code": "942",
-    "name": "Puilaetco Dewaay Private Bankers",
-    "short_name": "Puilaetco Dewaay Private Bankers"
+    "name": "Puilaetco Branch of Quintet Private Bank SA",
+    "short_name": "Puilaetco Branch of Quintet Private Bank SA"
   },
   {
     "country_code": "BE",
@@ -6028,8 +6012,8 @@
     "primary": true,
     "bic": "HSBCBEBB",
     "bank_code": "949",
-    "name": "HSBC France Belgian Branch",
-    "short_name": "HSBC France Belgian Branch"
+    "name": "HSBC Continental Europe Belgium",
+    "short_name": "HSBC Continental Europe Belgium"
   },
   {
     "country_code": "BE",
@@ -6164,8 +6148,8 @@
     "primary": true,
     "bic": "PUILBEBB",
     "bank_code": "969",
-    "name": "Puilaetco Dewaay Private Bankers",
-    "short_name": "Puilaetco Dewaay Private Bankers"
+    "name": "Puilaetco Branch of Quintet Private Bank SA",
+    "short_name": "Puilaetco Branch of Quintet Private Bank SA"
   },
   {
     "country_code": "BE",

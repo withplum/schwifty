@@ -316,8 +316,8 @@
     "primary": true,
     "bic": "",
     "bank_code": "7980",
-    "name": "W\u00c3\u00bcstenrot hypote\u00c4\u008dn\u00c3\u00ad banka a.s.",
-    "short_name": "W\u00c3\u00bcstenrot hypote\u00c4\u008dn\u00c3\u00ad banka a.s."
+    "name": "MONETA Money Bank, a.s.-dob\u00c4\u009bh plateb W\u00c3\u00bcstenrot hypote\u00c4\u008dn\u00c3\u00ad banka a.s.",
+    "short_name": "MONETA Money Bank, a.s.-dob\u00c4\u009bh plateb W\u00c3\u00bcstenrot hypote\u00c4\u008dn\u00c3\u00ad banka a.s."
   },
   {
     "country_code": "CZ",
@@ -364,8 +364,8 @@
     "primary": true,
     "bic": "MIDLCZPP",
     "bank_code": "8150",
-    "name": "HSBC France - pobo\u00c4\u008dka Praha",
-    "short_name": "HSBC France - pobo\u00c4\u008dka Praha"
+    "name": "HSBC Continental Europe, Czech Republic",
+    "short_name": "HSBC Continental Europe, Czech Republic"
   },
   {
     "country_code": "CZ",
@@ -418,18 +418,10 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "ORRRCZP1",
-    "bank_code": "8225",
-    "name": "ORANGETRUST s.r.o.",
-    "short_name": "ORANGETRUST s.r.o."
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
-    "bic": "EEPSCZPP",
+    "bic": "",
     "bank_code": "8230",
-    "name": "EEPAYS s.r.o.",
-    "short_name": "EEPAYS s.r.o."
+    "name": "ABAPAY s.r.o.",
+    "short_name": "ABAPAY s.r.o."
   },
   {
     "country_code": "CZ",
@@ -507,14 +499,6 @@
     "country_code": "CZ",
     "primary": true,
     "bic": "",
-    "bank_code": "8291",
-    "name": "Business Credit s.r.o.",
-    "short_name": "Business Credit s.r.o."
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
-    "bic": "",
     "bank_code": "8292",
     "name": "Money Change s.r.o.",
     "short_name": "Money Change s.r.o."
@@ -522,7 +506,7 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "",
+    "bic": "MRPSCZPP",
     "bank_code": "8293",
     "name": "Mercurius partners s.r.o.",
     "short_name": "Mercurius partners s.r.o."
@@ -534,13 +518,5 @@
     "bank_code": "8294",
     "name": "GrisPayUnion s.r.o.",
     "short_name": "GrisPayUnion s.r.o."
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
-    "bic": "",
-    "bank_code": "8296",
-    "name": "PaySysEU s.r.o.",
-    "short_name": "PaySysEU s.r.o."
   }
 ]

@@ -14,7 +14,7 @@ def process():
     book = xlrd.open_workbook(file_contents=requests.get(URL).content)
     sheet = book.sheet_by_index(0)
 
-    for row in list(sheet.get_rows())[2:]:
+    for row in list(sheet.get_rows())[4:]:
         bic, bank_code, name = row[:3]
         registry.append(
             {

@@ -5906,7 +5906,7 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "ABANSI2XXXX",
+    "bic": "KBMASI2XXXX",
     "bank_code": "05100",
     "name": "NOVA KBM D.D.",
     "short_name": "NOVA KBM D.D."
@@ -5914,7 +5914,7 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "ABANSI2XXXX",
+    "bic": "KBMASI2XXXX",
     "bank_code": "05200",
     "name": "NOVA KBM D.D.",
     "short_name": "NOVA KBM D.D."
@@ -5922,7 +5922,7 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "ABANSI2XXXX",
+    "bic": "KBMASI2XXXX",
     "bank_code": "05300",
     "name": "NOVA KBM D.D.",
     "short_name": "NOVA KBM D.D."
@@ -5930,7 +5930,7 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "ABANSI2XXXX",
+    "bic": "KBMASI2XXXX",
     "bank_code": "05400",
     "name": "NOVA KBM D.D.",
     "short_name": "NOVA KBM D.D."
@@ -5938,7 +5938,7 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "ABANSI2XXXX",
+    "bic": "KBMASI2XXXX",
     "bank_code": "05403",
     "name": "NOVA KBM D.D.",
     "short_name": "NOVA KBM D.D."
@@ -5946,7 +5946,7 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "ABANSI2XXXX",
+    "bic": "KBMASI2XXXX",
     "bank_code": "05500",
     "name": "NOVA KBM D.D.",
     "short_name": "NOVA KBM D.D."
@@ -5954,7 +5954,7 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "ABANSI2XXXX",
+    "bic": "KBMASI2XXXX",
     "bank_code": "05800",
     "name": "NOVA KBM D.D.",
     "short_name": "NOVA KBM D.D."
@@ -5962,7 +5962,7 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "ABANSI2XXXX",
+    "bic": "KBMASI2XXXX",
     "bank_code": "05901",
     "name": "NOVA KBM D.D.",
     "short_name": "NOVA KBM D.D."
@@ -5970,248 +5970,8 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "ABANSI2XXXX",
+    "bic": "KBMASI2XXXX",
     "bank_code": "05902",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06000",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06369",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06370",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06371",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06375",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06376",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06377",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06378",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06381",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06382",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06384",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06385",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06389",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06390",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06391",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06393",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06395",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06399",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06420",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06581",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06585",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06587",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06588",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06803",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06804",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06806",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06807",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06808",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06811",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "ABANSI2XXXX",
-    "bank_code": "06814",
     "name": "NOVA KBM D.D.",
     "short_name": "NOVA KBM D.D."
   },
