@@ -11,6 +11,7 @@ Unreleased
 Changed
 ~~~~~~~
 * Added type hints to the entire code base.
+* Dropped support for Python 3.6
 
 `2021.01.0`_ - 2021/01/20
 -------------------------

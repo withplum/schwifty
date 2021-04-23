@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import re
 import warnings
 from typing import List
@@ -51,7 +53,7 @@ class BIC(common.Base):
             self.validate()
 
     @classmethod
-    def from_bank_code(cls, country_code: str, bank_code: str) -> "BIC":
+    def from_bank_code(cls, country_code: str, bank_code: str) -> BIC:
         """Create a new BIC object from country-code and domestic bank-code.
 
         Examples:

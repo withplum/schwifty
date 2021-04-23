@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import re
 import string
 from typing import Dict
@@ -127,7 +129,7 @@ class IBAN(common.Base):
     @classmethod
     def generate(
         cls, country_code: str, bank_code: str, account_code: str, branch_code: str = ""
-    ) -> "IBAN":
+    ) -> IBAN:
         """Generate an IBAN from it's components.
 
         If the bank-code and/or account-number have less digits than required by their
