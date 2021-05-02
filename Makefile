@@ -4,7 +4,7 @@ docs:
 
 .PHONY: test
 test:
-	@tox -e py27,py37,py38
+	@tox -e py37,py38,py39
 
 .PHONY: lint
 lint:
