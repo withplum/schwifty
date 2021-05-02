@@ -5,6 +5,13 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2021.05.0`_ - 2021/05/02
+-------------------------
+
+Added
+~~~~~
+* Added manually curated list of Lithuanian Banks (e.g Revolut Payments UAB).
+
 `2021.04.0`_ - 2021/04/23
 -------------------------
 
