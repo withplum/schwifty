@@ -72,6 +72,7 @@ and currently includes entries for the following countries:
 * Germany
 * Great Britan
 * Latvia
+* Lithuania
 * Netherlands
 * Poland
 * Slovenia

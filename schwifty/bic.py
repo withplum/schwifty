@@ -93,6 +93,7 @@ class BIC(common.Base):
             * Germany
             * Great Britan
             * Latvia
+            * Lithuania
             * Netherlands
             * Poland
             * Slovenia
