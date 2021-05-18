@@ -17,3 +17,7 @@ lint-docs:
 .PHONY: fmt
 fmt:
 	@tox -e fmt
+
+.PHONY: build
+build:
+	python -m build

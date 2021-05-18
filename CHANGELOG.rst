@@ -5,6 +5,21 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2021.05.1`_ - 2021/05/20
+-------------------------
+
+Added
+~~~~~
+* The IBAN validation now optionally includes the verification of the country specific checksum
+  within the BBAN. This currently works for German and Italian banks. For German banks the checksum
+  algorithm for the account code is chosen by the bank code. Since there are over 150 bank specific
+  algorithms in Germany not all of them are implemented at the moment, but the majority of banks should
+  be covered.
+
+Changed
+~~~~~~~
+* Update bank registry for Germany
+
 `2021.05.0`_ - 2021/05/02
 -------------------------
 
