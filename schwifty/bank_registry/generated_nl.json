@@ -82,14 +82,6 @@
   {
     "country_code": "NL",
     "primary": true,
-    "bic": "BCDMNL22",
-    "bank_code": "BCDM",
-    "name": "BANQUE CHAABI DU MAROC",
-    "short_name": "BANQUE CHAABI DU MAROC"
-  },
-  {
-    "country_code": "NL",
-    "primary": true,
     "bic": "BCITNL2A",
     "bank_code": "BCIT",
     "name": "INTESA SANPAOLO",
@@ -582,5 +574,21 @@
     "bank_code": "ZWLB",
     "name": "SNS ( ex ZWITSERLEVENBANK)",
     "short_name": "SNS ( ex ZWITSERLEVENBANK)"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "",
+    "name": "",
+    "short_name": ""
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
+    "bic": "BCDMNL22",
+    "bank_code": "BCDM",
+    "name": "BANQUE CHAABI DU MAROC * (tijdelijk) inactief sinds 31 december 2020 *",
+    "short_name": "BANQUE CHAABI DU MAROC * (tijdelijk) inactief sinds 31 december 2020 *"
   }
 ]

@@ -300,8 +300,8 @@
     "primary": true,
     "bic": "",
     "bank_code": "7960",
-    "name": "\u00c4\u008ceskomoravsk\u00c3\u00a1 stavebn\u00c3\u00ad spo\u00c5\u0099itelna, a.s.",
-    "short_name": "\u00c4\u008ceskomoravsk\u00c3\u00a1 stavebn\u00c3\u00ad spo\u00c5\u0099itelna, a.s."
+    "name": "\u00c4\u008cSOB Stavebn\u00c3\u00ad spo\u00c5\u0099itelna, a.s.",
+    "short_name": "\u00c4\u008cSOB Stavebn\u00c3\u00ad spo\u00c5\u0099itelna, a.s."
   },
   {
     "country_code": "CZ",
@@ -450,14 +450,6 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "PYYMCZPP",
-    "bank_code": "8260",
-    "name": "PAYMASTER a.s.",
-    "short_name": "PAYMASTER a.s."
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
     "bic": "ICBKCZPP",
     "bank_code": "8265",
     "name": "Industrial and Commercial Bank of China Limited, Prague Branch, od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod",
@@ -494,14 +486,6 @@
     "bank_code": "8283",
     "name": "Qpay s.r.o.",
     "short_name": "Qpay s.r.o."
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
-    "bic": "",
-    "bank_code": "8292",
-    "name": "Money Change s.r.o.",
-    "short_name": "Money Change s.r.o."
   },
   {
     "country_code": "CZ",

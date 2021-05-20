@@ -18,7 +18,7 @@ Added
 
 Changed
 ~~~~~~~
-* Update bank registry for Germany
+* Update bank registry for Germany, Poland, Czech Republic, Austria and Netherlands.
 
 `2021.05.0`_ - 2021/05/02
 -------------------------
