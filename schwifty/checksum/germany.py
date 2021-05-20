@@ -465,7 +465,7 @@ class Algorithm88(Algorithm06):
     positions = Positions(start=4, end=9, check_digit=10)
     weights = [2, 3, 4, 5, 6, 7, 8]
 
-    def get_positions(self, account_code: str):
+    def get_positions(self, account_code: str) -> Positions:
         if account_code[2] == "9":
             return Positions(start=3, end=9, check_digit=10)
         return super().get_positions(account_code)
