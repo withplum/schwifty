@@ -39,7 +39,7 @@ of the IBAN.
   <BIC=COBADEFFXXX>
 
 A BIC is a unique identification code for both financial and non-financial institutes. ``schwifty``
-provides a :class:`.BIC``-object, that has a similar interface to the :class:`.IBAN`.
+provides a :class:`.BIC`-object, that has a similar interface to the :class:`.IBAN`.
 
 .. code-block:: pycon
 
