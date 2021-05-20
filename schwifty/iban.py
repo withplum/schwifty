@@ -12,6 +12,9 @@ from schwifty import common
 from schwifty import exceptions
 from schwifty import registry
 from schwifty.bic import BIC
+from schwifty.checksum import algorithms
+from schwifty.checksum import InputType
+
 
 _spec_to_re: Dict[str, str] = {"n": r"\d", "a": r"[A-Z]", "c": r"[A-Za-z0-9]", "e": r" "}
 
@@ -36,50 +39,9 @@ def code_length(spec: Dict, code_type: str) -> int:
     return end - start
 
 
-def _calc_it_checksum(bban: str) -> str:
-    odds = [
-        1,
-        0,
-        5,
-        7,
-        9,
-        13,
-        15,
-        17,
-        19,
-        21,
-        2,
-        4,
-        18,
-        20,
-        11,
-        3,
-        6,
-        8,
-        12,
-        14,
-        16,
-        10,
-        22,
-        25,
-        24,
-        23,
-        27,
-        28,
-        26,
-    ]
-    sum_ = 0
-    for i, char in enumerate(bban):
-        if (i + 1) % 2 == 0:
-            sum_ += _alphabet.index(char)
-        else:
-            sum_ += odds[_alphabet.index(char)]
-    return _alphabet[sum_ % 26 + 10]
-
-
 def add_bban_checksum(country_code: str, bban: str) -> str:
     if country_code == "IT":
-        checksum = _calc_it_checksum(bban[1:])
+        checksum = algorithms["IT:default"].compute(bban[1:])
         bban = checksum + bban[1:]
     return bban
 
@@ -107,21 +69,27 @@ class IBAN(common.Base):
     Args:
         iban (str): The IBAN code.
         allow_invalid (bool): If set to `True` IBAN validation is skipped on instantiation.
+        validate_bban (bool): If set to `True` also check the country specific checksum with then
+                              BBAN.
 
     Raises:
         InvalidStructure: If the IBAN contains invalid characters or the BBAN does not match the
                           country specific format.
         InvalidChecksumDigits: If the IBAN's checksum is invalid.
         InvalidLength: If the length does not match the country specific specification.
+
+    .. versionchanged:: 2021.05.1
+        Added the `validate_bban` parameter that controls if the country specific checksum within
+        the BBAN is also validated.
     """
 
-    def __init__(self, iban: str, allow_invalid: Optional[bool] = False) -> None:
+    def __init__(self, iban: str, allow_invalid: bool = False, validate_bban: bool = False) -> None:
         super().__init__(iban)
         if self.checksum_digits == "??":
             self._code = self.country_code + self._calc_checksum_digits() + self.bban
 
         if not allow_invalid:
-            self.validate()
+            self.validate(validate_bban)
 
     def _calc_checksum_digits(self) -> str:
         return "{:02d}".format(98 - (numerify(self.bban + self.country_code) * 100) % 97)
@@ -190,10 +158,14 @@ class IBAN(common.Base):
         bban = add_bban_checksum(country_code, bban)
         return cls(country_code + "??" + bban)
 
-    def validate(self) -> bool:
+    def validate(self, validate_bban: bool = False) -> bool:
         """Validate the structural integrity of this IBAN.
 
-        This function will verify the country specific format as well as the Luhn checksum.
+        This function will verify the country specific format as well as the Luhn checksum in the
+        3rd and 4th position of the IBAN. For some countries (currently Germany and Italy) it will
+        also verify the correctness of the country specific checksum within the BBAN if the
+        `validate_bban` parameter is set to `True`. For German banks it will pick the appropriate
+        algorithm based on the bank code and verify that the account code has the correct checksum.
 
         Note:
             You have to use the `allow_invalid` paramter when constructing the :class:`IBAN`-object
@@ -204,20 +176,22 @@ class IBAN(common.Base):
                               country specific format.
             InvalidChecksumDigits: If the IBAN's checksum is invalid.
             InvalidLength: If the length does not match the country specific specification.
+
+        .. versionchanged:: 2021.05.1
+            Added the `validate_bban` parameter that controls if the country specific checksum
+            within the BBAN is also validated.
         """
         self._validate_characters()
         self._validate_length()
         self._validate_format()
-        self._validate_checksum()
+        self._validate_iban_checksum()
+        if validate_bban:
+            self._validate_bban_checksum()
         return True
 
     def _validate_characters(self) -> None:
         if not re.match(r"[A-Z]{2}\d{2}[A-Z]*", self.compact):
             raise exceptions.InvalidStructure(f"Invalid characters in IBAN {self.compact}")
-
-    def _validate_checksum(self) -> None:
-        if self.numeric % 97 != 1 or self._calc_checksum_digits() != self.checksum_digits:
-            raise exceptions.InvalidChecksumDigits("Invalid checksum digits")
 
     def _validate_length(self) -> None:
         if self.spec["iban_length"] != self.length:
@@ -230,6 +204,27 @@ class IBAN(common.Base):
                     self.bban, self.spec["bban_spec"]
                 )
             )
+
+    def _validate_iban_checksum(self) -> None:
+        if self.numeric % 97 != 1 or self._calc_checksum_digits() != self.checksum_digits:
+            raise exceptions.InvalidChecksumDigits("Invalid checksum digits")
+
+    def _validate_bban_checksum(self) -> None:
+        bank_registry = registry.get("bank_code")
+        assert isinstance(bank_registry, dict)
+        bank = bank_registry.get((self.country_code, self.bank_code), {})
+        algo_name = bank.get("checksum_algo", "default")
+        algo = algorithms.get(f"{self.country_code}:{algo_name}")
+        if algo is None:
+            return
+        if algo.accepts == InputType.ACCOUNT_CODE:
+            value = self.account_code
+        elif algo.accepts == InputType.BBAN:
+            value = self.bban
+        else:
+            assert False, "Unsupported checksum algorithm input type"
+        if not algo.validate(value):
+            raise exceptions.InvalidBBANChecksum("Invalid BBAN checksum")
 
     @property
     def is_valid(self) -> bool:

@@ -28,3 +28,7 @@ class InvalidAccountCode(SchwiftyException):
 
 class InvalidChecksumDigits(SchwiftyException):
     """Indicates that the IBAN's checksum is invalid."""
+
+
+class InvalidBBANChecksum(SchwiftyException):
+    """Indicates that the BBAN's checksum is invalid."""

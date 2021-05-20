@@ -106,7 +106,7 @@ invalid = [
 
 @pytest.mark.parametrize("number", valid)
 def test_parse_iban(number):
-    iban = IBAN(number)
+    iban = IBAN(number, validate_bban=True)
     assert iban.formatted == number
 
 

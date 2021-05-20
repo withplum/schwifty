@@ -6891,14 +6891,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "",
-    "bank_code": "71100003",
-    "name": "Bank Millennium Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Millennium Sp\u00f3\u0142ka Akcyjna"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "",
     "bank_code": "12200005",
     "name": "Bank Handlowo-Kredytowy Sp\u00f3\u0142ka Akcyjna w Katowicach w likwidacji",
     "short_name": "Bank Handlowo-Kredytowy Sp\u00f3\u0142ka Akcyjna w Katowicach w likwidacji"
@@ -15779,14 +15771,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "SKOKPLPWXXX",
-    "bank_code": "70410000",
-    "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa Ma\u0142opolska",
-    "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa Ma\u0142opolska"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "SKOKPLPWXXX",
     "bank_code": "70420009",
     "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa im. Unii Lubelskiej w Lublinie",
     "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa im. Unii Lubelskiej w Lublinie"
@@ -15822,6 +15806,14 @@
     "bank_code": "70520002",
     "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa \"Wis\u0142a\"",
     "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa \"Wis\u0142a\""
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "70410000",
+    "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa im. Zygmunta Chmielewskiego",
+    "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa im. Zygmunta Chmielewskiego"
   },
   {
     "country_code": "PL",
@@ -20058,10 +20050,34 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBWCPLPPXXX",
+    "bic": "",
     "bank_code": "87850002",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Strykowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Strykowie"
+    "name": "\u0141\u00f3dzki Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "\u0141\u00f3dzki Bank Sp\u00f3\u0142dzielczy"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "89650008",
+    "name": "\u0141\u00f3dzki Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "\u0141\u00f3dzki Bank Sp\u00f3\u0142dzielczy"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "89651018",
+    "name": "\u0141\u00f3dzki Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "\u0141\u00f3dzki Bank Sp\u00f3\u0142dzielczy"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "90230006",
+    "name": "\u0141\u00f3dzki Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "\u0141\u00f3dzki Bank Sp\u00f3\u0142dzielczy"
   },
   {
     "country_code": "PL",
@@ -21355,22 +21371,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "GBWCPLPPXXX",
-    "bank_code": "89650008",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Be\u0142chatowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Be\u0142chatowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPPXXX",
-    "bank_code": "89651018",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Be\u0142chatowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Be\u0142chatowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPPXXX",
     "bank_code": "89730003",
     "name": "Bank Sp\u00f3\u0142dzielczy Ziemi Piotrkowskiej w Piotrkowie Trybunalskim",
     "short_name": "Bank Sp\u00f3\u0142dzielczy Ziemi Piotrkowskiej w Piotrkowie Trybunalskim"
@@ -21542,14 +21542,6 @@
     "bank_code": "90211021",
     "name": "Bank Sp\u00f3\u0142dzielczy \"Wsp\u00f3lna Praca\" w Kutnie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy \"Wsp\u00f3lna Praca\" w Kutnie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPPXXX",
-    "bank_code": "90230006",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Kro\u015bniewicach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Kro\u015bniewicach"
   },
   {
     "country_code": "PL",

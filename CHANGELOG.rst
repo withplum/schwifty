@@ -5,6 +5,21 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2021.05.1`_ - 2021/05/20
+-------------------------
+
+Added
+~~~~~
+* The IBAN validation now optionally includes the verification of the country specific checksum
+  within the BBAN. This currently works for German and Italian banks. For German banks the checksum
+  algorithm for the account code is chosen by the bank code. Since there are over 150 bank specific
+  algorithms in Germany not all of them are implemented at the moment, but the majority of banks should
+  be covered.
+
+Changed
+~~~~~~~
+* Update bank registry for Germany, Poland, Czech Republic, Austria and Netherlands.
+
 `2021.05.0`_ - 2021/05/02
 -------------------------
 
@@ -111,6 +126,8 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2021.05.1: https://github.com/mdomke/schwifty/compare/2021.05.0...2021.05.1
+.. _2021.05.0: https://github.com/mdomke/schwifty/compare/2021.04.0...2021.05.0
 .. _2021.04.0: https://github.com/mdomke/schwifty/compare/2021.01.0...2021.04.0
 .. _2021.01.0: https://github.com/mdomke/schwifty/compare/2020.11.0...2021.01.0
 .. _2020.11.0: https://github.com/mdomke/schwifty/compare/2020.09.0...2020.11.0

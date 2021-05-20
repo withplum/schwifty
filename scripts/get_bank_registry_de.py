@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 import json
+from urllib.parse import urljoin
 
 import requests
-
+from bs4 import BeautifulSoup
 
 FIELD_LENGTHS = {
     "bank_code": 8,
@@ -19,14 +20,21 @@ FIELD_LENGTHS = {
     "tbd": 1,
     "successor_bank_code": 8,
 }
-URL = (
-    "https://www.bundesbank.de/resource/blob/"
-    "602632/b8ada8f2b30c6ede5d237be9b932a014/mL/blz-aktuell-txt-data.txt"
-)
+
+URL = "https://www.bundesbank.de/de/aufgaben/unbarer-zahlungsverkehr/serviceangebot/bankleitzahlen"
+
+
+def get_download_url():
+    soup = BeautifulSoup(requests.get(URL).content, "html.parser")
+    atag = soup.find(href=lambda ref: ref and "download-bankleitzahlen" in ref)
+
+    soup = BeautifulSoup(requests.get(urljoin(URL, atag.get("href"))).content, "html.parser")
+    atag = soup.find(href=lambda ref: ref and "blz-neu-txt-data.txt" in ref)
+    return urljoin(URL, atag.get("href"))
 
 
 def get_raw():
-    return requests.get(URL).content.decode(encoding="latin1")
+    return requests.get(get_download_url()).content.decode(encoding="latin1")
 
 
 def parse(raw):
@@ -51,6 +59,7 @@ def process(records):
         cleaned = {k: v for k, v in record.items() if k in fieldnames}
         cleaned["primary"] = record["feature"] == "1"
         cleaned["country_code"] = "DE"
+        cleaned["checksum_algo"] = record["check_digit_method"]
 
         if cleaned["bic"]:
             registry.append(cleaned)
