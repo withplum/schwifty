@@ -126,6 +126,8 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2021.05.1: https://github.com/mdomke/schwifty/compare/2021.05.0...2021.05.1
+.. _2021.05.0: https://github.com/mdomke/schwifty/compare/2021.04.0...2021.05.0
 .. _2021.04.0: https://github.com/mdomke/schwifty/compare/2021.01.0...2021.04.0
 .. _2021.01.0: https://github.com/mdomke/schwifty/compare/2020.11.0...2021.01.0
 .. _2020.11.0: https://github.com/mdomke/schwifty/compare/2020.09.0...2020.11.0

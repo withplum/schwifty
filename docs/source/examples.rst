@@ -108,13 +108,14 @@ and possibly the branch-code have the correct country-specific format. E.g.:
   ...
   InvalidChecksumDigits: Invalid checksum digits
 
-Since version 2021.05.1 ``schwifty`` also provides the ability to validate the country specific checksum
-within the BBAN. This currently works for German and Italian banks. For German IBANs the bank specific
-checksum algorithm for the account code is derived from the bank code. This functionality is currently
-opt-in and can be used by providing the `validate_bban` paramter to the :class:`.IBAN` constructor or the
-:meth:`.IBAN.validate`-method.
+Since version 2021.05.1 ``schwifty`` also provides the ability to validate the country specific
+checksum within the BBAN. This currently works for German and Italian banks. For German IBANs the
+bank specific checksum algorithm for the account code is derived from the bank code. This
+functionality is currently opt-in and can be used by providing the `validate_bban` paramter to the
+:class:`.IBAN` constructor or the :meth:`.IBAN.validate`-method.
 
 .. code-block:: pycon
+
    >>> iban = IBAN('DE20 2909 0900 8840 0170 00')
    >>> iban.validate(validate_bban=True)
    ...
