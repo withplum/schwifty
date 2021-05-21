@@ -89,3 +89,11 @@ def test_german_checksum_success(account_code, algorithm_name):
 )
 def test_german_checksum_failure(account_code, algorithm_name):
     assert algorithms[algorithm_name].validate(account_code) is False
+
+
+def test_belgium_checksum():
+    assert algorithms["BE:default"].validate("539007547034") is True
+
+
+def test_belgium_checksum_failure():
+    assert algorithms["BE:default"].validate("050000123456") is False

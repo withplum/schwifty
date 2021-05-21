@@ -1,6 +1,5 @@
 import pytest
 from pycountry import countries
-
 from schwifty import IBAN
 from schwifty.exceptions import SchwiftyException
 
@@ -152,6 +151,9 @@ def test_iban_properties():
         (("GB", "NWBK", "31926819", "601613"), "GB29NWBK60161331926819"),
         (("GB", "NWBK", "31926819"), "GB66NWBK00000031926819"),
         (("GB", "NWBK601613", "31926819"), "GB29NWBK60161331926819"),
+        (("BE", "050", "123"), "BE66050000012343"),
+        (("BE", "050", "123456"), "BE45050012345689"),
+        (("BE", "539", "0075470"), "BE68539007547034"),
     ],
 )
 def test_generate_iban(components, compact):
@@ -206,3 +208,8 @@ def test_bic_from_iban(iban, bic):
 
 def test_unknown_bic_from_iban():
     assert IBAN("SI72000001234567892").bic is None
+
+
+def test_be_generated_iban_valid():
+    iban = IBAN.generate("BE", bank_code="050", account_code="123456")
+    assert iban.validate(validate_bban=True)
