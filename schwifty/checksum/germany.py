@@ -14,6 +14,8 @@ from schwifty import checksum
 from schwifty.exceptions import InvalidBBANChecksum
 
 
+ACCOUNT_CODE_LENGTH = 10
+
 register = partial(checksum.register, prefix="DE")
 
 
@@ -56,9 +58,9 @@ class WeightedModulus(checksum.Algorithm):
         # The positions are provided as in the specification, which starts counting at 1
         start, end = positions.start - 1, positions.end
 
-        assert len(account_code) == 10
-        assert start >= 0 and start <= 10
-        assert end >= start and end <= 10
+        assert len(account_code) == ACCOUNT_CODE_LENGTH
+        assert start >= 0 and start <= ACCOUNT_CODE_LENGTH
+        assert end >= start and end <= ACCOUNT_CODE_LENGTH
 
         digits = account_code[start:end]
         if self.reverse:

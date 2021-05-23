@@ -44,19 +44,14 @@ def add_bban_checksum(country_code: str, bban: str) -> str:
         checksum = algorithms["IT:default"].compute(bban[1:])
         bban = checksum + bban[1:]
     elif country_code == "BE":
-        """
-        The Belgian account format is XXX-YYYYYYY-ZZ where:
-            - XXX: bank code
-            - YYYYYYY: account number
-            - ZZ: mod 97 remainder of XXYYYYYYY
-        """
-        # The BBAN as passed in does not have the checksum yet
-        bank_code, account_number = bban[:3], bban[3:]
-        # Remove extra zeroes and fill up to 7 spaces again
-        account_number = account_number.lstrip("0").zfill(7)
-        # Concatenate again, leave space for the checksum digits
-        checksum = algorithms["BE:default"].compute(f"{bank_code}{account_number}??")
-        bban = f"{bank_code}{account_number}{checksum}"
+        # The Belgian BBAN format is XXXYYYYYYYZZ where:
+        # - XXX: bank code
+        # - YYYYYYY: account number
+        # - ZZ: mod 97 remainder of XXYYYYYYY
+        # The bban passed to this function has this format XXX00YYYYY
+        bban = bban[:3] + bban[5:]
+        checksum = algorithms["BE:default"].compute(bban)
+        bban = bban + checksum
     return bban
 
 
