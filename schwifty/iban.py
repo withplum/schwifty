@@ -135,6 +135,10 @@ class IBAN(common.Base):
         .. versionchanged:: 2020.08.3
             Added the `branch_code` parameter to allow the branch code (or sort code) to be
             specified independently.
+
+        .. versionchanged:: 2021.05.2
+            Added support for generating the country specific checksum of the BBAN for Belgian
+            banks.
         """
         spec: Dict = _get_iban_spec(country_code)
         bank_code_length: int = code_length(spec, "bank_code")

@@ -5,6 +5,14 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2021.05.2`_ - 2021/05/23
+-------------------------
+
+Added
+~~~~~
+* Country specifc checksum validation for Belgian banks, as well as support for generating the
+  checksum when using the :meth:`IBAN.generate`-method. `@mhemeryck <https://github.com/mhemeryck>`_
+
 `2021.05.1`_ - 2021/05/20
 -------------------------
 
