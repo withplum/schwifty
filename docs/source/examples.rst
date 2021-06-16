@@ -78,6 +78,7 @@ and currently includes entries for the following countries:
 * Slovenia
 * Slovakia
 * Spain
+* Sweden
 * Switzerland
 
 
