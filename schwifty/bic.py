@@ -98,6 +98,7 @@ class BIC(common.Base):
             * Poland
             * Slovenia
             * Spain
+            * Sweden
             * Switzerland
         """
         try:
