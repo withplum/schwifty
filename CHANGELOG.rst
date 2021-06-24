@@ -5,6 +5,15 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2021.06.1`_ - 2021/06/24
+-------------------------
+
+Added
+~~~~~
+* Enable tool based type checking as described in `PEP-0561`_ by adding the ``py.typed`` marker
+  `@jmfederico <https://github.com/jmfederico>`_
+
+
 `2021.06.0`_ - 2021/06/17
 -------------------------
 
@@ -156,3 +165,5 @@ Added
 .. _2020.08.0: https://github.com/mdomke/schwifty/compare/2020.05.3...2020.08.0
 .. _2020.05.3: https://github.com/mdomke/schwifty/compare/2020.05.2...2020.05.3
 .. _2020.05.2: https://github.com/mdomke/schwifty/compare/2020.05.1...2020.05.2
+
+.. _PEP-0561: https://www.python.org/dev/peps/pep-0561/#packaging-type-information
