@@ -73,8 +73,8 @@ integrations`_.
 Project Information
 -------------------
 
-``schwifty`` is released under `MIT`_ license and its documentation lives at `Read the Docs`_. The code
-is maintained on `GitHub`_ and packages are distributed on `PyPI`_
+``schwifty`` is released under `MIT`_ license and its documentation lives at `Read the Docs`_. The
+code is maintained on `GitHub`_ and packages are distributed on `PyPI`_
 
 Name
 ~~~~
