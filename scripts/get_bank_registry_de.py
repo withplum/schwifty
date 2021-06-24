@@ -5,6 +5,7 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
+
 FIELD_LENGTHS = {
     "bank_code": 8,
     "feature": 1,

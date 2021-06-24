@@ -13,6 +13,7 @@ from schwifty import common
 from schwifty import exceptions
 from schwifty import registry
 
+
 _bic_re = re.compile(r"[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?")
 
 
@@ -287,7 +288,7 @@ class BIC(common.Base):
 
     @property
     def bank_code(self) -> str:
-        """"str: The bank-code part of the BIC."""
+        """str: The bank-code part of the BIC."""
         return self._get_component(start=0, end=4)
 
     @property
@@ -302,7 +303,7 @@ class BIC(common.Base):
 
     @property
     def branch_code(self) -> str:
-        """str or None: The branch-code part of the BIC (if available)"""
+        """str: The branch-code part of the BIC (if available)"""
         return self._get_component(start=8, end=11)
 
 

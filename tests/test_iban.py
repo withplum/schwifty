@@ -1,5 +1,6 @@
 import pytest
 from pycountry import countries
+
 from schwifty import IBAN
 from schwifty.exceptions import SchwiftyException
 
