@@ -30,5 +30,13 @@
     "bank_code": "3081",
     "bic": "BCOEESMM081",
     "country_code": "ES"
+  },
+  {
+    "country_code": "ES",
+    "bic": "CLPEES2MXXX",
+    "bank_code": "3035",
+    "name": "CAJA LABORAL POPULAR COOP. DE CREDITO",
+    "short_name": "CAJA LABORAL POPULAR COOP. DE CREDITO",
+    "primary": true
   }
 ]
