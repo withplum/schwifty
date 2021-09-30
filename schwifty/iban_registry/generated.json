@@ -1619,6 +1619,26 @@
       ]
     }
   },
+  "SD": {
+    "bban_spec": "2!n12!n",
+    "iban_spec": "SD2!n2!n12!n",
+    "bban_length": 14,
+    "iban_length": 18,
+    "positions": {
+      "account_code": [
+        14,
+        14
+      ],
+      "bank_code": [
+        0,
+        2
+      ],
+      "branch_code": [
+        2,
+        14
+      ]
+    }
+  },
   "SE": {
     "bban_spec": "3!n16!n1!n",
     "iban_spec": "SE2!n3!n16!n1!n",

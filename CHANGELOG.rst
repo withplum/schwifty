@@ -5,6 +5,13 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2021.10.0`_ - 2021/10/01
+-------------------------
+
+Added
+~~~~~
+* IBAN spec for Sudan (SD)
+
 `2021.06.1`_ - 2021/06/24
 -------------------------
 
@@ -152,6 +159,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2021.10.0: https://github.com/mdomke/schwifty/compare/2021.06.1...2021.10.0
 .. _2021.06.1: https://github.com/mdomke/schwifty/compare/2021.06.0...2021.06.1
 .. _2021.06.0: https://github.com/mdomke/schwifty/compare/2021.05.2...2021.06.0
 .. _2021.05.2: https://github.com/mdomke/schwifty/compare/2021.05.1...2021.05.2
