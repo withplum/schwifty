@@ -52,16 +52,16 @@
     "primary": true,
     "bic": "LUBASKBX",
     "bank_code": "3100",
-    "name": "Prima banka Slovensko, a.s. (predt\u00fdm Sberbank Slovensko, a.s.) \u2013 k\u00f3d pre dobeh platieb",
-    "short_name": "Prima banka Slovensko, a.s. (predt\u00fdm Sberbank Slovensko, a.s.) \u2013 k\u00f3d pre dobeh platieb"
+    "name": "Prima banka Slovensko, a.s. (formerly Sberbank Slovensko, a.s.) - Code for running payments",
+    "short_name": "Prima banka Slovensko, a.s. (formerly Sberbank Slovensko, a.s.) - Code for running payments"
   },
   {
     "country_code": "SK",
     "primary": true,
     "bic": "OTPVSKBX",
     "bank_code": "5200",
-    "name": "OTP Banka Slovensko, a.s.",
-    "short_name": "OTP Banka Slovensko, a.s."
+    "name": "\u010ceskoslovensk\u00e1 obchodn\u00e1 banka, a.s. (formerly OTP Banka Slovensko, a.s.) \u2013 Code for running payments",
+    "short_name": "\u010ceskoslovensk\u00e1 obchodn\u00e1 banka, a.s. (formerly OTP Banka Slovensko, a.s.) \u2013 Code for running payments"
   },
   {
     "country_code": "SK",
@@ -84,8 +84,8 @@
     "primary": true,
     "bic": "POBNSKBA",
     "bank_code": "6500",
-    "name": "Po\u0161tov\u00e1 banka, a.s.",
-    "short_name": "Po\u0161tov\u00e1 banka, a.s."
+    "name": "365.bank, a.s.",
+    "short_name": "365.bank, a.s."
   },
   {
     "country_code": "SK",
@@ -218,14 +218,6 @@
   {
     "country_code": "SK",
     "primary": true,
-    "bic": "",
-    "bank_code": "8390",
-    "name": "\u010ceskoslovensk\u00e9 \u00fav\u011brn\u00ed dru\u017estvo, pobo\u010dka Slovensko",
-    "short_name": "\u010ceskoslovensk\u00e9 \u00fav\u011brn\u00ed dru\u017estvo, pobo\u010dka Slovensko"
-  },
-  {
-    "country_code": "SK",
-    "primary": true,
     "bic": "BFKKSKBB",
     "bank_code": "8420",
     "name": "BKS Bank AG, pobo\u010dka zahrani\u010dnej banky v\u00a0SR",
@@ -330,7 +322,7 @@
   {
     "country_code": "SK",
     "primary": true,
-    "bic": "",
+    "bic": "KPAYSK22",
     "bank_code": "9954",
     "name": "K-PAY a.s.",
     "short_name": "K-PAY a.s."

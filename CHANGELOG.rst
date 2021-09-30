@@ -10,7 +10,14 @@ Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro
 
 Added
 ~~~~~
-* IBAN spec for Sudan (SD)
+* Added IBAN spec for Sudan (SD).
+* Added and extended manually curated bank entries for Turkey, Italy, Israel, Ireland, Spain,
+  Switzerland and Denmark `@howorkon <https://github.com/howorkon>`_.
+
+Changed
+~~~~~~~
+* Updated bank registry for Austria, Belgium, Czech Republic, Germany, Netherlands, Poland,
+  Slovenia and Slovakia.
 
 `2021.06.1`_ - 2021/06/24
 -------------------------

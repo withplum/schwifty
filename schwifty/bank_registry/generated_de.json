@@ -676,7 +676,7 @@
   },
   {
     "bank_code": "10130800",
-    "name": "flatex Bank",
+    "name": "flatexDEGIRO Bank",
     "short_name": "flatex Bank, Frankfurt",
     "bic": "BIWBDE33XXX",
     "primary": true,
@@ -724,6 +724,15 @@
     "name": "solarisBank Gf (S)",
     "short_name": "solarisBank Gf (S)",
     "bic": "SOBKDEB2XXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "11010111",
+    "name": "solarisBank Gf (PNTA)",
+    "short_name": "solarisBank Gf (PNTA)",
+    "bic": "PNTADEBBXXX",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
@@ -6391,8 +6400,8 @@
   },
   {
     "bank_code": "25010600",
-    "name": "Deutsche Hypothekenbank",
-    "short_name": "Deuhypo Hannover",
+    "name": "NORD/LB vormals Deutsche Hypothekenbank",
+    "short_name": "NORD/LB Deut. Hypo Hannover",
     "bic": "DEHYDE2HXXX",
     "primary": true,
     "country_code": "DE",
@@ -9064,8 +9073,8 @@
   },
   {
     "bank_code": "28067068",
-    "name": "Volksbank Neuenkirchen-V\u00f6rden",
-    "short_name": "VB Neuenkirchen-V\u00f6rden",
+    "name": "Volksbank Neuenkirchen-V\u00f6rden -alt-",
+    "short_name": "VB Neuenkirchen-V\u00f6rden-alt-",
     "bic": "GENODEF1NEO",
     "primary": true,
     "country_code": "DE",
@@ -10260,15 +10269,6 @@
     "checksum_algo": "09"
   },
   {
-    "bank_code": "30019000",
-    "name": "ipagoo - German Branch",
-    "short_name": "ipagoo D\u00fcsseldorf",
-    "bic": "IPAGDEDFXXX",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "09"
-  },
-  {
     "bank_code": "30020500",
     "name": "BHF-BANK",
     "short_name": "BHF-BANK D\u00fcsseldorf",
@@ -10945,7 +10945,7 @@
   },
   {
     "bank_code": "30330800",
-    "name": "flatex Bank",
+    "name": "flatexDEGIRO Bank",
     "short_name": "flatex Bank, Frankfurt",
     "bic": "BIWBDE33303",
     "primary": true,
@@ -10991,7 +10991,7 @@
   {
     "bank_code": "30530000",
     "name": "Bankhaus Werhahn",
-    "short_name": "Bankhaus Werhahn Neuss",
+    "short_name": "Bankhaus Werhahn",
     "bic": "WERHDED1XXX",
     "primary": true,
     "country_code": "DE",
@@ -12871,9 +12871,9 @@
   },
   {
     "bank_code": "37020200",
-    "name": "AXA Bank Hof",
+    "name": "AXA Bank",
     "short_name": "AXA Bank Hof",
-    "bic": "AXABDE3KXXX",
+    "bic": "AXABDE31XXX",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
@@ -15085,8 +15085,8 @@
   },
   {
     "bank_code": "40069606",
-    "name": "Volksbank Erle",
-    "short_name": "Volksbank Erle",
+    "name": "Volksbank Erle -alt-",
+    "short_name": "Volksbank Erle -alt-",
     "bic": "GENODEM1ERR",
     "primary": true,
     "country_code": "DE",
@@ -16372,8 +16372,8 @@
   },
   {
     "bank_code": "42862451",
-    "name": "Volksbank Raesfeld",
-    "short_name": "Volksbank Raesfeld",
+    "name": "Volksbank Raesfeld und Erle",
+    "short_name": "Volksbank Raesfeld und Erle",
     "bic": "GENODEM1RAE",
     "primary": true,
     "country_code": "DE",
@@ -19674,6 +19674,60 @@
     "checksum_algo": "13"
   },
   {
+    "bank_code": "50040010",
+    "name": "Commerzbank (IPC PARIS)",
+    "short_name": "Commerzbank (IPC PARIS)FFM",
+    "bic": "COBADEFFPAR",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "13"
+  },
+  {
+    "bank_code": "50040011",
+    "name": "Commerzbank (IPC VIENNA)",
+    "short_name": "Commerzbank (IPC VIENNA)FFM",
+    "bic": "COBADEFFVIE",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "13"
+  },
+  {
+    "bank_code": "50040012",
+    "name": "Commerzbank (IPC MILANO)",
+    "short_name": "Commerzbank (IPC MILANO)FFM",
+    "bic": "COBADEFFMIL",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "13"
+  },
+  {
+    "bank_code": "50040013",
+    "name": "Commerzbank (IPC AMSTERDAM)",
+    "short_name": "Commerzbank(AMSTERDAM)FFM",
+    "bic": "COBADEFFAMS",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "13"
+  },
+  {
+    "bank_code": "50040014",
+    "name": "Commerzbank (IPC BRUSSEL)",
+    "short_name": "Commerzbank(IPC BRUSSEL)FFM",
+    "bic": "COBADEFFBRU",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "13"
+  },
+  {
+    "bank_code": "50040015",
+    "name": "Commerzbank (IPC MADRID)",
+    "short_name": "Commerzbank (IPC MADRID)FFM",
+    "bic": "COBADEFFMAD",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "13"
+  },
+  {
     "bank_code": "50040033",
     "name": "Commerzbank Gf BRS",
     "short_name": "Commerzbank Gf BRS Ffm",
@@ -21015,15 +21069,6 @@
     "checksum_algo": "00"
   },
   {
-    "bank_code": "50230100",
-    "name": "Morgan Stanley Bank Internaional",
-    "short_name": "Morgan Stanley Bank Int",
-    "bic": "MSPCDEF1XXX",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "09"
-  },
-  {
     "bank_code": "50230600",
     "name": "Isbank",
     "short_name": "Isbank Frankfurt Main",
@@ -21163,15 +21208,6 @@
     "name": "ABN AMRO Bank, Frankfurt Branch",
     "short_name": "ABN AMRO Bank",
     "bic": "FTSBDEFAXXX",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "31"
-  },
-  {
-    "bank_code": "50324015",
-    "name": "ABN AMRO Bank Frankfurt Branch, Prospery",
-    "short_name": "ABN AMRO Bank, Prospery",
-    "bic": "FTSBDEFAPRO",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "31"
@@ -22285,8 +22321,8 @@
   },
   {
     "bank_code": "51091700",
-    "name": "vr bank Untertaunus",
-    "short_name": "vr bank Untertaunus",
+    "name": "vr bank Untertaunus -alt-",
+    "short_name": "vr bank Untertaunus -alt-",
     "bic": "VRBUDE51XXX",
     "primary": true,
     "country_code": "DE",
@@ -22294,8 +22330,8 @@
   },
   {
     "bank_code": "51091711",
-    "name": "vr bank Untertaunus",
-    "short_name": "vr bank Untertaunus",
+    "name": "vr bank Untertaunus -alt-",
+    "short_name": "vr bank Untertaunus -alt-",
     "bic": "VRBUDE51XXX",
     "primary": true,
     "country_code": "DE",
@@ -23806,8 +23842,8 @@
   },
   {
     "bank_code": "54050110",
-    "name": "Stadtsparkasse Kaiserslautern",
-    "short_name": "St Spk Kaiserslautern",
+    "name": "Stadtsparkasse Kaiserslautern -alt-",
+    "short_name": "St Spk Kaiserslautern -alt-",
     "bic": "MALADE51KLS",
     "primary": true,
     "country_code": "DE",
@@ -23815,8 +23851,8 @@
   },
   {
     "bank_code": "54050220",
-    "name": "Kreissparkasse Kaiserslautern",
-    "short_name": "Kr Spk Kaiserslautern",
+    "name": "Sparkasse Kaiserslautern",
+    "short_name": "Spk Kaiserslautern",
     "bic": "MALADE51KLK",
     "primary": true,
     "country_code": "DE",
@@ -26875,8 +26911,8 @@
   },
   {
     "bank_code": "60030100",
-    "name": "Bankhaus Bauer, Stuttgart",
-    "short_name": "Bankhaus Bauer, Stuttgart",
+    "name": "Bankhaus Bauer, Essen",
+    "short_name": "Bankhaus Bauer, Essen",
     "bic": "BHBADES1XXX",
     "primary": true,
     "country_code": "DE",
@@ -27424,8 +27460,8 @@
   },
   {
     "bank_code": "60069455",
-    "name": "Raiffeisenbank Vordersteinenberg",
-    "short_name": "Raiffbk Vordersteinenberg",
+    "name": "Raiffeisenbank Vordersteinenberg -alt-",
+    "short_name": "Raiffbk Vordersteinenb.-alt",
     "bic": "GENODES1RVS",
     "primary": true,
     "country_code": "DE",
@@ -29404,8 +29440,8 @@
   },
   {
     "bank_code": "62391420",
-    "name": "Volksbank Vorbach-Tauber",
-    "short_name": "Volksbank Vorbach-Tauber",
+    "name": "Volksbank Vorbach-Tauber -alt-",
+    "short_name": "VB Vorbach-Tauber -alt-",
     "bic": "GENODES1VVT",
     "primary": true,
     "country_code": "DE",
@@ -30781,8 +30817,8 @@
   },
   {
     "bank_code": "66061724",
-    "name": "Volksbank Stutensee-Weingarten",
-    "short_name": "VB Stutensee-Weingarten",
+    "name": "Volksbank Stutensee-Weingarten -alt-",
+    "short_name": "VB Stutensee-Weing. -alt-",
     "bic": "GENODE61WGA",
     "primary": true,
     "country_code": "DE",
@@ -30961,8 +30997,8 @@
   },
   {
     "bank_code": "66190000",
-    "name": "Volksbank Karlsruhe",
-    "short_name": "Volksbank Karlsruhe",
+    "name": "Volksbank Karlsruhe Baden-Baden",
+    "short_name": "VB Karlsruhe Baden-Baden",
     "bic": "GENODE61KA1",
     "primary": true,
     "country_code": "DE",
@@ -31114,8 +31150,8 @@
   },
   {
     "bank_code": "66290000",
-    "name": "Volksbank Baden-Baden Rastatt",
-    "short_name": "Volksbank Baden-Bdn Rastatt",
+    "name": "Volksbank Baden-Baden Rastatt -alt-",
+    "short_name": "VB Baden-Bdn Rastatt -alt-",
     "bic": "VBRADE6KXXX",
     "primary": true,
     "country_code": "DE",
@@ -33124,6 +33160,15 @@
     "name": "VZ Depotbank Deutschland",
     "short_name": "VZDB DE M\u00fcnchen",
     "bic": "DEPDDEMMXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "70012900",
+    "name": "IBAN FIRST, Zweigniederlassung M\u00fcnchen",
+    "short_name": "IBAN FIRST, M\u00fcnchen",
+    "bic": "FXBBDEM2XXX",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
@@ -36190,8 +36235,8 @@
   },
   {
     "bank_code": "72169831",
-    "name": "Raiffeisenbank Riedenburg-Lobsing",
-    "short_name": "Raiffbk Riedenburg-Lobs",
+    "name": "Raiffeisenbank Riedenburg-Lobsing -alt-",
+    "short_name": "Raiffbk Riedenburg-L. -alt-",
     "bic": "GENODEF1RBL",
     "primary": true,
     "country_code": "DE",
@@ -38152,7 +38197,7 @@
   },
   {
     "bank_code": "76030800",
-    "name": "flatex Bank",
+    "name": "flatexDEGIRO Bank",
     "short_name": "flatex Bank, Frankfurt",
     "bic": "BIWBDE33760",
     "primary": true,
@@ -41248,8 +41293,8 @@
   },
   {
     "bank_code": "82064228",
-    "name": "Erfurter Bank",
-    "short_name": "Erfurter Bank",
+    "name": "Erfurter Bank -alt-",
+    "short_name": "Erfurter Bank -alt-",
     "bic": "ERFBDE8EXXX",
     "primary": true,
     "country_code": "DE",

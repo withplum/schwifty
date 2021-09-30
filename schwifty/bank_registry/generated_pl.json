@@ -14516,8 +14516,8 @@
     "primary": true,
     "bic": "SOGEPLPWXXX",
     "bank_code": "22400008",
-    "name": "Banque PSA Finance Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
-    "short_name": "Banque PSA Finance Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
+    "name": "Banque PSA Finance Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce w likwidacji",
+    "short_name": "Banque PSA Finance Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce w likwidacji"
   },
   {
     "country_code": "PL",
@@ -15468,8 +15468,8 @@
     "primary": true,
     "bic": "",
     "bank_code": "28500007",
-    "name": "Banca Farmafactoring S.p.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
-    "short_name": "Banca Farmafactoring S.p.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
+    "name": "BFF Bank S.p.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
+    "short_name": "BFF Bank S.p.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
   },
   {
     "country_code": "PL",
@@ -15670,6 +15670,22 @@
     "bank_code": "28900009",
     "name": "Hoist Finance AB (publ) Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
     "short_name": "Hoist Finance AB (publ) Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "29000003",
+    "name": "Millennium Bank Hipoteczny Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Millennium Bank Hipoteczny Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "BMPBPLPPXXX",
+    "bank_code": "29100006",
+    "name": "AION Bank S.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
+    "short_name": "AION Bank S.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
   },
   {
     "country_code": "PL",
@@ -17067,14 +17083,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
-    "bank_code": "81920002",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Sawinie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Sawinie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
     "bank_code": "81950009",
     "name": "Bank Sp\u00f3\u0142dzielczy w Le\u015bniowicach",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Le\u015bniowicach"
@@ -17156,6 +17164,14 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "82130008",
+    "name": "Polski Bank Sp\u00f3\u0142dzielczy w Ciechanowie",
+    "short_name": "Polski Bank Sp\u00f3\u0142dzielczy w Ciechanowie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "82130011",
     "name": "Polski Bank Sp\u00f3\u0142dzielczy w Ciechanowie",
     "short_name": "Polski Bank Sp\u00f3\u0142dzielczy w Ciechanowie"
   },
@@ -17523,30 +17539,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
-    "bank_code": "82760003",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Koniecpolu",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Koniecpolu"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "82761013",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Koniecpolu",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Koniecpolu"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "82761026",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Koniecpolu",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Koniecpolu"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
     "bank_code": "82770002",
     "name": "Bank Sp\u00f3\u0142dzielczy w Szczekocinach",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Szczekocinach"
@@ -17626,10 +17618,10 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBWCPLPPXXX",
+    "bic": "GBWCPLPP",
     "bank_code": "83040005",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Nowym Stawie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Nowym Stawie"
+    "name": "\u017bu\u0142awski Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "\u017bu\u0142awski Bank Sp\u00f3\u0142dzielczy"
   },
   {
     "country_code": "PL",
@@ -17748,8 +17740,8 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "83410000",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Lubichowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Lubichowie"
+    "name": "Bank Sp\u00f3\u0142dzielczy w Sk\u00f3rczu",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w Sk\u00f3rczu"
   },
   {
     "country_code": "PL",
@@ -18036,6 +18028,14 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "84040006",
+    "name": "Bank Sp\u00f3\u0142dzielczy Ziemi Kaliskiej",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy Ziemi Kaliskiej"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "87880009",
     "name": "Bank Sp\u00f3\u0142dzielczy Ziemi Kaliskiej",
     "short_name": "Bank Sp\u00f3\u0142dzielczy Ziemi Kaliskiej"
   },
@@ -18604,8 +18604,24 @@
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "84900007",
-    "name": "Bank Sp\u00f3\u0142dzielczy w J\u0119drzejowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w J\u0119drzejowie"
+    "name": "\u015awi\u0119tokrzyski Bank Sp\u00f3\u0142dzielczy w J\u0119drzejowie",
+    "short_name": "\u015awi\u0119tokrzyski Bank Sp\u00f3\u0142dzielczy w J\u0119drzejowie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
+    "bank_code": "85130001",
+    "name": "\u015awi\u0119tokrzyski Bank Sp\u00f3\u0142dzielczy w J\u0119drzejowie",
+    "short_name": "\u015awi\u0119tokrzyski Bank Sp\u00f3\u0142dzielczy w J\u0119drzejowie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
+    "bank_code": "85131011",
+    "name": "\u015awi\u0119tokrzyski Bank Sp\u00f3\u0142dzielczy w J\u0119drzejowie",
+    "short_name": "\u015awi\u0119tokrzyski Bank Sp\u00f3\u0142dzielczy w J\u0119drzejowie"
   },
   {
     "country_code": "PL",
@@ -18707,22 +18723,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
-    "bank_code": "85130001",
-    "name": "Bank Sp\u00f3\u0142dzielczy w S\u0119dziszowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w S\u0119dziszowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "85131011",
-    "name": "Bank Sp\u00f3\u0142dzielczy w S\u0119dziszowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w S\u0119dziszowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
     "bank_code": "85170007",
     "name": "Nadwi\u015bla\u0144ski Bank Sp\u00f3\u0142dzielczy w Solcu-Zdroju",
     "short_name": "Nadwi\u015bla\u0144ski Bank Sp\u00f3\u0142dzielczy w Solcu-Zdroju"
@@ -18782,6 +18782,30 @@
     "bank_code": "85230004",
     "name": "Bank Sp\u00f3\u0142dzielczy w W\u0105chocku",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w W\u0105chocku"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
+    "bank_code": "82760003",
+    "name": "Bank Sp\u00f3\u0142dzielczy we W\u0142oszczowie",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy we W\u0142oszczowie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
+    "bank_code": "82761013",
+    "name": "Bank Sp\u00f3\u0142dzielczy we W\u0142oszczowie",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy we W\u0142oszczowie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
+    "bank_code": "82761026",
+    "name": "Bank Sp\u00f3\u0142dzielczy we W\u0142oszczowie",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy we W\u0142oszczowie"
   },
   {
     "country_code": "PL",
@@ -19523,6 +19547,14 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
+    "bank_code": "81920002",
+    "name": "Sp\u00f3\u0142dzielczy Bank Powiatowy w Piaskach",
+    "short_name": "Sp\u00f3\u0142dzielczy Bank Powiatowy w Piaskach"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
     "bank_code": "86890007",
     "name": "Sp\u00f3\u0142dzielczy Bank Powiatowy w Piaskach",
     "short_name": "Sp\u00f3\u0142dzielczy Bank Powiatowy w Piaskach"
@@ -20094,14 +20126,6 @@
     "bank_code": "87870000",
     "name": "Bank Sp\u00f3\u0142dzielczy w G\u0142ownie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w G\u0142ownie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPPXXX",
-    "bank_code": "87880009",
-    "name": "Bank Sp\u00f3\u0142dzielczy Towarzystwo Oszcz\u0119dno\u015bciowo - Po\u017cyczkowe \"PA-CO-BANK\" w Pabianicach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy Towarzystwo Oszcz\u0119dno\u015bciowo - Po\u017cyczkowe \"PA-CO-BANK\" w Pabianicach"
   },
   {
     "country_code": "PL",
@@ -24196,16 +24220,16 @@
     "primary": true,
     "bic": "",
     "bank_code": "94860005",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Toruniu",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Toruniu"
+    "name": "Nicolaus Bank Sp\u00f3\u0142dzielczy w Toruniu",
+    "short_name": "Nicolaus Bank Sp\u00f3\u0142dzielczy w Toruniu"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "95110000",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Toruniu",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Toruniu"
+    "name": "Nicolaus Bank Sp\u00f3\u0142dzielczy w Toruniu",
+    "short_name": "Nicolaus Bank Sp\u00f3\u0142dzielczy w Toruniu"
   },
   {
     "country_code": "PL",
@@ -24779,14 +24803,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
-    "bank_code": "96200005",
-    "name": "Bank Sp\u00f3\u0142dzielczy w \u0141aszczowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w \u0141aszczowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
     "bank_code": "96230002",
     "name": "Bank Sp\u00f3\u0142dzielczy w Obszy",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Obszy"
@@ -24822,6 +24838,14 @@
     "bank_code": "96371011",
     "name": "Bank Sp\u00f3\u0142dzielczy w Tarnogrodzie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Tarnogrodzie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
+    "bank_code": "96200005",
+    "name": "Bank Sp\u00f3\u0142dzielczy w Tomaszowie Lubelskim",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w Tomaszowie Lubelskim"
   },
   {
     "country_code": "PL",

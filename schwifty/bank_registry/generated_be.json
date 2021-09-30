@@ -5922,6 +5922,14 @@
   {
     "country_code": "BE",
     "primary": true,
+    "bic": "PAGOBEBB",
+    "bank_code": "927",
+    "name": "PagoFX Europe",
+    "short_name": "PagoFX Europe"
+  },
+  {
+    "country_code": "BE",
+    "primary": true,
     "bic": "VPAYBE21",
     "bank_code": "928",
     "name": "VIVA Payment Services",

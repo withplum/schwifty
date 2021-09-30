@@ -58,14 +58,6 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "",
-    "bank_code": "2030",
-    "name": "\u00c4\u008ceskoslovensk\u00c3\u00a9 \u00c3\u00bav\u00c4\u009brn\u00c3\u00ad dru\u00c5\u00bestvo",
-    "short_name": "\u00c4\u008ceskoslovensk\u00c3\u00a9 \u00c3\u00bav\u00c4\u009brn\u00c3\u00ad dru\u00c5\u00bestvo"
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
     "bic": "CITFCZPP",
     "bank_code": "2060",
     "name": "Citfin, spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo",
@@ -102,14 +94,6 @@
     "bank_code": "2220",
     "name": "Artesa, spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo",
     "short_name": "Artesa, spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo"
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
-    "bic": "POBNCZPP",
-    "bank_code": "2240",
-    "name": "Po\u00c5\u00a1tov\u00c3\u00a1 banka, a.s., pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika",
-    "short_name": "Po\u00c5\u00a1tov\u00c3\u00a1 banka, a.s., pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika"
   },
   {
     "country_code": "CZ",
@@ -196,8 +180,8 @@
     "primary": true,
     "bic": "CMZRCZP1",
     "bank_code": "4300",
-    "name": "\u00c4\u008ceskomoravsk\u00c3\u00a1 z\u00c3\u00a1ru\u00c4\u008dn\u00c3\u00ad a rozvojov\u00c3\u00a1 banka, a.s.",
-    "short_name": "\u00c4\u008ceskomoravsk\u00c3\u00a1 z\u00c3\u00a1ru\u00c4\u008dn\u00c3\u00ad a rozvojov\u00c3\u00a1 banka, a.s."
+    "name": "N\u00c3\u00a1rodn\u00c3\u00ad rozvojov\u00c3\u00a1 banka, a.s.",
+    "short_name": "N\u00c3\u00a1rodn\u00c3\u00ad rozvojov\u00c3\u00a1 banka, a.s."
   },
   {
     "country_code": "CZ",
@@ -284,8 +268,8 @@
     "primary": true,
     "bic": "SPWTCZ21",
     "bank_code": "7940",
-    "name": "Waldviertler Sparkasse Bank AG",
-    "short_name": "Waldviertler Sparkasse Bank AG"
+    "name": "k\u00c3\u00b3d u\u00c5\u00be\u00c3\u00adv\u00c3\u00a1n pro dob\u00c4\u009bh plateb ve prosp\u00c4\u009bch \u00c4\u008cesk\u00c3\u00a9 spo\u00c5\u0099itelny, a.s.do 31. 1. 2022",
+    "short_name": "k\u00c3\u00b3d u\u00c5\u00be\u00c3\u00adv\u00c3\u00a1n pro dob\u00c4\u009bh plateb ve prosp\u00c4\u009bch \u00c4\u008cesk\u00c3\u00a9 spo\u00c5\u0099itelny, a.s.do 31. 1. 2022"
   },
   {
     "country_code": "CZ",
@@ -310,14 +294,6 @@
     "bank_code": "7970",
     "name": "MONETA Stavebn\u00c3\u00ad Spo\u00c5\u0099itelna, a.s.",
     "short_name": "MONETA Stavebn\u00c3\u00ad Spo\u00c5\u0099itelna, a.s."
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
-    "bic": "",
-    "bank_code": "7980",
-    "name": "MONETA Money Bank, a.s.-dob\u00c4\u009bh plateb W\u00c3\u00bcstenrot hypote\u00c4\u008dn\u00c3\u00ad banka a.s.",
-    "short_name": "MONETA Money Bank, a.s.-dob\u00c4\u009bh plateb W\u00c3\u00bcstenrot hypote\u00c4\u008dn\u00c3\u00ad banka a.s."
   },
   {
     "country_code": "CZ",
@@ -398,14 +374,6 @@
     "bank_code": "8200",
     "name": "PRIVAT BANK der Raiffeisenlandesbank Ober\u00c3\u00b6sterreich Aktiengesellschaft, pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika",
     "short_name": "PRIVAT BANK der Raiffeisenlandesbank Ober\u00c3\u00b6sterreich Aktiengesellschaft, pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika"
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
-    "bic": "",
-    "bank_code": "8215",
-    "name": "ALTERNATIVE PAYMENT SOLUTIONS, s.r.o.",
-    "short_name": "ALTERNATIVE PAYMENT SOLUTIONS, s.r.o."
   },
   {
     "country_code": "CZ",
@@ -502,5 +470,21 @@
     "bank_code": "8294",
     "name": "GrisPayUnion s.r.o.",
     "short_name": "GrisPayUnion s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "BEORCZP2",
+    "bank_code": "8299",
+    "name": "BESTPAY s.r.o.",
+    "short_name": "BESTPAY s.r.o."
+  },
+  {
+    "country_code": "CZ",
+    "primary": true,
+    "bic": "",
+    "bank_code": "8500",
+    "name": "Ferratum Bank plc",
+    "short_name": "Ferratum Bank plc"
   }
 ]

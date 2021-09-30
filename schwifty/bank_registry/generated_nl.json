@@ -138,14 +138,6 @@
   {
     "country_code": "NL",
     "primary": true,
-    "bic": "BMEUNL21",
-    "bank_code": "BMEU",
-    "name": "BMCE EUROSERVICES",
-    "short_name": "BMCE EUROSERVICES"
-  },
-  {
-    "country_code": "NL",
-    "primary": true,
     "bic": "BNDANL2A",
     "bank_code": "BNDA",
     "name": "BRAND NEW DAY BANK",
@@ -354,6 +346,14 @@
   {
     "country_code": "NL",
     "primary": true,
+    "bic": "HIFXNL2A",
+    "bank_code": "HIFX",
+    "name": "Xe Europe BV",
+    "short_name": "Xe Europe BV"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
     "bic": "HSBCNL2A",
     "bank_code": "HSBC",
     "name": "HSBC BANK",
@@ -414,14 +414,6 @@
     "bank_code": "KABA",
     "name": "YAPI KREDI BANK",
     "short_name": "YAPI KREDI BANK"
-  },
-  {
-    "country_code": "NL",
-    "primary": true,
-    "bic": "KASANL2A",
-    "bank_code": "KASA",
-    "name": "KAS BANK ",
-    "short_name": "KAS BANK "
   },
   {
     "country_code": "NL",
@@ -570,6 +562,14 @@
   {
     "country_code": "NL",
     "primary": true,
+    "bic": "VTPSNL2R",
+    "bank_code": "VTPS",
+    "name": "Vitesse PSP",
+    "short_name": "Vitesse PSP"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
     "bic": "ZWLBNL21",
     "bank_code": "ZWLB",
     "name": "SNS ( ex ZWITSERLEVENBANK)",
@@ -590,5 +590,13 @@
     "bank_code": "BCDM",
     "name": "BANQUE CHAABI DU MAROC * (tijdelijk) inactief sinds 31 december 2020 *",
     "short_name": "BANQUE CHAABI DU MAROC * (tijdelijk) inactief sinds 31 december 2020 *"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
+    "bic": "BMEUNL21",
+    "bank_code": "BMEU",
+    "name": "BMCE EUROSERVICES * (tijdelijk) inactief sinds 7 juni 2021 *",
+    "short_name": "BMCE EUROSERVICES * (tijdelijk) inactief sinds 7 juni 2021 *"
   }
 ]

@@ -4300,8 +4300,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03107",
-    "name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA \u00c8RNU\u00c8E",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA LJUBLJANA \u00c8RNU\u00c8E"
+    "name": "SKB BANKA D.D. POSLOVALNICA TRZIN PIRAMIDA",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA TRZIN PIRAMIDA"
   },
   {
     "country_code": "SI",
@@ -4356,8 +4356,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03114",
-    "name": "SKB BANKA D.D. POSLOVALNICA RIBNICA",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA RIBNICA"
+    "name": "SKB BANKA D.D. POSLOVALNICA KO\u00c8EVJE",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA KO\u00c8EVJE"
   },
   {
     "country_code": "SI",
@@ -4604,8 +4604,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03156",
-    "name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO II",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO II"
+    "name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA NOVO MESTO"
   },
   {
     "country_code": "SI",
@@ -4660,8 +4660,8 @@
     "primary": true,
     "bic": "SKBASI2XXXX",
     "bank_code": "03165",
-    "name": "SKB BANKA D.D. POSLOVALNICA CELJE II",
-    "short_name": "SKB BANKA D.D. POSLOVALNICA CELJE II"
+    "name": "SKB BANKA D.D. POSLOVALNICA CELJE",
+    "short_name": "SKB BANKA D.D. POSLOVALNICA CELJE"
   },
   {
     "country_code": "SI",
@@ -5914,70 +5914,6 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "KBMASI2XXXX",
-    "bank_code": "05200",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "KBMASI2XXXX",
-    "bank_code": "05300",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "KBMASI2XXXX",
-    "bank_code": "05400",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "KBMASI2XXXX",
-    "bank_code": "05403",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "KBMASI2XXXX",
-    "bank_code": "05500",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "KBMASI2XXXX",
-    "bank_code": "05800",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "KBMASI2XXXX",
-    "bank_code": "05901",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
-    "bic": "KBMASI2XXXX",
-    "bank_code": "05902",
-    "name": "NOVA KBM D.D.",
-    "short_name": "NOVA KBM D.D."
-  },
-  {
-    "country_code": "SI",
-    "primary": true,
     "bic": "GORESI2XXXX",
     "bank_code": "07000",
     "name": "GORENJSKA BANKA D.D., KRANJ",
@@ -6598,6 +6534,14 @@
     "bank_code": "35001",
     "name": "BKS BANK AG, BAN\u00c8NA PODRU\u008eNICA",
     "short_name": "BKS BANK AG, BAN\u00c8NA PODRU\u008eNICA"
+  },
+  {
+    "country_code": "SI",
+    "primary": true,
+    "bic": "SIDRSI22XXX",
+    "bank_code": "38000",
+    "name": "SID BANKA D.D.",
+    "short_name": "SID BANKA D.D."
   },
   {
     "country_code": "SI",

@@ -330,14 +330,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "HYSTAT2GXXX",
-    "bank_code": "56000",
-    "name": "Landes-Hypothekenbank Steiermark Aktiengesellschaft",
-    "short_name": "Landes-Hypothekenbank Steiermark Aktiengesellschaft"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "SMWRAT21XXX",
     "bank_code": "20334",
     "name": "Sparkasse M\u00fchlviertel-West Bank Aktiengesellschaft",
@@ -1156,8 +1148,8 @@
     "primary": true,
     "bic": "RLBBAT2E027",
     "bank_code": "33027",
-    "name": "Raiffeisenbezirksbank G\u00fcssing eGen",
-    "short_name": "Raiffeisenbezirksbank G\u00fcssing eGen"
+    "name": "Raiffeisen Regionalbank G\u00fcssing-Jennersdorf eGen",
+    "short_name": "Raiffeisen Regionalbank G\u00fcssing-Jennersdorf eGen"
   },
   {
     "country_code": "AT",
@@ -1238,14 +1230,6 @@
     "bank_code": "38113",
     "name": "Raiffeisenbank Schladming-Gr\u00f6bming eGen",
     "short_name": "Raiffeisenbank Schladming-Gr\u00f6bming eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RZTIAT22200",
-    "bank_code": "36200",
-    "name": "Raiffeisenbank Absam eGen",
-    "short_name": "Raiffeisenbank Absam eGen"
   },
   {
     "country_code": "AT",
@@ -1714,14 +1698,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RLBBAT2E034",
-    "bank_code": "33034",
-    "name": "Raiffeisenbezirksbank Jennersdorf eGen",
-    "short_name": "Raiffeisenbezirksbank Jennersdorf eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RLBBAT2E090",
     "bank_code": "33090",
     "name": "Raiffeisenbank Heideboden eGen",
@@ -1860,8 +1836,8 @@
     "primary": true,
     "bic": "RZOOAT2L135",
     "bank_code": "34135",
-    "name": "Raiffeisenbank Gramastetten-Herzogsdorf eGen",
-    "short_name": "Raiffeisenbank Gramastetten-Herzogsdorf eGen"
+    "name": "Raiffeisenbank Gramastetten eGen",
+    "short_name": "Raiffeisenbank Gramastetten eGen"
   },
   {
     "country_code": "AT",
@@ -2134,14 +2110,6 @@
     "bank_code": "34155",
     "name": "Raiffeisenbank Handenberg - St. Georgen a. F. eGen",
     "short_name": "Raiffeisenbank Handenberg - St. Georgen a. F. eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RZTIAT22337",
-    "bank_code": "36337",
-    "name": "Raiffeisenbank Thaur eGen",
-    "short_name": "Raiffeisenbank Thaur eGen"
   },
   {
     "country_code": "AT",
@@ -2514,14 +2482,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RLBBAT2E055",
-    "bank_code": "33085",
-    "name": "Raiffeisenbank Rust-M\u00f6rbisch eGen",
-    "short_name": "Raiffeisenbank Rust-M\u00f6rbisch eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "BWFBATW1XXX",
     "bank_code": "44220",
     "name": "\u00d6sterreichische \u00c4rzte- und Apothekerbank AG",
@@ -2842,14 +2802,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "AIAGATWWXXX",
-    "bank_code": "19330",
-    "name": "Allianz Investmentbank Aktiengesellschaft",
-    "short_name": "Allianz Investmentbank Aktiengesellschaft"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "SPIHAT22XXX",
     "bank_code": "20503",
     "name": "Tiroler Sparkasse Bankaktiengesellschaft Innsbruck",
@@ -2860,8 +2812,8 @@
     "primary": true,
     "bic": "BSSWATWWXXX",
     "bank_code": "19190",
-    "name": "Bankhaus Schelhammer & Schattera Aktiengesellschaft",
-    "short_name": "Bankhaus Schelhammer & Schattera Aktiengesellschaft"
+    "name": "Schelhammer Capital Bank AG",
+    "short_name": "Schelhammer Capital Bank AG"
   },
   {
     "country_code": "AT",
@@ -3406,14 +3358,6 @@
     "bank_code": "39500",
     "name": "Raiffeisenbank St. Paul im Lavanttal eGen",
     "short_name": "Raiffeisenbank St. Paul im Lavanttal eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RLBBAT2E055",
-    "bank_code": "33055",
-    "name": "Raiffeisenbank Rust-M\u00f6rbisch eGen",
-    "short_name": "Raiffeisenbank Rust-M\u00f6rbisch eGen"
   },
   {
     "country_code": "AT",
@@ -4556,8 +4500,8 @@
     "primary": true,
     "bic": "RZKTAT2K292",
     "bank_code": "39292",
-    "name": "Raiffeisenbank Lavam\u00fcnd, registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Lavam\u00fcnd, registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisenbank Unteres Lavanttal eGen",
+    "short_name": "Raiffeisenbank Unteres Lavanttal eGen"
   },
   {
     "country_code": "AT",
@@ -4756,8 +4700,8 @@
     "primary": true,
     "bic": "RZKTAT2K511",
     "bank_code": "39511",
-    "name": "Raiffeisenbank Gurktal, registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Gurktal, registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisenbank Gurktal eGen",
+    "short_name": "Raiffeisenbank Gurktal eGen"
   },
   {
     "country_code": "AT",
@@ -4878,14 +4822,6 @@
     "bank_code": "39561",
     "name": "Raiffeisenbank Oberes M\u00f6lltal-Oberdrauburg eGen",
     "short_name": "Raiffeisenbank Oberes M\u00f6lltal-Oberdrauburg eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "RSBUAT2KXXX",
-    "bank_code": "19600",
-    "name": "CAPITAL BANK - GRAWE GRUPPE AG",
-    "short_name": "CAPITAL BANK - GRAWE GRUPPE AG"
   },
   {
     "country_code": "AT",
@@ -5078,14 +5014,6 @@
     "bank_code": "35019",
     "name": "Raiffeisenbank Gro\u00dfarl-H\u00fcttschlag eGen",
     "short_name": "Raiffeisenbank Gro\u00dfarl-H\u00fcttschlag eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "SLHYAT2SXXX",
-    "bank_code": "55000",
-    "name": "SALZBURGER LANDES-HYPOTHEKENBANK AKTIENGESELLSCHAFT",
-    "short_name": "SALZBURGER LANDES-HYPOTHEKENBANK AKTIENGESELLSCHAFT"
   },
   {
     "country_code": "AT",
@@ -6330,14 +6258,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "VPAYATW2XXX",
-    "bank_code": "94648",
-    "name": "Viva Payment Services S.A. Zweigniederlassung Wien/\u00d6sterreich",
-    "short_name": "Viva Payment Services S.A. Zweigniederlassung Wien/\u00d6sterreich"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RLNWATWWZWE",
     "bank_code": "32615",
     "name": "Raiffeisenbank Region Waldviertel Mitte eGen",
@@ -6810,14 +6730,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "RLBBAT2E034",
-    "bank_code": "33041",
-    "name": "Raiffeisenbezirksbank Jennersdorf eGen",
-    "short_name": "Raiffeisenbezirksbank Jennersdorf eGen"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RZSTAT2G023",
     "bank_code": "38108",
     "name": "Raiffeisenbank Oststeiermark Nord eGen",
@@ -6882,7 +6794,15 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "",
+    "bic": "VPAYATW2XXX",
+    "bank_code": "94648",
+    "name": "Viva Payment Services S.A. Zweigniederlassung Wien/\u00d6sterreich",
+    "short_name": "Viva Payment Services S.A. Zweigniederlassung Wien/\u00d6sterreich"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "OPBAATW2XXX",
     "bank_code": "19515",
     "name": "Opel Bank S.A. Niederlassung \u00d6sterreich",
     "short_name": "Opel Bank S.A. Niederlassung \u00d6sterreich"
@@ -6898,7 +6818,7 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "",
+    "bic": "FAZFAT21XXX",
     "bank_code": "19835",
     "name": "Ford Bank GmbH, Zweigniederlassung \u00d6sterreich",
     "short_name": "Ford Bank GmbH, Zweigniederlassung \u00d6sterreich"
@@ -6962,6 +6882,86 @@
   {
     "country_code": "AT",
     "primary": true,
+    "bic": "RLBBAT2E027",
+    "bank_code": "33034",
+    "name": "Raiffeisen Regionalbank G\u00fcssing-Jennersdorf eGen",
+    "short_name": "Raiffeisen Regionalbank G\u00fcssing-Jennersdorf eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLBBAT2E027",
+    "bank_code": "33041",
+    "name": "Raiffeisen Regionalbank G\u00fcssing-Jennersdorf eGen",
+    "short_name": "Raiffeisen Regionalbank G\u00fcssing-Jennersdorf eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZTIAT22337",
+    "bank_code": "36337",
+    "name": "Raiffeisenbank Thaur eGen",
+    "short_name": "Raiffeisenbank Thaur eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLBBAT2E012",
+    "bank_code": "33055",
+    "name": "Raiffeisenbank Neusiedlersee-H\u00fcgelland eGen",
+    "short_name": "Raiffeisenbank Neusiedlersee-H\u00fcgelland eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RLBBAT2E012",
+    "bank_code": "33085",
+    "name": "Raiffeisenbank Neusiedlersee-H\u00fcgelland eGen",
+    "short_name": "Raiffeisenbank Neusiedlersee-H\u00fcgelland eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZTIAT22200",
+    "bank_code": "36200",
+    "name": "Raiffeisenbank Absam eGen",
+    "short_name": "Raiffeisenbank Absam eGen"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "SLHYAT2SXXX",
+    "bank_code": "55000",
+    "name": "Raiffeisenlandesbank Ober\u00f6sterreich Aktiengesellschaft",
+    "short_name": "Raiffeisenlandesbank Ober\u00f6sterreich Aktiengesellschaft"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "RZSTAT2GXXX",
+    "bank_code": "56000",
+    "name": "Raiffeisen-Landesbank Steiermark AG",
+    "short_name": "Raiffeisen-Landesbank Steiermark AG"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "SLHYAT2S500",
+    "bank_code": "55500",
+    "name": "Raiffeisenlandesbank Ober\u00f6sterreich Aktiengesellschaft",
+    "short_name": "Raiffeisenlandesbank Ober\u00f6sterreich Aktiengesellschaft"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "BSSWATWWXXX",
+    "bank_code": "19600",
+    "name": "Schelhammer Capital Bank AG",
+    "short_name": "Schelhammer Capital Bank AG"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
     "bic": "BUNDATWWXXX",
     "bank_code": "1000",
     "name": "Republik \u00d6sterreich",
@@ -6982,14 +6982,6 @@
     "bank_code": "34923",
     "name": "Raiffeisenlandesbank Ober\u00f6sterreich Aktiengesellschaft",
     "short_name": "Raiffeisenlandesbank Ober\u00f6sterreich Aktiengesellschaft"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
-    "bic": "SLHYAT2SXXX",
-    "bank_code": "55500",
-    "name": "SALZBURGER LANDES-HYPOTHEKENBANK AKTIENGESELLSCHAFT",
-    "short_name": "SALZBURGER LANDES-HYPOTHEKENBANK AKTIENGESELLSCHAFT"
   },
   {
     "country_code": "AT",

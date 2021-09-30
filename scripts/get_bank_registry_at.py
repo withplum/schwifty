@@ -21,7 +21,7 @@ def process():
             "short_name": row[6].strip(),
         }
         for i, row in enumerate(csvfile)
-        if i >= 6 and len(row) == 21
+        if i >= 6 and len(row) >= 19
     ]
 
 

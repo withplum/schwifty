@@ -6,7 +6,7 @@ import xlrd
 
 
 URL = (
-    "https://www.finanssiala.fi/maksujenvalitys/dokumentit/"
+    "https://www.finanssiala.fi/wp-content/uploads/2021/03/"
     "Finnish_monetary_institution_codes_and_BICs_in_excel_format.xlsx"
 )
 
