@@ -1,0 +1,18 @@
+[
+  {
+    "country_code": "IE",
+    "bic": "CITIIE2XXXX",
+    "bank_code": "CITI",
+    "name": "Citibank Bank Europe plc",
+    "short_name": "Citibank Bank Europe plc",
+    "primary": true
+  },
+  {
+    "country_code": "IE",
+    "bic": "CHASIE4L",
+    "bank_code": "CHAS",
+    "name": "J.P. Morgan Bank Luxembourg S.A. Dublin Branch",
+    "short_name": "J.P. Morgan Bank Luxembourg S.A. Dublin Branch",
+    "primary": true
+  }
+]

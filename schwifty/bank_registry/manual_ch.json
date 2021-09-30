@@ -222,5 +222,13 @@
         "name": "COMMERZBANK AG",
         "short_name": "COMMERZBANK AG",
         "primary": true
+    },
+    {
+        "country_code": "CH",
+        "bic": "SWQBCHZZXXX",
+        "bank_code": "08781",
+        "name": "Swissquote Bank SA",
+        "short_name": "Swissquote Bank SA",
+        "primary": true
     }
 ]

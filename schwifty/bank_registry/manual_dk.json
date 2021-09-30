@@ -1,0 +1,18 @@
+[
+  {
+    "country_code": "DK",
+    "bic": "SXPYDKKK",
+    "bank_code": "8900",
+    "name": "Saxo Payments AS",
+    "short_name": "Saxo Payments AS",
+    "primary": true
+  },
+  {
+    "country_code": "DK",
+    "bic": "SAXODKKK",
+    "bank_code": "1149",
+    "name": "Saxo Bank",
+    "short_name": "Saxo Bank",
+    "primary": true
+  }
+]

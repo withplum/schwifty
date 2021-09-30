@@ -294,6 +294,29 @@
     "name": "METRO BANK PLC",
     "short_name": "METRO BANK PLC",
     "primary": true
+  },
+  {
+    "country_code": "GB",
+    "bic": "CLYDGB2S",
+    "bank_code": "CLYD",
+    "name": "CLYDESDALE BANK PLC",
+    "short_name": "CLYDESDALE BANK PLC",
+    "primary": true
+  },
+  {
+    "country_code": "GB",
+    "bic": "CPBKGB21CAR",
+    "bank_code": "CPBK",
+    "name": "THE CO-OPERATIVE BANK PLC",
+    "short_name": "THE CO-OPERATIVE BANK PLC",
+    "primary": true
+  },
+  {
+    "country_code": "GB",
+    "bic": "TRWIGB22",
+    "bank_code": "TRWI",
+    "name": "TRANSFERWISE LIMITED",
+    "short_name": "TRANSFERWISE LIMITED",
+    "primary": true
   }
 ]
-

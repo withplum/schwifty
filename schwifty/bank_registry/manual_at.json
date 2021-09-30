@@ -1,0 +1,10 @@
+[
+  {
+    "country_code": "AT",
+    "bic": "BUNDATWWXXX",
+    "bank_code": "01000",
+    "name": "Republik Österreich",
+    "short_name": "Republik Österreich",
+    "primary": true
+  }
+]
