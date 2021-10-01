@@ -19,6 +19,11 @@ Changed
 * Updated bank registry for Austria, Belgium, Czech Republic, Germany, Netherlands, Poland,
   Slovenia and Slovakia.
 
+Fixed
+~~~~~
+* Disallow ``schwifty`` to be installed for Python versions older than 3.7. It was unsupported
+  before but is now rejected upon installation with an appropriate error message.
+
 `2021.06.1`_ - 2021/06/24
 -------------------------
 
