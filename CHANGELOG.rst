@@ -23,6 +23,8 @@ Fixed
 ~~~~~
 * Disallow ``schwifty`` to be installed for Python versions older than 3.7. It was unsupported
   before but is now rejected upon installation with an appropriate error message.
+* Austrian bank codes are now consistently left padded with zeros. This fixes the mapping from
+  IBAN to BIC for the Austrian federal bank institutes.
 
 `2021.06.1`_ - 2021/06/24
 -------------------------

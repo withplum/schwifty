@@ -1339,7 +1339,7 @@
     "country_code": "AT",
     "primary": true,
     "bic": "NABAATWWXXX",
-    "bank_code": "100",
+    "bank_code": "00100",
     "name": "Oesterreichische Nationalbank",
     "short_name": "Oesterreichische Nationalbank"
   },
@@ -6963,7 +6963,7 @@
     "country_code": "AT",
     "primary": true,
     "bic": "BUNDATWWXXX",
-    "bank_code": "1000",
+    "bank_code": "01000",
     "name": "Republik \u00d6sterreich",
     "short_name": "Republik \u00d6sterreich"
   },

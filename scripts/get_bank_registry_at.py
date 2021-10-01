@@ -16,7 +16,7 @@ def process():
             "country_code": "AT",
             "primary": True,
             "bic": row[18].strip().upper(),
-            "bank_code": row[2].strip(),
+            "bank_code": row[2].strip().rjust(5, "0"),
             "name": row[6].strip(),
             "short_name": row[6].strip(),
         }
