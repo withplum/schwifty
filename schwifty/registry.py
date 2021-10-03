@@ -12,7 +12,7 @@ from typing import Union
 try:
     from importlib.resources import files
 except ImportError:
-    from importlib_resources import files
+    from importlib_resources import files  # type: ignore
 
 
 _registry: Dict[str, Union[Dict, List[Dict]]] = {}
