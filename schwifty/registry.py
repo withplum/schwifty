@@ -1,5 +1,5 @@
 import json
-import os.path
+import pathlib
 from collections import defaultdict
 from typing import Any
 from typing import Callable
@@ -8,8 +8,11 @@ from typing import List
 from typing import Tuple
 from typing import Union
 
-from pkg_resources import resource_filename
-from pkg_resources import resource_listdir
+
+try:
+    from importlib.resources import files
+except ImportError:
+    from importlib_resources import files
 
 
 _registry: Dict[str, Union[Dict, List[Dict]]] = {}
@@ -22,12 +25,10 @@ def has(name: str) -> bool:
 def get(name: str) -> Union[Dict, List[Dict]]:
     if not has(name):
         data = None
-        dirname = name + "_registry"
-        for fname in sorted(resource_listdir(__name__, dirname)):
-            if os.path.splitext(fname)[1] != ".json":
-                continue
-            fname = resource_filename(__name__, os.path.join(dirname, fname))
-            with open(fname) as fp:
+        directory = files(__package__) / f"{name}_registry"
+        assert isinstance(directory, pathlib.Path)
+        for entry in sorted(directory.glob("*.json")):
+            with entry.open() as fp:
                 chunk = json.load(fp)
                 if data is None:
                     data = chunk
