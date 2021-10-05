@@ -5,6 +5,15 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+Unreleased
+----------
+
+Changed
+~~~~~~~
+* Use `importlib.resources <https://docs.python.org/3.9/library/importlib.html#module-importlib.resources>`_
+  for loading internal registries. This removes the need to have ``setuptools`` installed.
+  Thank you `@a-recknagel <https://github.com/a-recknagel>`_ for the idea!
+
 `2021.10.0`_ - 2021/10/01
 -------------------------
 
