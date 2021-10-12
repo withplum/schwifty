@@ -5,6 +5,13 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2021.10.2` - 2021/10/12
+------------------------
+
+Added
+~~~~~
+* Added 440 additional bank records for Spain.
+
 `2021.10.1` - 2021/10/11
 ------------------------
 
@@ -186,6 +193,8 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2021.10.2: https://github.com/mdomke/schwifty/compare/2021.10.1...2021.10.2
+.. _2021.10.1: https://github.com/mdomke/schwifty/compare/2021.10.0...2021.10.1
 .. _2021.10.0: https://github.com/mdomke/schwifty/compare/2021.06.1...2021.10.0
 .. _2021.06.1: https://github.com/mdomke/schwifty/compare/2021.06.0...2021.06.1
 .. _2021.06.0: https://github.com/mdomke/schwifty/compare/2021.05.2...2021.06.0

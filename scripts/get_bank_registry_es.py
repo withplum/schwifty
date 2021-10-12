@@ -5,7 +5,11 @@ import requests
 from bs4 import BeautifulSoup
 
 
-URL = "https://www.iban.es/bancos/"
+BASE_URLS = [
+    "https://www.iban.es/bancos/",
+    "https://www.iban.es/bancos-extranjeros/",
+    "https://www.iban.es/cajas/",
+]
 titles = {
     "Código de entidad (código de banco)": "bank_code",
     "Código BIC Banco (Codigo SWIFT)": "bic",
@@ -14,8 +18,8 @@ titles = {
 }
 
 
-def get_bank_details(path):
-    soup = BeautifulSoup(requests.get(urljoin(URL, path)).content, "html.parser")
+def get_bank_details(url):
+    soup = BeautifulSoup(requests.get(url).content, "html.parser")
     rows = soup.select("div.about-content-text table tr")
 
     record = {"country_code": "ES", "primary": True}
@@ -31,10 +35,13 @@ def get_bank_details(path):
 
 
 def process():
-    soup = BeautifulSoup(requests.get(URL).content, "html.parser")
-    paths = [a["href"] for a in soup.select("h6.portfolio-title a")]
-    print(f"Fetched {len(paths)} bank records")
-    return [get_bank_details(path) for path in paths]
+    result = []
+    for url in BASE_URLS:
+        soup = BeautifulSoup(requests.get(url).content, "html.parser")
+        paths = [str(a["href"]) for a in soup.select("h6.portfolio-title a")]
+        print(f"Fetched {len(paths)} bank records")
+        result.extend([get_bank_details(urljoin(url, path)) for path in paths])
+    return result
 
 
 if __name__ == "__main__":
