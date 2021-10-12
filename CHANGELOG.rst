@@ -5,6 +5,14 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+Unreleased
+----------
+
+Changed
+~~~~~~~
+* Removed manually curated bank entries for Spain since all values were already part of
+  the generated registry.
+
 `2021.10.2` - 2021/10/12
 ------------------------
 
