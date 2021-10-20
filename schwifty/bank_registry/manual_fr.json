@@ -2390,5 +2390,13 @@
         "name": "BANQUE NATIONALE DE PARIS SUCCURSALE DE FORT DE FRANCE",
         "short_name": "BANQUE NATIONALE DE PARIS SUCCURSALE DE FORT DE FRANCE",
         "primary": true
+    },
+    {
+        "country_code": "FR",
+        "bic": "SWNBFR22",
+        "bank_code": "17328",
+        "name": "SWAN",
+        "short_name": "SWAN",
+        "primary": true
     }
 ]
