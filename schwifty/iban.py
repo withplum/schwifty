@@ -52,6 +52,9 @@ def add_bban_checksum(country_code: str, bban: str) -> str:
         bban = bban[:3] + bban[5:]
         checksum = algorithms["BE:default"].compute(bban)
         bban = bban + checksum
+    elif country_code == "FR":
+        checksum = algorithms["FR:default"].compute(bban)
+        bban = bban[0:21] + checksum
     return bban
 
 
