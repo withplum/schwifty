@@ -286,7 +286,7 @@
     "iban_length": 24,
     "positions": {
       "account_code": [
-        11,
+        10,
         20
       ],
       "bank_code": [
@@ -294,7 +294,7 @@
         4
       ],
       "branch_code": [
-        5,
+        4,
         10
       ]
     }
