@@ -5,13 +5,21 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
-Unreleased
-----------
+`2022.02.0` - 2022/02/15
+------------------------
+
+Added
+~~~~~
+* N26 BIC for Spain `@brunovila <https://github.com/brunovila>`_
+* Manually curated entries for banks from Iceland `@gautinils <https://github.com/gautinils>`_
 
 Changed
 ~~~~~~~
 * Removed manually curated bank entries for Spain since all values were already part of
   the generated registry.
+* Updated bank registry for Austria, Belgium, Czech Republic, Germany, Spain, Netherlands and Poland
+* Added overwrite for IBAN spec of Czech Republic and France. The branch and account code positions
+  are wrongly provided in the official IBAN registry.
 
 `2021.10.2` - 2021/10/12
 ------------------------
