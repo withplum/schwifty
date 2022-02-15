@@ -1,0 +1,16 @@
+{
+  "CZ": {
+    "positions": {
+      "account_code": [10, 20],
+      "bank_code": [0, 4],
+      "branch_code": [4, 10]
+    }
+  },
+  "FR": {
+    "positions": {
+      "account_code": [10, 21],
+      "bank_code": [0, 5],
+      "branch_code": [5, 10]
+    }
+  }
+}

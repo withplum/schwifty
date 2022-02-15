@@ -1,3 +1,4 @@
+import itertools
 import json
 import pathlib
 from collections import defaultdict
@@ -18,6 +19,21 @@ except ImportError:
 _registry: Dict[str, Union[Dict, List[Dict]]] = {}
 
 
+def merge_dicts(left: Dict, right: Dict) -> Dict:
+    merged = {}
+    for key in frozenset(right) & frozenset(left):
+        left_value, right_value = left[key], right[key]
+        if isinstance(left_value, Dict) and isinstance(right_value, Dict):
+            merged[key] = merge_dicts(left_value, right_value)
+        else:
+            merged[key] = right_value
+
+    for key, value in itertools.chain(left.items(), right.items()):
+        if key not in merged:
+            merged[key] = value
+    return merged
+
+
 def has(name: str) -> bool:
     return name in _registry
 
@@ -35,7 +51,7 @@ def get(name: str) -> Union[Dict, List[Dict]]:
                 elif isinstance(data, list):
                     data.extend(chunk)
                 elif isinstance(data, dict):
-                    data.update(chunk)
+                    data = merge_dicts(data, chunk)
         if data is None:
             raise ValueError(f"Failed to load registry {name}")
         save(name, data)
