@@ -6963,6 +6963,14 @@
     "country_code": "PL",
     "primary": true,
     "bic": "PKOPPLPWXXX",
+    "bank_code": "12400128",
+    "name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "PKOPPLPWXXX",
     "bank_code": "12401011",
     "name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna"
@@ -11618,7 +11626,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "IEEAPLPAXXX",
+    "bic": "PKOPPLPWXXX",
     "bank_code": "19500001",
     "name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna"
@@ -11626,7 +11634,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "IEEAPLPAXXX",
+    "bic": "PKOPPLPWXXX",
     "bank_code": "19501024",
     "name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Bank Polska Kasa Opieki Sp\u00f3\u0142ka Akcyjna"
@@ -12747,14 +12755,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
-    "bank_code": "19301363",
-    "name": "BANK POLSKIEJ SP\u00d3\u0141DZIELCZO\u015aCI SP\u00d3\u0141KA AKCYJNA",
-    "short_name": "BANK POLSKIEJ SP\u00d3\u0141DZIELCZO\u015aCI SP\u00d3\u0141KA AKCYJNA"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
     "bank_code": "19301376",
     "name": "BANK POLSKIEJ SP\u00d3\u0141DZIELCZO\u015aCI SP\u00d3\u0141KA AKCYJNA",
     "short_name": "BANK POLSKIEJ SP\u00d3\u0141DZIELCZO\u015aCI SP\u00d3\u0141KA AKCYJNA"
@@ -13163,6 +13163,22 @@
     "country_code": "PL",
     "primary": true,
     "bic": "PPABPLPKXXX",
+    "bank_code": "16000045",
+    "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "PPABPLPKXXX",
+    "bank_code": "16000058",
+    "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "PPABPLPKXXX",
     "bank_code": "16001013",
     "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
     "short_name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna"
@@ -13188,14 +13204,6 @@
     "primary": true,
     "bic": "PPABPLPKXXX",
     "bank_code": "16001055",
-    "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "",
-    "bank_code": "16001068",
     "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
     "short_name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna"
   },
@@ -13428,14 +13436,6 @@
     "primary": true,
     "bic": "PPABPLPKXXX",
     "bank_code": "16001361",
-    "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "",
-    "bank_code": "16001374",
     "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
     "short_name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna"
   },
@@ -14610,7 +14610,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "14600009",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14618,7 +14618,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "14601181",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14626,7 +14626,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "14601240",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14634,7 +14634,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15600000",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14642,7 +14642,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15600013",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14650,7 +14650,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601010",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14658,7 +14658,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601023",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14666,7 +14666,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601049",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14674,7 +14674,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601081",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14682,7 +14682,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601094",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14690,7 +14690,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601108",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14698,7 +14698,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601111",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14706,7 +14706,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601137",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14714,7 +14714,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601140",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14722,7 +14722,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601166",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14730,7 +14730,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "15601195",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14746,7 +14746,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "24800002",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14754,7 +14754,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "24801012",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14762,7 +14762,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "24801025",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -14770,7 +14770,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBGCPLPKXXX",
+    "bic": "",
     "bank_code": "24801038",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -15484,176 +15484,176 @@
     "primary": true,
     "bic": "",
     "bank_code": "28700003",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86420002",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86420015",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421012",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421025",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421038",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421041",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421067",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421070",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421083",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421096",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421100",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421113",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421126",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421139",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421142",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421155",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421168",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421171",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421184",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421197",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "86421201",
-    "name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Bank Nowy BFG Sp\u00f3\u0142ka Akcyjna"
+    "name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Bank Nowy Sp\u00f3\u0142ka Akcyjna"
   },
   {
     "country_code": "PL",
@@ -15796,16 +15796,16 @@
     "primary": true,
     "bic": "SKOKPLPWXXX",
     "bank_code": "70460005",
-    "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa Poznaniak",
-    "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa Poznaniak"
+    "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa PROGRES",
+    "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa PROGRES"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "",
     "bank_code": "70560008",
-    "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa Poznaniak",
-    "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa Poznaniak"
+    "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa PROGRES",
+    "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa PROGRES"
   },
   {
     "country_code": "PL",
@@ -15987,14 +15987,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "",
-    "bank_code": "80021027",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Piasecznie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Piasecznie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "",
     "bank_code": "80021030",
     "name": "Bank Sp\u00f3\u0142dzielczy w Piasecznie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Piasecznie"
@@ -16020,6 +16012,14 @@
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "80030003",
+    "name": "Mazovia Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "Mazovia Bank Sp\u00f3\u0142dzielczy"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPR",
+    "bank_code": "91970004",
     "name": "Mazovia Bank Sp\u00f3\u0142dzielczy",
     "short_name": "Mazovia Bank Sp\u00f3\u0142dzielczy"
   },
@@ -16382,14 +16382,6 @@
     "bank_code": "80461070",
     "name": "Bank Sp\u00f3\u0142dzielczy w Radzyniu Podlaskim",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Radzyniu Podlaskim"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "80550006",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Wisznicach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Wisznicach"
   },
   {
     "country_code": "PL",
@@ -17011,6 +17003,14 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
+    "bank_code": "80550006",
+    "name": "Wschodni Bank Sp\u00f3\u0142dzielczy w Che\u0142mie",
+    "short_name": "Wschodni Bank Sp\u00f3\u0142dzielczy w Che\u0142mie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
     "bank_code": "81870004",
     "name": "Wschodni Bank Sp\u00f3\u0142dzielczy w Che\u0142mie",
     "short_name": "Wschodni Bank Sp\u00f3\u0142dzielczy w Che\u0142mie"
@@ -17403,6 +17403,22 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
+    "bank_code": "82590004",
+    "name": "Bank Sp\u00f3\u0142dzielczy w K\u0142obucku",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w K\u0142obucku"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
+    "bank_code": "82591014",
+    "name": "Bank Sp\u00f3\u0142dzielczy w K\u0142obucku",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w K\u0142obucku"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
     "bank_code": "82500003",
     "name": "Bank Sp\u00f3\u0142dzielczy w Krzepicach",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Krzepicach"
@@ -17451,33 +17467,17 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
-    "bank_code": "82590004",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Popowie z/s w Zawadach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Popowie z/s w Zawadach"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "82591014",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Popowie z/s w Zawadach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Popowie z/s w Zawadach"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
     "bank_code": "82600006",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Poczesnej",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Poczesnej"
+    "name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK",
+    "short_name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "82601016",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Poczesnej",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Poczesnej"
+    "name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK",
+    "short_name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK"
   },
   {
     "country_code": "PL",
@@ -17804,8 +17804,24 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "83510003",
-    "name": "Bank Rumia Sp\u00f3\u0142dzielczy",
-    "short_name": "Bank Rumia Sp\u00f3\u0142dzielczy"
+    "name": "Zjednoczony Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "Zjednoczony Bank Sp\u00f3\u0142dzielczy"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "93240008",
+    "name": "Zjednoczony Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "Zjednoczony Bank Sp\u00f3\u0142dzielczy"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "93241018",
+    "name": "Zjednoczony Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "Zjednoczony Bank Sp\u00f3\u0142dzielczy"
   },
   {
     "country_code": "PL",
@@ -18226,7 +18242,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "",
+    "bic": "POLUPLPRXXX",
     "bank_code": "84550000",
     "name": "Miko\u0142owski Bank Sp\u00f3\u0142dzielczy w Miko\u0142owie",
     "short_name": "Miko\u0142owski Bank Sp\u00f3\u0142dzielczy w Miko\u0142owie"
@@ -18234,7 +18250,15 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "",
+    "bic": "POLUPLPRXXX",
+    "bank_code": "84600008",
+    "name": "Miko\u0142owski Bank Sp\u00f3\u0142dzielczy w Miko\u0142owie",
+    "short_name": "Miko\u0142owski Bank Sp\u00f3\u0142dzielczy w Miko\u0142owie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
     "bank_code": "84680000",
     "name": "Miko\u0142owski Bank Sp\u00f3\u0142dzielczy w Miko\u0142owie",
     "short_name": "Miko\u0142owski Bank Sp\u00f3\u0142dzielczy w Miko\u0142owie"
@@ -18454,14 +18478,6 @@
     "bank_code": "84570008",
     "name": "Bank Sp\u00f3\u0142dzielczy w Gliwicach",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Gliwicach"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "84600008",
-    "name": "Bank Sp\u00f3\u0142dzielczy w So\u015bnicowicach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w So\u015bnicowicach"
   },
   {
     "country_code": "PL",
@@ -19739,14 +19755,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
-    "bank_code": "87210008",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Kocku",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Kocku"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
     "bank_code": "87240005",
     "name": "Bank Sp\u00f3\u0142dzielczy w Rykach",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Rykach"
@@ -19860,6 +19868,14 @@
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "87410004",
+    "name": "Lubelski Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "Lubelski Bank Sp\u00f3\u0142dzielczy"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
+    "bank_code": "96140008",
     "name": "Lubelski Bank Sp\u00f3\u0142dzielczy",
     "short_name": "Lubelski Bank Sp\u00f3\u0142dzielczy"
   },
@@ -21402,26 +21418,26 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBWCPLPPXXX",
+    "bic": "GBWCPLPP",
     "bank_code": "89780008",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Kleszczowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Kleszczowie"
+    "name": "ESBANK Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "ESBANK Bank Sp\u00f3\u0142dzielczy"
   },
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBWCPLPPXXX",
+    "bic": "GBWCPLPP",
     "bank_code": "89781018",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Kleszczowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Kleszczowie"
+    "name": "ESBANK Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "ESBANK Bank Sp\u00f3\u0142dzielczy"
   },
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBWCPLPPXXX",
+    "bic": "GBWCPLPP",
     "bank_code": "89781021",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Kleszczowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Kleszczowie"
+    "name": "ESBANK Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "ESBANK Bank Sp\u00f3\u0142dzielczy"
   },
   {
     "country_code": "PL",
@@ -21834,7 +21850,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBWCPLPP",
+    "bic": "WISOPLPP",
     "bank_code": "90680003",
     "name": "Wielkopolski Bank Sp\u00f3\u0142dzielczy",
     "short_name": "Wielkopolski Bank Sp\u00f3\u0142dzielczy"
@@ -21842,7 +21858,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "GBWCPLPP",
+    "bic": "WISOPLPP",
     "bank_code": "90681013",
     "name": "Wielkopolski Bank Sp\u00f3\u0142dzielczy",
     "short_name": "Wielkopolski Bank Sp\u00f3\u0142dzielczy"
@@ -22771,9 +22787,9 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
-    "bank_code": "91970004",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Sobieniach Jeziorach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Sobieniach Jeziorach"
+    "bank_code": "92270004",
+    "name": "Bank Sp\u00f3\u0142dzielczy w Siedlcach",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w Siedlcach"
   },
   {
     "country_code": "PL",
@@ -22806,6 +22822,14 @@
     "bank_code": "92031012",
     "name": "Bank Sp\u00f3\u0142dzielczy w Krzywdzie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Krzywdzie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
+    "bank_code": "87210008",
+    "name": "Bank Sp\u00f3\u0142dzielczy w \u0141ukowie",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w \u0141ukowie"
   },
   {
     "country_code": "PL",
@@ -22910,14 +22934,6 @@
     "bank_code": "92260005",
     "name": "Bank Sp\u00f3\u0142dzielczy w Mi\u0144sku Mazowieckim",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Mi\u0144sku Mazowieckim"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "92270004",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Mrozach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Mrozach"
   },
   {
     "country_code": "PL",
@@ -23178,6 +23194,22 @@
   {
     "country_code": "PL",
     "primary": true,
+    "bic": "GBWCPLPPXXX",
+    "bank_code": "93040002",
+    "name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141owickiej w \u0141owiczu",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141owickiej w \u0141owiczu"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBWCPLPPXXX",
+    "bank_code": "93041012",
+    "name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141owickiej w \u0141owiczu",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141owickiej w \u0141owiczu"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "92910001",
     "name": "Bank Sp\u00f3\u0142dzielczy w Bia\u0142ej Rawskiej",
@@ -23214,22 +23246,6 @@
     "bank_code": "93021027",
     "name": "Bank Sp\u00f3\u0142dzielczy w Mszczonowie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Mszczonowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPPXXX",
-    "bank_code": "93040002",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Wiskitkach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Wiskitkach"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPPXXX",
-    "bank_code": "93041012",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Wiskitkach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Wiskitkach"
   },
   {
     "country_code": "PL",
@@ -23302,22 +23318,6 @@
     "bank_code": "93211024",
     "name": "Bank Sp\u00f3\u0142dzielczy w Bytowie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Bytowie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPP",
-    "bank_code": "93240008",
-    "name": "Bank Sp\u00f3\u0142dzielczy w \u0141ebie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w \u0141ebie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPP",
-    "bank_code": "93241018",
-    "name": "Bank Sp\u00f3\u0142dzielczy w \u0141ebie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w \u0141ebie"
   },
   {
     "country_code": "PL",
@@ -23620,16 +23620,8 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "93770000",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Gryfinie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Gryfinie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "",
-    "bank_code": "93950008",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Gryfinie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Gryfinie"
+    "name": "Pyrzycko-Stargardzki Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "Pyrzycko-Stargardzki Bank Sp\u00f3\u0142dzielczy"
   },
   {
     "country_code": "PL",
@@ -23668,6 +23660,14 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "93871042",
+    "name": "Pyrzycko-Stargardzki Bank Sp\u00f3\u0142dzielczy",
+    "short_name": "Pyrzycko-Stargardzki Bank Sp\u00f3\u0142dzielczy"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "93950008",
     "name": "Pyrzycko-Stargardzki Bank Sp\u00f3\u0142dzielczy",
     "short_name": "Pyrzycko-Stargardzki Bank Sp\u00f3\u0142dzielczy"
   },
@@ -24770,14 +24770,6 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "96140008",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Ksi\u0119\u017cpolu",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Ksi\u0119\u017cpolu"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "96170005",
     "name": "Bank Sp\u00f3\u0142dzielczy w Lubyczy Kr\u00f3lewskiej",
@@ -25034,6 +25026,14 @@
   {
     "country_code": "PL",
     "primary": true,
+    "bic": "POLUPLPRXXX",
+    "bank_code": "96720008",
+    "name": "Bank Sp\u00f3\u0142dzielczy w I\u0142owej",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w I\u0142owej"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
     "bic": "GBWCPLPPXXX",
     "bank_code": "96600007",
     "name": "Bank Sp\u00f3\u0142dzielczy w Siedlcu",
@@ -25046,14 +25046,6 @@
     "bank_code": "96601017",
     "name": "Bank Sp\u00f3\u0142dzielczy w Siedlcu",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Siedlcu"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "96720008",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Trzebielu",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Trzebielu"
   },
   {
     "country_code": "PL",

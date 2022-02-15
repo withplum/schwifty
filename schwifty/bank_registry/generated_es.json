@@ -306,10 +306,10 @@
   {
     "country_code": "ES",
     "primary": true,
-    "bank_code": "0115",
-    "bic": "",
+    "bank_code": "2105",
+    "bic": "CECAESMM105",
     "name": "BANCO DE CASTILLA-LA MANCHA, S.A.",
-    "short_name": "BANCO CLM"
+    "short_name": "BANCO DE CASTIL"
   },
   {
     "country_code": "ES",

@@ -226,6 +226,14 @@
   {
     "country_code": "NL",
     "primary": true,
+    "bic": "CCBVNL2A",
+    "bank_code": "CCBV",
+    "name": "Currencycloud B.V.",
+    "short_name": "Currencycloud B.V."
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
     "bic": "DELENL22",
     "bank_code": "DELE",
     "name": "OYENS & VAN EEGHEN - part of Delen Private Bank",

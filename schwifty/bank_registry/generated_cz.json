@@ -178,7 +178,7 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "CMZRCZP1",
+    "bic": "NROZCZPP",
     "bank_code": "4300",
     "name": "N\u00c3\u00a1rodn\u00c3\u00ad rozvojov\u00c3\u00a1 banka, a.s.",
     "short_name": "N\u00c3\u00a1rodn\u00c3\u00ad rozvojov\u00c3\u00a1 banka, a.s."
@@ -212,8 +212,8 @@
     "primary": true,
     "bic": "EQBKCZPP",
     "bank_code": "6100",
-    "name": "Equa bank a.s.",
-    "short_name": "Equa bank a.s."
+    "name": "Raiffeisenbank a.s. (do 31. 12. 2021 Equa bank a.s.)",
+    "short_name": "Raiffeisenbank a.s. (do 31. 12. 2021 Equa bank a.s.)"
   },
   {
     "country_code": "CZ",
@@ -262,14 +262,6 @@
     "bank_code": "7910",
     "name": "Deutsche Bank Aktiengesellschaft Filiale Prag, organiza\u00c4\u008dn\u00c3\u00ad slo\u00c5\u00beka",
     "short_name": "Deutsche Bank Aktiengesellschaft Filiale Prag, organiza\u00c4\u008dn\u00c3\u00ad slo\u00c5\u00beka"
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
-    "bic": "SPWTCZ21",
-    "bank_code": "7940",
-    "name": "k\u00c3\u00b3d u\u00c5\u00be\u00c3\u00adv\u00c3\u00a1n pro dob\u00c4\u009bh plateb ve prosp\u00c4\u009bch \u00c4\u008cesk\u00c3\u00a9 spo\u00c5\u0099itelny, a.s.do 31. 1. 2022",
-    "short_name": "k\u00c3\u00b3d u\u00c5\u00be\u00c3\u00adv\u00c3\u00a1n pro dob\u00c4\u009bh plateb ve prosp\u00c4\u009bch \u00c4\u008cesk\u00c3\u00a9 spo\u00c5\u0099itelny, a.s.do 31. 1. 2022"
   },
   {
     "country_code": "CZ",
@@ -450,26 +442,10 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "QPSRCZPP",
-    "bank_code": "8283",
-    "name": "Qpay s.r.o.",
-    "short_name": "Qpay s.r.o."
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
     "bic": "MRPSCZPP",
     "bank_code": "8293",
     "name": "Mercurius partners s.r.o.",
     "short_name": "Mercurius partners s.r.o."
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
-    "bic": "",
-    "bank_code": "8294",
-    "name": "GrisPayUnion s.r.o.",
-    "short_name": "GrisPayUnion s.r.o."
   },
   {
     "country_code": "CZ",

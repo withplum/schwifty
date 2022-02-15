@@ -4172,8 +4172,8 @@
     "primary": true,
     "bic": "BKCHBEBB",
     "bank_code": "605",
-    "name": "Bank of China (Luxembourg) S.A., Brussels Branch",
-    "short_name": "Bank of China (Luxembourg) S.A., Brussels Branch"
+    "name": "Bank of China (Europe) SA Brussels Branch",
+    "short_name": "Bank of China (Europe) SA Brussels Branch"
   },
   {
     "country_code": "BE",
@@ -5844,8 +5844,8 @@
     "primary": true,
     "bic": "TUNZBEB1",
     "bank_code": "911",
-    "name": "Ingenico Financial Solutions",
-    "short_name": "Ingenico Financial Solutions"
+    "name": "Worldline Financial Solutions nv/SA",
+    "short_name": "Worldline Financial Solutions nv/SA"
   },
   {
     "country_code": "BE",
@@ -6012,8 +6012,8 @@
     "primary": true,
     "bic": "JPMGBEBB",
     "bank_code": "945",
-    "name": "J.P. Morgan Bank Luxembourg - Brussels Branch",
-    "short_name": "J.P. Morgan Bank Luxembourg - Brussels Branch"
+    "name": "J.P. Morgan SE \u2013 Brussels Branch",
+    "short_name": "J.P. Morgan SE \u2013 Brussels Branch"
   },
   {
     "country_code": "BE",
@@ -6140,8 +6140,8 @@
     "primary": true,
     "bic": "TRWIBEB1",
     "bank_code": "967",
-    "name": "TransferWise",
-    "short_name": "TransferWise"
+    "name": "Wise Europe SA",
+    "short_name": "Wise Europe SA"
   },
   {
     "country_code": "BE",
