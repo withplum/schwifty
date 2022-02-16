@@ -5,8 +5,8 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
-`2022.02.0` - 2022/02/15
-------------------------
+`2022.02.0`_ - 2022/02/15
+-------------------------
 
 Added
 ~~~~~
@@ -21,15 +21,15 @@ Changed
 * Added overwrite for IBAN spec of Czech Republic and France. The branch and account code positions
   are wrongly provided in the official IBAN registry.
 
-`2021.10.2` - 2021/10/12
-------------------------
+`2021.10.2`_ - 2021/10/12
+-------------------------
 
 Added
 ~~~~~
 * Added 440 additional bank records for Spain.
 
-`2021.10.1` - 2021/10/11
-------------------------
+`2021.10.1`_ - 2021/10/11
+-------------------------
 
 Changed
 ~~~~~~~
@@ -209,6 +209,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2022.02.0: https://github.com/mdomke/schwifty/compare/2021.10.2...2022.02.0
 .. _2021.10.2: https://github.com/mdomke/schwifty/compare/2021.10.1...2021.10.2
 .. _2021.10.1: https://github.com/mdomke/schwifty/compare/2021.10.0...2021.10.1
 .. _2021.10.0: https://github.com/mdomke/schwifty/compare/2021.06.1...2021.10.0
