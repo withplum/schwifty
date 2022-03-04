@@ -27,7 +27,7 @@ def test_bic_no_branch_code():
 
 def test_bic_properties():
     bic = BIC("GENODEM1GLS")
-    assert bic.length == 11
+    assert bic.length == len(bic) == 11
     assert bic.bank_code == "GENO"
     assert bic.country_code == "DE"
     assert bic.location_code == "M1"
@@ -54,7 +54,7 @@ def test_bic_properties():
 
 def test_unknown_bic_properties():
     bic = BIC("ABNAJPJTXXX")
-    assert bic.length == 11
+    assert bic.length == len(bic) == 11
     assert bic.bank_code == "ABNA"
     assert bic.country_code == "JP"
     assert bic.location_code == "JT"

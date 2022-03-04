@@ -131,7 +131,7 @@ def test_iban_properties():
     assert iban.country_code == "DE"
     assert iban.bic == "GENODEM1GLS"
     assert iban.formatted == "DE42 4306 0967 7000 5341 00"
-    assert iban.length == 22
+    assert iban.length == len(iban) == 22
     assert iban.country == countries.get(alpha_2="DE")
 
 

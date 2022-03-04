@@ -27,6 +27,9 @@ class Base:
     def __lt__(self, other: Any) -> bool:
         return str(self) < str(other)
 
+    def __len__(self) -> int:
+        return self.length
+
     @property
     def compact(self) -> str:
         """str: Compact representation of the code."""
