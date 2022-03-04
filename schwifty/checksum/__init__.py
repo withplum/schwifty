@@ -38,3 +38,4 @@ def register(algorithm_cls: Type[Algorithm], prefix: Optional[str] = None) -> Ty
 from schwifty.checksum import belgium  # noqa
 from schwifty.checksum import germany  # noqa
 from schwifty.checksum import italy  # noqa
+from schwifty.checksum import france  # noqa
