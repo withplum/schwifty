@@ -426,14 +426,6 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "VPAYCZP2",
-    "bank_code": "8272",
-    "name": "VIVA PAYMENT SERVICES S.A. od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod",
-    "short_name": "VIVA PAYMENT SERVICES S.A. od\u00c5\u00a1t\u00c4\u009bpn\u00c3\u00bd z\u00c3\u00a1vod"
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
     "bic": "BEFKCZP1",
     "bank_code": "8280",
     "name": "B-Efekt a.s.",

@@ -13,7 +13,10 @@ def process():
     with requests.get(URL, stream=True) as fp:
         csvfile = csv.reader([line.decode("cp1250") for line in fp.iter_lines()], delimiter=";")
     registry = []
+    next(csvfile)
     for row in csvfile:
+        if len(row) != 4:
+            continue
         bic = row[2].strip().upper()
         if bic and not BIC(bic, allow_invalid=True).is_valid:
             continue

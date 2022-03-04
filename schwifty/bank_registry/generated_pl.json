@@ -15276,8 +15276,8 @@
     "primary": true,
     "bic": "",
     "bank_code": "26000000",
-    "name": "Bank of China (Luxembourg) S.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
-    "short_name": "Bank of China (Luxembourg) S.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
+    "name": "Bank of China (Europe) S.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
+    "short_name": "Bank of China (Europe) S.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
   },
   {
     "country_code": "PL",
@@ -15454,14 +15454,6 @@
     "bank_code": "28100005",
     "name": "Goldman Sachs Bank Europe SE Sp\u00f3\u0142ka Europejska Oddzia\u0142 w Polsce",
     "short_name": "Goldman Sachs Bank Europe SE Sp\u00f3\u0142ka Europejska Oddzia\u0142 w Polsce"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "",
-    "bank_code": "25700000",
-    "name": "UBS Europe SE (Sp\u00f3\u0142ka Europejska) Oddzia\u0142 w Polsce",
-    "short_name": "UBS Europe SE (Sp\u00f3\u0142ka Europejska) Oddzia\u0142 w Polsce"
   },
   {
     "country_code": "PL",
@@ -15747,14 +15739,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "SKOKPLPWXXX",
-    "bank_code": "70050017",
-    "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa im. Powsta\u0144c\u00f3w \u015al\u0105skich",
-    "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa im. Powsta\u0144c\u00f3w \u015al\u0105skich"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "SKOKPLPWXXX",
     "bank_code": "70110001",
     "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa im. Stanis\u0142awa Adamskiego w Toruniu",
     "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa im. Stanis\u0142awa Adamskiego w Toruniu"
@@ -15854,6 +15838,14 @@
     "bank_code": "70790001",
     "name": "Krakowska Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa w Krakowie",
     "short_name": "Krakowska Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa w Krakowie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "SKOKPLPWXXX",
+    "bank_code": "70050017",
+    "name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa ?Szopienice? w Katowicach",
+    "short_name": "Sp\u00f3\u0142dzielcza Kasa Oszcz\u0119dno\u015bciowo-Kredytowa ?Szopienice? w Katowicach"
   },
   {
     "country_code": "PL",
@@ -17451,17 +17443,17 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
-    "bank_code": "82560007",
-    "name": "Bank Sp\u00f3\u0142dzielczy we Mstowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy we Mstowie"
+    "bank_code": "82580005",
+    "name": "Bank Sp\u00f3\u0142dzielczy w Mykanowie",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w Mykanowie"
   },
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "82580005",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Mykanowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Mykanowie"
+    "bic": "POLUPLPR",
+    "bank_code": "82560007",
+    "name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK",
+    "short_name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK"
   },
   {
     "country_code": "PL",
@@ -17476,6 +17468,30 @@
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "82601016",
+    "name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK",
+    "short_name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPR",
+    "bank_code": "82670009",
+    "name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK",
+    "short_name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPR",
+    "bank_code": "82671019",
+    "name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK",
+    "short_name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPR",
+    "bank_code": "82671022",
     "name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK",
     "short_name": "Cz\u0119stochowski Bank Sp\u00f3\u0142dzielczy JURA BANK"
   },
@@ -17502,30 +17518,6 @@
     "bank_code": "82651024",
     "name": "Bank Sp\u00f3\u0142dzielczy w Paj\u0119cznie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Paj\u0119cznie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "82670009",
-    "name": "Bank Sp\u00f3\u0142dzielczy w \u017bytnie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w \u017bytnie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "82671019",
-    "name": "Bank Sp\u00f3\u0142dzielczy w \u017bytnie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w \u017bytnie"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "82671022",
-    "name": "Bank Sp\u00f3\u0142dzielczy w \u017bytnie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w \u017bytnie"
   },
   {
     "country_code": "PL",
@@ -18884,8 +18876,8 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "85390001",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Grabowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Grabowie"
+    "name": "Bank Sp\u00f3\u0142dzielczy w Witkowie",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w Witkowie"
   },
   {
     "country_code": "PL",
@@ -23418,10 +23410,10 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "POLUPLPRXXX",
+    "bic": "POLUPLPR",
     "bank_code": "93500001",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Miko\u0142ajkach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Miko\u0142ajkach"
+    "name": "Bank Sp\u00f3\u0142dzielczy w W\u0119gorzewie",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w W\u0119gorzewie"
   },
   {
     "country_code": "PL",

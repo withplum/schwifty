@@ -52,8 +52,8 @@
     "primary": true,
     "bic": "LUBASKBX",
     "bank_code": "3100",
-    "name": "Prima banka Slovensko, a.s. (formerly Sberbank Slovensko, a.s.) - Code for running payments",
-    "short_name": "Prima banka Slovensko, a.s. (formerly Sberbank Slovensko, a.s.) - Code for running payments"
+    "name": "Prima banka Slovensko, a.s. - Code for running payments",
+    "short_name": "Prima banka Slovensko, a.s. - Code for running payments"
   },
   {
     "country_code": "SK",
@@ -254,14 +254,6 @@
     "bank_code": "2010",
     "name": "Fio banka, a.s.",
     "short_name": "Fio banka, a.s."
-  },
-  {
-    "country_code": "SK",
-    "primary": true,
-    "bic": "NFDNSKBA",
-    "bank_code": "9953",
-    "name": "Payment Institution NFD a.s.",
-    "short_name": "Payment Institution NFD a.s."
   },
   {
     "country_code": "SK",

@@ -13,6 +13,10 @@ Added
 * The :class:`.IBAN` and :class:`.BIC` classes now support the `__len__` method to allow a more
   Pythonic calculation of the length.
 
+Changed
+~~~~~~~
+* Update bank registry Czech Republic, Spain, Hungary, Poland and Slovakia.
+
 
 `2022.02.0`_ - 2022/02/15
 -------------------------
