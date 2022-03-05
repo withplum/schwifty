@@ -5,12 +5,21 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2022.03.1`_ - 2022/03/05
+-------------------------
+
+Added
+~~~~~
+* Country specifc checksum validation for French banks (based on the work of
+  `@sholan <https://github.com/sholan>`_)
+
+
 `2022.03.0`_ - 2022/03/04
 -------------------------
 
 Added
 ~~~~~
-* The :class:`.IBAN` and :class:`.BIC` classes now support the `__len__` method to allow a more
+* The :class:`.IBAN` and :class:`.BIC` classes now support the ``__len__`` method to allow a more
   Pythonic calculation of the length.
 
 Changed
@@ -222,7 +231,8 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
-.. _2022.03.0: https://github.com/mdomke/schwifty/compare/2021.02.0...2022.03.0
+.. _2022.03.1: https://github.com/mdomke/schwifty/compare/2022.03.0...2022.03.1
+.. _2022.03.0: https://github.com/mdomke/schwifty/compare/2022.02.0...2022.03.0
 .. _2022.02.0: https://github.com/mdomke/schwifty/compare/2021.10.2...2022.02.0
 .. _2021.10.2: https://github.com/mdomke/schwifty/compare/2021.10.1...2021.10.2
 .. _2021.10.1: https://github.com/mdomke/schwifty/compare/2021.10.0...2021.10.1

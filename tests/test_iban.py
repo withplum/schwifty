@@ -141,7 +141,6 @@ def test_iban_properties():
         (("DE", "43060967", "7000534100"), "DE42430609677000534100"),
         (("DE", "51230800", "2622196545"), "DE61512308002622196545"),
         (("DE", "20690500", "9027378"), "DE37206905000009027378"),
-        (("DE", "75090900", "7408418"), "DE04750909000007408418"),
         (("IT", "0538703601", "000000198036"), "IT18T0538703601000000198036"),
         (("IT", "0538703601", "000000198060"), "IT57V0538703601000000198060"),
         (("IT", "0538703601", "000000198072"), "IT40Z0538703601000000198072"),
@@ -155,10 +154,12 @@ def test_iban_properties():
         (("BE", "050", "123"), "BE66050000012343"),
         (("BE", "050", "123456"), "BE45050012345689"),
         (("BE", "539", "0075470"), "BE68539007547034"),
+        (("FR", "2004101005", "0500013M026"), "FR1420041010050500013M02606"),
     ],
 )
 def test_generate_iban(components, compact):
     iban = IBAN.generate(*components)
+    iban.validate(validate_bban=True)
     assert iban.compact == compact
 
 
@@ -210,8 +211,3 @@ def test_bic_from_iban(iban, bic):
 
 def test_unknown_bic_from_iban():
     assert IBAN("SI72000001234567892").bic is None
-
-
-def test_be_generated_iban_valid():
-    iban = IBAN.generate("BE", bank_code="050", account_code="123456")
-    assert iban.validate(validate_bban=True)
