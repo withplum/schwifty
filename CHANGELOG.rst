@@ -107,7 +107,7 @@ Added
 Added
 ~~~~~
 * Country specifc checksum validation for Belgian banks, as well as support for generating the
-  checksum when using the :meth:`IBAN.generate`-method. `@mhemeryck <https://github.com/mhemeryck>`_
+  checksum when using the :meth:`.IBAN.generate`-method. `@mhemeryck <https://github.com/mhemeryck>`_
 
 `2021.05.1`_ - 2021/05/20
 -------------------------
@@ -207,7 +207,7 @@ Changed
 
 Added
 ~~~~~
-* New attribute :class:`.BIC.is_valid` and :class:`.IBAN.is_valid`.
+* New attribute :attr:`.BIC.is_valid` and :attr:`.IBAN.is_valid`.
 
 `2020.08.0`_ - 2020/08/06
 -------------------------
