@@ -17,7 +17,7 @@ Fixed
 ~~~~~
 * Removed bogus line from dutch bank registry.
 * Loading the bank registry now also works on machines that don't have UTF-8 as their default
-  encoding `@imad3v <https://github.com/imad3v>`
+  encoding `@imad3v <https://github.com/imad3v>`_
 
 
 `2022.03.1`_ - 2022/03/05
