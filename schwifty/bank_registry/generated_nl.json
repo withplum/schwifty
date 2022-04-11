@@ -586,14 +586,6 @@
   {
     "country_code": "NL",
     "primary": true,
-    "bic": "",
-    "bank_code": "",
-    "name": "",
-    "short_name": ""
-  },
-  {
-    "country_code": "NL",
-    "primary": true,
     "bic": "BCDMNL22",
     "bank_code": "BCDM",
     "name": "BANQUE CHAABI DU MAROC * (tijdelijk) inactief sinds 31 december 2020 *",

@@ -17,7 +17,7 @@ def process():
     for row in list(sheet.get_rows())[4:]:
         bic, bank_code, name = row[:3]
 
-        if not any((bic, bank_code, name)):
+        if not any((bic.value, bank_code.value, name.value)):
             continue
 
         registry.append(
