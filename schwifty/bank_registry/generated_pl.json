@@ -2963,6 +2963,22 @@
     "country_code": "PL",
     "primary": true,
     "bic": "INGBPLPWXXX",
+    "bank_code": "10500464",
+    "name": "ING Bank \u015al\u0105ski Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "ING Bank \u015al\u0105ski Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "INGBPLPWXXX",
+    "bank_code": "10500477",
+    "name": "ING Bank \u015al\u0105ski Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "ING Bank \u015al\u0105ski Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "INGBPLPWXXX",
     "bank_code": "10501012",
     "name": "ING Bank \u015al\u0105ski Sp\u00f3\u0142ka Akcyjna",
     "short_name": "ING Bank \u015al\u0105ski Sp\u00f3\u0142ka Akcyjna"
@@ -12140,8 +12156,8 @@
     "primary": true,
     "bic": "CITIPLPXXXX",
     "bank_code": "15800006",
-    "name": "Mercedes-Benz Bank Polska Sp\u00f3\u0142ka Akcyjna",
-    "short_name": "Mercedes-Benz Bank Polska Sp\u00f3\u0142ka Akcyjna"
+    "name": "Mercedes-Benz Bank Polska Sp\u00f3\u0142ka Akcyjna w likwidacji",
+    "short_name": "Mercedes-Benz Bank Polska Sp\u00f3\u0142ka Akcyjna w likwidacji"
   },
   {
     "country_code": "PL",
@@ -12755,6 +12771,14 @@
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
+    "bank_code": "19301363",
+    "name": "BANK POLSKIEJ SP\u00d3\u0141DZIELCZO\u015aCI SP\u00d3\u0141KA AKCYJNA",
+    "short_name": "BANK POLSKIEJ SP\u00d3\u0141DZIELCZO\u015aCI SP\u00d3\u0141KA AKCYJNA"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPRXXX",
     "bank_code": "19301376",
     "name": "BANK POLSKIEJ SP\u00d3\u0141DZIELCZO\u015aCI SP\u00d3\u0141KA AKCYJNA",
     "short_name": "BANK POLSKIEJ SP\u00d3\u0141DZIELCZO\u015aCI SP\u00d3\u0141KA AKCYJNA"
@@ -13210,6 +13234,14 @@
   {
     "country_code": "PL",
     "primary": true,
+    "bic": "",
+    "bank_code": "16001068",
+    "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
     "bic": "PPABPLPKXXX",
     "bank_code": "16001071",
     "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
@@ -13436,6 +13468,14 @@
     "primary": true,
     "bic": "PPABPLPKXXX",
     "bank_code": "16001361",
+    "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "16001374",
     "name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna",
     "short_name": "BNP Paribas Bank Polska Sp\u00f3\u0142ka Akcyjna"
   },
@@ -15267,14 +15307,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "",
-    "bank_code": "25800003",
-    "name": "J.P. Morgan Europe Limited Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 Oddzia\u0142 w Polsce",
-    "short_name": "J.P. Morgan Europe Limited Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 Oddzia\u0142 w Polsce"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "",
     "bank_code": "26000000",
     "name": "Bank of China (Europe) S.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
     "short_name": "Bank of China (Europe) S.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
@@ -15454,6 +15486,14 @@
     "bank_code": "28100005",
     "name": "Goldman Sachs Bank Europe SE Sp\u00f3\u0142ka Europejska Oddzia\u0142 w Polsce",
     "short_name": "Goldman Sachs Bank Europe SE Sp\u00f3\u0142ka Europejska Oddzia\u0142 w Polsce"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "25800003",
+    "name": "J.P. Morgan SE (Sp\u00f3\u0142ka Europejska) Oddzia\u0142 w Polsce",
+    "short_name": "J.P. Morgan SE (Sp\u00f3\u0142ka Europejska) Oddzia\u0142 w Polsce"
   },
   {
     "country_code": "PL",
@@ -19467,14 +19507,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "GBWCPLPP",
-    "bank_code": "86630007",
-    "name": "Bank Sp\u00f3\u0142dzielczy w G\u00f3rze",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w G\u00f3rze"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPP",
     "bank_code": "86660004",
     "name": "Bank Sp\u00f3\u0142dzielczy w Ko\u015bcianie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Ko\u015bcianie"
@@ -19510,6 +19542,14 @@
     "bank_code": "86741019",
     "name": "Bank Sp\u00f3\u0142dzielczy w Jutrosinie",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Jutrosinie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "86630007",
+    "name": "Powiatowy Bank Sp\u00f3\u0142dzielczy w Gostyniu",
+    "short_name": "Powiatowy Bank Sp\u00f3\u0142dzielczy w Gostyniu"
   },
   {
     "country_code": "PL",
@@ -19596,6 +19636,14 @@
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "87021024",
+    "name": "Bank Sp\u00f3\u0142dzielczy w Niemcach",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w Niemcach"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "POLUPLPR",
+    "bank_code": "87320000",
     "name": "Bank Sp\u00f3\u0142dzielczy w Niemcach",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Niemcach"
   },
@@ -19782,14 +19830,6 @@
     "bank_code": "87310001",
     "name": "Bank Sp\u00f3\u0142dzielczy w Kazimierzu Dolnym",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Kazimierzu Dolnym"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "POLUPLPRXXX",
-    "bank_code": "87320000",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Kurowie",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Kurowie"
   },
   {
     "country_code": "PL",

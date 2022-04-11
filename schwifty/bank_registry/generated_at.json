@@ -6666,14 +6666,6 @@
   {
     "country_code": "AT",
     "primary": true,
-    "bic": "BAWOATW1XXX",
-    "bank_code": "47050",
-    "name": "BAWAG P.S.K. Wohnbaubank Aktiengesellschaft",
-    "short_name": "BAWAG P.S.K. Wohnbaubank Aktiengesellschaft"
-  },
-  {
-    "country_code": "AT",
-    "primary": true,
     "bic": "RLBBAT2E027",
     "bank_code": "33034",
     "name": "Raiffeisen Regionalbank G\u00fcssing-Jennersdorf eGen",

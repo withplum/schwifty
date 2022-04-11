@@ -318,5 +318,13 @@
     "bank_code": "9954",
     "name": "K-PAY a.s.",
     "short_name": "K-PAY a.s."
+  },
+  {
+    "country_code": "SK",
+    "primary": true,
+    "bic": "PANXSK22",
+    "bank_code": "9955",
+    "name": "Unifiedpost Payments, organiza\u010dn\u00e1 zlo\u017eka",
+    "short_name": "Unifiedpost Payments, organiza\u010dn\u00e1 zlo\u017eka"
   }
 ]

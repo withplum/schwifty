@@ -9,6 +9,10 @@ Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro
 `2022.04.0`_ - 2022/04/11
 -------------------------
 
+Changed
+~~~~~~~
+* Update bank registry for Austria, Czech Republic, Germany, Spain, Poland and Slovakia.
+
 Fixed
 ~~~~~
 * Removed bogus line from dutch bank registry.
@@ -35,7 +39,7 @@ Added
 
 Changed
 ~~~~~~~
-* Update bank registry Czech Republic, Spain, Hungary, Poland and Slovakia.
+* Update bank registry for Czech Republic, Spain, Hungary, Poland and Slovakia.
 
 
 `2022.02.0`_ - 2022/02/15
