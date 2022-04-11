@@ -5,6 +5,17 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+
+`2022.04.0`_ - 2022/04/11
+-------------------------
+
+Fixed
+~~~~~
+* Removed bogus line from dutch bank registry.
+* Loading the bank registry now also works on machines that don't have UTF-8 as their default
+  encoding `@imad3v <https://github.com/imad3v>`
+
+
 `2022.03.1`_ - 2022/03/05
 -------------------------
 
@@ -231,6 +242,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2022.04.0: https://github.com/mdomke/schwifty/compare/2022.03.1...2022.04.0
 .. _2022.03.1: https://github.com/mdomke/schwifty/compare/2022.03.0...2022.03.1
 .. _2022.03.0: https://github.com/mdomke/schwifty/compare/2022.02.0...2022.03.0
 .. _2022.02.0: https://github.com/mdomke/schwifty/compare/2021.10.2...2022.02.0
