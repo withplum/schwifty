@@ -44,7 +44,7 @@ def get(name: str) -> Union[Dict, List[Dict]]:
         directory = files(__package__) / f"{name}_registry"
         assert isinstance(directory, pathlib.Path)
         for entry in sorted(directory.glob("*.json")):
-            with entry.open(encoding='utf-8') as fp:
+            with entry.open(encoding="utf-8") as fp:
                 chunk = json.load(fp)
                 if data is None:
                     data = chunk
