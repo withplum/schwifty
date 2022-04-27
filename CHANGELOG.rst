@@ -6,6 +6,11 @@ Changelog
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
 
+Unreleased
+----------
+* Fix Italian BBAN checksum calculation `#78 <https://github.com/mdomke/schwifty/issues/78>`_
+
+
 `2022.04.0`_ - 2022/04/11
 -------------------------
 
