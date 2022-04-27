@@ -12,7 +12,7 @@ def get_index(char: str) -> int:
     try:
         return string.digits.index(char)
     except ValueError:
-        return string.ascii_uppercase.index(char)
+        return string.ascii_uppercase.index(char.upper())
 
 
 @register
