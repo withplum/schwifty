@@ -133,6 +133,8 @@ def test_iban_properties():
     assert iban.formatted == "DE42 4306 0967 7000 5341 00"
     assert iban.length == len(iban) == 22
     assert iban.country == countries.get(alpha_2="DE")
+    assert iban.bank_name == "GLS Gemeinschaftsbank"
+    assert iban.bank_short_name == "GLS Gemeinschaftsbk Bochum"
 
 
 @pytest.mark.parametrize(
@@ -211,3 +213,11 @@ def test_bic_from_iban(iban, bic):
 
 def test_unknown_bic_from_iban():
     assert IBAN("SI72000001234567892").bic is None
+
+
+def test_unknown_bank_name_from_iban():
+    assert IBAN("SI72000001234567892").bank_name is None
+
+
+def test_unknown_bank_name_short_from_iban():
+    assert IBAN("SI72000001234567892").bank_short_name is None

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 import string
+from functools import cached_property
 from typing import Dict
 from typing import Optional
 
@@ -226,9 +227,7 @@ class IBAN(common.Base):
             raise exceptions.InvalidChecksumDigits("Invalid checksum digits")
 
     def _validate_bban_checksum(self) -> None:
-        bank_registry = registry.get("bank_code")
-        assert isinstance(bank_registry, dict)
-        bank = bank_registry.get((self.country_code, self.bank_code), {})
+        bank = self.bank or {}
         algo_name = bank.get("checksum_algo", "default")
         algo = algorithms.get(f"{self.country_code}:{algo_name}")
         if algo is None:
@@ -328,6 +327,36 @@ class IBAN(common.Base):
     def account_code(self) -> str:
         """str: The customer specific account-code"""
         return self._get_code(code_type="account_code")
+
+    @cached_property
+    def bank(self) -> Optional[dict]:
+        bank_registry = registry.get("bank_code")
+        assert isinstance(bank_registry, dict)
+        return bank_registry.get((self.country_code, self.bank_code))
+
+    @property
+    def bank_name(self) -> Optional[str]:
+        """List[str]: The name of the bank associated with the IBAN bank code.
+
+        Examples:
+            >>> IBAN('DE89370400440532013000').bank_name
+            'Commerzbank'
+
+        """
+
+        return None if self.bank is None else self.bank["name"]
+
+    @property
+    def bank_short_name(self) -> Optional[str]:
+        """List[str]: The name of the bank associated with the IBAN bank code.
+
+        Examples:
+            >>> IBAN('DE89370400440532013000').bank_short_name
+            'Commerzbank Köln'
+
+        """
+
+        return None if self.bank is None else self.bank["short_name"]
 
 
 def add_bban_regex(country: str, spec: Dict) -> Dict:
