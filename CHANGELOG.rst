@@ -6,9 +6,17 @@ Changelog
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
 
-Unreleased
-----------
+`2022.04.1`_ - 2022/04/29
+-------------------------
+
+Changed
+~~~~~~~
+* The Italian BBAN checksum algorithm is now also applied for San Marino `@fabienpe <https://github.com/fabienpe>`_
+
+Fixed
+~~~~~
 * Fix Italian BBAN checksum calculation `#78 <https://github.com/mdomke/schwifty/issues/78>`_
+* Fix bank code position in BBAN for Jordan banks `@fabienpe <https://github.com/fabienpe>`_
 
 
 `2022.04.0`_ - 2022/04/11
@@ -251,6 +259,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2022.04.1: https://github.com/mdomke/schwifty/compare/2022.04.0...2022.04.1
 .. _2022.04.0: https://github.com/mdomke/schwifty/compare/2022.03.1...2022.04.0
 .. _2022.03.1: https://github.com/mdomke/schwifty/compare/2022.03.0...2022.03.1
 .. _2022.03.0: https://github.com/mdomke/schwifty/compare/2022.02.0...2022.03.0
