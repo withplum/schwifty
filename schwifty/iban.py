@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import re
 import string
-from functools import cached_property
 from typing import Dict
 from typing import Optional
 
@@ -328,7 +327,7 @@ class IBAN(common.Base):
         """str: The customer specific account-code"""
         return self._get_code(code_type="account_code")
 
-    @cached_property
+    @property
     def bank(self) -> Optional[dict]:
         bank_registry = registry.get("bank_code")
         assert isinstance(bank_registry, dict)
