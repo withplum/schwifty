@@ -342,6 +342,7 @@ class IBAN(common.Base):
             >>> IBAN('DE89370400440532013000').bank_name
             'Commerzbank'
 
+        .. versionadded:: 2022.04.2
         """
 
         return None if self.bank is None else self.bank["name"]
@@ -354,6 +355,7 @@ class IBAN(common.Base):
             >>> IBAN('DE89370400440532013000').bank_short_name
             'Commerzbank Köln'
 
+        .. versionadded:: 2022.04.2
         """
 
         return None if self.bank is None else self.bank["short_name"]
