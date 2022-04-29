@@ -335,7 +335,7 @@ class IBAN(common.Base):
 
     @property
     def bank_name(self) -> Optional[str]:
-        """List[str]: The name of the bank associated with the IBAN bank code.
+        """Optional[str]: The name of the bank associated with the IBAN bank code.
 
         Examples:
             >>> IBAN('DE89370400440532013000').bank_name
@@ -347,7 +347,7 @@ class IBAN(common.Base):
 
     @property
     def bank_short_name(self) -> Optional[str]:
-        """List[str]: The name of the bank associated with the IBAN bank code.
+        """Optional[str]: The name of the bank associated with the IBAN bank code.
 
         Examples:
             >>> IBAN('DE89370400440532013000').bank_short_name
