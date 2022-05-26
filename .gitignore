@@ -12,3 +12,9 @@ dist/
 htmlcov/
 .coverage
 test-results.xml
+
+.DS_Store
+
+.idea/
+
+*.xml
