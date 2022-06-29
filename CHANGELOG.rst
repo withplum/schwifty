@@ -5,6 +5,13 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2022.06.3`_ - 2022/06/29
+-------------------------
+Added
+~~~~~
+* Generated list of Lithuanian BICs `@Draugelis <https://github.com/Draugelis>`_
+* Removed manually curated list of Lithuanian banks.
+
 `2022.06.2`_ - 2022/06/22
 -------------------------
 Added
@@ -309,6 +316,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2022.06.3: https://github.com/mdomke/schwifty/compare/2022.06.2...2022.06.3
 .. _2022.06.2: https://github.com/mdomke/schwifty/compare/2022.06.1...2022.06.2
 .. _2022.06.1: https://github.com/mdomke/schwifty/compare/2022.06.0...2022.06.1
 .. _2022.06.0: https://github.com/mdomke/schwifty/compare/2022.04.2...2022.06.0
