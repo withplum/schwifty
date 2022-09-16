@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import json
+
 import pandas
 
 
@@ -8,6 +9,7 @@ URL = (
     "https://www.swedishbankers.se/media/4863/"
     "kalkylblad-i-iban-och-svenskt-nationellt-kontonummer-2021-02-16.xlsx"
 )
+
 
 def process():
     registry = []

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import json
+
 import pandas
 
 
@@ -26,7 +27,6 @@ def process():
                 "name": name or second_name,
                 "short_name": name or second_name,
             }
-
         )
 
     print(f"Fetched {len(registry)} bank records")
