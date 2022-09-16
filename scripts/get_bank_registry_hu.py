@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import json
+
 import pandas
 
 
@@ -11,9 +12,18 @@ def process():
     datas = pandas.read_excel(URL, sheet_name=0, dtype="str")
     datas.fillna("", inplace=True)
 
+    bank_codes = set()
     for row in datas.itertuples(index=False):
-        bank_code, bic, name = row[:3]
+        code, bic, name = row[:3]
 
+        # The branch code, which is the remainder of the `code`,  could be used to figure out the
+        # correct bank name (including the branch location), but that would require to alter the
+        # way banks are being looked up.
+        bank_code = code[:3]
+        if bank_code in bank_codes:
+            continue
+
+        bank_codes.add(bank_code)
         registry.append(
             {
                 "country_code": "HU",
