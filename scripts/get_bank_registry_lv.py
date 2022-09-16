@@ -1,25 +1,30 @@
 #!/usr/bin/env python
 import json
+
 import pandas
+import requests
 
 
 URL = "https://www.bank.lv/images/stories/pielikumi/makssist/bic_saraksts_22.01.2020_eng.xls"
 
 
 def process():
-    datas = pandas.read_excel(URL, skiprows=2, sheet_name=0, dtype="str")
+    agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:104.0) Gecko/20100101 Firefox/104.0"
+    response = requests.get(URL, headers={"User-Agent": agent})
+
+    datas = pandas.read_excel(response.content, skiprows=1, sheet_name=0, dtype="str")
     datas.fillna("", inplace=True)
 
     return [
         {
             "country_code": "LV",
             "primary": True,
-            "bic": str(bic).upper(),
-            "bank_code": str(bic)[:4],
-            "name": name,
-            "short_name": name,
+            "bic": str(row.BIC).upper(),
+            "bank_code": str(row.BIC)[:4],
+            "name": row._2,
+            "short_name": row._2,
         }
-        for _id, name, _iban_structure, bic in list(datas.itertuples())[2:]
+        for row in list(datas.itertuples())
     ]
 
 
