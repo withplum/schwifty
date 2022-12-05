@@ -657,14 +657,6 @@
     },
     {
         "country_code": "FR",
-        "bic": "CMBRFR2BXXX",
-        "bank_code": "15589",
-        "name": "CREDIT MUTUEL ARKEA",
-        "short_name": "CREDIT MUTUEL ARKEA",
-        "primary": true
-    },
-    {
-        "country_code": "FR",
         "bic": "CEPAFRPP213",
         "bank_code": "12135",
         "name": "CAISSE D'EPARGNE ET DE PREVOYANCE DE BOURGOGNE FRANCHE-COMTE",
@@ -977,14 +969,6 @@
     },
     {
         "country_code": "FR",
-        "bic": "FPELFR21XXX",
-        "bank_code": "16598",
-        "name": "FINANCIERE DES PAIEMENTS ELECTRONIQUES",
-        "short_name": "FINANCIERE DES PAIEMENTS ELECTRONIQUES",
-        "primary": true
-    },
-    {
-        "country_code": "FR",
         "bic": "BCADNCNN",
         "bank_code": "17499",
         "name": "BANQUE CALEDONIENNE D'INVESTISSEMENT",
@@ -1013,14 +997,6 @@
         "bank_code": "10268",
         "name": "CREDIT DU NORD",
         "short_name": "CREDIT DU NORD",
-        "primary": true
-    },
-    {
-        "country_code": "FR",
-        "bic": "BREDFRPPXXX",
-        "bank_code": "10107",
-        "name": "BRED BANQUE POPULAIRE",
-        "short_name": "BRED BANQUE POPULAIRE",
         "primary": true
     },
     {
@@ -2397,6 +2373,22 @@
         "bank_code": "17328",
         "name": "SWAN",
         "short_name": "SWAN",
+        "primary": true
+    },
+    {
+        "country_code": "FR",
+        "primary": true,
+        "bank_code": "AECF",
+        "bic": "AECFFR21",
+        "name": "AMERICAN EXPRESS CARTE - FRANCE S.A.",
+        "short_name": "AMERICAN EXPRESS CARTE"
+    },
+    {
+        "country_code": "FR",
+        "bic": "CMBRFR2B",
+        "bank_code": "CMBR",
+        "name": "CREDIT MUTUEL DE BRETAGNE",
+        "short_name": "CREDIT MUTUEL DE BRETAGNE",
         "primary": true
     }
 ]
