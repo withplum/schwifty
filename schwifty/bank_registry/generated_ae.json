@@ -386,14 +386,6 @@
   {
     "country_code": "AE",
     "primary": true,
-    "bic": "E214XXXXXXX",
-    "bank_code": "214",
-    "name": "Al Falah Exchange Co",
-    "short_name": "Al Falah Exchange Co"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
     "bic": "FEXEAEAAXXX",
     "bank_code": "215",
     "name": "Al Fardan Exchange",
@@ -410,102 +402,6 @@
   {
     "country_code": "AE",
     "primary": true,
-    "bic": "E217XXXXXXX",
-    "bank_code": "217",
-    "name": "Al Gergawi Exchange LLC",
-    "short_name": "Al Gergawi Exchange LLC"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E218XXXXXXX",
-    "bank_code": "218",
-    "name": "Al Ghurair Exchange",
-    "short_name": "Al Ghurair Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E219XXXXXXX",
-    "bank_code": "219",
-    "name": "Al Ghurair International Exchange",
-    "short_name": "Al Ghurair International Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E232XXXXXXX",
-    "bank_code": "232",
-    "name": "Al Razouki International Exchange Co",
-    "short_name": "Al Razouki International Exchange Co"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E233XXXXXXX",
-    "bank_code": "233",
-    "name": "Al Zari ",
-    "short_name": "Al Zari "
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E234XXXXXXX",
-    "bank_code": "234",
-    "name": "Al Zarooni Exchange",
-    "short_name": "Al Zarooni Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E235XXXXXXX",
-    "bank_code": "235",
-    "name": "Alukkas Exchange",
-    "short_name": "Alukkas Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E236XXXXXXX",
-    "bank_code": "236",
-    "name": "Arabian Exchange Co",
-    "short_name": "Arabian Exchange Co"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E238XXXXXXX",
-    "bank_code": "238",
-    "name": "Asia Exchange Centre",
-    "short_name": "Asia Exchange Centre"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E245XXXXXXX",
-    "bank_code": "245",
-    "name": "City Exchange ",
-    "short_name": "City Exchange "
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E246XXXXXXX",
-    "bank_code": "246",
-    "name": "Deniba International Exchange",
-    "short_name": "Deniba International Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E249XXXXXXX",
-    "bank_code": "249",
-    "name": "Dubai Exchange Centre ",
-    "short_name": "Dubai Exchange Centre "
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
     "bic": "EIIEAEADXXX",
     "bank_code": "252",
     "name": "Emirates India International Exchange",
@@ -514,122 +410,10 @@
   {
     "country_code": "AE",
     "primary": true,
-    "bic": "E253XXXXXXX",
-    "bank_code": "253",
-    "name": "Federal Exchange",
-    "short_name": "Federal Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E254XXXXXXX",
-    "bank_code": "254",
-    "name": "First Gulf Exchange Centre",
-    "short_name": "First Gulf Exchange Centre"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E256XXXXXXX",
-    "bank_code": "256",
-    "name": "Gulf Express Exchange",
-    "short_name": "Gulf Express Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E258XXXXXXX",
-    "bank_code": "258",
-    "name": "Habib Exchange Co",
-    "short_name": "Habib Exchange Co"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E259XXXXXXX",
-    "bank_code": "259",
-    "name": "Hadi Express Exchange",
-    "short_name": "Hadi Express Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
     "bic": "LAEEAEAAXXX",
     "bank_code": "267",
     "name": "Lari Exchange",
     "short_name": "Lari Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E268XXXXXXX",
-    "bank_code": "268",
-    "name": "Leela Megh Exchange LLC",
-    "short_name": "Leela Megh Exchange LLC"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E269XXXXXXX",
-    "bank_code": "269",
-    "name": "Malik Exchange",
-    "short_name": "Malik Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E273XXXXXXX",
-    "bank_code": "273",
-    "name": "National Exchange Co",
-    "short_name": "National Exchange Co"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E277XXXXXXX",
-    "bank_code": "277",
-    "name": "Redha Al Ansari Exchange Est",
-    "short_name": "Redha Al Ansari Exchange Est"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E279XXXXXXX",
-    "bank_code": "279",
-    "name": "Saad Exchange",
-    "short_name": "Saad Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E281XXXXXXX",
-    "bank_code": "281",
-    "name": "Sajwani Exchange",
-    "short_name": "Sajwani Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E285XXXXXXX",
-    "bank_code": "285",
-    "name": "Shaheen Money Exchange LLC",
-    "short_name": "Shaheen Money Exchange LLC"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E286XXXXXXX",
-    "bank_code": "286",
-    "name": "Sharjah International Exchange",
-    "short_name": "Sharjah International Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E289XXXXXXX",
-    "bank_code": "289",
-    "name": "Alneel Exchange",
-    "short_name": "Alneel Exchange"
   },
   {
     "country_code": "AE",
@@ -654,45 +438,6 @@
     "bank_code": "294",
     "name": "Wall Street Exchange Centre LLC",
     "short_name": "Wall Street Exchange Centre LLC"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E312XXXXXXX",
-    "bank_code": "312",
-    "name": "Delma Exchange",
-    "short_name": "Delma Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E313XXXXXXX",
-    "bank_code": "313",
-    "name": "Sharaf Exchange LLC",
-    "short_name": "Sharaf Exchange LLC"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E314XXXXXXX",
-    "bank_code": "314",
-    "name": "Lulu Exchange",
-    "short_name": "Lulu Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E316XXXXXXX",
-    "bank_code": "316",
-    "name": "Al Jaber Exchange",
-    "short_name": "Al Jaber Exchange"
-  },
-  {
-    "country_code": "AE",
-    "primary": true,
-    "bic": "E851XXXXXXX",
-    "bank_code": "851",
-    "name": "GPSSA ",
-    "short_name": "GPSSA "
   }
 ]
+
