@@ -35,8 +35,8 @@
         "primary": true,
         "name": "ASTROBANK PUBLIC COMPANY LIMITED",
         "short_name": "ASTROBANK PUBLIC COMPANY",
-        "bank_code": "PIRB",
-        "bic": "PIRBCY2NXXX",
+        "bank_code": "008",
+        "bic": "PIRBCY2N",
         "country_code": "CY"
     },   
     {
@@ -59,8 +59,8 @@
         "primary": true,
         "name": "BANK OF CYPRUS PUBLIC COMPANY LIMITED",
         "short_name": "BANK OF CYPRUS PUBLIC COMPANY",
-        "bank_code": "BCYP",
-        "bic": "BCYPCY2NXXX",
+        "bank_code": "002",
+        "bic": "BCYPCY2N",
         "country_code": "CY"
     },   
     {
@@ -179,8 +179,8 @@
         "primary": true,
         "name": "HELLENIC BANK PUBLIC COMPANY LTD.",
         "short_name": "HELLENIC BANK PUBLIC COMPANY",
-        "bank_code": "HEBA",
-        "bic": "HEBACY2NXXX",
+        "bank_code": "005",
+        "bic": "HEBACY2N",
         "country_code": "CY"
     },  
     {
