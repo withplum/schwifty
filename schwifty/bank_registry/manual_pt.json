@@ -1,14 +1,6 @@
 [
   {
     "primary": true,
-    "name": "CAIXA GERAL DE DEPOSITOS SA",
-    "short_name": "CAIXA GERAL DE DEPOSITOS",
-    "bank_code": "0035",
-    "bic": "CGDIPTPL",
-    "country_code": "PT"
-  },
-  {
-    "primary": true,
     "name": "NOVO BANCO SA",
     "short_name": "NOVO BANCO",
     "bank_code": "0007",
@@ -53,6 +45,14 @@
     "short_name": "BANCO COMERCIAL PORTUGUES",
     "bank_code": "0033",
     "bic": "BCOMPTPL",
+    "country_code": "PT"
+  },
+  {
+    "primary": true,
+    "name": "CAIXA GERAL DE DEPOSITOS SA",
+    "short_name": "CAIXA GERAL DE DEPOSITOS",
+    "bank_code": "0035",
+    "bic": "CGDIPTPL",
     "country_code": "PT"
   },
   {
