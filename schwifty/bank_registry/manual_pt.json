@@ -72,6 +72,14 @@
       "short_name": "CAIXA CENTRAL DE CREDITO AGRICOLA MUTUO"
     },
     {
+      "bank_code": "0065",
+      "bic": "BESZPTPL",
+      "country_code": "PT",
+      "name": "BEST - BANCO ELECTRONICO DE SERVICO TOTAL, SA",
+      "primary": true,
+      "short_name": "BEST - BANCO ELECTRONICO DE SERVICO TOTAL"
+    },
+    {
       "bank_code": "0079",
       "bic": "BPNPPTPL",
       "country_code": "PT",
