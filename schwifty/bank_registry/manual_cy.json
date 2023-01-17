@@ -326,7 +326,7 @@
         "bank_code": "SOGE",
         "bic": "SOGECY2NXXX",
         "country_code": "CY"
-    }, 
+    },
     {
         "primary": true,
         "name": "TFI MARKETS LIMITED",
@@ -334,7 +334,7 @@
         "bank_code": "TFIM",
         "bic": "TFIMCY2NXXX",
         "country_code": "CY"
-    }, 
+    },
     {
         "primary": true,
         "name": "WARGAMING FINANCE LTD",
@@ -342,7 +342,7 @@
         "bank_code": "WARF",
         "bic": "WARFCY2NXXX",
         "country_code": "CY"
-    }, 
+    },
     {
         "primary": true,
         "name": "WISE WOLVES FINANCE LTD",
@@ -358,5 +358,13 @@
         "bank_code": "WWPI",
         "bic": "WWPICY2LXXX",
         "country_code": "CY"
+    },
+    {
+       "bank_code":"029",
+       "bic":"ANCOCY2N",
+       "country_code":"CY",
+       "name":"ANCORIA BANK LTD, LIMASSOL BANKING CENTRE",
+       "primary":true,
+       "short_name":"ANCORIA BANK LTD"
     }
 ]
