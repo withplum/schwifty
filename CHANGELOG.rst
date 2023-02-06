@@ -5,6 +5,17 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2023.02.0`_ - 2023/02/06
+-------------------------
+Added
+~~~~~
+* New banks for Portugal and Italy `@dennisxtria <https://github.com/dennisxtria>`_
+* Added support for Ukrainian banks `@shpigunov <https://github.com/shpigunov>`_
+
+Fixed
+~~~~~
+* Corrected bank codes for Cypriot banks `@Krystofee <https://github.com/Krystofee>`_
+
 `2022.09.0`_ - 2022/16/09
 -------------------------
 Added
@@ -341,6 +352,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2023.02.0: https://github.com/mdomke/schwifty/compare/2022.09.0...2023.02.0
 .. _2022.09.0: https://github.com/mdomke/schwifty/compare/2022.07.1...2022.09.0
 .. _2022.07.1: https://github.com/mdomke/schwifty/compare/2022.07.0...2022.07.1
 .. _2022.07.0: https://github.com/mdomke/schwifty/compare/2022.06.3...2022.07.0
