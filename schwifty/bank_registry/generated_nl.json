@@ -1,10 +1,10 @@
 [
   {
-    "country_code": "NL",
-    "primary": true,
-    "bic": "ABNANL2A",
     "bank_code": "ABNA",
+    "bic": "ABNANL2A",
+    "country_code": "NL",
     "name": "ABN AMRO BANK",
+    "primary": true,
     "short_name": "ABN AMRO BANK"
   },
   {
