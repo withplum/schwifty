@@ -50,14 +50,6 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "BOTKCZPP",
-    "bank_code": "2020",
-    "name": "MUFG Bank (Europe) N.V. Prague Branch",
-    "short_name": "MUFG Bank (Europe) N.V. Prague Branch"
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
     "bic": "CITFCZPP",
     "bank_code": "2060",
     "name": "Citfin, spo\u00c5\u0099iteln\u00c3\u00ad dru\u00c5\u00bestvo",
@@ -172,8 +164,8 @@
     "primary": true,
     "bic": "EXPNCZPP",
     "bank_code": "4000",
-    "name": "Expobank CZ a.s.",
-    "short_name": "Expobank CZ a.s."
+    "name": "Max banka a.s.",
+    "short_name": "Max banka a.s."
   },
   {
     "country_code": "CZ",
@@ -210,7 +202,7 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "EQBKCZPP",
+    "bic": "",
     "bank_code": "6100",
     "name": "Raiffeisenbank a.s. (do 31. 12. 2021 Equa bank a.s.)",
     "short_name": "Raiffeisenbank a.s. (do 31. 12. 2021 Equa bank a.s.)"
@@ -452,7 +444,7 @@
     "primary": true,
     "bic": "",
     "bank_code": "8500",
-    "name": "Ferratum Bank plc",
-    "short_name": "Ferratum Bank plc"
+    "name": "Multitude Bank p.l.c.",
+    "short_name": "Multitude Bank p.l.c."
   }
 ]

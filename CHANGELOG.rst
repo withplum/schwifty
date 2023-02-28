@@ -5,6 +5,18 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2023.02.1`_ - 2023/02/28
+-------------------------
+Fixed
+~~~~~
+* The domestic checksum calculation for Belgium now returns 97 in case the modulo operation
+  results in 0. `@mhemeryck <https://github.com/mhemeryck>`_
+
+Changed
+~~~~~~~
+* Updated generated bank registries for Austria, Belgium, Czech Republic, Germany, Spain,
+  Hungary and Croatia.
+
 `2023.02.0`_ - 2023/02/06
 -------------------------
 Added
@@ -352,6 +364,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2023.02.1: https://github.com/mdomke/schwifty/compare/2023.02.0...2023.02.1
 .. _2023.02.0: https://github.com/mdomke/schwifty/compare/2022.09.0...2023.02.0
 .. _2022.09.0: https://github.com/mdomke/schwifty/compare/2022.07.1...2022.09.0
 .. _2022.07.1: https://github.com/mdomke/schwifty/compare/2022.07.0...2022.07.1
