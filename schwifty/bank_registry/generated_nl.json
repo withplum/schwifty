@@ -1,10 +1,10 @@
 [
   {
-    "bank_code": "ABNA",
-    "bic": "ABNANL2A",
     "country_code": "NL",
-    "name": "ABN AMRO BANK",
     "primary": true,
+    "bic": "ABNANL2A",
+    "bank_code": "ABNA",
+    "name": "ABN AMRO BANK",
     "short_name": "ABN AMRO BANK"
   },
   {
@@ -228,8 +228,8 @@
     "primary": true,
     "bic": "CCBVNL2A",
     "bank_code": "CCBV",
-    "name": "Currencycloud B.V.",
-    "short_name": "Currencycloud B.V."
+    "name": "CURRENCYCLOUD B.V.",
+    "short_name": "CURRENCYCLOUD B.V."
   },
   {
     "country_code": "NL",
@@ -364,8 +364,8 @@
     "primary": true,
     "bic": "HIFXNL2A",
     "bank_code": "HIFX",
-    "name": "Xe Europe BV",
-    "short_name": "Xe Europe BV"
+    "name": "XE EUROPE BV",
+    "short_name": "XE EUROPE BV"
   },
   {
     "country_code": "NL",
@@ -482,6 +482,14 @@
   {
     "country_code": "NL",
     "primary": true,
+    "bic": "MODRNL22",
+    "bank_code": "MODR",
+    "name": "MODULR FINANCE B.V.",
+    "short_name": "MODULR FINANCE B.V."
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
     "bic": "NNBANL2G",
     "bank_code": "NNBA",
     "name": "NATIONALE-NEDERLANDEN BANK",
@@ -494,6 +502,14 @@
     "bank_code": "NWAB",
     "name": "NEDERLANDSE WATERSCHAPSBANK",
     "short_name": "NEDERLANDSE WATERSCHAPSBANK"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
+    "bic": "PANXNL22",
+    "bank_code": "PANX",
+    "name": "UNIFIEDPOST PAYMENTS",
+    "short_name": "UNIFIEDPOST PAYMENTS"
   },
   {
     "country_code": "NL",
@@ -518,6 +534,22 @@
     "bank_code": "RBRB",
     "name": "REGIOBANK",
     "short_name": "REGIOBANK"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
+    "bic": "REVONL22",
+    "bank_code": "REVO",
+    "name": "REVOLUT BANK UAB",
+    "short_name": "REVOLUT BANK UAB"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
+    "bic": "SBOSNL2A",
+    "bank_code": "SBOS",
+    "name": "STATE STREET BANK INTERNATIONAL GbmH",
+    "short_name": "STATE STREET BANK INTERNATIONAL GbmH"
   },
   {
     "country_code": "NL",
@@ -572,8 +604,8 @@
     "primary": true,
     "bic": "VTPSNL2R",
     "bank_code": "VTPS",
-    "name": "Vitesse PSP",
-    "short_name": "Vitesse PSP"
+    "name": "VITESSE PSP",
+    "short_name": "VITESSE PSP"
   },
   {
     "country_code": "NL",
@@ -598,13 +630,5 @@
     "bank_code": "BMEU",
     "name": "BMCE EUROSERVICES * (tijdelijk) inactief sinds 7 juni 2021 *",
     "short_name": "BMCE EUROSERVICES * (tijdelijk) inactief sinds 7 juni 2021 *"
-  },
-  {
-    "country_code": "NL",
-    "primary": true,
-    "bic": "ICSVNL21",
-    "bank_code": "ICSV",
-    "name": "INTERNATIONAL CARD SERVICES B.V.",
-    "short_name": "INTERNATIONAL CARD SERVICES B.V."
   }
 ]
