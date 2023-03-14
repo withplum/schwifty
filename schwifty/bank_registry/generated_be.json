@@ -4524,16 +4524,16 @@
     "primary": true,
     "bic": "BOFABE3X",
     "bank_code": "685",
-    "name": "",
-    "short_name": ""
+    "name": "Bank of America Europe DAC - Brussels Branch",
+    "short_name": "Bank of America Europe DAC - Brussels Branch"
   },
   {
     "country_code": "BE",
     "primary": true,
     "bic": "BOFABE3X",
     "bank_code": "686",
-    "name": "",
-    "short_name": ""
+    "name": "Bank of America Europe DAC - Brussels Branch",
+    "short_name": "Bank of America Europe DAC - Brussels Branch"
   },
   {
     "country_code": "BE",
@@ -4550,6 +4550,14 @@
     "bank_code": "688",
     "name": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale",
     "short_name": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale"
+  },
+  {
+    "country_code": "BE",
+    "primary": true,
+    "bic": "BOFABE3X",
+    "bank_code": "689",
+    "name": "Bank of America Europe DAC - Brussels Branch",
+    "short_name": "Bank of America Europe DAC - Brussels Branch"
   },
   {
     "country_code": "BE",
