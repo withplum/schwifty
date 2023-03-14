@@ -6982,5 +6982,13 @@
     "bank_code": "19931",
     "name": "Raiffeisen Digital Bank AG",
     "short_name": "Raiffeisen Digital Bank AG"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "OBKLAT2LXXX",
+    "bank_code": "15899",
+    "name": "Oberbank AG",
+    "short_name": "Oberbank AG"
   }
 ]
