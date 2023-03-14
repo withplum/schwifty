@@ -27,6 +27,15 @@
     "checksum_algo": "09"
   },
   {
+    "bank_code": "10010200",
+    "name": "Treezor, Berlin",
+    "short_name": "Treezor Berlin",
+    "bic": "TRZODEB2XXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
     "bank_code": "10010300",
     "name": "Klarna Bank German Branch",
     "short_name": "Klarna Bank, Berlin",
@@ -46,8 +55,8 @@
   },
   {
     "bank_code": "10010500",
-    "name": "Afone Paiement",
-    "short_name": "Afone Paiement, Berlin",
+    "name": "Noelse Pay",
+    "short_name": "Noelse Pay, Berlin",
     "bic": "AFOPDEB2XXX",
     "primary": true,
     "country_code": "DE",
@@ -4393,7 +4402,7 @@
   },
   {
     "bank_code": "20230800",
-    "name": "Max Heinr. Sutor",
+    "name": "Sutor Bank",
     "short_name": "Sutor Bank Hamburg",
     "bic": "MHSBDEHBXXX",
     "primary": true,
@@ -7267,15 +7276,6 @@
     "name": "Sparkasse Uelzen L\u00fcchow-Dannenberg",
     "short_name": "Sparkasse Uelzen L\u00fcchow-Dbg",
     "bic": "NOLADE21UEL",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "00"
-  },
-  {
-    "bank_code": "25851335",
-    "name": "Sparkasse Uelzen L\u00fcchow-Dannenberg -alt-",
-    "short_name": "Spk Uelzen L\u00fcchow-Dbg.-alt-",
-    "bic": "NOLADE21DAN",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "00"
@@ -10928,7 +10928,7 @@
   {
     "bank_code": "30330800",
     "name": "flatexDEGIRO Bank",
-    "short_name": "flatex Bank, Frankfurt",
+    "short_name": "FTX Bank, Frankfurt",
     "bic": "BIWBDE33303",
     "primary": true,
     "country_code": "DE",
@@ -12892,6 +12892,15 @@
     "name": "Ford Bank (GF EG)",
     "short_name": "Ford Bank (GF EG), K\u00f6ln",
     "bic": "LRFSDE31XXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "37027000",
+    "name": "Santander Consumer Bank",
+    "short_name": "Santander Consumer Bank",
+    "bic": "SCFBDE33XXX",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
@@ -17308,8 +17317,8 @@
   },
   {
     "bank_code": "45451060",
-    "name": "Sparkasse Ennepetal-Breckerfeld",
-    "short_name": "Spk Ennepetal-Breckerfeld",
+    "name": "Sparkasse Ennepetal-Breckerfeld -alt-",
+    "short_name": "Spk Ennepetal-Brecker.-alt-",
     "bic": "WELADED1ENE",
     "primary": true,
     "country_code": "DE",
@@ -19539,15 +19548,6 @@
     "checksum_algo": "09"
   },
   {
-    "bank_code": "50030100",
-    "name": "HKB Bank Frankfurt",
-    "short_name": "HKB Bank Frankfurt am Main",
-    "bic": "HKBBDEF1FRA",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "00"
-  },
-  {
     "bank_code": "50030500",
     "name": "BNP Paribas Niederlassung Deutschland",
     "short_name": "BNP Paribas NDL Deutschland",
@@ -20340,6 +20340,150 @@
     "checksum_algo": "63"
   },
   {
+    "bank_code": "50070050",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070051",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070052",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070053",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070054",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070055",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070056",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070057",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070058",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070059",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070060",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070061",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070062",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070063",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070064",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "50070065",
+    "name": "Deutsche Bank",
+    "short_name": "Deutsche Bank",
+    "bic": "DEUTDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
     "bank_code": "50070324",
     "name": "Postbank/DSL Ndl der Deutsche Bank",
     "short_name": "Postbank Ndl Deutsche Bank",
@@ -20734,15 +20878,6 @@
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
-  },
-  {
-    "bank_code": "50110300",
-    "name": "DVB Bank",
-    "short_name": "DVB Frankfurt Main",
-    "bic": "DVKBDEFFXXX",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "10"
   },
   {
     "bank_code": "50110400",
@@ -22467,7 +22602,7 @@
     "bank_code": "51210801",
     "name": "Societe Generale",
     "short_name": "Societe Generale",
-    "bic": "SOGEDEFFXXX",
+    "bic": "SGSSDEFFXXX",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
@@ -25939,44 +26074,44 @@
   },
   {
     "bank_code": "59010011",
-    "name": "ZVC FK 11 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK11 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF011",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010012",
-    "name": "ZVC FK 12 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK12 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF012",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010013",
-    "name": "ZVC FK 13 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK13 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF013",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010014",
-    "name": "ZVC FK 14 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK14 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF014",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010015",
-    "name": "ZVC FK 15 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK15 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF015",
     "primary": true,
     "country_code": "DE",
@@ -25984,17 +26119,17 @@
   },
   {
     "bank_code": "59010016",
-    "name": "ZVC FK 16 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK16 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF016",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010017",
-    "name": "ZVC FK 17 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK17 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF017",
     "primary": true,
     "country_code": "DE",
@@ -26002,17 +26137,17 @@
   },
   {
     "bank_code": "59010018",
-    "name": "ZVC FK 18 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK18 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF018",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010019",
-    "name": "ZVC FK 19 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK19 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF019",
     "primary": true,
     "country_code": "DE",
@@ -26020,8 +26155,8 @@
   },
   {
     "bank_code": "59010021",
-    "name": "ZVC FK 21 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK21 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF021",
     "primary": true,
     "country_code": "DE",
@@ -26029,8 +26164,8 @@
   },
   {
     "bank_code": "59010022",
-    "name": "ZVC FK 22 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK22 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF022",
     "primary": true,
     "country_code": "DE",
@@ -26038,8 +26173,8 @@
   },
   {
     "bank_code": "59010023",
-    "name": "ZVC FK 23 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK23 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF023",
     "primary": true,
     "country_code": "DE",
@@ -26047,17 +26182,17 @@
   },
   {
     "bank_code": "59010024",
-    "name": "ZVC FK 24 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK24 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF024",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010025",
-    "name": "ZVC FK 25 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK25 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF025",
     "primary": true,
     "country_code": "DE",
@@ -26065,53 +26200,53 @@
   },
   {
     "bank_code": "59010026",
-    "name": "ZVC FK 26 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK26 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF026",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010027",
-    "name": "ZVC FK 27 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK27 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF027",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010028",
-    "name": "ZVC FK 28 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK28 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF028",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010029",
-    "name": "ZVC FK 29 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK29 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF029",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010031",
-    "name": "ZVC FK 31 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK31 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF031",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010032",
-    "name": "ZVC FK 32 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK32 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF032",
     "primary": true,
     "country_code": "DE",
@@ -26119,8 +26254,8 @@
   },
   {
     "bank_code": "59010033",
-    "name": "ZVC FK 33 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK33 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF033",
     "primary": true,
     "country_code": "DE",
@@ -26128,35 +26263,35 @@
   },
   {
     "bank_code": "59010034",
-    "name": "ZVC FK 34 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK34 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF034",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010035",
-    "name": "ZVC FK 35 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK35 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF035",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010036",
-    "name": "ZVC FK 36 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK36 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF036",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010037",
-    "name": "ZVC FK 37 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK37 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF037",
     "primary": true,
     "country_code": "DE",
@@ -26164,17 +26299,17 @@
   },
   {
     "bank_code": "59010038",
-    "name": "ZVC FK 38 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK38 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF038",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010039",
-    "name": "ZVC FK 39 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK39 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF039",
     "primary": true,
     "country_code": "DE",
@@ -26182,26 +26317,26 @@
   },
   {
     "bank_code": "59010040",
-    "name": "ZVC FK 40 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK40 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF040",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010041",
-    "name": "ZVC FK 41 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK41 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF041",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010042",
-    "name": "ZVC FK 42 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK42 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF042",
     "primary": true,
     "country_code": "DE",
@@ -26209,8 +26344,8 @@
   },
   {
     "bank_code": "59010044",
-    "name": "ZVC FK 44 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK44 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF044",
     "primary": true,
     "country_code": "DE",
@@ -26218,17 +26353,17 @@
   },
   {
     "bank_code": "59010045",
-    "name": "ZVC FK 45 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK45 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF045",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010047",
-    "name": "ZVC FK 47 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK47 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF047",
     "primary": true,
     "country_code": "DE",
@@ -26236,17 +26371,17 @@
   },
   {
     "bank_code": "59010048",
-    "name": "ZVC FK 48 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK48 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF048",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010049",
-    "name": "ZVC FK 49 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK49 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF049",
     "primary": true,
     "country_code": "DE",
@@ -26254,26 +26389,26 @@
   },
   {
     "bank_code": "59010051",
-    "name": "ZVC FK 51 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK51 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF051",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010052",
-    "name": "ZVC FK 52 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK52 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF052",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010053",
-    "name": "ZVC FK 53 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK53 Postbank Ndl DB",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
     "bic": "PBNKDEFF053",
     "primary": true,
     "country_code": "DE",
@@ -26281,99 +26416,99 @@
   },
   {
     "bank_code": "59010054",
-    "name": "ZVC FK 54 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK54 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF054",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010055",
-    "name": "ZVC FK 55 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK55 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF055",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010056",
-    "name": "ZVC FK 56 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK56 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF056",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010057",
-    "name": "ZVC FK 57 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK57 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF057",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010058",
-    "name": "ZVC FK 58 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK58 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF058",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010059",
-    "name": "ZVC FK 59 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK59 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF059",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010061",
-    "name": "ZVC FK 61 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK61 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF061",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010062",
-    "name": "ZVC FK 62 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK62 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF062",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010063",
-    "name": "ZVC FK 63 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK63 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF063",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010064",
-    "name": "ZVC FK 64 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK64 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF064",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010065",
-    "name": "ZVC FK 65 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK65 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF065",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
@@ -26389,54 +26524,54 @@
   },
   {
     "bank_code": "59010068",
-    "name": "ZVC FK 68 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK68 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF068",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010069",
-    "name": "ZVC FK 69 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK69 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF069",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010071",
-    "name": "ZVC FK 71 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK71 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF071",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010072",
-    "name": "ZVC FK 72 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK72 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF072",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010073",
-    "name": "ZVC FK 73 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK73 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF073",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
   },
   {
     "bank_code": "59010074",
-    "name": "ZVC FK 74 Postbank Ndl der Deutsche Bank",
-    "short_name": "ZVCFK74 Postbank Ndl DB",
-    "bic": "PBNKDEFFXXX",
+    "name": "Postbank Ndl der Deutsche Bank",
+    "short_name": "Postbank Ndl Deutsche Bank",
+    "bic": "PBNKDEFF074",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
@@ -28882,8 +29017,8 @@
   },
   {
     "bank_code": "61361975",
-    "name": "Raiffeisenbank Mutlangen",
-    "short_name": "Raiffeisenbank Mutlangen",
+    "name": "Raiffeisenbank Mutlangen -alt-",
+    "short_name": "Raiffbk Mutlangen -alt-",
     "bic": "GENODES1RML",
     "primary": true,
     "country_code": "DE",
@@ -34281,24 +34416,6 @@
     "checksum_algo": "00"
   },
   {
-    "bank_code": "70130700",
-    "name": "Bankhaus August Lenz & Co",
-    "short_name": "Lenz Bank M\u00fcnchen",
-    "bic": "LENZDEM1XXX",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "09"
-  },
-  {
-    "bank_code": "70130799",
-    "name": "Bankhaus August Lenz & Co Gf GAA",
-    "short_name": "Lenz Bank M\u00fcnchen Gf GAA",
-    "bic": "LENZDEM1XXX",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "09"
-  },
-  {
     "bank_code": "70130800",
     "name": "MERKUR PRIVATBANK",
     "short_name": "MERKUR PRIVATBANK M\u00fcnchen",
@@ -37833,7 +37950,7 @@
     "bic": "GENODEF1S05",
     "primary": true,
     "country_code": "DE",
-    "checksum_algo": "84"
+    "checksum_algo": "09"
   },
   {
     "bank_code": "75090900",
@@ -40588,6 +40705,15 @@
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "09"
+  },
+  {
+    "bank_code": "81010400",
+    "name": "Investitionsbank Sachsen-Anhalt",
+    "short_name": "Investitionsbk Sachsen-Anh.",
+    "bic": "NOLADE21LSA",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "27"
   },
   {
     "bank_code": "81020500",
