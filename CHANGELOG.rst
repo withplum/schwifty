@@ -5,6 +5,17 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2023.03.0`_ - 2023/03/14
+-------------------------
+Changed
+~~~~~~~
+* Updated generated bank registries for Austria, Belgium, Germany, Netherlands,
+  Hungary, Slovenia and Ukraine.
+
+Added
+~~~~~
+* New bank registry for Norway thanks to `@ezet <https://github.com/ezet>`_
+
 `2023.02.1`_ - 2023/02/28
 -------------------------
 Fixed
@@ -364,6 +375,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2023.03.0: https://github.com/mdomke/schwifty/compare/2023.02.1...2023.03.0
 .. _2023.02.1: https://github.com/mdomke/schwifty/compare/2023.02.0...2023.02.1
 .. _2023.02.0: https://github.com/mdomke/schwifty/compare/2022.09.0...2023.02.0
 .. _2022.09.0: https://github.com/mdomke/schwifty/compare/2022.07.1...2022.09.0
