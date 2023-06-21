@@ -1,8 +1,10 @@
 #!/usr/bin/env python
-from typing import Tuple
 import json
-import requests
+from typing import Tuple
+
 import pandas as pd
+import requests
+
 
 BRANCH_URL = "https://bank.gov.ua/NBU_BankInfo/get_data_branch?json"
 PARENT_URL = "https://bank.gov.ua/NBU_BankInfo/get_data_branch_glbank?json"
@@ -52,17 +54,15 @@ def get_data(filter_insolvent: bool = True) -> pd.DataFrame:
 
 
 def process():
-
     branches = get_data()
     registry = []
 
     for idx, row in branches.iterrows():
-
         registry.append(
             {
                 "country_code": "UA",
                 "primary": row["TYP"] == 0,
-                "bic": None,
+                "bic": "",
                 "bank_code": str(row["MFO"]),
                 "name": row["FULLNAME"],
                 "short_name": row["NGOL_E_SHORT"],
