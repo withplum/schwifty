@@ -4131,15 +4131,6 @@
     "checksum_algo": "09"
   },
   {
-    "bank_code": "20090500",
-    "name": "Augsburger Aktienbank (netbank)",
-    "short_name": "AAB (netbank)",
-    "bic": "AUGBDE71NET",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "81"
-  },
-  {
     "bank_code": "20090700",
     "name": "Edekabank",
     "short_name": "Edekabank Hamburg",
@@ -6355,8 +6346,8 @@
   },
   {
     "bank_code": "24161594",
-    "name": "Zevener Volksbank",
-    "short_name": "Zevener Volksbank",
+    "name": "Zevener Volksbank -alt-",
+    "short_name": "Zevener Volksbank -alt-",
     "bic": "GENODEF1SIT",
     "primary": true,
     "country_code": "DE",
@@ -7465,15 +7456,6 @@
     "name": "Sparkasse Duderstadt",
     "short_name": "Sparkasse Duderstadt",
     "bic": "NOLADE21DUD",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "00"
-  },
-  {
-    "bank_code": "26051450",
-    "name": "Kreis- und Stadtsparkasse M\u00fcnden -alt-",
-    "short_name": "Kr u St Spk M\u00fcnden -alt-",
-    "bic": "NOLADE21HMU",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "00"
@@ -10180,8 +10162,8 @@
   },
   {
     "bank_code": "29265747",
-    "name": "Volksbank Bremerhaven-Cuxland",
-    "short_name": "VB Bremerhaven-Cuxland",
+    "name": "Volksbank im Elbe-Weser-Dreieck",
+    "short_name": "VB im Elbe-Weser-Dreieck",
     "bic": "GENODEF1BEV",
     "primary": true,
     "country_code": "DE",
@@ -13879,8 +13861,8 @@
   },
   {
     "bank_code": "37551020",
-    "name": "Stadt-Sparkasse Leichlingen",
-    "short_name": "St Spk Leichlingen Rheinl",
+    "name": "Stadt-Sparkasse Leichlingen -alt-",
+    "short_name": "St Spk Leichlingen Rh.-alt-",
     "bic": "WELADED1LEI",
     "primary": true,
     "country_code": "DE",
@@ -14113,8 +14095,8 @@
   },
   {
     "bank_code": "38051290",
-    "name": "Stadtsparkasse Bad Honnef",
-    "short_name": "St Spk Bad Honnef",
+    "name": "Stadtsparkasse Bad Honnef -alt-",
+    "short_name": "St Spk Bad Honnef -alt-",
     "bic": "WELADED1HON",
     "primary": true,
     "country_code": "DE",
@@ -14446,8 +14428,8 @@
   },
   {
     "bank_code": "38650000",
-    "name": "Kreissparkasse Siegburg",
-    "short_name": "Kr Spk Siegburg",
+    "name": "Kreissparkasse Siegburg -alt-",
+    "short_name": "Kr Spk Siegburg -alt-",
     "bic": "WELADED1SGB",
     "primary": true,
     "country_code": "DE",
@@ -14455,8 +14437,8 @@
   },
   {
     "bank_code": "38651390",
-    "name": "Sparkasse Hennef",
-    "short_name": "Sparkasse Hennef",
+    "name": "Sparkasse Hennef -alt-",
+    "short_name": "Sparkasse Hennef -alt-",
     "bic": "WELADED1HEN",
     "primary": true,
     "country_code": "DE",
@@ -15401,7 +15383,7 @@
   {
     "bank_code": "40351060",
     "name": "Kreissparkasse Steinfurt",
-    "short_name": "Kr Spk Steinfurt",
+    "short_name": "Kreissparkasse Steinfurt",
     "bic": "WELADED1STF",
     "primary": true,
     "country_code": "DE",
@@ -18082,8 +18064,8 @@
   },
   {
     "bank_code": "47251550",
-    "name": "Sparkasse H\u00f6xter",
-    "short_name": "Spk H\u00f6xter Brakel",
+    "name": "Sparkasse H\u00f6xter -alt-",
+    "short_name": "Spk H\u00f6xter Brakel -alt-",
     "bic": "WELADED1HXB",
     "primary": true,
     "country_code": "DE",
@@ -18091,8 +18073,8 @@
   },
   {
     "bank_code": "47251740",
-    "name": "Stadtsparkasse Delbr\u00fcck",
-    "short_name": "St Spk Delbr\u00fcck",
+    "name": "Stadtsparkasse Delbr\u00fcck -alt-",
+    "short_name": "St Spk Delbr\u00fcck -alt-",
     "bic": "WELADED1DEL",
     "primary": true,
     "country_code": "DE",
@@ -18298,8 +18280,8 @@
   },
   {
     "bank_code": "47261603",
-    "name": "Volksbank Brilon-B\u00fcren-Salzkotten",
-    "short_name": "VB Brilon-B\u00fcren-Salzkotten",
+    "name": "Volksbank Brilon-B\u00fcren-Salzkotten -alt-",
+    "short_name": "VB Brilon-B\u00fcren-Salzk.-alt-",
     "bic": "GENODEM1BUS",
     "primary": true,
     "country_code": "DE",
@@ -18460,8 +18442,8 @@
   },
   {
     "bank_code": "47650130",
-    "name": "Sparkasse Paderborn-Detmold",
-    "short_name": "Spk Paderborn-Detmold",
+    "name": "Sparkasse Paderborn-Detmold-H\u00f6xter",
+    "short_name": "Spk Paderborn-Detmold-H\u00f6xt.",
     "bic": "WELADE3LXXX",
     "primary": true,
     "country_code": "DE",
@@ -18759,8 +18741,17 @@
     "bank_code": "48020151",
     "name": "Hauck Aufh\u00e4user Lampe Privatbank",
     "short_name": "Hauck Aufh\u00e4user Lampe",
-    "bic": "LAMPDEDDXXX",
+    "bic": "HAUKDEFFXXX",
     "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
+    "bank_code": "48020151",
+    "name": "Hauck Aufh\u00e4user Lampe Privatbank",
+    "short_name": "Hauck Aufh\u00e4user Lampe",
+    "bic": "LAMPDEDDXXX",
+    "primary": false,
     "country_code": "DE",
     "checksum_algo": "09"
   },
@@ -19528,6 +19519,15 @@
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "10"
+  },
+  {
+    "bank_code": "50026600",
+    "name": "UNLIMINT EU Zweigniederlassung Deutschland",
+    "short_name": "Unlimint Frankfurt",
+    "bic": "CARDDEFFXXX",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "00"
   },
   {
     "bank_code": "50030000",
@@ -20926,12 +20926,12 @@
   },
   {
     "bank_code": "50110801",
-    "name": "J.P. Morgan, Internal Reference",
-    "short_name": "J.P. Morgan, IR, Ffm",
+    "name": "J.P. Morgan",
+    "short_name": "J.P. Morgan Frankfurt",
     "bic": "CHASDEFXVR1",
     "primary": true,
     "country_code": "DE",
-    "checksum_algo": "94"
+    "checksum_algo": "09"
   },
   {
     "bank_code": "50110855",
@@ -24154,15 +24154,6 @@
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "76"
-  },
-  {
-    "bank_code": "54290000",
-    "name": "VR-Bank Pirmasens -alt-",
-    "short_name": "VR-Bank Pirmasens -alt-",
-    "bic": "GENODE61PS1",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "06"
   },
   {
     "bank_code": "54291200",
@@ -33102,6 +33093,15 @@
     "checksum_algo": "09"
   },
   {
+    "bank_code": "70010588",
+    "name": "Deutsche Pfandbriefbank",
+    "short_name": "pbb, Garching",
+    "bic": "REBMDEMMSCA",
+    "primary": true,
+    "country_code": "DE",
+    "checksum_algo": "09"
+  },
+  {
     "bank_code": "70010800",
     "name": "Middle East Bank, Munich Branch",
     "short_name": "Middle East Bank, M\u00fcnchen",
@@ -33111,24 +33111,6 @@
     "checksum_algo": "11"
   },
   {
-    "bank_code": "70011100",
-    "name": "Deutsche Handelsbank",
-    "short_name": "Deutsche Handelsbank",
-    "bic": "DEKTDE7GXXX",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "06"
-  },
-  {
-    "bank_code": "70011110",
-    "name": "Deutsche Handelsbank",
-    "short_name": "Deutsche Handelsbank",
-    "bic": "DEKTDE7GXXX",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "06"
-  },
-  {
     "bank_code": "70011200",
     "name": "Bank Vontobel Europe",
     "short_name": "Bank Vontobel Europe",
@@ -33136,15 +33118,6 @@
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "17"
-  },
-  {
-    "bank_code": "70011300",
-    "name": "Autobank",
-    "short_name": "Autobank Oberhaching",
-    "bic": "AUZDDEM1XXX",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "16"
   },
   {
     "bank_code": "70011400",
@@ -35539,15 +35512,6 @@
     "primary": false,
     "country_code": "DE",
     "checksum_algo": "99"
-  },
-  {
-    "bank_code": "72020700",
-    "name": "Augsburger Aktienbank",
-    "short_name": "Augsburger Aktienbank",
-    "bic": "AUGBDE77XXX",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "23"
   },
   {
     "bank_code": "72021271",
@@ -38506,15 +38470,6 @@
     "name": "Raiffeisenbank Plankstetten",
     "short_name": "Raiffeisenbank Plankstetten",
     "bic": "GENODEF1BPL",
-    "primary": true,
-    "country_code": "DE",
-    "checksum_algo": "88"
-  },
-  {
-    "bank_code": "76069598",
-    "name": "Raiffeisenbank Gro\u00dfhabersdorf-Ro\u00dftal -alt-",
-    "short_name": "Raiffeisenbank Ro\u00dftal -alt-",
-    "bic": "GENODEF1RSS",
     "primary": true,
     "country_code": "DE",
     "checksum_algo": "88"
