@@ -852,8 +852,8 @@
     "primary": true,
     "bic": "TELENO21",
     "bank_code": "1450",
-    "name": "Oslofjord Sparebank ",
-    "short_name": "Oslofjord Sparebank "
+    "name": "Oslofjord Sparebank",
+    "short_name": "Oslofjord Sparebank"
   },
   {
     "country_code": "NO",
@@ -2930,7 +2930,7 @@
   {
     "country_code": "NO",
     "primary": true,
-    "bic": "ARENNO21",
+    "bic": "GJSPNO21",
     "bank_code": "2895",
     "name": "Agder Sparebank",
     "short_name": "Agder Sparebank"
@@ -4764,56 +4764,56 @@
     "primary": true,
     "bic": "VOLDNO21",
     "bank_code": "3991",
-    "name": "SpareBank 1 S\u00f8re Sunnm\u00f8re",
-    "short_name": "SpareBank 1 S\u00f8re Sunnm\u00f8re"
+    "name": "SpareBank 1 SMN",
+    "short_name": "SpareBank 1 SMN"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "VOLDNO21",
     "bank_code": "3992",
-    "name": "SpareBank 1 S\u00f8re Sunnm\u00f8re ",
-    "short_name": "SpareBank 1 S\u00f8re Sunnm\u00f8re "
+    "name": "SpareBank 1 SMN",
+    "short_name": "SpareBank 1 SMN"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "VOLDNO21",
     "bank_code": "3993",
-    "name": "SpareBank 1 S\u00f8re Sunnm\u00f8re",
-    "short_name": "SpareBank 1 S\u00f8re Sunnm\u00f8re"
+    "name": "SpareBank 1 SMN",
+    "short_name": "SpareBank 1 SMN"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "VOLDNO21",
     "bank_code": "3994",
-    "name": "SpareBank 1 S\u00f8re Sunnm\u00f8re",
-    "short_name": "SpareBank 1 S\u00f8re Sunnm\u00f8re"
+    "name": "SpareBank 1 SMN",
+    "short_name": "SpareBank 1 SMN"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "VOLDNO21",
     "bank_code": "3995",
-    "name": "SpareBank 1 S\u00f8re Sunnm\u00f8re",
-    "short_name": "SpareBank 1 S\u00f8re Sunnm\u00f8re"
+    "name": "SpareBank 1 SMN",
+    "short_name": "SpareBank 1 SMN"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "VOLDNO21",
     "bank_code": "3997",
-    "name": "SpareBank 1 S\u00f8re Sunnm\u00f8re",
-    "short_name": "SpareBank 1 S\u00f8re Sunnm\u00f8re"
+    "name": "SpareBank 1 SMN",
+    "short_name": "SpareBank 1 SMN"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "VOLDNO21",
     "bank_code": "3998",
-    "name": "SpareBank 1 S\u00f8re Sunnm\u00f8re",
-    "short_name": "SpareBank 1 S\u00f8re Sunnm\u00f8re"
+    "name": "SpareBank 1 SMN",
+    "short_name": "SpareBank 1 SMN"
   },
   {
     "country_code": "NO",
@@ -5012,8 +5012,8 @@
     "primary": true,
     "bic": "VOLDNO21",
     "bank_code": "4168",
-    "name": "SpareBank 1 S\u00f8re Sunnm\u00f8re",
-    "short_name": "SpareBank 1 S\u00f8re Sunnm\u00f8re"
+    "name": "SpareBank 1 SMN",
+    "short_name": "SpareBank 1 SMN"
   },
   {
     "country_code": "NO",
@@ -5276,16 +5276,16 @@
     "primary": true,
     "bic": "HEMNNO21",
     "bank_code": "4312",
-    "name": "Hemne Sparebank",
-    "short_name": "Hemne Sparebank"
+    "name": "Tr\u00f8ndelag Sparebank",
+    "short_name": "Tr\u00f8ndelag Sparebank"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "HEMNNO21",
     "bank_code": "4313",
-    "name": "Hemne Sparebank",
-    "short_name": "Hemne Sparebank"
+    "name": "Tr\u00f8ndelag Sparebank",
+    "short_name": "Tr\u00f8ndelag Sparebank"
   },
   {
     "country_code": "NO",
@@ -5324,8 +5324,8 @@
     "primary": true,
     "bic": "AFJONO21",
     "bank_code": "4345",
-    "name": "\u00c5fjord Sparebank",
-    "short_name": "\u00c5fjord Sparebank"
+    "name": "Tr\u00f8ndelag Sparebank",
+    "short_name": "Tr\u00f8ndelag Sparebank"
   },
   {
     "country_code": "NO",
@@ -17044,8 +17044,8 @@
     "primary": true,
     "bic": "BNPANOKK",
     "bank_code": "9021",
-    "name": "BNP Paribas S.A. Norway Branch ",
-    "short_name": "BNP Paribas S.A. Norway Branch "
+    "name": "BNP Paribas S.A. Norway Branch",
+    "short_name": "BNP Paribas S.A. Norway Branch"
   },
   {
     "country_code": "NO",
@@ -17364,32 +17364,32 @@
     "primary": true,
     "bic": "NORWNOK1",
     "bank_code": "9355",
-    "name": "Bank Norwegian, Filial av Nordax Bank AB (PUBL)",
-    "short_name": "Bank Norwegian, Filial av Nordax Bank AB (PUBL)"
+    "name": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)",
+    "short_name": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "NORWNOK1",
     "bank_code": "9356",
-    "name": "Bank Norwegian, Filial av Nordax Bank AB (PUBL)",
-    "short_name": "Bank Norwegian, Filial av Nordax Bank AB (PUBL)"
+    "name": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)",
+    "short_name": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "NORWNOK1",
     "bank_code": "9357",
-    "name": "Bank Norwegian, Filial av Nordax Bank AB (PUBL)",
-    "short_name": "Bank Norwegian, Filial av Nordax Bank AB (PUBL)"
+    "name": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)",
+    "short_name": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "NORWNOK1",
     "bank_code": "9358",
-    "name": "Bank Norwegian, Filial av Nordax Bank AB (PUBL)",
-    "short_name": "Bank Norwegian, Filial av Nordax Bank AB (PUBL)"
+    "name": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)",
+    "short_name": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)"
   },
   {
     "country_code": "NO",
@@ -17940,56 +17940,56 @@
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9710",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9713",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9722",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9723",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9726",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9727",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9729",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
@@ -18066,7 +18066,7 @@
   {
     "country_code": "NO",
     "primary": true,
-    "bic": "GJASNO21",
+    "bic": "NDEANOKK",
     "bank_code": "9775",
     "name": "Nordea Bank  Abp, Filial i Norge",
     "short_name": "Nordea Bank  Abp, Filial i Norge"
@@ -18092,72 +18092,72 @@
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9801",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9802",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9803",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9804",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9805",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9807",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9808",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9809",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",
     "primary": true,
     "bic": "SBAKNOBB",
     "bank_code": "9810",
-    "name": "Sbanken ASA",
-    "short_name": "Sbanken ASA"
+    "name": "DNB BANK ASA",
+    "short_name": "DNB BANK ASA"
   },
   {
     "country_code": "NO",

@@ -428,8 +428,8 @@
     "primary": true,
     "bic": "RVSAAT2S064",
     "bank_code": "35064",
-    "name": "Raiffeisenbank Taxenbach registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Taxenbach registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisenbank Taxenbach eGen",
+    "short_name": "Raiffeisenbank Taxenbach eGen"
   },
   {
     "country_code": "AT",
@@ -1380,8 +1380,8 @@
     "primary": true,
     "bic": "RVSAAT2S064",
     "bank_code": "35164",
-    "name": "Raiffeisenbank Taxenbach registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Taxenbach registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisenbank Taxenbach eGen",
+    "short_name": "Raiffeisenbank Taxenbach eGen"
   },
   {
     "country_code": "AT",
@@ -4020,8 +4020,8 @@
     "primary": true,
     "bic": "RVVGAT2B475",
     "bank_code": "37475",
-    "name": "Raiffeisenbank Vorderland registrierte Genossenschaft mit beschr\u00e4nkter Haftung",
-    "short_name": "Raiffeisenbank Vorderland registrierte Genossenschaft mit beschr\u00e4nkter Haftung"
+    "name": "Raiffeisenbank Vorderland eGen",
+    "short_name": "Raiffeisenbank Vorderland eGen"
   },
   {
     "country_code": "AT",
@@ -6990,5 +6990,13 @@
     "bank_code": "15899",
     "name": "Oberbank AG",
     "short_name": "Oberbank AG"
+  },
+  {
+    "country_code": "AT",
+    "primary": true,
+    "bic": "BFKKAT2KXXX",
+    "bank_code": "17899",
+    "name": "BKS Bank AG",
+    "short_name": "BKS Bank AG"
   }
 ]

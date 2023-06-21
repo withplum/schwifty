@@ -14674,6 +14674,14 @@
   {
     "country_code": "PL",
     "primary": true,
+    "bic": "",
+    "bank_code": "24811112",
+    "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
     "bic": "ALBPPLPWXXX",
     "bank_code": "10600018",
     "name": "Alior Bank Sp\u00f3\u0142ka Akcyjna",
@@ -15348,8 +15356,8 @@
     "primary": true,
     "bic": "FBPLPLPWXXX",
     "bank_code": "21400007",
-    "name": "FCA Bank S.p.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
-    "short_name": "FCA Bank S.p.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
+    "name": "CA Auto Bank S.p.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce",
+    "short_name": "CA Auto Bank S.p.A. Sp\u00f3\u0142ka Akcyjna Oddzia\u0142 w Polsce"
   },
   {
     "country_code": "PL",
@@ -21635,38 +21643,6 @@
     "country_code": "PL",
     "primary": true,
     "bic": "GBWCPLPPXXX",
-    "bank_code": "90290000",
-    "name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141\u0119czyckiej w \u0141\u0119czycy",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141\u0119czyckiej w \u0141\u0119czycy"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPPXXX",
-    "bank_code": "90291010",
-    "name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141\u0119czyckiej w \u0141\u0119czycy",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141\u0119czyckiej w \u0141\u0119czycy"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPPXXX",
-    "bank_code": "90291023",
-    "name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141\u0119czyckiej w \u0141\u0119czycy",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141\u0119czyckiej w \u0141\u0119czycy"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPPXXX",
-    "bank_code": "90291036",
-    "name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141\u0119czyckiej w \u0141\u0119czycy",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy Ziemi \u0141\u0119czyckiej w \u0141\u0119czycy"
-  },
-  {
-    "country_code": "PL",
-    "primary": true,
-    "bic": "GBWCPLPPXXX",
     "bank_code": "90150001",
     "name": "Bank Sp\u00f3\u0142dzielczy w Starej Bia\u0142ej",
     "short_name": "Bank Sp\u00f3\u0142dzielczy w Starej Bia\u0142ej"
@@ -23030,6 +23006,38 @@
     "bank_code": "92511019",
     "name": "Nadwarcia\u0144ski Bank Sp\u00f3\u0142dzielczy w Dzia\u0142oszynie",
     "short_name": "Nadwarcia\u0144ski Bank Sp\u00f3\u0142dzielczy w Dzia\u0142oszynie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "90290000",
+    "name": "Rejonowy Bank Sp\u00f3\u0142dzielczy w Lututowie",
+    "short_name": "Rejonowy Bank Sp\u00f3\u0142dzielczy w Lututowie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "90291010",
+    "name": "Rejonowy Bank Sp\u00f3\u0142dzielczy w Lututowie",
+    "short_name": "Rejonowy Bank Sp\u00f3\u0142dzielczy w Lututowie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "90291023",
+    "name": "Rejonowy Bank Sp\u00f3\u0142dzielczy w Lututowie",
+    "short_name": "Rejonowy Bank Sp\u00f3\u0142dzielczy w Lututowie"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBWCPLPP",
+    "bank_code": "90291036",
+    "name": "Rejonowy Bank Sp\u00f3\u0142dzielczy w Lututowie",
+    "short_name": "Rejonowy Bank Sp\u00f3\u0142dzielczy w Lututowie"
   },
   {
     "country_code": "PL",

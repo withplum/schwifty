@@ -34,6 +34,14 @@
   {
     "country_code": "NL",
     "primary": true,
+    "bic": "AINHNL22",
+    "bank_code": "AINH",
+    "name": "AIRWALLEX (NETHERLANDS) B.V.",
+    "short_name": "AIRWALLEX (NETHERLANDS) B.V."
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
     "bic": "ANDLNL2A",
     "bank_code": "ANDL",
     "name": "ANADOLUBANK",
@@ -62,14 +70,6 @@
     "bank_code": "ASNB",
     "name": "ASN BANK",
     "short_name": "ASN BANK"
-  },
-  {
-    "country_code": "NL",
-    "primary": true,
-    "bic": "ATBANL2A",
-    "bank_code": "ATBA",
-    "name": "AMSTERDAM TRADE BANK * status exclusion *",
-    "short_name": "AMSTERDAM TRADE BANK * status exclusion *"
   },
   {
     "country_code": "NL",
@@ -322,6 +322,14 @@
   {
     "country_code": "NL",
     "primary": true,
+    "bic": "FROMNL2A",
+    "bank_code": "FROM",
+    "name": "FROMENTY AND CUSTARD E-COMMERCE",
+    "short_name": "FROMENTY AND CUSTARD E-COMMERCE"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
     "bic": "FVLBNL22",
     "bank_code": "FVLB",
     "name": "VAN LANSCHOT",
@@ -366,6 +374,14 @@
     "bank_code": "HIFX",
     "name": "XE EUROPE BV",
     "short_name": "XE EUROPE BV"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
+    "bic": "HUSHNL2A",
+    "bank_code": "HUSH",
+    "name": "HUSHPAY",
+    "short_name": "HUSHPAY"
   },
   {
     "country_code": "NL",
@@ -522,6 +538,14 @@
   {
     "country_code": "NL",
     "primary": true,
+    "bic": "PNOWNL2A",
+    "bank_code": "PNOW",
+    "name": "PAY NOW",
+    "short_name": "PAY NOW"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
     "bic": "RABONL2U",
     "bank_code": "RABO",
     "name": "RABOBANK",
@@ -606,6 +630,14 @@
     "bank_code": "VTPS",
     "name": "VITESSE PSP",
     "short_name": "VITESSE PSP"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
+    "bic": "YOURNL2A",
+    "bank_code": "YOUR",
+    "name": "YOURSAFE B.V.",
+    "short_name": "YOURSAFE B.V."
   },
   {
     "country_code": "NL",

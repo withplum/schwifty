@@ -5930,7 +5930,7 @@
   {
     "country_code": "BE",
     "primary": true,
-    "bic": "VPAYBE21",
+    "bic": "VPAYBEB1",
     "bank_code": "928",
     "name": "VIVA Payment Services",
     "short_name": "VIVA Payment Services"
@@ -6142,14 +6142,6 @@
     "bank_code": "964",
     "name": "FINANCIERE DES PAIEMENTS ELECTRONIQUES SAS - NICKEL BELGIUM",
     "short_name": "FINANCIERE DES PAIEMENTS ELECTRONIQUES SAS - NICKEL BELGIUM"
-  },
-  {
-    "country_code": "BE",
-    "primary": true,
-    "bic": "NEECBEB2",
-    "bank_code": "966",
-    "name": "NewB",
-    "short_name": "NewB"
   },
   {
     "country_code": "BE",

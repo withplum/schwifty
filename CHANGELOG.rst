@@ -5,6 +5,20 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+
+`2023.06.0`_ - 2023/06/21
+-------------------------
+Fixed
+~~~~~
+* For Ukrainian banks calling ``iban.bic`` did result in a ``TypeError``. Thanks
+  `@bernoreitsma <https://github.com/bernoreitsma>`_ for reporting.
+
+Changed
+~~~~~~~
+* Updated generated bank registries for Austria, Belgium, Czech Republic, Germany, Netherlands,
+  Hungary, Norway, Poland and Ukraine.
+
+
 `2023.03.0`_ - 2023/03/14
 -------------------------
 Changed
@@ -375,6 +389,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2023.06.0: https://github.com/mdomke/schwifty/compare/2023.03.0...2023.06.0
 .. _2023.03.0: https://github.com/mdomke/schwifty/compare/2023.02.1...2023.03.0
 .. _2023.02.1: https://github.com/mdomke/schwifty/compare/2023.02.0...2023.02.1
 .. _2023.02.0: https://github.com/mdomke/schwifty/compare/2022.09.0...2023.02.0
