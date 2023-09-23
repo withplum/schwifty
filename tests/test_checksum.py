@@ -4,7 +4,7 @@ from schwifty.checksum import algorithms
 
 
 @pytest.mark.parametrize(
-    "account_code,algorithm_name",
+    ("account_code", "algorithm_name"),
     [
         ("0009290701", "DE:00"),
         ("0539290858", "DE:00"),
@@ -73,7 +73,7 @@ def test_german_checksum_success(account_code, algorithm_name):
 
 
 @pytest.mark.parametrize(
-    "account_code,algorithm_name",
+    ("account_code", "algorithm_name"),
     [
         ("8840017000", "DE:91"),
         ("8840023000", "DE:91"),

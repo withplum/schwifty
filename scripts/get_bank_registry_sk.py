@@ -1,4 +1,5 @@
 import json
+
 import pandas
 
 from schwifty import BIC

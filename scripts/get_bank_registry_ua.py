@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import json
-from typing import Tuple
 
 import pandas as pd
 import requests
@@ -10,9 +9,9 @@ BRANCH_URL = "https://bank.gov.ua/NBU_BankInfo/get_data_branch?json"
 PARENT_URL = "https://bank.gov.ua/NBU_BankInfo/get_data_branch_glbank?json"
 
 
-def split_names(s) -> Tuple[str, str]:
+def split_names(s) -> tuple[str, str]:
     """This will split the `NAME_E` line from the API into a name and a short name"""
-    name, short_name = [name.strip() for name in s[:-1].split(" (скорочена назва - ")]
+    name, short_name = (name.strip() for name in s[:-1].split(" (скорочена назва - "))
     return name, short_name
 
 
@@ -56,7 +55,7 @@ def process():
     branches = get_data()
     registry = []
 
-    for idx, row in branches.iterrows():
+    for _, row in branches.iterrows():
         registry.append(
             {
                 "country_code": "UA",

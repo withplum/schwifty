@@ -1,9 +1,6 @@
 import abc
 import enum
 from typing import ClassVar
-from typing import Dict
-from typing import Optional
-from typing import Type
 
 
 class InputType(enum.Enum):
@@ -24,10 +21,10 @@ class Algorithm(metaclass=abc.ABCMeta):
         pass
 
 
-algorithms: Dict[str, Algorithm] = {}
+algorithms: dict[str, Algorithm] = {}
 
 
-def register(algorithm_cls: Type[Algorithm], prefix: Optional[str] = None) -> Type[Algorithm]:
+def register(algorithm_cls: type[Algorithm], prefix: str | None = None) -> type[Algorithm]:
     key = algorithm_cls.name
     if prefix is not None:
         key = f"{prefix}:{key}"

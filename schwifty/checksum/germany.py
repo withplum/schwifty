@@ -4,11 +4,12 @@ A description of the algorithms can be found on the website of the Bundesbank
 
 https://www.bundesbank.de/resource/blob/603320/16a80c739bbbae592ca575905975c2d0/mL/pruefzifferberechnungsmethoden-data.pdf
 """
+from __future__ import annotations
+
 from dataclasses import dataclass
 from functools import partial
 from itertools import cycle
-from typing import List
-from typing import Optional
+from typing import ClassVar
 
 from schwifty import checksum
 from schwifty.exceptions import InvalidBBANChecksum
@@ -31,11 +32,11 @@ def digit_sum(number: int) -> int:
 
 
 class WeightedModulus(checksum.Algorithm):
-    minuend: Optional[int] = None
-    modulus: int
-    positions: Positions
-    reverse: bool = True
-    weights: List[int]
+    minuend: ClassVar[int | None] = None
+    modulus: ClassVar[int]
+    positions: ClassVar[Positions]
+    reverse: ClassVar[bool] = True
+    weights: ClassVar[list[int]]
 
     def __init__(self) -> None:
         self.weighted_sum: int = 0
@@ -44,7 +45,7 @@ class WeightedModulus(checksum.Algorithm):
     def compute(self, account_code: str) -> str:
         digits = self.get_digits(self.adjust_input(account_code))
         self.remainder = self.compute_remainder(self.compute_weighted_sum(digits))
-        if self.minuend is None:
+        if self.minuend is None:  # noqa: SIM108
             checksum = self.remainder
         else:
             checksum = self.minuend - self.remainder
@@ -59,8 +60,8 @@ class WeightedModulus(checksum.Algorithm):
         start, end = positions.start - 1, positions.end
 
         assert len(account_code) == ACCOUNT_CODE_LENGTH
-        assert start >= 0 and start <= ACCOUNT_CODE_LENGTH
-        assert end >= start and end <= ACCOUNT_CODE_LENGTH
+        assert start >= 0 and start <= ACCOUNT_CODE_LENGTH  # noqa: PT018
+        assert end >= start and end <= ACCOUNT_CODE_LENGTH  # noqa: PT018
 
         digits = account_code[start:end]
         if self.reverse:
@@ -90,20 +91,20 @@ class WeightedModulus(checksum.Algorithm):
 
 
 class WeightedMod10(WeightedModulus):
-    modulus: int = 10
-    minuend: Optional[int] = 10
+    modulus: ClassVar[int] = 10
+    minuend: ClassVar[int | None] = 10
 
 
 class WeightedMod11(WeightedModulus):
-    modulus: int = 11
-    minuend: Optional[int] = 11
+    modulus: ClassVar[int] = 11
+    minuend: ClassVar[int | None] = 11
 
 
 @register
 class Algorithm00(WeightedMod10):
-    name = "00"
-    positions = Positions(start=1, end=9, check_digit=10)
-    weights = [2, 1]
+    name: ClassVar[str] = "00"
+    positions: ClassVar[Positions] = Positions(start=1, end=9, check_digit=10)
+    weights: ClassVar[list[int]] = [2, 1]
 
     def compute_summand(self, digit: int, weight: int) -> int:
         return digit_sum(super().compute_summand(digit, weight))
@@ -111,16 +112,16 @@ class Algorithm00(WeightedMod10):
 
 @register
 class Algorithm01(WeightedMod10):
-    name = "01"
-    positions = Positions(start=1, end=9, check_digit=10)
-    weights = [3, 7, 1]
+    name: ClassVar[str] = "01"
+    positions: ClassVar[Positions] = Positions(start=1, end=9, check_digit=10)
+    weights: ClassVar[list[int]] = [3, 7, 1]
 
 
 @register
 class Algorithm02(WeightedMod11):
-    name = "02"
-    positions = Positions(start=1, end=9, check_digit=10)
-    weights = [2, 3, 4, 5, 6, 7, 8, 9]
+    name: ClassVar[str] = "02"
+    positions: ClassVar[Positions] = Positions(start=1, end=9, check_digit=10)
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7, 8, 9]
 
     def reconcile(self, checksum: int) -> int:
         if self.remainder == 0:
@@ -133,32 +134,32 @@ class Algorithm02(WeightedMod11):
 @register
 class Algorithm03(Algorithm01):
     name = "03"
-    weights = [2, 1]
+    weights: ClassVar[list[int]] = [2, 1]
 
 
 @register
 class Algorithm04(Algorithm02):
     name = "04"
-    weights = [2, 3, 4, 5, 6, 7]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7]
 
 
 @register
 class Algorithm05(Algorithm01):
     name = "05"
-    weights = [7, 3, 1]
+    weights: ClassVar[list[int]] = [7, 3, 1]
 
 
 @register
 class Algorithm06(WeightedMod11):
     name = "06"
     positions = Positions(start=1, end=9, check_digit=10)
-    weights = [2, 3, 4, 5, 6, 7]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7]
 
 
 @register
 class Algorithm07(Algorithm02):
     name = "07"
-    weights = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 @register
@@ -191,7 +192,7 @@ class Algorithm09(checksum.Algorithm):
 @register
 class Algorithm10(Algorithm06):
     name = "10"
-    weights = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 @register
@@ -208,28 +209,28 @@ class Algorithm11(Algorithm10):
 class Algorithm13(Algorithm00):
     name = "13"
     positions = Positions(start=2, end=7, check_digit=8)
-    weights = [2, 1]
+    weights: ClassVar[list[int]] = [2, 1]
 
 
 @register
 class Algorithm14(Algorithm02):
     name = "14"
     positions = Positions(start=4, end=9, check_digit=10)
-    weights = [2, 3, 4, 5, 6, 7]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7]
 
 
 @register
 class Algorithm15(Algorithm06):
     name = "15"
     positions = Positions(start=6, end=9, check_digit=10)
-    weights = [2, 3, 4, 5]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5]
 
 
 @register
 class Algorithm16(Algorithm06):
     name = "16"
     positions = Positions(start=6, end=9, check_digit=10)
-    weights = [2, 3, 4, 5, 6, 7]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7]
 
     def validate(self, account_code: str) -> bool:
         check_digit = self.compute(account_code)
@@ -241,10 +242,10 @@ class Algorithm16(Algorithm06):
 @register
 class Algorithm17(WeightedMod11):
     name = "17"
-    minuend = 10
+    minuend: ClassVar[int | None] = 10
     positions = Positions(start=2, end=7, check_digit=8)
-    reverse = False
-    weights = [1, 2]
+    reverse: ClassVar[bool] = False
+    weights: ClassVar[list[int]] = [1, 2]
 
     def compute_weighted_sum(self, digits: str) -> int:
         return super().compute_weighted_sum(digits) - 1
@@ -256,25 +257,25 @@ class Algorithm17(WeightedMod11):
 @register
 class Algorithm18(Algorithm01):
     name = "18"
-    weights = [3, 9, 7, 1]
+    weights: ClassVar[list[int]] = [3, 9, 7, 1]
 
 
 @register
 class Algorithm19(Algorithm06):
     name = "19"
-    weights = [2, 3, 4, 5, 6, 7, 8, 9, 1]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7, 8, 9, 1]
 
 
 @register
 class Algorithm20(Algorithm06):
     name = "20"
-    weights = [2, 3, 4, 5, 6, 7, 8, 9, 3]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7, 8, 9, 3]
 
 
 @register
 class Algorithm21(Algorithm00):
     name = "21"
-    weights = [2, 1]
+    weights: ClassVar[list[int]] = [2, 1]
 
     def compute_remainder(self, number: int) -> int:
         while number >= 10:
@@ -285,7 +286,7 @@ class Algorithm21(Algorithm00):
 @register
 class Algorithm22(Algorithm01):
     name = "22"
-    weights = [3, 1]
+    weights: ClassVar[list[int]] = [3, 1]
 
     def compute_summand(self, digit: int, weight: int) -> int:
         return super().compute_summand(digit, weight) % 10
@@ -295,7 +296,7 @@ class Algorithm22(Algorithm01):
 class Algorithm23(Algorithm16):
     name = "23"
     positions = Positions(start=1, end=6, check_digit=7)
-    weights = [2, 3, 4, 5, 6, 7]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7]
 
 
 @register
@@ -304,7 +305,7 @@ class Algorithm24(WeightedMod10):
     minuend = None
     positions = Positions(start=1, end=9, check_digit=10)
     reverse = False
-    weights = [1, 2, 3]
+    weights: ClassVar[list[int]] = [1, 2, 3]
 
     def get_digits(self, account_code: str) -> str:
         digits = super().get_digits(account_code)
@@ -322,7 +323,7 @@ class Algorithm24(WeightedMod10):
 class Algorithm25(WeightedMod11):
     name = "25"
     positions = Positions(start=2, end=9, check_digit=10)
-    weights = [2, 3, 4, 5, 6, 7, 8, 9]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7, 8, 9]
 
     def validate(self, account_code: str) -> bool:
         result = super().validate(account_code)
@@ -335,7 +336,7 @@ class Algorithm25(WeightedMod11):
 class Algorithm26(Algorithm06):
     name = "26"
     positions = Positions(start=1, end=7, check_digit=8)
-    weights = [2, 3, 4, 5, 6, 7]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7]
 
     def adjust_input(self, account_code: str) -> str:
         if account_code.startswith("00"):
@@ -347,35 +348,35 @@ class Algorithm26(Algorithm06):
 class Algorithm28(Algorithm06):
     name = "28"
     positions = Positions(start=1, end=7, check_digit=8)
-    weights = [2, 3, 4, 5, 6, 7, 8]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7, 8]
 
 
 @register
 class Algorithm32(Algorithm06):
     name = "32"
     positions = Positions(start=4, end=9, check_digit=10)
-    weights = [2, 3, 4, 5, 6, 7]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7]
 
 
 @register
 class Algorithm33(Algorithm06):
     name = "33"
     positions = Positions(start=5, end=9, check_digit=10)
-    weights = [2, 3, 4, 5, 6]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6]
 
 
 @register
 class Algorithm34(Algorithm06):
     name = "34"
     positions = Positions(start=1, end=7, check_digit=8)
-    weights = [2, 4, 8, 5, 10, 9, 7]
+    weights: ClassVar[list[int]] = [2, 4, 8, 5, 10, 9, 7]
 
 
 @register
 class Algorithm38(Algorithm06):
     name = "38"
     positions = Positions(start=4, end=9, check_digit=10)
-    weights = [2, 4, 8, 5, 10, 9]
+    weights: ClassVar[list[int]] = [2, 4, 8, 5, 10, 9]
 
 
 @register
@@ -388,7 +389,7 @@ class Algorithm60(Algorithm00):
 class Algorithm61(Algorithm00):
     name = "61"
     positions = Positions(start=1, end=7, check_digit=8)
-    weights = [2, 1]
+    weights: ClassVar[list[int]] = [2, 1]
 
     def get_digits(self, account_code: str) -> str:
         digits = super().get_digits(account_code)
@@ -401,7 +402,7 @@ class Algorithm61(Algorithm00):
 class Algorithm63(WeightedMod10):
     name = "63"
     positions = Positions(start=2, end=7, check_digit=8)
-    weights = [2, 1]
+    weights: ClassVar[list[int]] = [2, 1]
 
     def compute_summand(self, digit: int, weight: int) -> int:
         return digit_sum(super().compute_summand(digit, weight))
@@ -416,7 +417,7 @@ class Algorithm63(WeightedMod10):
 class Algorithm68(Algorithm00):
     name = "68"
     positions = Positions(start=1, end=9, check_digit=10)
-    weights = [2, 1]
+    weights: ClassVar[list[int]] = [2, 1]
 
     def get_digits(self, account_code: str) -> str:
         digits = super().get_digits(account_code)
@@ -449,7 +450,7 @@ class Algorithm76(WeightedMod11):
     name = "76"
     minuend = None
     positions = Positions(start=2, end=7, check_digit=8)
-    weights = [2, 3, 4, 5, 6, 7, 8]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7, 8]
 
     def get_digits(self, account_code: str) -> str:
         digits = super().get_digits(account_code)
@@ -465,7 +466,7 @@ class Algorithm76(WeightedMod11):
 class Algorithm88(Algorithm06):
     name = "88"
     positions = Positions(start=4, end=9, check_digit=10)
-    weights = [2, 3, 4, 5, 6, 7, 8]
+    weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7, 8]
 
     def get_positions(self, account_code: str) -> Positions:
         if account_code[2] == "9":
@@ -479,17 +480,17 @@ class Algorithm91(checksum.Algorithm):
 
     class Variant1(Algorithm06):
         positions = Positions(start=1, end=6, check_digit=7)
-        weights = [2, 3, 4, 5, 6, 7]
+        weights: ClassVar[list[int]] = [2, 3, 4, 5, 6, 7]
 
     class Variant2(Variant1):
-        weights = [7, 6, 5, 4, 3, 2]
+        weights: ClassVar[list[int]] = [7, 6, 5, 4, 3, 2]
 
     class Variant3(Variant1):
         positions = Positions(start=1, end=10, check_digit=7)
-        weights = [2, 3, 4, 0, 5, 6, 7, 8, 9, 10]
+        weights: ClassVar[list[int]] = [2, 3, 4, 0, 5, 6, 7, 8, 9, 10]
 
     class Variant4(Variant1):
-        weights = [2, 4, 8, 5, 10, 9]
+        weights: ClassVar[list[int]] = [2, 4, 8, 5, 10, 9]
 
     def compute(self, account_code: str) -> str:
         return self.Variant1().compute(account_code)

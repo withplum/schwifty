@@ -139,7 +139,7 @@ def test_iban_properties():
 
 
 @pytest.mark.parametrize(
-    "components,compact",
+    ("components", "compact"),
     [
         (("DE", "43060967", "7000534100"), "DE42430609677000534100"),
         (("DE", "51230800", "2622196545"), "DE61512308002622196545"),
@@ -204,7 +204,7 @@ def test_magic_methods():
 
 
 @pytest.mark.parametrize(
-    "iban,bic",
+    ("iban", "bic"),
     [
         ("AT483200000012345864", "RLNWATWWXXX"),
         ("AT930100000000123145", "BUNDATWWXXX"),

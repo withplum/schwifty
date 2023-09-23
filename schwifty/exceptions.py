@@ -1,4 +1,4 @@
-class SchwiftyException(ValueError):
+class SchwiftyException(ValueError):  # noqa: N818
     """Base exception of all schwifty related errors."""
 
 

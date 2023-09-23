@@ -5,6 +5,24 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
+`2023.09.0`_ - 2023/09/23
+-------------------------
+Added
+~~~~~
+* New method :meth:`.BIC.candidates_from_bank_code` to list all matching BICs to a given domestic
+  bank code `@Natim <https://github.com/Natim>`_.
+
+Changed
+~~~~~~~
+* The Italian bank registry is now automatically generated thanks to
+  `@Krystofee <https://github.com/Krystofee>`_
+
+Internal
+~~~~~~~~
+* Switch project tooling to [hatch](https://hatch.pypa.io/latest/).
+* Use [ruff](https://docs.astral.sh/ruff/) instead of [flake8](https://flake8.pycqa.org/en/latest/)
+  as linter.
+* Upgrade [mypy](https://www.mypy-lang.org/) to 1.5.1 and fix all new typing errors.
 
 `2023.06.0`_ - 2023/06/21
 -------------------------
@@ -389,6 +407,7 @@ Added
 * Added :attr:`.BIC.country` and :attr:`.IBAN.country`.
 
 
+.. _2023.09.0: https://github.com/mdomke/schwifty/compare/2023.06.0...2023.09.0
 .. _2023.06.0: https://github.com/mdomke/schwifty/compare/2023.03.0...2023.06.0
 .. _2023.03.0: https://github.com/mdomke/schwifty/compare/2023.02.1...2023.03.0
 .. _2023.02.1: https://github.com/mdomke/schwifty/compare/2023.02.0...2023.02.1

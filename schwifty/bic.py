@@ -2,12 +2,10 @@ from __future__ import annotations
 
 import re
 import warnings
-from typing import List
-from typing import Optional
 
 import iso3166
-from pycountry import countries
-from pycountry.db import Data
+from pycountry import countries  # type: ignore
+from pycountry.db import Data  # type: ignore
 
 from schwifty import common
 from schwifty import exceptions
@@ -48,7 +46,7 @@ class BIC(common.Base):
         InvalidCountryCode: If the BIC's country code is unknown.
     """
 
-    def __init__(self, bic: str, allow_invalid: Optional[bool] = False) -> None:
+    def __init__(self, bic: str, allow_invalid: bool = False) -> None:
         super().__init__(bic)
         if not allow_invalid:
             self.validate()
@@ -116,10 +114,10 @@ class BIC(common.Base):
             spec = registry.get("bank_code")
             assert isinstance(spec, dict)
             return [cls(entry["bic"]) for entry in spec[(country_code, bank_code)]]
-        except KeyError:
+        except KeyError as e:
             raise exceptions.InvalidBankCode(
                 f"Unknown bank code {bank_code!r} for country {country_code!r}"
-            )
+            ) from e
 
     @classmethod
     def from_bank_code(cls, country_code: str, bank_code: str) -> BIC:
@@ -179,10 +177,10 @@ class BIC(common.Base):
         try:
             entries = cls.candidates_from_bank_code(country_code, bank_code)
             return entries[0]
-        except KeyError:
+        except KeyError as e:
             raise exceptions.InvalidBankCode(
                 f"Unknown bank code {bank_code!r} for country {country_code!r}"
-            )
+            ) from e
 
     def validate(self) -> bool:
         """Validate the structural integrity of this BIC.
@@ -216,8 +214,8 @@ class BIC(common.Base):
         country_code = self.country_code
         try:
             iso3166.countries_by_alpha2[country_code]
-        except KeyError:
-            raise exceptions.InvalidCountryCode(f"Invalid country code '{country_code}'")
+        except KeyError as e:
+            raise exceptions.InvalidCountryCode(f"Invalid country code '{country_code}'") from e
 
     @property
     def is_valid(self) -> bool:
@@ -251,14 +249,14 @@ class BIC(common.Base):
             formatted += " " + self.branch_code
         return formatted
 
-    def _lookup_values(self, key: str) -> List:
+    def _lookup_values(self, key: str) -> list:
         spec = registry.get("bic")
         assert isinstance(spec, dict)
         entries = spec.get(self.compact, [])
         return sorted({entry[key] for entry in entries})
 
     @property
-    def domestic_bank_codes(self) -> List[str]:
+    def domestic_bank_codes(self) -> list[str]:
         """List[str]: The country specific bank-codes associated with the BIC.
 
         Examples:
@@ -270,7 +268,7 @@ class BIC(common.Base):
         return self._lookup_values("bank_code")
 
     @property
-    def bank_names(self) -> List[str]:
+    def bank_names(self) -> list[str]:
         """List[str]: The name of the banks associated with the BIC.
 
         Examples:
@@ -282,7 +280,7 @@ class BIC(common.Base):
         return self._lookup_values("name")
 
     @property
-    def bank_short_names(self) -> List[str]:
+    def bank_short_names(self) -> list[str]:
         """List[str]: The short name of the banks associated with the BIC.
 
         Examples:
@@ -294,35 +292,35 @@ class BIC(common.Base):
         return self._lookup_values("short_name")
 
     @property
-    def country_bank_code(self) -> Optional[str]:
+    def country_bank_code(self) -> str | None:
         """str or None: The country specific bank-code associated with the BIC.
 
         .. deprecated:: 2020.01.0
            Use :meth:`domestic_bank_codes` instead.
         """
-        warnings.warn("Use `BIC.domestic_bank_codes` instead", DeprecationWarning)
+        warnings.warn("Use `BIC.domestic_bank_codes` instead", DeprecationWarning, stacklevel=2)
         codes = self.domestic_bank_codes
         return codes[0] if codes else None
 
     @property
-    def bank_name(self) -> Optional[str]:
+    def bank_name(self) -> str | None:
         """str or None: The name of the bank associated with the BIC.
 
         .. deprecated:: 2020.01.0
            Use :meth:`bank_names` instead.
         """
-        warnings.warn("Use `BIC.bank_names` instead", DeprecationWarning)
+        warnings.warn("Use `BIC.bank_names` instead", DeprecationWarning, stacklevel=2)
         names = self.bank_names
         return names[0] if names else None
 
     @property
-    def bank_short_name(self) -> Optional[str]:
+    def bank_short_name(self) -> str | None:
         """str or None: The short name of the bank associated with the BIC.
 
         .. deprecated:: 2020.01.0
            Use :meth:`bank_short_names` instead.
         """
-        warnings.warn("Use `BIC.bank_short_names` instead", DeprecationWarning)
+        warnings.warn("Use `BIC.bank_short_names` instead", DeprecationWarning, stacklevel=2)
         names = self.bank_short_names
         return names[0] if names else None
 
@@ -356,7 +354,7 @@ class BIC(common.Base):
             return "default"
 
     @property
-    def country(self) -> Optional[Data]:
+    def country(self) -> Data | None:
         """Country: The country this BIC is registered in."""
         return countries.get(alpha_2=self.country_code)
 

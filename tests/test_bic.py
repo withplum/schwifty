@@ -5,13 +5,13 @@ from schwifty import BIC
 from schwifty import exceptions
 
 
-def test_bic():
+def test_bic() -> None:
     bic = BIC("GENODEM1GLS")
     assert bic.formatted == "GENO DE M1 GLS"
     assert bic.validate()
 
 
-def test_bic_allow_invalid():
+def test_bic_allow_invalid() -> None:
     bic = BIC("GENODXM1GLS", allow_invalid=True)
     assert bic
     assert bic.country_code == "DX"
@@ -19,13 +19,13 @@ def test_bic_allow_invalid():
         bic.validate()
 
 
-def test_bic_no_branch_code():
+def test_bic_no_branch_code() -> None:
     bic = BIC("GENODEM1")
     assert bic.branch_code == ""
     assert bic.formatted == "GENO DE M1"
 
 
-def test_bic_properties():
+def test_bic_properties() -> None:
     bic = BIC("GENODEM1GLS")
     assert bic.length == len(bic) == 11
     assert bic.bank_code == "GENO"
@@ -52,7 +52,7 @@ def test_bic_properties():
     assert bic.type == "passive"
 
 
-def test_unknown_bic_properties():
+def test_unknown_bic_properties() -> None:
     bic = BIC("ABNAJPJTXXX")
     assert bic.length == len(bic) == 11
     assert bic.bank_code == "ABNA"
@@ -70,7 +70,7 @@ def test_unknown_bic_properties():
 
 
 @pytest.mark.parametrize(
-    "code,type",
+    ("code", "type"),
     [
         ("GENODEM0GLS", "testing"),
         ("GENODEM1GLS", "passive"),
@@ -78,13 +78,13 @@ def test_unknown_bic_properties():
         ("GENODEMMGLS", "default"),
     ],
 )
-def test_bic_type(code, type):
+def test_bic_type(code: str, type: str) -> None:  # noqa: A002
     bic = BIC(code)
     assert bic.type == type
 
 
 @pytest.mark.parametrize(
-    "code,exc",
+    ("code", "exc"),
     [
         ("AAAA", exceptions.InvalidLength),
         ("AAAADEM1GLSX", exceptions.InvalidLength),
@@ -93,13 +93,13 @@ def test_bic_type(code, type):
         ("GENOXXM1GLS", exceptions.InvalidCountryCode),
     ],
 )
-def test_invalid_bic(code, exc):
+def test_invalid_bic(code: str, exc: type[Exception]) -> None:
     with pytest.raises(exc):
         BIC(code)
 
 
 @pytest.mark.parametrize(
-    "country,bank_code,bic",
+    ("country", "bank_code", "bic"),
     [
         ("AT", "36274", "RZTIAT22274"),
         ("BE", "002", "GEBABEBB"),
@@ -118,7 +118,7 @@ def test_invalid_bic(code, exc):
         ("SK", "0900", "GIBASKBX"),
     ],
 )
-def test_bic_from_bank_code(country, bank_code, bic):
+def test_bic_from_bank_code(country: str, bank_code: str, bic: str) -> None:
     bic = BIC.from_bank_code(country, bank_code)
     assert bic.compact == bic
 
@@ -129,7 +129,7 @@ def test_bic_from_unknown_bank_code():
 
 
 @pytest.mark.parametrize(
-    "country,bank_code,bic_codes",
+    ("country", "bank_code", "bic_codes"),
     [
         ("AT", "36274", ["RZTIAT22274"]),
         ("BE", "002", ["GEBABEBB"]),
@@ -177,23 +177,22 @@ def test_bic_from_unknown_bank_code():
         ("SK", "0900", ["GIBASKBX"]),
     ],
 )
-def test_bic_candidates_from_bank_code(country, bank_code, bic_codes):
-    candidates = BIC.candidates_from_bank_code(country, bank_code)
-    for bic in candidates:
+def test_bic_candidates_from_bank_code(country: str, bank_code: str, bic_codes: list[str]) -> None:
+    for bic in BIC.candidates_from_bank_code(country, bank_code):
         assert bic.compact in bic_codes
 
 
-def test_bic_candidates_from_unknown_bank_code():
+def test_bic_candidates_from_unknown_bank_code() -> None:
     with pytest.raises(exceptions.InvalidBankCode):
         BIC.candidates_from_bank_code("PO", "12345678")
 
 
-def test_bic_is_from_primary_bank_code():
+def test_bic_is_from_primary_bank_code() -> None:
     bic = BIC.from_bank_code("DE", "20070024")
     assert bic.compact == "DEUTDEDBHAM"
 
 
-def test_magic_methods():
+def test_magic_methods() -> None:
     bic = BIC("GENODEM1GLS")
     assert bic == "GENODEM1GLS"
     assert bic == BIC("GENODEM1GLS")

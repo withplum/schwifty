@@ -2,11 +2,10 @@ from __future__ import annotations
 
 import re
 import string
-from typing import Dict
-from typing import Optional
+from typing import Any
 
-from pycountry import countries
-from pycountry.db import Data
+from pycountry import countries  # type: ignore
+from pycountry.db import Data  # type: ignore
 
 from schwifty import common
 from schwifty import exceptions
@@ -16,7 +15,7 @@ from schwifty.checksum import algorithms
 from schwifty.checksum import InputType
 
 
-_spec_to_re: Dict[str, str] = {"n": r"\d", "a": r"[A-Z]", "c": r"[A-Za-z0-9]", "e": r" "}
+_spec_to_re: dict[str, str] = {"n": r"\d", "a": r"[A-Z]", "c": r"[A-Za-z0-9]", "e": r" "}
 
 _alphabet: str = string.digits + string.ascii_uppercase
 
@@ -26,15 +25,15 @@ def _get_iban_spec(country_code: str) -> dict:
         spec = registry.get("iban")
         assert isinstance(spec, dict)
         return spec[country_code]
-    except KeyError:
-        raise exceptions.InvalidCountryCode(f"Unknown country-code '{country_code}'")
+    except KeyError as e:
+        raise exceptions.InvalidCountryCode(f"Unknown country-code '{country_code}'") from e
 
 
 def numerify(string: str) -> int:
     return int("".join(str(_alphabet.index(c)) for c in string))
 
 
-def code_length(spec: Dict, code_type: str) -> int:
+def code_length(spec: dict[str, Any], code_type: str) -> int:
     start, end = spec["positions"][code_type]
     return end - start
 
@@ -105,7 +104,7 @@ class IBAN(common.Base):
             self.validate(validate_bban)
 
     def _calc_checksum_digits(self) -> str:
-        return "{:02d}".format(98 - (numerify(self.bban + self.country_code) * 100) % 97)
+        return f"{98 - (numerify(self.bban + self.country_code) * 100) % 97:02d}"
 
     @classmethod
     def generate(
@@ -139,7 +138,7 @@ class IBAN(common.Base):
             Added support for generating the country specific checksum of the BBAN for Belgian
             banks.
         """
-        spec: Dict = _get_iban_spec(country_code)
+        spec: dict[str, Any] = _get_iban_spec(country_code)
         bank_code_length: int = code_length(spec, "bank_code")
         branch_code_length: int = code_length(spec, "branch_code")
         account_code_length: int = code_length(spec, "account_code")
@@ -237,7 +236,7 @@ class IBAN(common.Base):
         elif algo.accepts == InputType.BBAN:
             value = self.bban
         else:
-            assert False, "Unsupported checksum algorithm input type"
+            raise exceptions.SchwiftyException("Unsupported checksum algorithm input type")
         if not algo.validate(value):
             raise exceptions.InvalidBBANChecksum("Invalid BBAN checksum")
 
@@ -271,13 +270,13 @@ class IBAN(common.Base):
         return " ".join(self.compact[i : i + 4] for i in range(0, len(self.compact), 4))
 
     @property
-    def spec(self) -> Dict:
+    def spec(self) -> dict[str, Any]:
         """dict: The country specific IBAN specification."""
         return _get_iban_spec(self.country_code)
 
     @property
-    def bic(self) -> Optional[BIC]:
-        """BIC or None: The BIC associated to the IBAN´s bank-code.
+    def bic(self) -> BIC | None:
+        """BIC or None: The BIC associated to the IBAN's bank-code.
 
         If the bank code is not available in Schwifty's registry ``None`` is returned.
 
@@ -290,7 +289,7 @@ class IBAN(common.Base):
             return None
 
     @property
-    def country(self) -> Optional[Data]:
+    def country(self) -> Data | None:
         """Country: The country this IBAN is registered in."""
         return countries.get(alpha_2=self.country_code)
 
@@ -329,15 +328,17 @@ class IBAN(common.Base):
         return self._get_code(code_type="account_code")
 
     @property
-    def bank(self) -> Optional[dict]:
+    def bank(self) -> dict | None:
         bank_registry = registry.get("bank_code")
         assert isinstance(bank_registry, dict)
         bank_entry = bank_registry.get((self.country_code, self.bank_code or self.branch_code))
+        if not bank_entry:
+            return None
         return bank_entry and bank_entry[0]
 
     @property
-    def bank_name(self) -> Optional[str]:
-        """Optional[str]: The name of the bank associated with the IBAN bank code.
+    def bank_name(self) -> str | None:
+        """str or None: The name of the bank associated with the IBAN bank code.
 
         Examples:
             >>> IBAN('DE89370400440532013000').bank_name
@@ -349,8 +350,8 @@ class IBAN(common.Base):
         return None if self.bank is None else self.bank["name"]
 
     @property
-    def bank_short_name(self) -> Optional[str]:
-        """Optional[str]: The name of the bank associated with the IBAN bank code.
+    def bank_short_name(self) -> str | None:
+        """str or None: The name of the bank associated with the IBAN bank code.
 
         Examples:
             >>> IBAN('DE89370400440532013000').bank_short_name
@@ -362,7 +363,7 @@ class IBAN(common.Base):
         return None if self.bank is None else self.bank["short_name"]
 
 
-def add_bban_regex(country: str, spec: Dict) -> Dict:
+def add_bban_regex(country: str, spec: dict) -> dict:
     bban_spec = spec["bban_spec"]
     spec_re = r"(\d+)(!)?([{}])".format("".join(_spec_to_re.keys()))
 
@@ -370,7 +371,7 @@ def add_bban_regex(country: str, spec: Dict) -> Dict:
         quantifier = ("{%s}" if match.group(2) else "{1,%s}") % match.group(1)
         return _spec_to_re[match.group(3)] + quantifier
 
-    spec["regex"] = re.compile("^{}$".format(re.sub(spec_re, convert, bban_spec)))
+    spec["regex"] = re.compile(rf"^{re.sub(spec_re, convert, bban_spec)}$")
     return spec
 
 

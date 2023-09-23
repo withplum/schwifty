@@ -4,6 +4,7 @@ import json
 import camelot
 import pandas
 
+
 # https://www.bankinfrastruktur.se/framtidens-betalningsinfrastruktur/iban-och-svenskt-nationellt-kontonummer
 URL = (
     "https://www.bankinfrastruktur.se/media/d1tlidv0/"
