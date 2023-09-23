@@ -1,7 +1,8 @@
+from __future__ import annotations
+
 import re
 from functools import total_ordering
 from typing import Any
-from typing import Optional
 
 
 _clean_regex = re.compile(r"\s+")
@@ -40,7 +41,7 @@ class Base:
         """int: Length of the compact code."""
         return len(self.compact)
 
-    def _get_component(self, start: int, end: Optional[int] = None) -> str:
+    def _get_component(self, start: int, end: int | None = None) -> str:
         if start < self.length and (end is None or end <= self.length):
             return self.compact[start:end] if end else self.compact[start:]
         return ""
