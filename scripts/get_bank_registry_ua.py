@@ -17,7 +17,6 @@ def split_names(s) -> Tuple[str, str]:
 
 
 def get_data(filter_insolvent: bool = True) -> pd.DataFrame:
-
     # Get raw dataframes for parent banks and branches
     with requests.get(PARENT_URL) as r:
         parents = pd.read_json(r.text)

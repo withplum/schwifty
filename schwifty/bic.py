@@ -382,4 +382,10 @@ class BIC(common.Base):
 
 
 registry.build_index("bank", "bic", key="bic", accumulate=True)
-registry.build_index("bank", "bank_code", key=("country_code", "bank_code"), primary=True, build_list=True)
+registry.build_index(
+    "bank",
+    "bank_code",
+    key=("country_code", "bank_code"),
+    primary=True,
+    accumulate=True,
+)

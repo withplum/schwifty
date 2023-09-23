@@ -76,13 +76,12 @@ def build_index(
     index_name: str,
     key: Union[str, Tuple],
     accumulate: bool = False,
-    build_list: bool = False,
     **predicate: Any,
 ) -> None:
     def make_key(entry: Dict) -> Union[Tuple, str]:
         return tuple(entry[k] for k in key) if isinstance(key, tuple) else entry[key]
 
-    def match(entry: dict) -> bool:
+    def match(entry: Dict) -> bool:
         return all(entry[key] == value for key, value in predicate.items())
 
     base = get(base_name)
@@ -97,15 +96,9 @@ def build_index(
     else:
         entries = {}
         for entry in base:
-            if match(entry):
-                entry_key = make_key(entry)
-                if build_list:
-                    if entry_key not in entries:
-                        entries[entry_key] = [entry]
-                    else:
-                        entries[entry_key].append(entry)
-                else:
-                    entries[entry_key] = entry
+            if not match(entry):
+                continue
+            entries[make_key(entry)] = entry
         save(index_name, entries)
 
 

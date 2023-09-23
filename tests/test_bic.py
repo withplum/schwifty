@@ -127,6 +127,7 @@ def test_bic_from_unknown_bank_code():
     with pytest.raises(exceptions.InvalidBankCode):
         BIC.from_bank_code("PO", "12345678")
 
+
 @pytest.mark.parametrize(
     "country,bank_code,bic_codes",
     [
@@ -135,7 +136,35 @@ def test_bic_from_unknown_bank_code():
         ("CZ", "0600", ["AGBACZPP"]),
         ("ES", "0209", ["BSABESBB"]),
         ("FI", "101", ["NDEAFIHH"]),
-        ("FR", "30004", ["BNPAFRPPIFN", "BNPAFRPPPAA", "BNPAFRPPMED", "BNPAFRPPCRN", "BNPAFRPP", "BNPAFRPPPAE", "BNPAFRPPPBQ", "BNPAFRPPNFE", "BNPAFRPPPGN", "BNPAFRPPXXX", "BNPAFRPPBOR", "BNPAFRPPCRM", "BNPAFRPPPVD", "BNPAFRPPPTX", "BNPAFRPPPAC", "BNPAFRPPPLZ", "BNPAFRPP039", "BNPAFRPPENG", "BNPAFRPPNEU", "BNPAFRPPORE", "BNPAFRPPPEE", "BNPAFRPPPXV", "BNPAFRPPIFO"]),
+        (
+            "FR",
+            "30004",
+            [
+                "BNPAFRPPIFN",
+                "BNPAFRPPPAA",
+                "BNPAFRPPMED",
+                "BNPAFRPPCRN",
+                "BNPAFRPP",
+                "BNPAFRPPPAE",
+                "BNPAFRPPPBQ",
+                "BNPAFRPPNFE",
+                "BNPAFRPPPGN",
+                "BNPAFRPPXXX",
+                "BNPAFRPPBOR",
+                "BNPAFRPPCRM",
+                "BNPAFRPPPVD",
+                "BNPAFRPPPTX",
+                "BNPAFRPPPAC",
+                "BNPAFRPPPLZ",
+                "BNPAFRPP039",
+                "BNPAFRPPENG",
+                "BNPAFRPPNEU",
+                "BNPAFRPPORE",
+                "BNPAFRPPPEE",
+                "BNPAFRPPPXV",
+                "BNPAFRPPIFO",
+            ],
+        ),
         ("DE", "43060967", ["GENODEM1GLS"]),
         ("HU", "107", ["CIBHHUHB"]),
         ("HR", "2485003", ["CROAHR2X"]),
