@@ -7,6 +7,10 @@ Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro
 
 `2023.09.0`_ - 2023/09/23
 -------------------------
+Removed
+~~~~~~~
+* Support for Python 3.7 and 3.8 has been dropped. Only Python versions 3.9+ are supported.
+
 Added
 ~~~~~
 * New method :meth:`.BIC.candidates_from_bank_code` to list all matching BICs to a given domestic

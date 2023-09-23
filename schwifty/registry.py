@@ -1,20 +1,15 @@
+from __future__ import annotations
+
 import itertools
 import json
 import pathlib
 import sys
 from collections import defaultdict
+from importlib.abc import Traversable
+from importlib.resources import files
 from pathlib import Path
 from typing import Any
 from typing import Callable
-from typing import Union
-
-
-try:
-    from importlib.abc import Traversable
-    from importlib.resources import files
-except ImportError:
-    from importlib_resources import files  # type: ignore
-    from importlib_resources.abc import Traversable  # type: ignore
 
 
 _registry: dict[str, dict | list[dict]] = {}
@@ -42,7 +37,7 @@ def has(name: str) -> bool:
 def get(name: str) -> dict | list[dict]:
     if not has(name):
         data = None
-        package_path: Union[Traversable, Path]
+        package_path: Traversable | Path
         if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
             package_path = Path(sys._MEIPASS)
         else:
