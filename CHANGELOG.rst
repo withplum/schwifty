@@ -5,7 +5,7 @@ Changelog
 
 Versions follow `CalVer <http://www.calver.org/>`_ with the scheme ``YY.0M.Micro``.
 
-`2023.09.0`_ - 2023/09/23
+`2023.09.0`_ - 2023/09/25
 -------------------------
 Removed
 ~~~~~~~
