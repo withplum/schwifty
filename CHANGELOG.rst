@@ -23,10 +23,10 @@ Changed
 
 Internal
 ~~~~~~~~
-* Switch project tooling to [hatch](https://hatch.pypa.io/latest/).
-* Use [ruff](https://docs.astral.sh/ruff/) instead of [flake8](https://flake8.pycqa.org/en/latest/)
+* Switch project tooling to `hatch <https://hatch.pypa.io/latest/>`_.
+* Use `ruff <https://docs.astral.sh/ruff/>`_ instead of [flake8](https://flake8.pycqa.org/en/latest/)
   as linter.
-* Upgrade [mypy](https://www.mypy-lang.org/) to 1.5.1 and fix all new typing errors.
+* Upgrade `mypy <https://www.mypy-lang.org/>`_ to 1.5.1 and fix all new typing errors.
 
 `2023.06.0`_ - 2023/06/21
 -------------------------
