@@ -339,6 +339,26 @@
       ]
     }
   },
+  "DJ": {
+    "bban_spec": "5!n5!n11!n2!n",
+    "iban_spec": "DJ2!n5!n5!n11!n2!n",
+    "bban_length": 23,
+    "iban_length": 27,
+    "positions": {
+      "account_code": [
+        10,
+        23
+      ],
+      "bank_code": [
+        0,
+        5
+      ],
+      "branch_code": [
+        5,
+        10
+      ]
+    }
+  },
   "DK": {
     "bban_spec": "4!n9!n1!n",
     "iban_spec": "DK2!n4!n9!n1!n",
@@ -479,6 +499,26 @@
       ]
     }
   },
+  "FK": {
+    "bban_spec": "2!a12!n",
+    "iban_spec": "FK2!n2!a12!n",
+    "bban_length": 14,
+    "iban_length": 18,
+    "positions": {
+      "account_code": [
+        2,
+        14
+      ],
+      "bank_code": [
+        0,
+        2
+      ],
+      "branch_code": [
+        2,
+        2
+      ]
+    }
+  },
   "FO": {
     "bban_spec": "4!n9!n1!n",
     "iban_spec": "FO2!n4!n9!n1!n",
@@ -506,8 +546,8 @@
     "iban_length": 27,
     "positions": {
       "account_code": [
-        10,
-        21
+        5,
+        23
       ],
       "bank_code": [
         0,
@@ -515,7 +555,7 @@
       ],
       "branch_code": [
         5,
-        10
+        5
       ]
     }
   },
@@ -1359,6 +1399,26 @@
       ]
     }
   },
+  "MN": {
+    "bban_spec": "4!n12!n",
+    "iban_spec": "MN2!n4!n12!n",
+    "bban_length": 16,
+    "iban_length": 20,
+    "positions": {
+      "account_code": [
+        4,
+        16
+      ],
+      "bank_code": [
+        0,
+        4
+      ],
+      "branch_code": [
+        4,
+        4
+      ]
+    }
+  },
   "MR": {
     "bban_spec": "5!n5!n11!n2!n",
     "iban_spec": "MR2!n5!n5!n11!n2!n",
@@ -1416,6 +1476,26 @@
       "branch_code": [
         6,
         8
+      ]
+    }
+  },
+  "NI": {
+    "bban_spec": "4!a20!n",
+    "iban_spec": "NI2!n4!a20!n",
+    "bban_length": 24,
+    "iban_length": 28,
+    "positions": {
+      "account_code": [
+        4,
+        24
+      ],
+      "bank_code": [
+        0,
+        4
+      ],
+      "branch_code": [
+        4,
+        4
       ]
     }
   },
@@ -1599,6 +1679,26 @@
       ]
     }
   },
+  "RU": {
+    "bban_spec": "9!n5!n15!c",
+    "iban_spec": "RU2!n9!n5!n15!c",
+    "bban_length": 29,
+    "iban_length": 33,
+    "positions": {
+      "account_code": [
+        14,
+        29
+      ],
+      "bank_code": [
+        0,
+        9
+      ],
+      "branch_code": [
+        9,
+        14
+      ]
+    }
+  },
   "SA": {
     "bban_spec": "2!n18!c",
     "iban_spec": "SA2!n2!n18!c",
@@ -1736,6 +1836,26 @@
       "branch_code": [
         6,
         11
+      ]
+    }
+  },
+  "SO": {
+    "bban_spec": "4!n3!n12!n",
+    "iban_spec": "SO2!n4!n3!n12!n",
+    "bban_length": 19,
+    "iban_length": 23,
+    "positions": {
+      "account_code": [
+        7,
+        19
+      ],
+      "bank_code": [
+        0,
+        4
+      ],
+      "branch_code": [
+        4,
+        7
       ]
     }
   },
