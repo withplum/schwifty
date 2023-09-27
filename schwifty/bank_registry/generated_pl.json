@@ -14674,7 +14674,7 @@
   {
     "country_code": "PL",
     "primary": true,
-    "bic": "",
+    "bic": "POLUPLPRXXX",
     "bank_code": "24811112",
     "name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "Getin Noble Bank Sp\u00f3\u0142ka Akcyjna"
@@ -15732,6 +15732,14 @@
     "primary": true,
     "bic": "GBGCPLPK",
     "bank_code": "24801038",
+    "name": "VeloBank Sp\u00f3\u0142ka Akcyjna",
+    "short_name": "VeloBank Sp\u00f3\u0142ka Akcyjna"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "GBGCPLPK",
+    "bank_code": "29300002",
     "name": "VeloBank Sp\u00f3\u0142ka Akcyjna",
     "short_name": "VeloBank Sp\u00f3\u0142ka Akcyjna"
   },
@@ -16900,8 +16908,8 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "81490000",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Inowroc\u0142awiu",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Inowroc\u0142awiu"
+    "name": "InoBank Bank Sp\u00f3\u0142dzielczy w Inowroc\u0142awiu",
+    "short_name": "InoBank Bank Sp\u00f3\u0142dzielczy w Inowroc\u0142awiu"
   },
   {
     "country_code": "PL",
@@ -18588,16 +18596,16 @@
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "84700001",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Jastrz\u0119biu Zdroju",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Jastrz\u0119biu Zdroju"
+    "name": "Bank Sp\u00f3\u0142dzielczy w Jastrz\u0119biu-Zdroju",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy w Jastrz\u0119biu-Zdroju"
   },
   {
     "country_code": "PL",
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "84740007",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Krzy\u017canowicach",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Krzy\u017canowicach"
+    "name": "Meander Bank Sp\u00f3\u0142dzielczy w Krzy\u017canowicach",
+    "short_name": "Meander Bank Sp\u00f3\u0142dzielczy w Krzy\u017canowicach"
   },
   {
     "country_code": "PL",
@@ -20140,8 +20148,8 @@
     "primary": true,
     "bic": "POLUPLPRXXX",
     "bank_code": "87800007",
-    "name": "Bank Sp\u00f3\u0142dzielczy w Aleksandrowie \u0141\u00f3dzkim",
-    "short_name": "Bank Sp\u00f3\u0142dzielczy w Aleksandrowie \u0141\u00f3dzkim"
+    "name": "AURET BANK Sp\u00f3\u0142dzielczy",
+    "short_name": "AURET BANK Sp\u00f3\u0142dzielczy"
   },
   {
     "country_code": "PL",
@@ -21460,6 +21468,22 @@
     "primary": true,
     "bic": "GBWCPLPP",
     "bank_code": "89610002",
+    "name": "Bank Sp\u00f3\u0142dzielczy we Wronkach",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy we Wronkach"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "89611012",
+    "name": "Bank Sp\u00f3\u0142dzielczy we Wronkach",
+    "short_name": "Bank Sp\u00f3\u0142dzielczy we Wronkach"
+  },
+  {
+    "country_code": "PL",
+    "primary": true,
+    "bic": "",
+    "bank_code": "89611025",
     "name": "Bank Sp\u00f3\u0142dzielczy we Wronkach",
     "short_name": "Bank Sp\u00f3\u0142dzielczy we Wronkach"
   },
