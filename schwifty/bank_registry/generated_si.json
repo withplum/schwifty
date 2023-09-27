@@ -2267,6 +2267,38 @@
     "country_code": "SI",
     "primary": true,
     "bic": "LJBASI2XXXX",
+    "bank_code": "02184",
+    "name": "NLB D.D.",
+    "short_name": "NLB D.D."
+  },
+  {
+    "country_code": "SI",
+    "primary": true,
+    "bic": "LJBASI2XXXX",
+    "bank_code": "02185",
+    "name": "NLB D.D.",
+    "short_name": "NLB D.D."
+  },
+  {
+    "country_code": "SI",
+    "primary": true,
+    "bic": "LJBASI2XXXX",
+    "bank_code": "02186",
+    "name": "NLB D.D.",
+    "short_name": "NLB D.D."
+  },
+  {
+    "country_code": "SI",
+    "primary": true,
+    "bic": "LJBASI2XXXX",
+    "bank_code": "02187",
+    "name": "NLB D.D.",
+    "short_name": "NLB D.D."
+  },
+  {
+    "country_code": "SI",
+    "primary": true,
+    "bic": "LJBASI2XXXX",
     "bank_code": "02219",
     "name": "NLB D.D.",
     "short_name": "NLB D.D."
@@ -3380,6 +3412,14 @@
     "primary": true,
     "bic": "LJBASI2XXXX",
     "bank_code": "02677",
+    "name": "NLB D.D.",
+    "short_name": "NLB D.D."
+  },
+  {
+    "country_code": "SI",
+    "primary": true,
+    "bic": "LJBASI2XXXX",
+    "bank_code": "02756",
     "name": "NLB D.D.",
     "short_name": "NLB D.D."
   },
@@ -6506,18 +6546,18 @@
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "SABRSI2XXXX",
+    "bic": "LJBASI2XXXX",
     "bank_code": "30000",
-    "name": "N BANKA D.D.",
-    "short_name": "N BANKA D.D."
+    "name": "NLB D.D.",
+    "short_name": "NLB D.D."
   },
   {
     "country_code": "SI",
     "primary": true,
-    "bic": "SABRSI2XXXX",
+    "bic": "LJBASI2XXXX",
     "bank_code": "30909",
-    "name": "N BANKA D.D.",
-    "short_name": "N BANKA D.D."
+    "name": "NLB D.D.",
+    "short_name": "NLB D.D."
   },
   {
     "country_code": "SI",
