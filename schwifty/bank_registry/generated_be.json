@@ -1130,22 +1130,6 @@
   {
     "country_code": "BE",
     "primary": true,
-    "bic": "RABOBE23",
-    "bank_code": "172",
-    "name": "Co\u00f6peratieve Rabobank U.A.",
-    "short_name": "Co\u00f6peratieve Rabobank U.A."
-  },
-  {
-    "country_code": "BE",
-    "primary": true,
-    "bic": "RABOBE23",
-    "bank_code": "173",
-    "name": "Co\u00f6peratieve Rabobank U.A.",
-    "short_name": "Co\u00f6peratieve Rabobank U.A."
-  },
-  {
-    "country_code": "BE",
-    "primary": true,
     "bic": "BSCHBEBBRET",
     "bank_code": "176",
     "name": "Santander Consumer Finance \u2013 Succursale en Belgique/Bijkantoor in Belgi\u00eb",
@@ -5876,8 +5860,8 @@
     "primary": true,
     "bic": "OONXBEBB",
     "bank_code": "915",
-    "name": "Oonex",
-    "short_name": "Oonex"
+    "name": "Equals Money Europe SA",
+    "short_name": "Equals Money Europe SA"
   },
   {
     "country_code": "BE",
