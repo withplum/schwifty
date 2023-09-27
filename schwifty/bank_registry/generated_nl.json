@@ -594,6 +594,14 @@
   {
     "country_code": "NL",
     "primary": true,
+    "bic": "SWNBNL22",
+    "bank_code": "SWNB",
+    "name": "SWAN",
+    "short_name": "SWAN"
+  },
+  {
+    "country_code": "NL",
+    "primary": true,
     "bic": "TRIONL2U",
     "bank_code": "TRIO",
     "name": "TRIODOS BANK",
@@ -654,13 +662,5 @@
     "bank_code": "BCDM",
     "name": "BANQUE CHAABI DU MAROC * (tijdelijk) inactief sinds 31 december 2020 *",
     "short_name": "BANQUE CHAABI DU MAROC * (tijdelijk) inactief sinds 31 december 2020 *"
-  },
-  {
-    "country_code": "NL",
-    "primary": true,
-    "bic": "BMEUNL21",
-    "bank_code": "BMEU",
-    "name": "BMCE EUROSERVICES * (tijdelijk) inactief sinds 7 juni 2021 *",
-    "short_name": "BMCE EUROSERVICES * (tijdelijk) inactief sinds 7 juni 2021 *"
   }
 ]
