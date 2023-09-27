@@ -202,14 +202,6 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "",
-    "bank_code": "6100",
-    "name": "k\u00c3\u00b3d u\u00c5\u00be\u00c3\u00adv\u00c3\u00a1n pro dob\u00c4\u009bh plateb ve prosp\u00c4\u009bch Raiffeisenbank a.s. do 30. 6. 2023",
-    "short_name": "k\u00c3\u00b3d u\u00c5\u00be\u00c3\u00adv\u00c3\u00a1n pro dob\u00c4\u009bh plateb ve prosp\u00c4\u009bch Raiffeisenbank a.s. do 30. 6. 2023"
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
     "bic": "COBACZPX",
     "bank_code": "6200",
     "name": "COMMERZBANK Aktiengesellschaft, pobo\u00c4\u008dka Praha",
@@ -346,14 +338,6 @@
   {
     "country_code": "CZ",
     "primary": true,
-    "bic": "",
-    "bank_code": "8200",
-    "name": "PRIVAT BANK der Raiffeisenlandesbank Ober\u00c3\u00b6sterreich Aktiengesellschaft, pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika",
-    "short_name": "PRIVAT BANK der Raiffeisenlandesbank Ober\u00c3\u00b6sterreich Aktiengesellschaft, pobo\u00c4\u008dka \u00c4\u008cesk\u00c3\u00a1 republika"
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
     "bic": "PAERCZP1",
     "bank_code": "8220",
     "name": "Payment execution s.r.o.",
@@ -398,14 +382,6 @@
     "bank_code": "8280",
     "name": "B-Efekt a.s.",
     "short_name": "B-Efekt a.s."
-  },
-  {
-    "country_code": "CZ",
-    "primary": true,
-    "bic": "MRPSCZPP",
-    "bank_code": "8293",
-    "name": "Mercurius partners s.r.o.",
-    "short_name": "Mercurius partners s.r.o."
   },
   {
     "country_code": "CZ",
