@@ -74,14 +74,6 @@
   {
     "country_code": "HU",
     "primary": true,
-    "bic": "MANEHUHH",
-    "bank_code": "114",
-    "name": "NHB N\u00f6veked\u00e9si Hitel Bank Szent Istv\u00e1n",
-    "short_name": "NHB N\u00f6veked\u00e9si Hitel Bank Szent Istv\u00e1n"
-  },
-  {
-    "country_code": "HU",
-    "primary": true,
     "bic": "TAKBHUHB",
     "bank_code": "115",
     "name": "MBH Befektet\u00e9si Bank Zrt.  K\u00f6zpont",
@@ -346,14 +338,6 @@
   {
     "country_code": "HU",
     "primary": true,
-    "bic": "BORGISRE",
-    "bank_code": "194",
-    "name": "Saltpay IIB hf",
-    "short_name": "Saltpay IIB hf"
-  },
-  {
-    "country_code": "HU",
-    "primary": true,
     "bic": "CLSBUS33",
     "bank_code": "196",
     "name": "CLS Bank International",
@@ -406,6 +390,14 @@
     "bank_code": "298",
     "name": "Banking Circle S.A.",
     "short_name": "Banking Circle S.A."
+  },
+  {
+    "country_code": "HU",
+    "primary": true,
+    "bic": "THZTHUHH",
+    "bank_code": "299",
+    "name": "Trive Bank Hungary Zrt",
+    "short_name": "Trive Bank Hungary Zrt"
   },
   {
     "country_code": "HU",
@@ -716,16 +708,16 @@
     "primary": true,
     "bic": "MKKBHUHB",
     "bank_code": "574",
-    "name": "MBH Bank Nyrt.",
-    "short_name": "MBH Bank Nyrt."
+    "name": "MBH Szeged Miksz\u00e1th",
+    "short_name": "MBH Szeged Miksz\u00e1th"
   },
   {
     "country_code": "HU",
     "primary": true,
     "bic": "MKKBHUHB",
     "bank_code": "576",
-    "name": "MBH Bank Nyrt.",
-    "short_name": "MBH Bank Nyrt."
+    "name": "MBH Szeged Miksz\u00e1th",
+    "short_name": "MBH Szeged Miksz\u00e1th"
   },
   {
     "country_code": "HU",
@@ -780,8 +772,8 @@
     "primary": true,
     "bic": "MKKBHUHB",
     "bank_code": "591",
-    "name": "MBH Bank Nyrt.",
-    "short_name": "MBH Bank Nyrt."
+    "name": "MBH Gy\u0151r ETO Park",
+    "short_name": "MBH Gy\u0151r ETO Park"
   },
   {
     "country_code": "HU",
@@ -796,16 +788,16 @@
     "primary": true,
     "bic": "MKKBHUHB",
     "bank_code": "593",
-    "name": "MBH Bank Nyrt.",
-    "short_name": "MBH Bank Nyrt."
+    "name": "MBH Gy\u0151r ETO Park",
+    "short_name": "MBH Gy\u0151r ETO Park"
   },
   {
     "country_code": "HU",
     "primary": true,
     "bic": "MKKBHUHB",
     "bank_code": "595",
-    "name": "MBH Bank Nyrt.",
-    "short_name": "MBH Bank Nyrt."
+    "name": "MBH Gy\u0151r ETO Park",
+    "short_name": "MBH Gy\u0151r ETO Park"
   },
   {
     "country_code": "HU",
@@ -1276,8 +1268,8 @@
     "primary": true,
     "bic": "MKKBHUHB",
     "bank_code": "736",
-    "name": "MBH Bank Nyrt.",
-    "short_name": "MBH Bank Nyrt."
+    "name": "MBH 103 Herend",
+    "short_name": "MBH 103 Herend"
   },
   {
     "country_code": "HU",
