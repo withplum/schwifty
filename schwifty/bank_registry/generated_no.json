@@ -2476,8 +2476,8 @@
     "primary": true,
     "bic": "LABRNOB1",
     "bank_code": "2510",
-    "name": "Larvikbanken",
-    "short_name": "Larvikbanken"
+    "name": "Larvikbanken - din sparebank",
+    "short_name": "Larvikbanken - din sparebank"
   },
   {
     "country_code": "NO",
@@ -12164,6 +12164,30 @@
     "primary": true,
     "bic": "NDEANOKK",
     "bank_code": "6636",
+    "name": "Nordea Bank Abp, Filial i Norge",
+    "short_name": "Nordea Bank Abp, Filial i Norge"
+  },
+  {
+    "country_code": "NO",
+    "primary": true,
+    "bic": "NDEANOKK",
+    "bank_code": "6637",
+    "name": "Nordea Bank Abp, Filial i Norge",
+    "short_name": "Nordea Bank Abp, Filial i Norge"
+  },
+  {
+    "country_code": "NO",
+    "primary": true,
+    "bic": "NDEANOKK",
+    "bank_code": "6638",
+    "name": "Nordea Bank Abp, Filial i Norge",
+    "short_name": "Nordea Bank Abp, Filial i Norge"
+  },
+  {
+    "country_code": "NO",
+    "primary": true,
+    "bic": "NDEANOKK",
+    "bank_code": "6639",
     "name": "Nordea Bank Abp, Filial i Norge",
     "short_name": "Nordea Bank Abp, Filial i Norge"
   },
