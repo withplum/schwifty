@@ -184,6 +184,14 @@
         "short_name": "HELLENIC BANK PUBLIC COMPANY"
     },
     {
+        "bank_code": "007",
+        "bic": "HEBACY2N",
+        "country_code": "CY",
+        "name": "HELLENIC BANK PUBLIC COMPANY LTD (FORMERLY CYPRUS COOPERATIVE BANK LTD)",
+        "primary": true,
+        "short_name": "HELLENIC BANK PUBLIC COMPANY"
+    },
+    {
         "bank_code": "HFIC",
         "bic": "HFICCY2NXXX",
         "country_code": "CY",
