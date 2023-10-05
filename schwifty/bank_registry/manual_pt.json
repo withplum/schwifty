@@ -126,5 +126,45 @@
       "name": "BANKINTER, SA - SUCURSAL EM PORTUGAL",
       "primary": true,
       "short_name": "BANKINTER"
+    },
+    {
+      "bank_code": "5180",
+      "bic": "CDCTPTP2",
+      "country_code": "PT",
+      "name": "CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE LEIRIA, CRL",
+      "primary": true,
+      "short_name": "CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE LEIRIA, CRL"
+    },
+    {
+      "bank_code": "5200",
+      "bic": "CDOTPTPP",
+      "country_code": "PT",
+      "name": "CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE MAFRA, CRL",
+      "primary": true,
+      "short_name": "CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE MAFRA, CRL"
+    },
+    {
+      "bank_code": "5340",
+      "bic": "CTIUPTPP",
+      "country_code": "PT",
+      "name": "CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE TORRES VEDRAS, C.R.L",
+      "primary": true,
+      "short_name": "CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE TORRES VEDRAS, C.R.L"
+    },
+    {
+      "bank_code": "5810",
+      "bic": "FPEAPTP2",
+      "country_code": "PT",
+      "name": "FINANCIERE DES PAIEMENTS ELECTRONIQUE SAS - SUCURSAL EM PORTUGAL",
+      "primary": true,
+      "short_name": "FINANCIÈRE DES PAIEMENTS ÉLECTRONIQUES SAS"
+    },
+    {
+      "bank_code": "7500",
+      "bic": "SONVPTP1",
+      "country_code": "PT",
+      "name": "UNIVERSO, IME, S.A.",
+      "primary": true,
+      "short_name": "UNIVERSO, IME, S.A."
     }
 ]
