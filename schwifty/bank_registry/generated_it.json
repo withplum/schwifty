@@ -1632,14 +1632,6 @@
 		"short_name": "BANCA DI CARAGLIO, DEL CUNEESE E DELLA RIVIERA DEI FIORI - CREDITO COOPERATIVO - SOCIETA' COOPERATIVA"
 	},
 	{
-		"bank_code": "08441",
-		"bic": "ICRAITRRC90",
-		"country_code": "IT",
-		"name": "CREDITO COOPERATIVO DI CARAVAGGIO ADDA E CREMASCO - CASSA RURALE - S.C.",
-		"primary": true,
-		"short_name": "CREDITO COOPERATIVO DI CARAVAGGIO ADDA E CREMASCO - CASSA RURALE - S.C."
-	},
-	{
 		"bank_code": "08460",
 		"bic": "ICRAITRRCS0",
 		"country_code": "IT",
